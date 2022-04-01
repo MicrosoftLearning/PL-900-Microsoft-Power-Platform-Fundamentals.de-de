@@ -1,19 +1,24 @@
 ---
 lab:
-    title: 'Lab 8: So erstellen Sie einen grundlegenden Chatbot'
-    module: 'Modul 6: Einführung in Power Virtual Agents'
+  title: 'Lab 8: Einen einfachen Chatbot erstellen'
+  module: 'Module 6: Intro to Power Virtual Agents'
+ms.openlocfilehash: ed1611f4b1450093a6e95cbb9df7ad7fdc040e86
+ms.sourcegitcommit: ef58c858463b890e923ef808b1d43405423943fd
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "137898938"
 ---
+# <a name="module-6-intro-to-power-virtual-agents"></a>Modul 6 Einführung in Power Virtual Agents
+## <a name="lab-how-to-build-a-basic-chatbot"></a>Lab: Einen einfachen Chatbot erstellen
 
-# Modul 6: Einführung in Power Virtual Agents
-## Lab: So erstellen Sie einen grundlegenden Chatbot
-
-# Szenario
+# <a name="scenario"></a>Szenario
 
 Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem Campus. Campusbesuche werden derzeit in Papierzeitschriften aufgezeichnet. Die Informationen werden nicht konsistent erfasst und es gibt keine Möglichkeit, Daten über die Besuche auf dem gesamten Campus zu sammeln und zu analysieren.
 
 Wie die meisten Organisationen reagiert das Bellows College schnell auf Bedenken bezüglich Fehlinformationen zu COVID-19, Best Practices, Zeitplänen usw. In dieser Übung erstellen Sie einen Power Virtual Agent-Chatbot, der auf die Seite des Center for Disease Control mit Fragen und Antworten zum aktuellen Status der Pandemie verweist. Das College möchte dieses Setup, damit es in seine Portal-Website eingebettet und ad hoc zur Verfügung gestellt werden kann, wenn die Abteilungen ihre eigene geplante Wiedereröffnung vornehmen.
 
-## Generelle Schritte
+## <a name="high-level-steps"></a>Schritte auf oberer Ebene:
 
 Wir folgen der nachstehenden Übersicht, um unseren Power Virtual Agent zu erstellen:
 
@@ -21,29 +26,29 @@ Wir folgen der nachstehenden Übersicht, um unseren Power Virtual Agent zu erste
 
   - Erstellen Sie einen Bot mithilfe von FAQs
 
-  - Testen Sie den Bot
+  - Testen des Bots
 
   - Ändern Sie die Standardbegrüßung
 
-  - Veröffentlichen Sie den Bot
+  - Veröffentlichen des Bots
 
   - **Bonus-Herausforderung:** Betten Sie den Bot in Ihr Portal ein
 
-## Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
 
 Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschließen.
 
-  - Beendigung von **Modul 0 Lab 0 – Lab-Umgebung bestätigen**
+  - Beendigung von **Modul 0 Lab 0 – Lab-Umgebung überprüfen**
 
   - Beendigung von **Modul 2 Lab 1 – Einführung in Microsoft Dataverse**
 
   - Nur Bonusübung: Abschluss von **Modul 6 Lab 4 – Einführung in Power Apps-Portale** 
 
-## Vor dem Beginn zu beachtende Dinge
+## <a name="things-to-consider-before-you-begin"></a>Vor dem Beginn zu beachtende Dinge
 
 Bots können in vielen verschiedenen Szenarien sehr nützlich sein. Überlegen Sie anhand Ihrer bisherigen Kenntnisse über das Bellows College, wo in der Organisation sonst ein Bot von Nutzen sein könnte.
 
-# Übung Nr. 1: Für PVA registrieren und einen neuen Bot erstellen
+# <a name="exercise-1-sign-up-for-pva-and-create-a-new-bot"></a>Übung 1: Für PVA registrieren und einen neuen Bot erstellen
 
 In dieser Übung registrieren Sie sich für die Testversion von Power Virtual Agents.
 
@@ -67,7 +72,7 @@ In dieser Übung registrieren Sie sich für die Testversion von Power Virtual Ag
 
 > In der nächsten Übung generieren Sie Ihre eigenen Themen aus der CDC-FAQ-Website. Navigieren Sie nicht von diesem Browserfenster weg.
 
-# Übung Nr. 2: Themen erstellen
+# <a name="exercise-2-create-topics"></a>Übung 2: Themen erstellen
 
 In dieser Übung generieren Sie Themen von der CDC-FAQ-Website.
 
@@ -81,7 +86,7 @@ In dieser Übung generieren Sie Themen von der CDC-FAQ-Website.
 
 5.  Klicken Sie auf **Los geht's**.
 
-6. Fügen Sie die URL, die Sie kopiert haben, in das Textfeld **Link zu Online-Inhalten** ein, und klicken Sie auf **Hinzufügen**. Bitte beachten Sie, dass https:// zweimal aufgeführt wird, wenn Sie die komplette URL kopiert haben. Stellen Sie sicher, dass die URL das Protokoll nur einmal aufführt.
+6. Fügen Sie die URL, die Sie kopiert haben, in das Textfeld **Link zu Online-Inhalten** ein, und klicken Sie auf **Hinzufügen**. Beachten Sie, dass https:// zwei Mal aufgeführt wird, wenn Sie die vollständige URL kopiert haben. Achten Sie darauf, dass das Protokoll in der URL nur einmal auflistet wird.
 
 7.  Klicken Sie auf **Start**, und warten Sie. Dies kann einige Minuten dauern.
 
@@ -101,7 +106,7 @@ In dieser Übung generieren Sie Themen von der CDC-FAQ-Website.
 
 > Navigieren Sie nicht von diesem Browserfenster weg.
 
-# Übung Nr. 3: Themen testen
+# <a name="exercise-3-test-topics"></a>Übung 3: Themen testen
 
 In dieser Aufgabe testen Sie die Themen, die Sie hinzugefügt haben.
 
@@ -121,9 +126,9 @@ In dieser Aufgabe testen Sie die Themen, die Sie hinzugefügt haben.
 
 8.  Geben Sie **Hallo** ein, und klicken Sie auf **Senden**.
 
-9.  Der Bot sollte Sie begrüßen und Ihnen sagen, was er tun kann. Ihr Bot kann jetzt Benutzern mit COVID-19-FAQs helfen, sodass Sie die Begrüßungsnachricht in der nächsten Aufgabe ändern müssen. Navigieren Sie nicht von diesem Browserfenster weg.
+9.  Der Bot sollte Sie begrüßen und Ihnen sagen, was er tun kann. Ihr Bot kann jetzt Benutzern bei der Beantwortung häufig gestellter Fragen zu COVID-19 helfen, sodass Sie die Begrüßungsnachricht in der nächsten Aufgabe ändern müssen. Navigieren Sie nicht von diesem Browserfenster weg.
 
-# Übung Nr. 4: Begrüßung ändern
+# <a name="exercise-4-change-the-greeting"></a>Übung 4: Begrüßung ändern
 
 In dieser Aufgabe ändern Sie die Begrüßung in eine COVID-19-spezifische Begrüßung.
 
@@ -135,7 +140,7 @@ In dieser Aufgabe ändern Sie die Begrüßung in eine COVID-19-spezifische Begr�
 
 4.  Das Begrüßungsthema enthält 52 Triggerbegriffe. Klicken Sie auf **Zum Dokumenterstellungsbereich**.
 
-5.  Navigieren Sie zur ersten Nachricht, und ersetzen Sie sie durch `Hi, I’m a virtual agent. I can tell you about how COVID-19 spreads, how to protect yourself, preparing your home and family for COVID-19, symptoms, testing, and more.`
+5.  Wechseln Sie zur ersten Nachricht, und ersetzen Sie sie durch `Hi, I’m a virtual agent. I can tell you about how COVID-19 spreads, how to protect yourself, preparing your home and family for COVID-19, symptoms, testing, and more.`.
 
 6.  Klicken Sie auf **Speichern**.
 
@@ -145,7 +150,7 @@ In dieser Aufgabe ändern Sie die Begrüßung in eine COVID-19-spezifische Begr�
 
 9.  Der Bot sollte nun mit der neuen Begrüßung antworten.
 
-# Übung Nr. 5: Den Bot veröffentlichen
+# <a name="exercise-5-publish-the-bot"></a>Übung 5: Veröffentlichen Sie den Bot
 
 In dieser Übung veröffentlichen Sie den Bot.
 
@@ -159,7 +164,7 @@ In dieser Übung veröffentlichen Sie den Bot.
 
 5.  Sie erhalten eine Liste der verfügbaren Kanäle, auf denen Sie Ihren Bot veröffentlichen können. Wählen Sie **Demo-Website** aus.
 
-6.  Ändern Sie die Begrüßungsnachricht in `Try my COVID-19 FAQ bot.` um.
+6.  Ändern Sie die Begrüßungsnachricht in `Try my COVID-19 FAQ bot.`.
 
 7.  Geben Sie Folgendes in **Gesprächsstarter** ein:
     ```
@@ -182,5 +187,5 @@ Wenn Sie fertig sind, sollte Ihr veröffentlichter Bot ungefähr so aussehen:
 
 ![Bot-Demowebsite – Screenshot](./media/8-image1.png)
 
-# Herausforderungen 
-* Betten Sie Ihren Chatbot in Ihr Bellows College-Besucherportal ein (weitere Informationen dazu finden Sie unter **Bot zu Power Apps hinzufügen** [hier](https://docs.microsoft.com/de-de/power-virtual-agents/publication-connect-bot-to-web-channels).)
+# <a name="challenges"></a>Herausforderungen 
+* Betten Sie Ihren Chatbot in Ihr Bellows College-Besucherportal ein (weitere Informationen dazu finden Sie unter **Bot zu Power Apps hinzufügen** [hier](https://docs.microsoft.com/en-us/power-virtual-agents/publication-connect-bot-to-web-channels).)

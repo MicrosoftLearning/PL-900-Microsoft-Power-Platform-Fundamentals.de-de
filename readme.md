@@ -1,16 +1,24 @@
-# PL-900: Microsoft Power Platform Fundamentals
+---
+ms.openlocfilehash: 4ed3e8f1b4b97a760aeb60cff93ad06b89fedd6a
+ms.sourcegitcommit: ef58c858463b890e923ef808b1d43405423943fd
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "137898988"
+---
+# <a name="pl-900-power-platform-fundamentals"></a>PL-900: Power Platform Fundamentals
 
-- **[Laden Sie das aktuelle Kursteilnehmerhandbuch und den AllFiles-Inhalt herunter.](../../releases/latest)**
-- **Sind Sie ein MCT?** - Lesen Sie unseren [GitHub User Guide for MCTs](https://microsoftlearning.github.io/MCT-User-Guide-DE/)
-- **Sie benötigen keine manuell erstellten Lab-Anweisungen?** - Anweisungen stehen im Repository [MicrosoftLearning/Docker-Build](https://github.com/MicrosoftLearning/Docker-Build) zur Verfügung.
+- **[Laden Sie das aktuelle Kursteilnehmerhandbuch und alle Dateiinhalte herunter.](../../releases/latest)**
+- **Sind Sie ein MCT?** – Lesen Sie unser [GitHub-Benutzerhandbuch für MCTs](https://microsoftlearning.github.io/MCT-User-Guide/).
+- **Müssen Sie die Lab-Anweisungen manuell erstellen?** – Anweisungen sind im Repository [MicrosoftLearning/Docker-Build](https://github.com/MicrosoftLearning/Docker-Build) verfügbar
 
-## Was tun wir?
+## <a name="what-are-we-doing"></a>Was tun wir?
 
-- Wir müssen den Kursinhalt regelmäßig aktualisieren, um ihn hinsichtlich der in diesem Kurs verwendeten Power Platform-Dienste auf dem neuesten Stand zu halten.  Wir veröffentlichen die Lab-Anweisungen und Lab-Dateien auf GitHub, um eine offene Zusammenarbeit zwischen den Kursautoren und MCTs zu ermöglichen, damit der Inhalt hinsichtlich Änderungen der Plattform auf dem neuesten Stand bleibt.
+- Um diesen Kurs zu unterstützen, müssen häufig Änderungen an den Kursinhalten vorgenommen werden, um sie an den verwendeten Power Platform-Dienst anzupassen.  Wir veröffentlichen die Lab-Anweisungen und Lab-Dateien auf GitHub, um eine offene Zusammenarbeit zwischen den Kursautoren und MCTs zu ermöglichen, damit der Inhalt hinsichtlich Änderungen der Plattform auf dem neuesten Stand bleibt.
 
 - Wir hoffen, dass dies den Labs ein Klima der Zusammenarbeit verleiht, wie wir es noch nie zuvor hatten. Wenn sich Power Platform ändert und Ihnen die Änderung als Erstem auffällt, können Sie direkt im Lab-Quellcode eine Verbesserung vornehmen.  Helfen Sie Ihren MCT-Kollegen.
 
-## Wie kann ich diese Dateien in Bezug auf die freigegebenen MOC-Dateien verwenden?
+## <a name="how-should-i-use-these-files-relative-to-the-released-moc-files"></a>Wie kann ich diese Dateien in Bezug auf die freigegebenen MOC-Dateien verwenden?
 
 - Das Handbuch für Kursleiter und die PowerPoints sind auch weiterhin Ihre Hauptquelle für die Kursinhalte.
 
@@ -18,18 +26,18 @@
 
 - Kursleiter sollten GitHub vor jedem Kurs auf Änderungen überprüfen, die möglicherweise als Anpassung an die neuesten Azure-Dienste vorgenommen wurden, und die neuesten Dateien für den Kurs abrufen.
 
-## Was ist mit Änderungen am Kursteilnehmerhandbuch?
+## <a name="what-about-changes-to-the-student-handbook"></a>Was ist mit Änderungen am Kursteilnehmerhandbuch?
 
 - Wir werden das Kursteilnehmerhandbuch vierteljährlich überprüfen und bei Bedarf über die regulären MOC-Veröffentlichungskanäle aktualisieren.
 
-## Wie kann ich beitragen?
+## <a name="how-do-i-contribute"></a>Wie kann ich beitragen?
 
 - Jeder MCT kann eine Pull Request an den Code oder Inhalte im GitHub-Repository senden. Microsoft und der Kursautor prüfen den Inhalt und den Lab-Code und nehmen nach Bedarf Änderungen vor.
 
 - Sie können Fehler, Änderungen, Verbesserungen und Vorschläge einreichen.  Sie haben vor uns eine neue Azure-Funktion gefunden?  Reichen Sie eine neue Demo ein!
 
-## Anmerkungen
+## <a name="notes"></a>Hinweise
 
-### Unterrichtsmaterialien
+### <a name="classroom-materials"></a>Unterrichtsmaterialien
 
-Wir empfehlen MCTs und Partnern dringend, auf diese Materialien zuzugreifen und sie den Kursteilnehmern separat zur Verfügung zu stellen.  Wenn Sie die Kursteilnehmer direkt auf GitHub verweisen, um im Rahmen eines laufenden Kurses auf Lab-Schritte zuzugreifen, müssen sie auf eine weitere Benutzeroberfläche zugreifen, was zu Verwirrung führen kann. Mit einer Erklärung für die Kursteilnehmer, warum sie separate Labanweisungen erhalten, können Sie extrem dynamische Natur von cloudbasierten Schnittstellen und Plattformen hervorheben. Die Microsoft Learning-Unterstützung für den Zugriff auf Dateien auf GitHub und für die Navigation auf der GitHub-Website ist auf MCTs beschränkt, die diesen Kurs unterrichten.
+Wir empfehlen MCTs und Partnern dringend, diese Materialien zu nutzen und sie den Kursteilnehmern separat zur Verfügung zu stellen.  Wenn Sie die Kursteilnehmer direkt auf GitHub verweisen, um im Rahmen eines laufenden Kurses auf Lab-Schritte zuzugreifen, müssen sie auf eine weitere Benutzeroberfläche zugreifen, was zu Verwirrung führen kann. Mit einer Erklärung für die Kursteilnehmer, warum sie separate Labanweisungen erhalten, können Sie extrem dynamische Natur von cloudbasierten Schnittstellen und Plattformen hervorheben. Die Microsoft Learning-Unterstützung für den Zugriff auf Dateien auf GitHub und für die Navigation auf der GitHub-Website ist auf MCTs beschränkt, die diesen Kurs unterrichten.

@@ -1,12 +1,17 @@
 ---
 lab:
-    title: 'Lab 1: Datenmodellierung'
-    module: 'Modul 2: Einführung in Microsoft Dataverse'
+  title: 'Lab 1: Datenmodellierung'
+  module: 'Module 2: Introduction to Microsoft Dataverse'
+ms.openlocfilehash: 05d0f0656ae0d93f5666f7c14602c3976a9a9ac9
+ms.sourcegitcommit: ef58c858463b890e923ef808b1d43405423943fd
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "137898891"
 ---
+# <a name="module-2-introduction-to-microsoft-dataverse"></a>Modul 2: Einführung in Microsoft Dataverse
 
-# Modul 2: Einführung in Common Data Service
-
-# Szenario
+# <a name="scenario"></a>Szenario
 
 Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem Campus. Campusbesuche werden derzeit in Papierzeitschriften aufgezeichnet. Die Informationen werden nicht konsistent erfasst und es gibt keine Möglichkeit, Daten über die Besuche auf dem gesamten Campus zu sammeln und zu analysieren. 
 
@@ -22,7 +27,7 @@ In diesem Lab greifen Sie auf Ihre Umgebung zu, erstellen eine Microsoft Dataver
 
 Zum Abschluss importieren Sie Beispieldaten in Microsoft Dataverse.
 
-# Weiterführende Schritte des Lab
+# <a name="high-level-lab-steps"></a>Weiterführende Schritte des Lab
 
 Um Ihre Lernumgebungen vorzubereiten, werden Sie:
 
@@ -31,27 +36,27 @@ Um Ihre Lernumgebungen vorzubereiten, werden Sie:
 
 Nach Abschluss aller Anpassungen wird Ihre Lösung mehrere Tabellen enthalten:
 
--   Kontakt
--   Gebäude
--   Besuch
+-   Contact
+-   Erstellen
+-   Navigieren Sie zu folgendem Pfad.
 
-## Voraussetzungen:
+## <a name="prerequisites"></a>Voraussetzungen:
 
 * Beendigung von **Modul 0 Lab 0 – Lab-Umgebung überprüfen**
 
-## Bevor Sie beginnen, sollten Sie Folgendes berücksichtigen:
+## <a name="things-to-consider-before-you-begin"></a>Bevor Sie beginnen, sollten Sie Folgendes berücksichtigen:
 
-* Namenskonvention
+* Benennungskonvention
 
 * Datentypen, Einschränkungen (z. B. maximale Länge eines Namens)
 
 * Datetime-Formatierung zur Unterstützung einer einfachen Lokalisierung
 
-# Übung 1: Lösung erstellen
+# <a name="exercise-1-create-solution"></a>Übung 1: Lösung erstellen
 
-## Aufgabe 1: Lösung und Publisher erstellen
+## <a name="task-1-create-solution-and-publisher"></a>Aufgabe 1: Lösung und Publisher erstellen
 
-1.  Lösung erstellen
+1.  Projektmappe erstellen
 
     -   Navigieren Sie zu <https://make.powerapps.com>. Möglicherweise müssen Sie sich erneut authentifizieren. Klicken Sie dazu auf **Anmelden**, und folgen Sie den Anweisungen (falls erforderlich).
 
@@ -61,9 +66,9 @@ Nach Abschluss aller Anpassungen wird Ihre Lösung mehrere Tabellen enthalten:
 
     -   Geben Sie **[Ihr Nachname] Campusverwaltung** als **Anzeigename** ein.
 
-2.  Publisher erstellen
+2.  Herausgeber erstellen
 
-    -   Wählen Sie im Abschnitt **Publisher** die Option **+ Publisher** aus.
+    -   Wählen Sie im Abschnitt **Herausgeber** die Option **+ Herausgeber** aus.
 
     -   Geben Sie in dem Fenster, das daraufhin eingeblendet wird, **Bellows College** als **Anzeigename** ein. 
 
@@ -71,24 +76,23 @@ Nach Abschluss aller Anpassungen wird Ihre Lösung mehrere Tabellen enthalten:
     
     -   Geben Sie **bc** als **Präfix** ein.
 
-    -   Klicken Sie auf **Speichern**.
+    -   Klicken Sie unten auf der Seite auf **Speichern**.
     
     -   Klicken Sie im Popupfenster auf **Fertig**.
 
 3.  Schließen Sie die Lösungserstellung ab.
 
-    -   Klicken Sie nun auf die Dropdownliste **Publisher**, und wählen Sie den Herausgeber **Bellows College** aus,
-        den Sie gerade erstellt haben.
+    -   Klicken Sie nun auf die Dropdownliste **Herausgeber**, und wählen Sie den Herausgeber **Bellows College** aus, den Sie soeben erstellt haben.
 
     -   Vergewissern Sie sich, dass **Version** auf **1.0.0.0** gesetzt ist. 
     
     -   Klicken Sie auf **Erstellen**.
 
-# Übung Nr. 2: Vorhandene Tabelle hinzufügen und neue Tabellen erstellen
+# <a name="exercise-2-add-existing-and-create-new-tables"></a>Übung 2: Vorhandene Tabellen hinzufügen und neue erstellen
 
-**Ziel:** In dieser Übung fügen Sie die Standardtabelle „Kontakt“ hinzu und erstellen neue benutzerdefinierte Tabellen für Gebäude und Besuche in der Lösung. 
+**Ziel**: In dieser Übung fügen Sie die Standardtabelle „Kontakt“ hinzu und erstellen neue benutzerdefinierte Tabellen für Gebäude und Besuche in der Lösung. 
 
-## Aufgabe 1: Vorhandene Tabelle hinzufügen
+## <a name="task-1-add-existing-table"></a>Aufgabe 1: Vorhandene Tabelle hinzufügen
 
 1.  Klicken Sie, um Ihre **Campusverwaltung**-Lösung, die Sie gerade erstellt haben, zu öffnen.
 
@@ -100,29 +104,27 @@ Nach Abschluss aller Anpassungen wird Ihre Lösung mehrere Tabellen enthalten:
 
 5.  Klicken Sie unter „Kontakt“ auf **Komponenten auswählen**.
 
-6.  Wählen Sie die Registerkarte **Ansichten** aus, und wählen Sie die Ansicht **Aktive Kontakte** aus. Klicken Sie auf
-    **Hinzufügen**.
+6.  Wählen Sie die Registerkarte **Ansichten** aus, und wählen Sie die Ansicht **Aktive Kontakte** aus. Klicken Sie auf **Hinzufügen**.
     
 7.  Klicken Sie erneut auf **Komponenten auswählen**.
 
-8.  Wählen Sie die Registerkarte **Formulare** aus, und wählen Sie das Formular **Kontakt**aus.
+8.  Wählen Sie die Registerkarte **Formulare** aus, und wählen Sie das Formular **Kontakt** aus.
     
 9.  Klicken Sie auf **Hinzufügen**.
 
     > Sie sollten **1 Ansicht** und **1 Formular** ausgewählt haben. 
     
-10.  Klicken Sie erneut auf **Hinzufügen**. Dadurch wird der neu erstellten Lösung die Tabelle „Kontakt“ mit der ausgewählten Ansicht und dem ausgewählten Formular hinzugefügt.
+10.  Klicken Sie noch einmal auf **Hinzufügen**. Dadurch wird der neu erstellten Lösung die Tabelle „Kontakt“ mit der ausgewählten Ansicht und dem ausgewählten Formular hinzugefügt.
 
 > Ihre Lösung sollte jetzt eine Tabelle enthalten: Kontakt.
     
-## Aufgabe Nr. 2: Tabelle „Gebäude“ erstellen
+## <a name="task-2-create-building-table"></a>Aufgabe Nr. 2: Tabelle „Gebäude“ erstellen
 
 1.  In Ihrem Browser sollte weiterhin Ihre Campusverwaltung-Lösung geöffnet sein. Öffnen Sie andernfalls die Lösung wie folgt:
 
-    * Melden Sie sich bei <https://make.powerapps.com> an (falls Sie noch nicht angemeldet sind)
+    * Melden Sie sich bei <https://make.powerapps.com> an (falls Sie nicht bereits angemeldet sind).
     
-    * Wählen Sie **Lösungen** aus, und klicken Sie zum Öffnen der Lösung **[Ihr Nachname] Campusverwaltung**,
-          die Sie gerade erstellt haben.
+    * Wählen Sie **Lösungen** aus, und klicken Sie auf die Lösung **[Ihr Nachname] Campusverwaltung**, die Sie soeben erstellt haben, um sie zu öffnen.
           
 2.  Tabelle „Gebäude“ erstellen
 
@@ -130,9 +132,9 @@ Nach Abschluss aller Anpassungen wird Ihre Lösung mehrere Tabellen enthalten:
     
     -   Geben Sie **Gebäude** als **Anzeigename** ein. 
     
-    -   Wählen Sie **Speichern** aus. Dadurch wird die Tabelle im Hintergrund bereitgestellt, während Sie damit beginnen können, weitere Tabellen und Spalten hinzuzufügen.
+    -   Klicken Sie auf **Speichern**. Dadurch wird die Tabelle im Hintergrund bereitgestellt, während Sie damit beginnen können, weitere Tabellen und Spalten hinzuzufügen.
 
-## Aufgabe 3: Tabelle „Besuch“ und Spalten erstellen
+## <a name="task-3-create-visit-table-and-columns"></a>Aufgabe 3: Tabelle „Besuch“ und Spalten erstellen
 
 Die Tabelle **Besuch** wird Informationen zu den Campusbesuchen enthalten, einschließlich des Gebäudes, des Besuchers und des geplanten sowie des tatsächlichen Zeitpunkts jedes Besuchs. 
 
@@ -142,10 +144,9 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
 
 1.  In Ihrem Browser sollte weiterhin Ihre Campusverwaltung-Lösung geöffnet sein. Öffnen Sie andernfalls die Lösung wie folgt:
 
-    * Melden Sie sich bei <https://make.powerapps.com> an (falls Sie noch nicht angemeldet sind)
+    * Melden Sie sich bei <https://make.powerapps.com> an (falls Sie nicht bereits angemeldet sind).
     
-    * Wählen Sie **Lösungen** aus, und klicken Sie zum Öffnen der Lösung **[Ihr Nachname] Campusverwaltung**,
-          die Sie gerade erstellt haben.
+    * Wählen Sie **Lösungen** aus, und klicken Sie auf die Lösung **[Ihr Nachname] Campusverwaltung**, die Sie soeben erstellt haben, um sie zu öffnen.
 
 2. Tabelle „Besuch“ erstellen
 
@@ -153,7 +154,7 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
    
    * Geben Sie **Besuch** als **Anzeigename** ein. 
    
-   * Wählen Sie **Speichern** aus. Dadurch wird die Tabelle im Hintergrund bereitgestellt, während Sie damit beginnen können, weitere Spalten hinzuzufügen.
+   * Klicken Sie auf **Speichern**. Dadurch wird die Tabelle im Hintergrund bereitgestellt, während Sie damit beginnen können, weitere Spalten hinzuzufügen.
 
 3. Spalte „Geplanter Start“ erstellen
 
@@ -235,11 +236,11 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
     
 8.  Klicken Sie auf **Tabelle speichern**.
 
-# Übung Nr. 3: Beziehungen erstellen
+# <a name="exercise-3-create-relationships"></a>Übung 3: Beziehungen erstellen
 
-**Ziel:** In dieser Übung fügen Sie Beziehungen zwischen Tabellen hinzu.
+**Ziel**: In dieser Übung fügen Sie Beziehungen zwischen Tabellen hinzu.
 
-## Aufgabe Nr. 1: Beziehungen erstellen
+## <a name="task-1-create-relationships"></a>Aufgabe Nr. 1: Beziehungen erstellen
 
 1.  Vergewissern Sie sich, dass weiterhin die Tabelle **Besuch** der Lösung **Campusverwaltung** angezeigt wird. Navigieren Sie andernfalls dorthin.
 
@@ -269,11 +270,11 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
 
 6.  Wählen Sie **Alle Anpassungen veröffentlichen** aus.
 
-# Übung Nr. 4: Daten importieren
+# <a name="exercise-4-import-data"></a>Übung 4: Daten importieren
 
-**Ziel:** In dieser Übung importieren Sie Beispieldaten in die Dataverse-Datenbank.
+**Ziel**: In dieser Übung importieren Sie Beispieldaten in die Dataverse-Datenbank.
 
-## Aufgabe Nr. 1: Lösung importieren
+## <a name="task-1-import-solution"></a>Aufgabe Nr. 1: Lösung importieren
 
 In dieser Aufgabe importieren Sie eine Lösung, die den Power Automate-Flow enthält, der erforderlich ist, um den Datenimport abzuschließen.
 
@@ -291,9 +292,7 @@ In dieser Aufgabe importieren Sie eine Lösung, die den Power Automate-Flow enth
 >
 >   Es fehlen Abhängigkeiten. Installieren Sie die folgenden Lösungen, bevor Sie diese installieren...
 >
->   Diese Meldung bedeutet entweder, dass das Datenmodell nicht vollständig ist, das
->   Herausgeberpräfix nicht **bc** lautet oder für die Tabelle **Building** und **Visits**
->   andere Namen als in den vorherigen Schritten angegeben sind.
+>   Diese Meldung bedeutet entweder, dass das Datenmodell nicht vollständig ist, das Herausgeberpräfix nicht **bc** lautet oder für die Tabelle **Gebäude** und **Besuch** andere Namen als in den vorherigen Schritten angegeben sind.
 
 6. Klicken Sie auf **Weiter**. Sie sollten aufgefordert werden, Verbindungen neu herzustellen. 
 
@@ -305,11 +304,11 @@ In dieser Aufgabe importieren Sie eine Lösung, die den Power Automate-Flow enth
 
 10. Vergewissern Sie sich, dass die Verbindung, die Sie gerade erstellt haben, ausgewählt ist. Wenn diese Verbindung nicht angezeigt wird, klicken Sie auf **Aktualisieren**, um die Liste der Verbindungen zu aktualisieren. 
 
-11. Klicken Sie auf **Importieren**.
+11. Klicken Sie auf **Import** (Importieren).
 
 12. Warten Sie, bis der Importvorgang abgeschlossen ist.
 
-## Aufgabe Nr. 2: Daten importieren  
+## <a name="task-2-import-data"></a>Aufgabe Nr. 2: Daten importieren  
 
 1. Öffnen Sie die **Datenimport**-Lösung.
 
@@ -331,7 +330,7 @@ In dieser Aufgabe importieren Sie eine Lösung, die den Power Automate-Flow enth
 
     > Der Zweck dieses Flows bestand darin, Beispieldaten für die nächsten Labs zu generieren. In der nächsten Aufgabe werden Sie überprüfen, ob der Datenimport erfolgreich war. 
 
-## Aufgabe 3: Datenimport überprüfen
+## <a name="task-3-verify-data-import"></a>Aufgabe 3: Datenimport überprüfen
 
 1. Navigieren Sie zurück zur vorherigen Power Apps-Registerkarte. Klicken Sie in dem Popupfenster auf **Fertig**. 
 
@@ -353,7 +352,7 @@ In dieser Aufgabe importieren Sie eine Lösung, die den Power Automate-Flow enth
 
 7. Schließen Sie das kürzlich gestartete Fenster.
 
-# Herausforderungen
+# <a name="challenges"></a>Herausforderungen
 
 * Würden Sie in Betracht ziehen, die *Termin*-Aktivität als Teil der Lösung zu verwenden? Was würde sich ändern?
 * Wie lässt sich erzwingen, dass das geplante Ende hinter dem geplanten Start liegt? 

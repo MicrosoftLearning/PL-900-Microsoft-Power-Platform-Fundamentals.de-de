@@ -1,18 +1,18 @@
 ---
 lab:
-    title: 'Lab 4: Erstellen einer modellgesteuerten App'
-    module: 'Modul 3: Erste Schritte mit Power Apps'
+  title: 'Lab 4: So erstellen Sie eine modellgesteuerte App'
+  module: 'Module 3: Get started with Power Apps'
+ms.openlocfilehash: e0fcc3a12bb54b7fca08e41599d999b3e38eee23
+ms.sourcegitcommit: ef58c858463b890e923ef808b1d43405423943fd
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "137898980"
 ---
+# <a name="module-3-get-started-with-power-apps"></a>Modul 3: Erste Schritte mit Power Apps
+## <a name="lab-3-how-to-build-a-model-driven-app"></a>Lab 3: So erstellen Sie eine modellgesteuerte App
 
-# Modul 3: Erste Schritte mit Power Apps
-## Lab 3: Erstellen einer modellgesteuerten App
-
-### Wichtiger Hinweis (gültig ab November 2020)
-Common Data Service wurde in Microsoft Dataverse umbenannt. Einige Begriffe in Microsoft Dataverse wurden aktualisiert. Zum Beispiel: „Entität“ (jetzt **Tabelle**), „Feld“ (jetzt **Spalte**) und „Datensatz“ (jetzt **Zeile**) sind möglicherweise nicht mehr aktuell. Bitte berücksichtigen Sie diese Information, wenn Sie mit den Labs arbeiten. Unsere Inhalte sollten schon bald vollständig auf dem neuesten Stand sein.
-
-Weitere Informationen und eine vollständige Liste der betroffenen Begriffe finden Sie unter [Was ist Microsoft Dataverse?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
-
-# Szenario
+# <a name="scenario"></a>Szenario
 
 Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem Campus. Campusbesucher werden derzeit auf Papier erfasst. Die Informationen werden nicht konsistent erfasst und es gibt keine Möglichkeit, Daten über die Besuche auf dem gesamten Campus zu sammeln und zu analysieren. 
 
@@ -22,7 +22,7 @@ Während dieses Kurses erstellen Sie Anwendungen und führen eine Automatisierun
 
 In diesem Lab erstellen Sie eine modellgesteuerte Power Apps-App, mit der die Campus-Mitarbeiter im Backoffice die Besuchsdatensätze für den gesamten Campus verwalten können.
 
-# Weiterführende Schritte des Lab
+# <a name="high-level-lab-steps"></a>Weiterführende Schritte des Lab
 
 Im Rahmen der Erstellung der modellgesteuerten App führen Sie Folgendes aus:
 
@@ -40,12 +40,12 @@ Wir werden mit folgenden Komponenten arbeiten:
 
 Beide werden für eine bessere Benutzererfahrung in die modellgesteuerte App integriert.
 
-## Voraussetzungen
+## <a name="prerequisites"></a>Voraussetzungen
 
 * Beendigung von **Modul 0 Lab 0 – Lab-Umgebung überprüfen**
 * Beendigung von **Modul 2 Lab 1 – Einführung in Microsoft Dataverse**
 
-## Vor dem Beginn zu beachtende Dinge
+## <a name="things-to-consider-before-you-begin"></a>Vor dem Beginn zu beachtende Dinge
 
 -   Welche Änderungen sollten wir vornehmen, um die Benutzererfahrung zu verbessern?
 
@@ -54,34 +54,34 @@ Beide werden für eine bessere Benutzererfahrung in die modellgesteuerte App int
 -   Welche Anpassungen können an der Seitenübersicht einer modellgesteuerten App vorgenommen werden?
 
 
-# Übung 1: Ansichten und Formulare anpassen
+# <a name="exercise-1-customize-views-and-forms"></a>Übung 1: Ansichten und Formulare anpassen
 
-**Ziel:** In dieser Übung passen Sie Ansichten und Formulare der benutzerdefinierten erstellten Tabellen an, die in der modellgesteuerten App verwendet werden.
+**Ziel**: In dieser Übung passen Sie Ansichten und Formulare der benutzerdefinierten erstellten Tabellen an, die in der modellgesteuerten App verwendet werden.
 
-## Aufgabe 1: Formular „Besuch bearbeiten“
+## <a name="task-1-edit-visit-form"></a>Aufgabe 1: Formular „Besuch bearbeiten“
 
-1.  Melden Sie sich bei <https://make.powerapps.com> an, wenn Sie noch nicht angemeldet sind.
+1.  Melden Sie sich bei <https://make.powerapps.com> an (falls Sie nicht bereits angemeldet sind).
 
 2.  Wählen Sie Ihre **Umgebung** aus.
 
-3.  Wählen Sie **Lösungen** aus.
+3.  Wählen Sie **Projektmappen** aus.
 
-4.  Klicken Sie, um Ihre **Campusverwaltung**-Lösung zu öffnen.
+4.  Klicken Sie, um Ihre **Campusverwaltungslösung** zu öffnen.
 
 5.  Klicken Sie, um die Entität **Besuch** zu öffnen.
 
-6.  Wählen Sie die Registerkarte **Formulare** aus, und klicken Sie auf den Formulartyp **Haupt** damit dieser geöffnet wird. 
+6.  Wählen Sie die Registerkarte **Formulare** sowie den **Hauptformulartyp** aus, und klicken Sie auf **Formular bearbeiten**.
 
     > Standardmäßig enthält das Formular zwei Felder: Name (Hauptfeld) und Besitzer.
     
 7.  Wählen Sie **+ Formularfeld** aus, und fügen Sie unter dem Feld **Besitzer** die folgenden Felder hinzu, indem Sie Spalten in das Formular ziehen oder einfach auf Spaltennamen klicken:
 
-    * **Gebäude**
+    * **Building (Gebäude)**
     * **Besucher**
     * **Geplanter Start**
     * **Geplantes Ende**
-    * **Tatsächlicher Start**
-    * **Tatsächliches Ende** 
+    * **Actual Start (Tatsächlicher Start)**
+    * **Actual End (Tatsächliches Ende)** 
     
 8.  Ziehen Sie die Spalte **Code**, und legen Sie sie im Formularkopf ab. 
 
@@ -95,10 +95,9 @@ Beide werden für eine bessere Benutzererfahrung in die modellgesteuerte App int
 
 12.  Klicken Sie oben rechts auf **Veröffentlichen**, und warten Sie, bis die Veröffentlichung abgeschlossen ist.
 
-13.  Klicken Sie oben links im Bildschirm auf **Zurück**. Sie sollten jetzt wieder auf der
-     Formular-Registerkarte „Entität Besuch“.
+13.  Schließen Sie die Registerkarte, wenn die Bearbeitungsansicht in einer neuen Registerkarte angezeigt wird. Klicken Sie andernfalls oben links im Bildschirm auf **Zurück**. Sie sollten sich nun wieder auf der Registerkarte „Formulare“ für die Entität „Besuch“ befinden.
 
-## Aufgabe 2: Besuchsansichten bearbeiten
+## <a name="task-2-edit-visit-views"></a>Aufgabe 2: Besuchsansichten bearbeiten
 
 In dieser Aufgabe ändern wir die Standardansicht „Aktive Besuche“ und erstellen eine neue Ansicht für die heutigen Besuche.
 
@@ -108,7 +107,7 @@ In dieser Aufgabe ändern wir die Standardansicht „Aktive Besuche“ und erste
 
     *  **Code**
     *  **Besucher**
-    *  **Gebäude**
+    *  **Building (Gebäude)**
     *  **Geplanter Start** 
     *  **Geplantes Ende**
     
@@ -116,7 +115,7 @@ In dieser Aufgabe ändern wir die Standardansicht „Aktive Besuche“ und erste
 
 4.  Klicken Sie auf die Spalte **Name**, und wählen Sie dann **Entfernen** aus. Das Feld **Name** wird nun aus der Ansicht entfernt.
 
-5.  Klicken Sie im Eigenschaftenpanel rechts auf **Sortieren nach...**, und wählen Sie **Geplanter Start** aus. Klicken Sie erneut auf **Geplanter Start**, um die Reihenfolge in „absteigend“ zu ändern.
+5.  Klicken Sie im Eigenschaftenpanel rechts auf **Sortieren nach...** , und wählen Sie **Geplanter Start** aus. Klicken Sie erneut auf **Geplanter Start**, um die Reihenfolge in „absteigend“ zu ändern.
 
 6.  Passen Sie die Größe der einzelnen Spaltenbreiten an die Daten an.
 
@@ -138,7 +137,7 @@ Jetzt werden wir die Ansicht klonen, um eine neue Ansicht für die heutigen Besu
 
 14.  Fügen Sie der Ansicht die Felder **Tatsächlicher Start** und **Tatsächliches Ende** hinzu. 
 
-> **Hinweis:** Da wir nicht mehr nach dem Ansichtsstatus filtern, erhalten wir alle heutigen Besuche, einschließlich der abgeschlossenen. Diese Felder helfen dabei, zwischen abgeschlossenen und laufenden Besuchen zu unterscheiden.
+    > **Hinweis:** Da wir nicht mehr nach dem Ansichtsstatus filtern, erhalten wir alle heutigen Besuche, einschließlich der abgeschlossenen. Diese Felder helfen dabei, zwischen abgeschlossenen und laufenden Besuchen zu unterscheiden.
 
 15.  Klicken Sie auf den **Dropdownpfeil** neben der Schaltfläche „Speichern“ (achten Sie darauf, dass Sie nicht auf die Schaltfläche selbst klicken), und wählen Sie **Speichern unter** aus.
 
@@ -146,34 +145,35 @@ Jetzt werden wir die Ansicht klonen, um eine neue Ansicht für die heutigen Besu
 
 17.  Klicken Sie auf **Veröffentlichen** und warten Sie, bis die Veröffentlichung abgeschlossen ist.
 
-# Übung Nr. 2: Eine modellgesteuerte Anwendung erstellen
+# <a name="exercise-2-create-model-driven-application"></a>Übung 2: Eine modellgesteuerte Anwendung erstellen
 
-**Ziel:** In dieser Übung erstellen Sie die modellgesteuerte App, passen die Sitemap an und testen die App.
+**Ziel**: In dieser Übung erstellen Sie die modellgesteuerte App, passen die Sitemap an und testen die App.
 
 > Beim Erstellen Ihrer Anwendung werden mehrere Felder angezeigt, um die Sie sich nicht gekümmert haben, insbesondere bei den Schritten für die Siteübersicht. Für die Labs haben wir einige Abkürzungen vorgenommen. In einer realen Implementierung würden Sie diesen Elementen logische Namen geben.
 
-## Aufgabe 1: Eine Anwendung erstellen
+## <a name="task-1-create-application"></a>Aufgabe 1: Anwendung erstellen
 
 1.  Öffnen Sie soweit noch nicht geschehen die Campusverwaltung-Lösung.
 
-    -   Anmelden bei <https://make.powerapps.com>
+    -   Melden Sie sich bei <https://make.powerapps.com> an.
 
-    -   Während Sie in Ihrer Umgebung sind, klicken Sie auf Ihre **Campusverwaltung**-Lösung,
-        um sie zu öffnen.
+    -   Während Sie in Ihrer Umgebung sind, klicken Sie auf Ihre **Campusverwaltung**-Lösung, um sie zu öffnen.
     
 2.  Eine modellgesteuerte Anwendung erstellen
 
-    -   Klicken Sie auf **Neu**, und wählen Sie **App** und dann **modellgesteuerte App** aus. Dadurch wird eine neue Registerkarte geöffnet.
+    -   Klicken Sie auf **Neu**, und wählen Sie **App** und dann **modellgesteuerte App** aus.
+    
+    -   Klicken Sie auf dem Bildschirm zum Erstellen einer modellgesteuerten App aus einer leeren Vorlage auf **Erstellen**.
     
     -   Geben Sie **[Ihr Nachname] Campusverwaltung** als Namen ein.
 
     -   Aktivieren Sie das Kontrollkästchen **Vorhandene Lösung zum Erstellen der App verwenden** aus
 
-    -   Klicken Sie auf **Weiter**.
+    -   Wählen Sie **Weiter** aus.
 
     -   Wählen Sie Ihre **Campusverwaltung**-Lösung aus.
     
-    -   Klicken Sie auf **Fertig**
+    -   Klicken Sie auf **Fertig**.
     
 3.  Klicken Sie auf das Stiftsymbol neben **Siteübersicht.**
 
@@ -183,16 +183,15 @@ Jetzt werden wir die Ansicht klonen, um eine neue Ansicht für die heutigen Besu
 
     -   Ändern Sie den Titel von „Neuer Bereich“ im Eigenschaftenbereich rechts in **Campus**.
 
-    -   Wählen Sie **Neue Gruppe** aus.
+    -   Klicken Sie auf **Neue Gruppe**.
 
     -   Ändern Sie den Titel von „Neue Gruppe“ im Eigenschaftenbereich rechts in **Sicherheit**.
     
 5.  Fügen Sie die Tabelle „Kontakt“ zur Siteübersicht hinzu.
 
-    -   Wählen Sie **Neuer Unterbereich** aus.
+    -   Klicken Sie auf **Neuer Unterbereich**.
 
-    -   Wählen Sie im Bereich **Eigenschaften** die Option **Entität** aus der Dropdownliste aus
-        als **Typ** aus.
+    -   Wählen Sie im Bereich **Eigenschaften** die Option **Entität** aus der Dropdownliste für **Typ** aus.
 
     -   Suchen Sie in der Dropdownliste für **Entität** nach der Tabelle **Kontakt**.
     
@@ -202,24 +201,23 @@ Jetzt werden wir die Ansicht klonen, um eine neue Ansicht für die heutigen Besu
 
     -   Wählen Sie **Teilbereich** aus.
 
-    -   Gehen Sie zum Bereich **Eigenschaften**.
+    -   Wechseln Sie zum Bereich **Eigenschaften**.
 
-    -   Wählen Sie **Entität** aus der Dropdownliste für **Typ** aus, und suchen Sie nach
-        der Tabelle **Besuch** in der Dropdownliste für **Entität**.
+    -   Wählen Sie **Entität** in der Dropdownliste für **Typ** aus, und suchen Sie in der Dropdownliste für **Entität** nach der Tabelle **Besuch**.
     
 7.  Fügen Sie die Tabelle „Gebäude“ zur Siteübersicht hinzu.
 
     -   Wählen Sie den **Campus**-Bereich aus, und klicken Sie auf **Hinzufügen**.
     
-    -   Wählen Sie **Gruppieren** aus.
+    -   Wählen Sie **Gruppe** aus.
     
     -   Geben Sie **Einstellungen** als den **Titel** im Bereich **Eigenschaften** ein.
     
-    -   Klicken Sie in der ausgewählten Gruppe auf **Einstellungen** auf **Hinzufügen**.
+    -   Klicken Sie bei weiterhin ausgewählter Gruppe **Einstellungen** auf **Hinzufügen**.
     
     -   Wählen Sie **Teilbereich** aus.
     
-    -   Gehen Sie zum Bereich **Eigenschaften**.
+    -   Wechseln Sie zum Bereich **Eigenschaften**.
     
     -   Wählen Sie **Entität** in der Dropdownliste für **Typ** aus, und suchen Sie in der Dropdownliste für **Entität** nach der Tabelle **Gebäude**.
 
@@ -235,7 +233,7 @@ Jetzt werden wir die Ansicht klonen, um eine neue Ansicht für die heutigen Besu
 
 12.  Klicken Sie auf **Überprüfen**, um die in der Anwendung vorgenommenen Änderungen zu überprüfen. 
 
->  Es werden einige Warnungen angezeigt, die wir aber ignorieren können, da wir nicht auf eine bestimmte Ansicht und ein bestimmtes Formular für die Entitäten verwiesen haben und die Benutzer Zugriff auf alle Ansichten und Formulare für die Entitäten **Besuch** und **Gebäude** haben.
+    >  Es werden einige Warnungen angezeigt, die wir aber ignorieren können, da wir nicht auf eine bestimmte Ansicht und ein bestimmtes Formular für die Entitäten verwiesen haben und die Benutzer Zugriff auf alle Ansichten und Formulare für die Entitäten **Besuch** und **Gebäude** haben.
      
 13. Klicken Sie auf **Veröffentlichen**.
 
@@ -247,9 +245,9 @@ Jetzt werden wir die Ansicht klonen, um eine neue Ansicht für die heutigen Besu
 
 17.  Wählen Sie **Apps** aus. Ihre Anwendung sollte jetzt aufgelistet werden.
 
-## Aufgabe 2: Testanwendung
+## <a name="task-2-test-application"></a>Aufgabe 2: Testanwendung
 
-1.  Starten Sie die Anwendung
+1.  Starten der Anwendung
 
     -   Wählen Sie **Apps** aus, und klicken Sie auf Ihre **Campusverwaltung**-App. (Wenn Sie Ihre App anfangs nicht sehen, müssen Sie möglicherweise Ihren Browser aktualisieren.)
 
@@ -261,7 +259,7 @@ Jetzt werden wir die Ansicht klonen, um eine neue Ansicht für die heutigen Besu
 
     -   Klicken Sie im oberen Menü auf **Neu**.
 
-    -   Geben Sie als **Vorname** `John` und als **Nachname** `Doe` an.
+    -   Geben Sie als **Vorname** „`John`“ und als **Nachname** „`Doe`“ an.
 
     -   Geben Sie unter **E-Mail** Ihre persönliche E-Mail-Adresse an. Dies wird in einem zukünftigen Lab verwendet. 
     
@@ -275,10 +273,9 @@ Jetzt werden wir die Ansicht klonen, um eine neue Ansicht für die heutigen Besu
 
     -   Klicken Sie auf **Neu**.
 
-    -   Geben Sie als **Name** `Microsoft Building` ein.
+    -   Geben Sie `Microsoft Building` als **Name** ein.
         
-    -   Klicken Sie auf **Speichern und schließen**. Hierdurch wird der neu erstellte Datensatz
-        in der Ansicht „Aktive Gebäude“ angezeigt wird.
+    -   Klicken Sie auf **Speichern und schließen**. Dadurch wird der neu erstellte Datensatz in der Ansicht für aktive Gebäude angezeigt.
     
 4.  Erstellen Sie einen neuen Besuch.
 
@@ -288,14 +285,13 @@ Jetzt werden wir die Ansicht klonen, um eine neue Ansicht für die heutigen Besu
     
     -   Füllen Sie die Felder folgendermaßen aus: 
     
-        -   **Name**: `Neuer Testbesuch`
-        -   **Gebäude**: Wählen Sie Microsoft Building
+        -   **Name**: `New test visit`
+        -   **Gebäude**: Alpine Ski House
         -   **Besucher**: Wählen Sie Max Mustermann aus
         -   **Geplanter Start**: Wählen Sie das morgige Datum und 14:00 Uhr als Startzeit aus
         -   **Geplantes Ende**: Wählen Sie das morgige Datum und 15:30 Uhr als Endzeit aus
         
-    -   Klicken Sie auf **Speichern und schließen**. Dadurch wird der Besuch erstellt, und Sie sollten ihn in der
-        Ansicht „Aktive Besuche“.
+    -   Klicken Sie auf **Speichern und schließen**. Der Besuch wird erstellt und sollte in der Ansicht für aktive Besuche zu sehen sein.
         
     -   Ändern Sie die Ansicht in **Heutige Besuche**. Sie sollten den neuen Besuch nicht mehr in der Ansicht sehen, da er für morgen geplant ist.
     
@@ -305,7 +301,7 @@ Jetzt werden wir die Ansicht klonen, um eine neue Ansicht für die heutigen Besu
 
 ![Beispiel einer modellgesteuerten App](media/3-model-app.png)
 
-# Herausforderungen
+# <a name="challenges"></a>Herausforderungen
 
 * Spezifische Ansichten und Formulare für Besuche und Gebäude auswählen
 * Das Sicherheitspersonal arbeitet üblicherweise in einem einzigen Gebäude. Welche einfache Möglichkeit könnten Sie ihnen bieten, Besuche nur für ein ausgewähltes Gebäude anzuzeigen?
