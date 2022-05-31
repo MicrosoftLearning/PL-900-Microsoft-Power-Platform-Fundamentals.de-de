@@ -2,28 +2,30 @@
 lab:
   title: 'Lab 1: Datenmodellierung'
   module: 'Module 2: Introduction to Microsoft Dataverse'
-ms.openlocfilehash: 05d0f0656ae0d93f5666f7c14602c3976a9a9ac9
-ms.sourcegitcommit: ef58c858463b890e923ef808b1d43405423943fd
+ms.openlocfilehash: c3ea362eebf9156f069a9ab8635859e6186c1626
+ms.sourcegitcommit: 0118c25a230425d0ccba16e6c3922053ee07c183
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "137898891"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "144810907"
 ---
 # <a name="module-2-introduction-to-microsoft-dataverse"></a>Modul 2: Einführung in Microsoft Dataverse
 
 # <a name="scenario"></a>Szenario
 
-Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem Campus. Campusbesuche werden derzeit in Papierzeitschriften aufgezeichnet. Die Informationen werden nicht konsistent erfasst und es gibt keine Möglichkeit, Daten über die Besuche auf dem gesamten Campus zu sammeln und zu analysieren. 
+Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem Campus. Campusbesuche werden derzeit in Papierzeitschriften aufgezeichnet. Die Informationen werden nicht konsistent erfasst und es gibt keine Möglichkeit, Daten über die Besuche auf dem gesamten Campus zu sammeln und zu analysieren.
 
 Die Campusverwaltung möchte ihr Besucherregistrierungssystem modernisieren, wobei der Zugang zu den Gebäuden von Sicherheitspersonal kontrolliert werden soll und alle Besuche von den entsprechenden Gastgebern zuvor registriert und aufgezeichnet werden müssen.
 
-Während dieses Kurses erstellen Sie Anwendungen und führen eine Automatisierung durch, damit das Verwaltungs- und Sicherheitspersonal des Bellows College den Zugang zu den Gebäuden auf dem Campus verwalten und kontrollieren kann. 
+Während dieses Kurses erstellen Sie Anwendungen und führen eine Automatisierung durch, damit das Verwaltungs- und Sicherheitspersonal des Bellows College den Zugang zu den Gebäuden auf dem Campus verwalten und kontrollieren kann.
 
 In diesem Lab greifen Sie auf Ihre Umgebung zu, erstellen eine Microsoft Dataverse-Datenbank und eine Lösung zum Nachverfolgen Ihrer Änderungen. Sie erstellen auch ein Datenmodell, um die folgenden Anforderungen zu unterstützen:
 
--   R1 – Verfolgen Sie Standorte (Gebäude) der Campusbesuche
--   R2 – Aufzeichnen der grundlegende Informationen, um die Besucher zu identifizieren und nachzuverfolgen 
--   R3 – Planen, Aufzeichnen und Verwalten von Besuchen 
+-   R1: Nachverfolgen von Informationen zu geplanten Campusbesuchen
+
+-   R2 – Aufzeichnen der grundlegende Informationen, um die Besucher zu identifizieren und nachzuverfolgen
+
+-   R3 – Planen, Aufzeichnen und Verwalten von Besuchen
 
 Zum Abschluss importieren Sie Beispieldaten in Microsoft Dataverse.
 
@@ -33,330 +35,193 @@ Um Ihre Lernumgebungen vorzubereiten, werden Sie:
 
 * eine Lösung und einen Herausgeber erstellen.
 * sowohl neue als auch vorhandene Komponenten hinzufügen, die zur Erfüllung der Anwendungsanforderungen erforderlich sind. Beschreibungen zu den Metadaten (Tabellen und Beziehungen) finden Sie im [Datenmodelldokument](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png). Sie können die STRG-Taste gedrückt halten oder mit der rechten Maustaste auf den Link klicken, um das Datenmodelldokument in einem neuen Fenster zu öffnen.
-
-Nach Abschluss aller Anpassungen wird Ihre Lösung mehrere Tabellen enthalten:
-
--   Contact
--   Erstellen
--   Navigieren Sie zu folgendem Pfad.
+* Erstellen der Tabelle „Visit“
+* Besuchsdaten mithilfe eines Excel-Arbeitsblatts importieren
 
 ## <a name="prerequisites"></a>Voraussetzungen:
 
-* Beendigung von **Modul 0 Lab 0 – Lab-Umgebung überprüfen**
+-   Beendigung von **Modul 0 Lab 0 – Lab-Umgebung überprüfen**
 
 ## <a name="things-to-consider-before-you-begin"></a>Bevor Sie beginnen, sollten Sie Folgendes berücksichtigen:
 
-* Benennungskonvention
+-   Benennungskonventionen – Namen sorgfältig eingeben.
 
-* Datentypen, Einschränkungen (z. B. maximale Länge eines Namens)
+# <a name="exercise-1-create-new-table"></a>Übung \#1: Erstellen einer neuen Tabelle
 
-* Datetime-Formatierung zur Unterstützung einer einfachen Lokalisierung
+**Ziel**: In dieser Übung erstellen Sie eine neue benutzerdefinierte Tabelle für Besuche. 
 
-# <a name="exercise-1-create-solution"></a>Übung 1: Lösung erstellen
+## <a name="task--1-create-visit-table-and-columns"></a>Aufgabe \#1: Tabelle „Besuch“ und Spalten erstellen
 
-## <a name="task-1-create-solution-and-publisher"></a>Aufgabe 1: Lösung und Publisher erstellen
-
-1.  Projektmappe erstellen
-
-    -   Navigieren Sie zu <https://make.powerapps.com>. Möglicherweise müssen Sie sich erneut authentifizieren. Klicken Sie dazu auf **Anmelden**, und folgen Sie den Anweisungen (falls erforderlich).
-
-    -   Wählen Sie Ihre Umgebung aus. Klicken Sie dazu in der oberen rechten Ecke des Bildschirms auf **Umgebung**, und wählen Sie im Dropdownmenü Ihre Umgebung aus.
-
-    -   Wählen Sie **Lösungen** aus dem linken Menü aus, und klicken Sie auf **Neue Lösung**.
-
-    -   Geben Sie **[Ihr Nachname] Campusverwaltung** als **Anzeigename** ein.
-
-2.  Herausgeber erstellen
-
-    -   Wählen Sie im Abschnitt **Herausgeber** die Option **+ Herausgeber** aus.
-
-    -   Geben Sie in dem Fenster, das daraufhin eingeblendet wird, **Bellows College** als **Anzeigename** ein. 
-
-    -   Geben Sie **BellowsCollege** als **Namen** ein.
-    
-    -   Geben Sie **bc** als **Präfix** ein.
-
-    -   Klicken Sie unten auf der Seite auf **Speichern**.
-    
-    -   Klicken Sie im Popupfenster auf **Fertig**.
-
-3.  Schließen Sie die Lösungserstellung ab.
-
-    -   Klicken Sie nun auf die Dropdownliste **Herausgeber**, und wählen Sie den Herausgeber **Bellows College** aus, den Sie soeben erstellt haben.
-
-    -   Vergewissern Sie sich, dass **Version** auf **1.0.0.0** gesetzt ist. 
-    
-    -   Klicken Sie auf **Erstellen**.
-
-# <a name="exercise-2-add-existing-and-create-new-tables"></a>Übung 2: Vorhandene Tabellen hinzufügen und neue erstellen
-
-**Ziel**: In dieser Übung fügen Sie die Standardtabelle „Kontakt“ hinzu und erstellen neue benutzerdefinierte Tabellen für Gebäude und Besuche in der Lösung. 
-
-## <a name="task-1-add-existing-table"></a>Aufgabe 1: Vorhandene Tabelle hinzufügen
-
-1.  Klicken Sie, um Ihre **Campusverwaltung**-Lösung, die Sie gerade erstellt haben, zu öffnen.
-
-2.  Klicken Sie auf **Vorhandene hinzufügen**, und wählen Sie **Tabelle** aus.
-
-3.  Suchen Sie **Kontakt**, und wählen Sie diese Option aus.
-
-4.  Klicken Sie auf **Weiter**.
-
-5.  Klicken Sie unter „Kontakt“ auf **Komponenten auswählen**.
-
-6.  Wählen Sie die Registerkarte **Ansichten** aus, und wählen Sie die Ansicht **Aktive Kontakte** aus. Klicken Sie auf **Hinzufügen**.
-    
-7.  Klicken Sie erneut auf **Komponenten auswählen**.
-
-8.  Wählen Sie die Registerkarte **Formulare** aus, und wählen Sie das Formular **Kontakt** aus.
-    
-9.  Klicken Sie auf **Hinzufügen**.
-
-    > Sie sollten **1 Ansicht** und **1 Formular** ausgewählt haben. 
-    
-10.  Klicken Sie noch einmal auf **Hinzufügen**. Dadurch wird der neu erstellten Lösung die Tabelle „Kontakt“ mit der ausgewählten Ansicht und dem ausgewählten Formular hinzugefügt.
-
-> Ihre Lösung sollte jetzt eine Tabelle enthalten: Kontakt.
-    
-## <a name="task-2-create-building-table"></a>Aufgabe Nr. 2: Tabelle „Gebäude“ erstellen
-
-1.  In Ihrem Browser sollte weiterhin Ihre Campusverwaltung-Lösung geöffnet sein. Öffnen Sie andernfalls die Lösung wie folgt:
-
-    * Melden Sie sich bei <https://make.powerapps.com> an (falls Sie nicht bereits angemeldet sind).
-    
-    * Wählen Sie **Lösungen** aus, und klicken Sie auf die Lösung **[Ihr Nachname] Campusverwaltung**, die Sie soeben erstellt haben, um sie zu öffnen.
-          
-2.  Tabelle „Gebäude“ erstellen
-
-    -   Klicken Sie auf **Neu**, und wählen Sie **Tabelle** aus.
-    
-    -   Geben Sie **Gebäude** als **Anzeigename** ein. 
-    
-    -   Klicken Sie auf **Speichern**. Dadurch wird die Tabelle im Hintergrund bereitgestellt, während Sie damit beginnen können, weitere Tabellen und Spalten hinzuzufügen.
-
-## <a name="task-3-create-visit-table-and-columns"></a>Aufgabe 3: Tabelle „Besuch“ und Spalten erstellen
-
-Die Tabelle **Besuch** wird Informationen zu den Campusbesuchen enthalten, einschließlich des Gebäudes, des Besuchers und des geplanten sowie des tatsächlichen Zeitpunkts jedes Besuchs. 
+Die Tabelle **Visit** wird Informationen zu den Campusbesuchen enthalten, einschließlich der Besucher*innen sowie des geplanten sowie des tatsächlichen Zeitpunkts jedes Besuchs.
 
 Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besucher leicht eingegeben und interpretiert werden kann, wenn er beim Einchecken gefragt wird.
 
-> Wir verwenden **zeitzonenunabhängiges** Verhalten beim Aufzeichnen von Datums- und Uhrzeitinformationen, da die Uhrzeit eines Besuchs immer die Ortszeit am Standort des Gebäudes ist und sich nicht ändern sollte, wenn sie in einer anderen Zeitzone angezeigt wird. 
+>   Wir verwenden **zeitzonenunabhängiges** Verhalten beim Aufzeichnen von Datums- und Uhrzeitinformationen, da die Uhrzeit eines Besuchs immer die Lokalzeit am Standort des Gebäudes ist und sich nicht ändern sollte, wenn sie aus einer anderen Zeitzone angezeigt wird.
 
-1.  In Ihrem Browser sollte weiterhin Ihre Campusverwaltung-Lösung geöffnet sein. Öffnen Sie andernfalls die Lösung wie folgt:
+1.  Melden Sie sich bei <https://make.powerapps.com> an (falls Sie nicht bereits angemeldet sind).
 
-    * Melden Sie sich bei <https://make.powerapps.com> an (falls Sie nicht bereits angemeldet sind).
-    
-    * Wählen Sie **Lösungen** aus, und klicken Sie auf die Lösung **[Ihr Nachname] Campusverwaltung**, die Sie soeben erstellt haben, um sie zu öffnen.
+2.  Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung** sumgebung aus, falls diese noch nicht ausgewählt ist.
 
-2. Tabelle „Besuch“ erstellen
+3.  Erweitern Sie mithilfe der Navigation auf der linken Seite Dataverse, und wählen Sie „Tabellen“ aus.
 
-   * Klicken Sie auf **Neu**, und wählen Sie **Tabelle** aus.
-   
-   * Geben Sie **Besuch** als **Anzeigename** ein. 
-   
-   * Klicken Sie auf **Speichern**. Dadurch wird die Tabelle im Hintergrund bereitgestellt, während Sie damit beginnen können, weitere Spalten hinzuzufügen.
+4.  Klicken Sie auf **Neue Tabelle**.
 
-3. Spalte „Geplanter Start“ erstellen
+5.  Geben Sie **Besuch** als **Anzeigename** ein.
 
-   * Wählen Sie die Tabelle **Besuch** aus.
+6.  Klicken Sie auf **Erstellen**. Dadurch wird die Tabelle im Hintergrund bereitgestellt, während Sie damit beginnen können, weitere Spalten hinzuzufügen.
 
-   * Stellen Sie sicher, dass die Registerkarte **Spalten** ausgewählt ist, und klicken Sie auf **Spalte hinzufügen**.
-   
-   * Geben Sie **Geplanter Start** als **Anzeigename** ein.
-   
-   * Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
-   
-   * Wählen Sie unter **Erforderlich** die Option **Erforderlich** aus.
-   
-   * Erweitern Sie den Abschnitt **Erweiterte Optionen**.
-   
-   * Wählen Sie unter **Verhalten** den Eintrag **Zeitzonenunabhängig** aus.
-   
-   * Klicken Sie auf **Fertig**.
+7.  Spalte „Geplanter Start“ erstellen
 
-4.  Spalte „Geplantes Ende“ erstellen
+    1.  Sie sollten sich auf der Seite „Spalten“ der Tabelle „Besuch“ befinden.
 
-    * Klicken Sie auf **Spalte hinzufügen**.
-    
-    * Geben Sie **Geplantes Ende** als **Anzeigename** ein.
-    
-    * Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
-    
-    * Wählen Sie unter **Erforderlich** die Option **Erforderlich** aus.
-    
-    * Erweitern Sie den Abschnitt **Erweiterte Optionen**.
-    
-    * Wählen Sie unter **Verhalten** den Eintrag **Zeitzonenunabhängig** aus.
-    
-    * Klicken Sie auf **Fertig**.
-    
-5.  Spalte „Tatsächlicher Start“ erstellen
+    2.  Stellen Sie sicher, dass die Registerkarte **Spalten** ausgewählt ist, und klicken Sie auf **Spalte hinzufügen**.
 
-    * Klicken Sie auf **Spalte hinzufügen**.
-    
-    * Geben Sie **Tatsächlicher Start** als **Anzeigename** ein.
-    
-    * Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
-    
-    * Behalten Sie unter **Erforderlich** die Einstellung **Optional** bei.
-    
-    * Erweitern Sie den Abschnitt **Erweiterte Optionen**.
-    
-    * Wählen Sie unter **Verhalten** den Eintrag **Zeitzonenunabhängig** aus.
-    
-    * Klicken Sie auf **Fertig**.
-    
-6.  Spalte „Tatsächliches Ende“ erstellen
+    3.  Geben Sie **Geplanter Start** als **Anzeigename** ein.
 
-    * Klicken Sie auf **Spalte hinzufügen**.
-    
-    * Geben Sie **Tatsächliches Ende** als **Anzeigename** ein.
-    
-    * Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
-    
-    * Behalten Sie unter **Erforderlich** die Einstellung **Optional** bei.
-    
-    * Erweitern Sie den Abschnitt **Erweiterte Optionen**.
-    
-    * Wählen Sie unter **Verhalten** den Eintrag **Zeitzonenunabhängig** aus.
-    
-    * Klicken Sie auf **Fertig**.
-    
-7.  Spalte „Code“ erstellen
+    4.  Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
 
-    * Klicken Sie auf **Spalte hinzufügen**.
-    
-    * Geben Sie **Code** als **Anzeigename** ein.
-    
-    * Wählen Sie **AutoWert** als **Datentyp** aus.
-    
-    * Wählen Sie **Datumspräfixnummer** als **AutoWert-Typ** aus.
-    
-    * Klicken Sie auf **Fertig**.
-    
-8.  Klicken Sie auf **Tabelle speichern**.
+    5.  Wählen Sie unter **Erforderlich** die Option **Erforderlich** aus.
 
-# <a name="exercise-3-create-relationships"></a>Übung 3: Beziehungen erstellen
+    6.  Erweitern Sie den Abschnitt **Erweiterte Optionen**.
 
-**Ziel**: In dieser Übung fügen Sie Beziehungen zwischen Tabellen hinzu.
+    7.  Wählen Sie unter **Verhalten** den Eintrag **Zeitzonenunabhängig** aus.
 
-## <a name="task-1-create-relationships"></a>Aufgabe Nr. 1: Beziehungen erstellen
+    8.  Klicken Sie auf **Fertig**.
 
-1.  Vergewissern Sie sich, dass weiterhin die Tabelle **Besuch** der Lösung **Campusverwaltung** angezeigt wird. Navigieren Sie andernfalls dorthin.
+8.  Spalte „Geplantes Ende“ erstellen
 
-2.  Erstellen der Beziehung „Besuch zu Kontakt“
+    1.  Klicken Sie auf **Spalte hinzufügen**.
 
-    * Wählen Sie die Registerkarte **Beziehungen** aus.
+    2.  Geben Sie **Geplantes Ende** als **Anzeigename** ein.
+
+    3.  Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
+
+    4.  Wählen Sie unter **Erforderlich** die Option **Erforderlich** aus.
+
+    5.  Erweitern Sie den Abschnitt **Erweiterte Optionen**.
+
+    6.  Wählen Sie unter **Verhalten** den Eintrag **Zeitzonenunabhängig** aus.
+
+    7.  Klicken Sie auf **Fertig**.
+
+9.  Spalte „Tatsächlicher Start“ erstellen
+
+    1.  Klicken Sie auf **Spalte hinzufügen**.
+
+    2.  Geben Sie **Tatsächlicher Start** als **Anzeigename** ein.
+
+    3.  Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
+
+    4.  Behalten Sie unter **Erforderlich** die Einstellung **Optional** bei.
+
+    5.  Erweitern Sie den Abschnitt **Erweiterte Optionen**.
+
+    6.  Wählen Sie unter **Verhalten** den Eintrag **Zeitzonenunabhängig** aus.
+
+    7.  Klicken Sie auf **Fertig**.
+
+10. Spalte „Tatsächliches Ende“ erstellen
+
+    1.  Klicken Sie auf **Spalte hinzufügen**.
+
+    2.  Geben Sie **Tatsächliches Ende** als **Anzeigename** ein.
+
+    3.  Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
+
+    4.  Behalten Sie unter **Erforderlich** die Einstellung **Optional** bei.
+
+    5.  Erweitern Sie den Abschnitt **Erweiterte Optionen**.
+
+    6.  Wählen Sie unter **Verhalten** den Eintrag **Zeitzonenunabhängig** aus.
+
+    7.  Klicken Sie auf **Fertig**.
+
+11. Spalte „Code“ erstellen
+
+    1.  Klicken Sie auf **Spalte hinzufügen**.
+
+    2.  Geben Sie **Code** als **Anzeigename** ein.
+
+    3.  Wählen Sie **AutoWert** als **Datentyp** aus.
     
-    * Klicken Sie auf **Beziehung hinzufügen**, und wählen Sie **n:1** aus.
-    
-    * Wählen Sie **Kontakt** als **Verknüpft (Eins)** aus. 
-    
-    * Geben Sie **Besucher** als **Anzeigename der Nachschlagespalte** ein. 
-    
-    * Klicken Sie auf **Fertig**.
-    
-3.  Erstellen Sie die Beziehung „Besuch in Gebäude“
+    4.  Wählen Sie **Datumspräfixnummer** als **AutoWert-Typ** aus.
 
-    * Klicken Sie auf **Beziehung hinzufügen**, und wählen Sie **n:1** aus.
-    
-    * Wählen Sie **Gebäude** als **Verknüpft (Eins)** aus. 
-    
-    * Klicken Sie auf **Fertig**.
-    
-4.  Klicken Sie auf **Tabelle speichern**.
+    5.  Klicken Sie auf **Fertig**.
 
-5.  Wählen Sie oben links **Zurück zu Lösungen** aus.
+12. Erstellen einer Nachschlagespalte für „Besucher“
 
-6.  Wählen Sie **Alle Anpassungen veröffentlichen** aus.
+    1.  Klicken Sie auf **Spalte hinzufügen**.
 
-# <a name="exercise-4-import-data"></a>Übung 4: Daten importieren
+    2.  Geben Sie **Besuch** als **Anzeigename** ein.
+
+    3.  Wählen Sie **Lookup** (Nachschlagen) als **Datentyp** aus.
+
+    4.  Wählen Sie **Kontakt** für die **Verknüpfte Tabelle** aus.
+
+    5.  Erweitern Sie den Abschnitt **Erweiterte Optionen**.
+    
+    6.  Geben Sie **visitor_id** für **den Beziehungsnamen** ein.
+    
+    7.  Klicken Sie auf **Fertig**.
+
+13. Klicken Sie unten rechts auf **Tabelle speichern**.
+
+# <a name="exercise-2-import-data"></a>Übung \#2: Daten importieren
 
 **Ziel**: In dieser Übung importieren Sie Beispieldaten in die Dataverse-Datenbank.
 
-## <a name="task-1-import-solution"></a>Aufgabe Nr. 1: Lösung importieren
+## <a name="task-1-import-the-visitsxls-file"></a>Aufgabe \#1: Importieren der Datei „Visits.xls“.
 
-In dieser Aufgabe importieren Sie eine Lösung, die den Power Automate-Flow enthält, der erforderlich ist, um den Datenimport abzuschließen.
+In dieser Aufgabe importieren Sie die „Visit“-Daten aus einer Excel-Datei. 
 
-1. Die Datei **DataImport_managed.zip** sollte auf Ihrem Desktop gespeichert sein. Laden Sie soweit noch nicht geschehen die [Datenimportlösung](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/DataImport_managed.zip?raw=true) herunter.
+1.  Die Datei **Visits.xls** sollte auf Ihrem Desktop gespeichert sein. Laden Sie [Visits.xls](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) herunter, wenn dies nicht der Fall ist.
 
-2. Melden Sie sich bei <https://make.powerapps.com> an.
+2.  Wenn Sie noch nicht angemeldet sind, melden Sie sich bei <https://make.powerapps.com> an.
 
-3. Wählen Sie oben rechts Ihre Umgebung **[Ihre Initialen] Übung** aus, falls diese noch nicht ausgewählt ist.
+3.  Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung** sumgebung aus, falls diese noch nicht ausgewählt ist.
 
-4. Wählen Sie im linken Navigationsbereich **Lösungen** aus.
+4.  Erweitern Sie mithilfe der Navigation auf der linken Seite **Dataverse**, und wählen Sie „Tabellen“ aus.
+    >   Dies wird möglicherweise als Daten \> Tabellen auf Ihrem Bildschirm angezeigt. 
 
-5. Klicken Sie auf **Importieren**, und klicken Sie dann auf **Durchsuchen**. Navigieren Sie zur Datei **DataImport_managed.zip** auf Ihrem Desktop, wählen Sie sie aus, und klicken Sie dann auf **Weiter**.
+5.  Suchen und öffnen Sie die Tabelle **Visit**, die Sie in der vorherigen Übung erstellt haben.
 
->   Möglicherweise wird die folgende Meldung angezeigt:
->
->   Es fehlen Abhängigkeiten. Installieren Sie die folgenden Lösungen, bevor Sie diese installieren...
->
->   Diese Meldung bedeutet entweder, dass das Datenmodell nicht vollständig ist, das Herausgeberpräfix nicht **bc** lautet oder für die Tabelle **Gebäude** und **Besuch** andere Namen als in den vorherigen Schritten angegeben sind.
+6.  Wählen Sie mit dem Menü oben den Dropdownpfeil neben **Daten** aus, wählen Sie den Pfeil neben **Daten abrufen** aus, und wählen Sie dann **Daten aus Excel abrufen** aus.
 
-6. Klicken Sie auf **Weiter**. Sie sollten aufgefordert werden, Verbindungen neu herzustellen. 
+7.  Wählen Sie in dem angezeigten Menü **Hochladen** aus.
 
-7. Erweitern Sie die Dropdownliste **Wählen Sie eine Verbindung aus**, und wählen Sie **+Neue Verbindung** aus.
+8.  Suchen Sie die zuvor heruntergeladene Datei **Visits.xls**, und wählen Sie sie aus. *(Beachten Sie, dass der Upload ein bis zwei Minuten dauern kann. Machen Sie sich keine Sorgen, wenn Sie eine Meldung erhalten, dass Zuordnungsfehler vorhanden sind. Diese beheben wir als Nächstes.)*
 
-8. Es wird ein neues Browserfenster oder eine neue Browserregisterkarte geöffnet. Wählen Sie **Erstellen** aus, wenn Sie aufgefordert werden, eine Verbindung herzustellen. Falls erforderlich, melden Sie sich an, um das Erstellen der Verbindung abzuschließen.
+9. Wählen Sie **Spalten zuordnen** aus.
 
-9. Schließen Sie die aktuelle Registerkarte, sodass Sie sich wieder auf der vorherigen Registerkarte **Lösung importieren** befinden.
+10. Ordnen Sie die Spalten wie unten beschrieben zu:
 
-10. Vergewissern Sie sich, dass die Verbindung, die Sie gerade erstellt haben, ausgewählt ist. Wenn diese Verbindung nicht angezeigt wird, klicken Sie auf **Aktualisieren**, um die Liste der Verbindungen zu aktualisieren. 
+    | Datenbankspalten von „Visit“ | Quellwerte   |
+    |------------------|-----------------|
+    | Tatsächliches Ende       | Tatsächliches Ende      |
+    | Tatsächlicher Start     | Tatsächlicher Start    |
+    | Code             | Code            |
+    | Name             | Name            |
+    | Geplantes Ende    | Geplantes Ende   |
+    | Geplanter Start  | Geplanter Start |
 
-11. Klicken Sie auf **Import** (Importieren).
+11. Lassen Sie die restlichen Felder auf **Nicht festgelegt**.
 
-12. Warten Sie, bis der Importvorgang abgeschlossen ist.
+12. Wählen Sie in der oberen rechten Ecke des Bildschirms **Änderungen speichern** aus.
 
-## <a name="task-2-import-data"></a>Aufgabe Nr. 2: Daten importieren  
+13. Überprüfen Sie auf dem Bildschirm **Daten importieren**, ob der Zuordnungsstatus besagt, dass die Zuordnung erfolgreich war.
 
-1. Öffnen Sie die **Datenimport**-Lösung.
+14. Wählen Sie in der oberen rechten Ecke **Importieren** aus, um den Datenimport abzuschließen.
 
-2. Überprüfen Sie den **Status** des Flows **Daten importieren**.
+**Hinweis:** *Es kann mehrere Minuten dauern, bis Ihre Daten in Ihre Tabelle importiert werden. Machen Sie sich keine Sorgen, wenn ein paar Fehler angezeigt werden. Das ist normal und hat keine Auswirkungen auf den Rest des Kurses.*
 
-3. Wenn **Status** auf **Aus** gesetzt ist, klicken Sie auf die Schaltfläche **[...]** neben **Daten importieren**, und wählen Sie dann **Einschalten** aus.
+## <a name="task-2-verify-data-import"></a>Aufgabe \#2: Datenimport überprüfen
 
-   > **Wichtig:** Wenn eine Fehlermeldung angezeigt wird, überprüfen Sie, ob die von Ihnen erstellten Tabellen und Spalten mit den obigen Anweisungen übereinstimmen.
+1.  Nachdem Ihre Daten importiert wurden, verwenden Sie die Navigation auf der linken Seite des Bildschirms, um die Tabelle **Besuch** erneut auszuwählen.
 
-4. Öffnen Sie die Komponente **Daten importieren**. Power Automate wird auf einer neuen Registerkarte geöffnet. 
+2.  Beachten Sie, dass viele Registerkarten für die „Visit“-Tabelle vorhanden sind. Dazu gehören beispielsweise „Cikynns“, Beziehungen, Geschäftsregeln und Ansichten. 
 
-5. Klicken Sie auf **Los geht's**, wenn ein Popupfenster eingeblendet wird. 
+3.  Wählen Sie die Registerkarte **Daten** für die Tabelle „Visit“ aus. Diese befindet sich unter **Tabellen** \> **Visit**
 
-6. Klicken Sie auf **Ausführen**, und klicken Sie dann auf **Flow ausführen**, wenn Sie dazu aufgefordert werden.
+3.  Stellen Sie sicher, dass Datensätze in Ihrer Tabelle vorhanden sind. Sie können die Ansicht ändern, indem Sie den Ansichtsnamen oben rechts auswählen und in **Alle Spalten** ändern. 
 
-7. Klicken Sie auf **Fertig**.
-
-8. Warten Sie, bis die Ausführung der Flow-Instanz abgeschlossen ist. Sie können die Tabelle **28-tägiger Ausführungsverlauf** aktualisieren, um zu sehen, wann der Flow ausgeführt wurde. 
-
-    > Der Zweck dieses Flows bestand darin, Beispieldaten für die nächsten Labs zu generieren. In der nächsten Aufgabe werden Sie überprüfen, ob der Datenimport erfolgreich war. 
-
-## <a name="task-3-verify-data-import"></a>Aufgabe 3: Datenimport überprüfen
-
-1. Navigieren Sie zurück zur vorherigen Power Apps-Registerkarte. Klicken Sie in dem Popupfenster auf **Fertig**. 
-
-2. Wählen Sie in der linken Navigationsleiste **Lösungen** aus, und öffnen Sie Ihre **Campusverwaltung**-Lösung.
-
-2. Klicken Sie, um die Tabelle **Besuch** zu öffnen, und wählen Sie dann die Registerkarte **Daten** aus.
-
-3. Klicken Sie oben rechts auf **Aktive Besuche**, um die Ansichtsauswahl anzuzeigen, und wählen Sie dann **Alle Spalten** aus. Dadurch wird die Ansicht geändert, die zum Anzeigen der Besuchsdaten verwendet wird. 
-
-    > Wenn Sie aufgrund geringerer Auflösung **Aktive Besuche** nicht sehen, sollte an derselben Stelle ein Augensymbol angezeigt werden.
-
-    > Wenn der Import erfolgreich war, sollte eine Liste der Besuchszeilen angezeigt werden.
-
-4. Klicken Sie auf einen beliebigen Wert in der Spalte **Gebäude**, und überzeugen Sie sich, dass in einem separaten Fenster das Gebäudeformular geöffnet wird. 
-
-5. Schließen Sie das kürzlich gestartete Fenster.
-
-6. Klicken Sie auf einen beliebigen Wert in der Spalte **Besucher** (möglicherweise müssen Sie dazu nach rechts scrollen), und überzeugen Sie sich, dass in einem separaten Fenster das Kontaktformular geöffnet wird.
-
-7. Schließen Sie das kürzlich gestartete Fenster.
-
-# <a name="challenges"></a>Herausforderungen
-
-* Würden Sie in Betracht ziehen, die *Termin*-Aktivität als Teil der Lösung zu verwenden? Was würde sich ändern?
-* Wie lässt sich erzwingen, dass das geplante Ende hinter dem geplanten Start liegt? 
-* Wie lässt sich Unterstützung für mehrere Meetings während eines einzelnen Besuchs hinzufügen?
-* Wie lässt sich der Gebäudezugang nicht nur für externe Kontakte, sondern auch für interne Mitarbeiter absichern?
-* Wie lässt sich für Besuche in bestimmten Gebäude vorgeben, dass dazu eine Genehmigung der Verwaltung erforderlich ist? Was würde der Genehmigungsprozess im Datenmodell ändern?
-
+Glückwunsch, Sie haben erfolgreich eine neue Tabelle erstellt und Daten importiert.
