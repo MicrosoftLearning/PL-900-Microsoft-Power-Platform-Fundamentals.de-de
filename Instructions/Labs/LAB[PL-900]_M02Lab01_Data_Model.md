@@ -2,12 +2,12 @@
 lab:
   title: 'Lab 1: Datenmodellierung'
   module: 'Module 2: Introduction to Microsoft Dataverse'
-ms.openlocfilehash: c3ea362eebf9156f069a9ab8635859e6186c1626
-ms.sourcegitcommit: 0118c25a230425d0ccba16e6c3922053ee07c183
+ms.openlocfilehash: 9edefbdf214d5a0f2e0693ffdf024dfc05c032c5
+ms.sourcegitcommit: dbffa13e13419f5b9aadc894eb95fd16215b2ebf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "144810907"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "146458361"
 ---
 # <a name="module-2-introduction-to-microsoft-dataverse"></a>Modul 2: Einführung in Microsoft Dataverse
 
@@ -58,170 +58,166 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
 
 >   Wir verwenden **zeitzonenunabhängiges** Verhalten beim Aufzeichnen von Datums- und Uhrzeitinformationen, da die Uhrzeit eines Besuchs immer die Lokalzeit am Standort des Gebäudes ist und sich nicht ändern sollte, wenn sie aus einer anderen Zeitzone angezeigt wird.
 
-1.  Melden Sie sich bei <https://make.powerapps.com> an (falls Sie nicht bereits angemeldet sind).
+1. Melden Sie sich bei [https://make.powerapps.com](https://make.powerapps.com/) an (falls Sie nicht bereits angemeldet sind).
 
-2.  Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung** sumgebung aus, falls diese noch nicht ausgewählt ist.
+2. Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung** sumgebung aus, falls diese noch nicht ausgewählt ist.
 
-3.  Erweitern Sie mithilfe der Navigation auf der linken Seite Dataverse, und wählen Sie „Tabellen“ aus.
+3. Erweitern Sie mithilfe der Navigation auf der linken Seite Dataverse, und wählen Sie „Tabellen“ aus.
 
-4.  Klicken Sie auf **Neue Tabelle**.
+4. Klicken Sie auf **Neue Tabelle**.
 
-5.  Geben Sie **Besuch** als **Anzeigename** ein.
+5. Geben Sie **Besuch** als **Anzeigename** ein.
 
-6.  Klicken Sie auf **Erstellen**. Dadurch wird die Tabelle im Hintergrund bereitgestellt, während Sie damit beginnen können, weitere Spalten hinzuzufügen.
+6. Klicken Sie auf **Speichern**. Dadurch wird die Tabelle im Hintergrund bereitgestellt, während Sie damit beginnen können, weitere Spalten hinzuzufügen.
 
-7.  Spalte „Geplanter Start“ erstellen
+7. Nachdem die Tabelle erstellt wurde, wählen Sie im Abschnitt **Schema** die Option **Spalten** aus. 
 
-    1.  Sie sollten sich auf der Seite „Spalten“ der Tabelle „Besuch“ befinden.
+8. Wählen Sie **Neue Spalte** aus, und konfigurieren Sie sie wie folgt: 
 
-    2.  Stellen Sie sicher, dass die Registerkarte **Spalten** ausgewählt ist, und klicken Sie auf **Spalte hinzufügen**.
+    - Geben Sie **Geplanter Start** als **Anzeigename** ein.
 
-    3.  Geben Sie **Geplanter Start** als **Anzeigename** ein.
+    - Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
 
-    4.  Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
+    - Wählen Sie für **Erforderlich** **Eingabe erforderlich** aus.
 
-    5.  Wählen Sie unter **Erforderlich** die Option **Erforderlich** aus.
+    - Erweitern Sie den Abschnitt **Erweiterte Optionen**.
 
-    6.  Erweitern Sie den Abschnitt **Erweiterte Optionen**.
+    - Wählen Sie unter **Verhalten** den Eintrag **Zeitzonenunabhängig** aus.
 
-    7.  Wählen Sie unter **Verhalten** den Eintrag **Zeitzonenunabhängig** aus.
+    - Klicken Sie auf **Speichern**.
 
-    8.  Klicken Sie auf **Fertig**.
+9. Spalte „Geplantes Ende“ erstellen 
 
-8.  Spalte „Geplantes Ende“ erstellen
+    - Klicken Sie auf **Spalte hinzufügen**.
 
-    1.  Klicken Sie auf **Spalte hinzufügen**.
+    - Geben Sie **Geplantes Ende** als **Anzeigename** ein.
 
-    2.  Geben Sie **Geplantes Ende** als **Anzeigename** ein.
+    - Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
 
-    3.  Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
+    - Wählen Sie für **Erforderlich** **Eingabe erforderlich** aus.
 
-    4.  Wählen Sie unter **Erforderlich** die Option **Erforderlich** aus.
+    - Erweitern Sie den Abschnitt **Erweiterte Optionen**.
 
-    5.  Erweitern Sie den Abschnitt **Erweiterte Optionen**.
+    - Wählen Sie unter **Verhalten** den Eintrag **Zeitzonenunabhängig** aus.
 
-    6.  Wählen Sie unter **Verhalten** den Eintrag **Zeitzonenunabhängig** aus.
+    - Klicken Sie auf **Speichern**.
 
-    7.  Klicken Sie auf **Fertig**.
+10. Spalte „Tatsächlicher Start“ erstellen
 
-9.  Spalte „Tatsächlicher Start“ erstellen
+    - Klicken Sie auf **Spalte hinzufügen**.
 
-    1.  Klicken Sie auf **Spalte hinzufügen**.
+    - Geben Sie **Tatsächlicher Start** als **Anzeigename** ein.
 
-    2.  Geben Sie **Tatsächlicher Start** als **Anzeigename** ein.
+    - Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
 
-    3.  Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
+    - Behalten Sie unter **Erforderlich** die Einstellung **Optional** bei.
 
-    4.  Behalten Sie unter **Erforderlich** die Einstellung **Optional** bei.
+    - Erweitern Sie den Abschnitt **Erweiterte Optionen**.
 
-    5.  Erweitern Sie den Abschnitt **Erweiterte Optionen**.
+    - Wählen Sie unter **Verhalten** den Eintrag **Zeitzonenunabhängig** aus.
 
-    6.  Wählen Sie unter **Verhalten** den Eintrag **Zeitzonenunabhängig** aus.
+    - Klicken Sie auf **Speichern**.
 
-    7.  Klicken Sie auf **Fertig**.
+11. Spalte „Tatsächliches Ende“ erstellen
 
-10. Spalte „Tatsächliches Ende“ erstellen
+    - Klicken Sie auf **Spalte hinzufügen**.
 
-    1.  Klicken Sie auf **Spalte hinzufügen**.
+    - Geben Sie **Tatsächliches Ende** als **Anzeigename** ein.
 
-    2.  Geben Sie **Tatsächliches Ende** als **Anzeigename** ein.
+    - Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
 
-    3.  Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
+    - Behalten Sie unter **Erforderlich** die Einstellung **Optional** bei.
 
-    4.  Behalten Sie unter **Erforderlich** die Einstellung **Optional** bei.
+    - Erweitern Sie den Abschnitt **Erweiterte Optionen**.
 
-    5.  Erweitern Sie den Abschnitt **Erweiterte Optionen**.
+    - Wählen Sie unter **Verhalten** den Eintrag **Zeitzonenunabhängig** aus.
 
-    6.  Wählen Sie unter **Verhalten** den Eintrag **Zeitzonenunabhängig** aus.
+    - Klicken Sie auf **Speichern**.
 
-    7.  Klicken Sie auf **Fertig**.
+12. Spalte „Code“ erstellen
 
-11. Spalte „Code“ erstellen
+    - Klicken Sie auf **Spalte hinzufügen**.
 
-    1.  Klicken Sie auf **Spalte hinzufügen**.
+    - Geben Sie **Code** als **Anzeigename** ein.
 
-    2.  Geben Sie **Code** als **Anzeigename** ein.
+    - Wählen Sie **AutoWert** als **Datentyp** aus.
 
-    3.  Wählen Sie **AutoWert** als **Datentyp** aus.
-    
-    4.  Wählen Sie **Datumspräfixnummer** als **AutoWert-Typ** aus.
+    - Wählen Sie **Datumspräfixnummer** als **AutoWert-Typ** aus.
 
-    5.  Klicken Sie auf **Fertig**.
+    - Klicken Sie auf **Speichern**.
 
-12. Erstellen einer Nachschlagespalte für „Besucher“
+13. Erstellen einer Nachschlagespalte für „Besucher“
 
-    1.  Klicken Sie auf **Spalte hinzufügen**.
+    - Klicken Sie auf **Spalte hinzufügen**.
 
-    2.  Geben Sie **Besuch** als **Anzeigename** ein.
+    - Geben Sie **Besuch** als **Anzeigename** ein.
 
-    3.  Wählen Sie **Lookup** (Nachschlagen) als **Datentyp** aus.
+    - Wählen Sie **Lookup** (Nachschlagen) als **Datentyp** aus.
 
-    4.  Wählen Sie **Kontakt** für die **Verknüpfte Tabelle** aus.
+    - Wählen Sie **Kontakt** für die **Verknüpfte Tabelle** aus.
 
-    5.  Erweitern Sie den Abschnitt **Erweiterte Optionen**.
-    
-    6.  Geben Sie **visitor_id** für **den Beziehungsnamen** ein.
-    
-    7.  Klicken Sie auf **Fertig**.
+    - Erweitern Sie den Abschnitt **Erweiterte Optionen**.
 
-13. Klicken Sie unten rechts auf **Tabelle speichern**.
+    - Geben Sie **visitor_id** für **den Beziehungsnamen** ein.
 
-# <a name="exercise-2-import-data"></a>Übung \#2: Daten importieren
+    - Klicken Sie auf **Speichern**.
+
+ 
+
+Übung Nr. 2: Daten importieren
 
 **Ziel**: In dieser Übung importieren Sie Beispieldaten in die Dataverse-Datenbank.
 
-## <a name="task-1-import-the-visitsxls-file"></a>Aufgabe \#1: Importieren der Datei „Visits.xls“.
+Aufgabe Nr. 1: Importieren der Datei „Visits.xls“.
 
-In dieser Aufgabe importieren Sie die „Visit“-Daten aus einer Excel-Datei. 
+In dieser Aufgabe importieren Sie die „Visit“-Daten aus einer Excel-Datei.
 
-1.  Die Datei **Visits.xls** sollte auf Ihrem Desktop gespeichert sein. Laden Sie [Visits.xls](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) herunter, wenn dies nicht der Fall ist.
+1. Die Datei **Visits.xls** sollte auf Ihrem Desktop gespeichert sein. Laden Sie [Visits.xls](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) herunter, wenn dies nicht der Fall ist.
 
-2.  Wenn Sie noch nicht angemeldet sind, melden Sie sich bei <https://make.powerapps.com> an.
+2. Wenn Sie noch nicht angemeldet sind, melden Sie sich bei [https://make.powerapps.com](https://make.powerapps.com/) an.
 
-3.  Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung** sumgebung aus, falls diese noch nicht ausgewählt ist.
+3. Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung** sumgebung aus, falls diese noch nicht ausgewählt ist.
 
-4.  Erweitern Sie mithilfe der Navigation auf der linken Seite **Dataverse**, und wählen Sie „Tabellen“ aus.
-    >   Dies wird möglicherweise als Daten \> Tabellen auf Ihrem Bildschirm angezeigt. 
+4. Erweitern Sie mithilfe der Navigation auf der linken Seite **Dataverse**, und wählen Sie „Tabellen“ aus.
 
-5.  Suchen und öffnen Sie die Tabelle **Visit**, die Sie in der vorherigen Übung erstellt haben.
+Dies wird möglicherweise als Daten > Tabellen auf Ihrem Bildschirm angezeigt.
 
-6.  Wählen Sie mit dem Menü oben den Dropdownpfeil neben **Daten** aus, wählen Sie den Pfeil neben **Daten abrufen** aus, und wählen Sie dann **Daten aus Excel abrufen** aus.
+5. Suchen und öffnen Sie die Tabelle **Visit**, die Sie in der vorherigen Übung erstellt haben.
 
-7.  Wählen Sie in dem angezeigten Menü **Hochladen** aus.
+6. Wählen Sie oben über das Menü den Dropdownpfeil neben **Importieren** die Option **Daten aus Excel importieren** aus.
 
-8.  Suchen Sie die zuvor heruntergeladene Datei **Visits.xls**, und wählen Sie sie aus. *(Beachten Sie, dass der Upload ein bis zwei Minuten dauern kann. Machen Sie sich keine Sorgen, wenn Sie eine Meldung erhalten, dass Zuordnungsfehler vorhanden sind. Diese beheben wir als Nächstes.)*
+7. Wählen Sie in dem angezeigten Menü **Hochladen** aus.
+
+8. Suchen Sie die zuvor heruntergeladene Datei **Visits.xls**, und wählen Sie sie aus. (Beachten Sie, dass der Upload ein bis zwei Minuten dauern kann. Machen Sie sich keine Sorgen, wenn Sie eine Meldung erhalten, dass Zuordnungsfehler vorhanden sind. Diese beheben wir als Nächstes.)
 
 9. Wählen Sie **Spalten zuordnen** aus.
 
 10. Ordnen Sie die Spalten wie unten beschrieben zu:
 
-    | Datenbankspalten von „Visit“ | Quellwerte   |
-    |------------------|-----------------|
-    | Tatsächliches Ende       | Tatsächliches Ende      |
-    | Tatsächlicher Start     | Tatsächlicher Start    |
-    | Code             | Code            |
-    | Name             | Name            |
-    | Geplantes Ende    | Geplantes Ende   |
-    | Geplanter Start  | Geplanter Start |
+| Datenbankspalten von „Visit“| Quellwerte |
+| - |
+| Tatsächliches Ende| Tatsächliches Ende |
+| Tatsächlicher Start| Tatsächlicher Start |
+| Code| Code |
+| Name| Name |
+| Geplantes Ende| Geplantes Ende |
+| Geplanter Start| Geplanter Start |
+
 
 11. Lassen Sie die restlichen Felder auf **Nicht festgelegt**.
 
 12. Wählen Sie in der oberen rechten Ecke des Bildschirms **Änderungen speichern** aus.
 
-13. Überprüfen Sie auf dem Bildschirm **Daten importieren**, ob der Zuordnungsstatus besagt, dass die Zuordnung erfolgreich war.
+13. Überprüfen Sie auf dem Bildschirm **Daten importieren**, ob der Zuordnungsstatus besagt, dass die Zuordnung erfolgreich war („Die Zuordnung war erfolgreich“).
 
 14. Wählen Sie in der oberen rechten Ecke **Importieren** aus, um den Datenimport abzuschließen.
 
-**Hinweis:** *Es kann mehrere Minuten dauern, bis Ihre Daten in Ihre Tabelle importiert werden. Machen Sie sich keine Sorgen, wenn ein paar Fehler angezeigt werden. Das ist normal und hat keine Auswirkungen auf den Rest des Kurses.*
+**Hinweis:** Es kann mehrere Minuten dauern, bis Ihre Daten in Ihre Tabelle importiert werden. Machen Sie sich keine Sorgen, wenn ein paar Fehler angezeigt werden. Das ist normal und hat keine Auswirkungen auf den Rest des Kurses.
 
-## <a name="task-2-verify-data-import"></a>Aufgabe \#2: Datenimport überprüfen
+Aufgabe Nr. 2: Datenimport überprüfen
 
-1.  Nachdem Ihre Daten importiert wurden, verwenden Sie die Navigation auf der linken Seite des Bildschirms, um die Tabelle **Besuch** erneut auszuwählen.
+1. Nachdem Ihre Daten importiert wurden, verwenden Sie die Navigation auf der linken Seite des Bildschirms, um die Tabelle **Besuch** erneut auszuwählen.
 
-2.  Beachten Sie, dass viele Registerkarten für die „Visit“-Tabelle vorhanden sind. Dazu gehören beispielsweise „Cikynns“, Beziehungen, Geschäftsregeln und Ansichten. 
-
-3.  Wählen Sie die Registerkarte **Daten** für die Tabelle „Visit“ aus. Diese befindet sich unter **Tabellen** \> **Visit**
-
-3.  Stellen Sie sicher, dass Datensätze in Ihrer Tabelle vorhanden sind. Sie können die Ansicht ändern, indem Sie den Ansichtsnamen oben rechts auswählen und in **Alle Spalten** ändern. 
+2. Stellen Sie sicher, dass die importierten Daten im Abschnitt **Ansehen von Spalten und Daten** angezeigt werden. 
 
 Glückwunsch, Sie haben erfolgreich eine neue Tabelle erstellt und Daten importiert.
