@@ -2,12 +2,12 @@
 lab:
   title: 'Lab 3: So erstellen Sie eine modellgesteuerte App'
   module: 'Module 3: Get started with Power Apps'
-ms.openlocfilehash: ed98e1f2c2ff900f84b98910e0ef2d14d130f462
-ms.sourcegitcommit: dbffa13e13419f5b9aadc894eb95fd16215b2ebf
+ms.openlocfilehash: c69ca883cc8f8c8b00ed3f67fb18f93b035726e3
+ms.sourcegitcommit: 50e1a519a6893e02a4a0c2c6bef93cafd2513611
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "146458373"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "147125760"
 ---
 # <a name="module-3-get-started-with-power-apps"></a>Modul 3: Erste Schritte mit Power Apps
 ## <a name="lab-how-to-build-a-model-driven-app"></a>Lab: So erstellen Sie eine modellgesteuerte App
@@ -234,7 +234,7 @@ Aufgabe 3: Testanwendung
 
 2. Erstellen Sie einen neuen Kontakt.
 
-    0. Die App sollte in der Ansicht **Meine aktiven Kontakte** geöffnet werden. Wenn dies nicht der Fall ist, wählen Sie links „Besuche“ aus.
+    0. Die App sollte in der Ansicht **Meine aktiven Kontakte** geöffnet werden. Wenn dies nicht der Fall ist, wählen Sie links „Kontakte“ aus.
 
     1. Klicken Sie im oberen Menü auf **Neu**.
 

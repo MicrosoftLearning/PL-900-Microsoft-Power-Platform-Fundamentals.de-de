@@ -2,12 +2,12 @@
 lab:
   title: 'Lab 5: Erstellen eines einfachen Dashboards'
   module: 'Module 5: Get Started with Power BI'
-ms.openlocfilehash: 8d104c42de9d4114c668a63a4d8d30cbbcc4b39e
-ms.sourcegitcommit: 36c8fda9cdc6f448416d7000e38c1606bea87d2e
+ms.openlocfilehash: 1df94fcda0e59554c10ed772314e5138936b73a8
+ms.sourcegitcommit: 50e1a519a6893e02a4a0c2c6bef93cafd2513611
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "144812933"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "147125736"
 ---
 # <a name="module-5-get-started-with-power-bi"></a>Modul 5: Erste Schritte mit Power BI
 ## <a name="lab-how-to-build-a-simple-dashboard"></a>Lab: Erstellen eines einfachen Dashboards
@@ -88,9 +88,9 @@ Damit haben den Power BI-Dienst für Ihre Labs eingerichtet.
 
 5.  Klicken Sie auf den Bericht außerhalb des Kreisdiagramms, um die Auswahl aufzuheben, und wählen Sie „Gestapeltes Säulendiagramm“ im Bereich **Visualisierungen** aus.
 
-6.  Drücken Sie den Dropdownpfeil neben **bc_Visit** im Bereich „Felder“. Ziehen Sie das Feld **Besuch**, und legen Sie es im Feld **Werte** ab.
+6.  Drücken Sie den Dropdownpfeil neben **bc_Visit** im Bereich „Felder“. Ziehen Sie das Feld **Besuch** in das Zielfeld **Y-Achse**.
 
-7.  Ziehen Sie das Feld **Start** in das Zielfeld **Achse**.
+7.  Ziehen Sie das Feld **Start** in das Zielfeld **X-Achse**.
 
 8.  Klicken Sie im Bereich „Visualisierungen“ auf das **x** neben **Jahr** und **Quartal**, sodass auf der Achse nur noch die Summen von **Monat** und **Tag** angezeigt werden.
 
