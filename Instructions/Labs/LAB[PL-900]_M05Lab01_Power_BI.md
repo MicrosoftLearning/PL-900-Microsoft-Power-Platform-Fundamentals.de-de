@@ -2,17 +2,16 @@
 lab:
   title: 'Lab 5: Erstellen eines einfachen Dashboards'
   module: 'Module 5: Get Started with Power BI'
-ms.openlocfilehash: 1df94fcda0e59554c10ed772314e5138936b73a8
-ms.sourcegitcommit: 50e1a519a6893e02a4a0c2c6bef93cafd2513611
+ms.openlocfilehash: 2fb53fa9130cae4a711b11f341ea663f019c94c8
+ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "147125736"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "147154442"
 ---
-# <a name="module-5-get-started-with-power-bi"></a>Modul 5: Erste Schritte mit Power BI
-## <a name="lab-how-to-build-a-simple-dashboard"></a>Lab: Erstellen eines einfachen Dashboards
+## <a name="lab-5-how-to-build-a-simple-dashboard"></a>Lab 5: Erstellen eines einfachen Dashboards
 
-# <a name="scenario"></a>Szenario
+## <a name="scenario"></a>Szenario
 
 Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem Campus. Campusbesucher werden derzeit auf Papier erfasst. Die Informationen werden nicht konsistent erfasst und es gibt keine Möglichkeit, Daten über die Besuche auf dem gesamten Campus zu sammeln und zu analysieren.
 
@@ -20,43 +19,33 @@ Die Campusverwaltung möchte ihr Besucherregistrierungssystem modernisieren, wob
 
 Während dieses Kurses erstellen Sie Anwendungen und führen eine Automatisierung durch, damit das Verwaltungs- und Sicherheitspersonal des Bellows College den Zugang zu den Gebäuden auf dem Campus verwalten und kontrollieren kann.
 
-In diesem Lab erstellen Sie ein Power BI-Dashboard, das Daten zu Campusbesuchen visualisiert.
+In diesem Lab erstellen Sie einen Power BI-Bericht und ein Dashboard, das Daten zu Campusbesuchen visualisiert.
 
-# <a name="high-level-lab-steps"></a>Weiterführende Schritte des Lab
+## <a name="high-level-lab-steps"></a>Weiterführende Schritte des Lab
 
 Wir werden die folgenden Schritte ausführen, um ein Power BI-Dashboard zu entwerfen und zu erstellen:
 
--   Verbinden mit Dataverse
-
--   Daten so transformieren, dass sie benutzerfreundliche Beschreibungen für die zugehörigen Zeilen enthalten (Lookups)
-
--   Einen Bericht mit verschiedenen Visualisierungen der Informationen zu Campusbesuchen erstellen und veröffentlichen
+-   Einen Bericht mit verschiedenen Visualisierungen der Informationen zu Campusbesuchen erstellen
 
 -   Eine Abfrage in natürlicher Sprache zum Erstellen zusätzlicher Visualisierungen verwenden
 
--   Eine mobile Ansicht des Power BI-Dashboards erstellen
-
 ## <a name="prerequisites"></a>Voraussetzungen
 
--   Beendigung von **Modul 0 Lab 0 – Lab-Umgebung überprüfen**
-
--   Beendigung von **Modul 2 Lab 1 – Einführung in Microsoft Dataverse**
+- Beendigung von **Modul 0 Lab 0 – Lab-Umgebung überprüfen**
+- Abschluss von **Modul 2 Lab 1: Datenmodellierung**
 
 ## <a name="things-to-consider-before-you-begin"></a>Vor dem Beginn zu beachtende Dinge
 
 -   Wer ist das Zielpublikum des Berichts?
-
 -   Wie wird das Publikum den Bericht verwenden? Typisches Gerät? Der Standort?
-
 -   Haben Sie ausreichend Daten für die Visualisierung?
-
 -   Welche möglichen Merkmale können Sie verwenden, um Daten über die Besuche zu analysieren?
 
-# <a name="exercise-1-create-power-bi-report"></a>Übung 1: Power BI-Bericht erstellen
+## <a name="exercise-1-create-power-bi-report"></a>Übung 1: Power BI-Bericht erstellen
 
 **Ziel**: In dieser Übung erstellen Sie einen Power BI-Bericht basierend auf den Daten des Excel-Arbeitsblatts, das wir in einer vorherigen Übung genutzt haben.
 
-## <a name="task-1-prepare-power-bi-service"></a>Aufgabe \#1: Vorbereiten des Power BI-Diensts
+### <a name="task-1-prepare-power-bi-service"></a>Aufgabe \#1: Vorbereiten des Power BI-Diensts
 
 1.  Laden Sie [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) herunter, und speichern Sie die Datei auf Ihrem Computer.
 
@@ -70,17 +59,17 @@ Wir werden die folgenden Schritte ausführen, um ein Power BI-Dashboard zu entwe
 
 6.  Suchen Sie die Datei **visits.pbix**, die Sie zuvor heruntergeladen haben, und wählen Sie sie aus.
 
-7.  Sobald der Datenladevorgang abgeschlossen ist, wählen Sie den Bericht **Besuche** aus (beachten Sie, dass als Typ **Bericht** festgelegt ist).
+7.  Sobald der Datenladevorgang abgeschlossen ist, erweitern Sie **Mein Arbeitsbereich** und wählen den Bericht **visits** aus (beachten Sie, dass als „Typ“ **Bericht** festgelegt ist).
 
 8.  Klicken Sie auf **Bearbeiten**. Wenn das Menüelement **Bearbeiten** nicht angezeigt wird, klicken Sie auf **...** , und wählen Sie dann **Bearbeiten** aus.
 
-Damit haben den Power BI-Dienst für Ihre Labs eingerichtet. 
+Damit haben den Power BI-Dienst für Ihre Labs eingerichtet.
 
-## <a name="task-2-create-chart-and-time-visualizations"></a>Aufgabe \#2: Diagramm- und Zeitvisualisierungen erstellen
+### <a name="task-2-create-chart-and-time-visualizations"></a>Aufgabe \#2: Diagramm- und Zeitvisualisierungen erstellen
 
 1.  Klicken Sie auf das **Kreisdiagramm** symbol im Bereich **Visualisierungen**, um ein Diagramm einzufügen.
 
-2.  Drücken Sie den Dropdownpfeil neben **bc_name** im Bereich „Felder“. Ziehen Sie das Feld **Gebäude** in das Zielfeld **Legende**.
+2.  Klicken Sie auf den Dropdownpfeil neben **bc_building** im Bereich „Felder“. Ziehen Sie das Feld **Gebäude** in das Zielfeld **Legende**.
 
 3.  Drücken Sie den Dropdownpfeil neben **bc_Visit** im Bereich „Felder“. Ziehen Sie das Feld **Besuch**, und legen Sie es im Feld **Werte** ab.
 
@@ -100,15 +89,15 @@ Damit haben den Power BI-Dienst für Ihre Labs eingerichtet.
 
     1.  Klicken Sie auf verschiedene Gebäudesegmente im Kreisdiagramm, und beobachten Sie Änderungen im Zeitbericht.
 
-    2.  Klicken Sie auf das Säulendiagramm. Drücken Sie die NACH-UNTEN-TASTE, um den **Drilldownmodus** zu aktivieren (oder klicken Sie mit der rechten Maustaste auf das Diagramm, und wählen Sie **Drilldown** aus), und klicken Sie dann auf eine Spalte, um auf die nächste Ebene (Tage) zu gelangen. 
-    
+    2.  Klicken Sie auf das Säulendiagramm. Drücken Sie die NACH-UNTEN-TASTE, um den **Drilldownmodus** zu aktivieren (oder klicken Sie mit der rechten Maustaste auf das Diagramm, und wählen Sie **Drilldown** aus), und klicken Sie dann auf eine Spalte, um auf die nächste Ebene (Tage) zu gelangen.
+
     3.  Führen Sie einen Drillup und Drilldown aus. Wählen Sie dann verschiedene Balken im Zeitsäulendiagramm aus, und beobachten Sie Änderungen im Kreisdiagrammbericht.
 
 11. Speichern Sie laufende Arbeiten, indem Sie auf **Speichern** klicken.
 
-# <a name="exercise-2-create-power-bi-dashboard"></a>Übung \#2: Power BI-Dashboard erstellen
+## <a name="exercise-2-create-power-bi-dashboard"></a>Übung 2: Power BI-Dashboard erstellen
 
-## <a name="task-1-create-power-bi-dashboard"></a>Aufgabe \#1: Power BI-Dashboard erstellen
+### <a name="task-1-create-power-bi-dashboard"></a>Aufgabe \#1: Power BI-Dashboard erstellen
 
 1.  Sie sollten den Bericht aus der vorherigen Aufgabe geöffnet haben.
 
@@ -118,13 +107,11 @@ Damit haben den Power BI-Dienst für Ihre Labs eingerichtet.
 
 4.  Geben Sie **Campusverwaltung** unter **Dashboardname** ein, und klicken Sie auf **Live anheften**.
 
-5.  Wählen Sie **Mein Arbeitsbereich** am oberen Rand aus, und wählen Sie dann das Dashboard **[Ihr Nachname] Campusverwaltung** aus.
+5.  In einem Popup wird Ihnen mitgeteilt, dass das Dashboard erstellt wurde. Wählen Sie **Zum Dashboard wechseln** aus.
 
-6.  In einem Popup wird Ihnen mitgeteilt, dass das Dashboard erstellt wurde. Wählen Sie **Zum Dashboard wechseln** aus.
+6.  Testen Sie die Interaktivität der angezeigten Kreis- und Balkendiagramme.
 
-7.  Testen Sie die Interaktivität der angezeigten Kreis- und Balkendiagramme.
-
-## <a name="task-2-add-visualizations-using-natural-language"></a>Aufgabe \#2: Visualisierungen in natürlicher Sprache hinzufügen
+### <a name="task-2-add-visualizations-using-natural-language"></a>Aufgabe \#2: Visualisierungen in natürlicher Sprache hinzufügen
 
 1.  Wählen Sie in Ihrem Dashboard **Campusverwaltung** die Leiste **Stellen Sie eine Frage zu Ihren Daten** ganz oben aus.
 
