@@ -1,19 +1,14 @@
 ---
 lab:
-  title: 'Lab 5: Erstellen eines einfachen Dashboards'
+  title: "Lab\_5: Erstellen eines einfachen Dashboards"
   module: 'Module 5: Get Started with Power BI'
-ms.openlocfilehash: 2fb53fa9130cae4a711b11f341ea663f019c94c8
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154442"
 ---
+
 ## <a name="lab-5-how-to-build-a-simple-dashboard"></a>Lab 5: Erstellen eines einfachen Dashboards
 
 ## <a name="scenario"></a>Szenario
 
-Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem Campus. Campusbesucher werden derzeit auf Papier erfasst. Die Informationen werden nicht konsistent erfasst und es gibt keine Möglichkeit, Daten über die Besuche auf dem gesamten Campus zu sammeln und zu analysieren.
+Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
 
 Die Campusverwaltung möchte ihr Besucherregistrierungssystem modernisieren, wobei der Zugang zu den Gebäuden von Sicherheitspersonal kontrolliert werden soll und alle Besuche von den entsprechenden Gastgebern zuvor registriert und aufgezeichnet werden müssen.
 
@@ -37,7 +32,7 @@ Wir werden die folgenden Schritte ausführen, um ein Power BI-Dashboard zu entwe
 ## <a name="things-to-consider-before-you-begin"></a>Vor dem Beginn zu beachtende Dinge
 
 -   Wer ist das Zielpublikum des Berichts?
--   Wie wird das Publikum den Bericht verwenden? Typisches Gerät? Der Standort?
+-   How will the audience consume the report? Typical device? Location?
 -   Haben Sie ausreichend Daten für die Visualisierung?
 -   Welche möglichen Merkmale können Sie verwenden, um Daten über die Besuche zu analysieren?
 
@@ -61,23 +56,23 @@ Wir werden die folgenden Schritte ausführen, um ein Power BI-Dashboard zu entwe
 
 7.  Sobald der Datenladevorgang abgeschlossen ist, erweitern Sie **Mein Arbeitsbereich** und wählen den Bericht **visits** aus (beachten Sie, dass als „Typ“ **Bericht** festgelegt ist).
 
-8.  Klicken Sie auf **Bearbeiten**. Wenn das Menüelement **Bearbeiten** nicht angezeigt wird, klicken Sie auf **...** , und wählen Sie dann **Bearbeiten** aus.
+8.  Click <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>. If <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> menu item is not visible click <bpt id="p2">**</bpt>...<ept id="p2">**</ept> and then select <bpt id="p3">**</bpt>Edit<ept id="p3">**</ept>.
 
 Damit haben den Power BI-Dienst für Ihre Labs eingerichtet.
 
 ### <a name="task-2-create-chart-and-time-visualizations"></a>Aufgabe \#2: Diagramm- und Zeitvisualisierungen erstellen
 
-1.  Klicken Sie auf das **Kreisdiagramm** symbol im Bereich **Visualisierungen**, um ein Diagramm einzufügen.
+1.  Klicken Sie auf das **Kreisdiagramm**symbol im Bereich **Visualisierungen**, um ein Diagramm einzufügen.
 
-2.  Klicken Sie auf den Dropdownpfeil neben **bc_building** im Bereich „Felder“. Ziehen Sie das Feld **Gebäude** in das Zielfeld **Legende**.
+2.  Press the drop-down arrow beside <bpt id="p1">**</bpt>bc_building<ept id="p1">**</ept> in the Fields pane. Drag the <bpt id="p1">**</bpt>Building<ept id="p1">**</ept> field and drop it into <bpt id="p2">**</bpt>Legend<ept id="p2">**</ept> box.
 
-3.  Drücken Sie den Dropdownpfeil neben **bc_Visit** im Bereich „Felder“. Ziehen Sie das Feld **Besuch**, und legen Sie es im Feld **Werte** ab.
+3.  Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem Campus.
 
 4.  Ändern Sie die Größe des Kreisdiagramms mithilfe der Ziehpunkte an den Ecken, sodass alle Diagrammkomponenten sichtbar sind.
 
 5.  Klicken Sie auf den Bericht außerhalb des Kreisdiagramms, um die Auswahl aufzuheben, und wählen Sie „Gestapeltes Säulendiagramm“ im Bereich **Visualisierungen** aus.
 
-6.  Drücken Sie den Dropdownpfeil neben **bc_Visit** im Bereich „Felder“. Ziehen Sie das Feld **Besuch** in das Zielfeld **Y-Achse**.
+6.  Campusbesucher werden derzeit auf Papier erfasst.
 
 7.  Ziehen Sie das Feld **Start** in das Zielfeld **X-Achse**.
 
@@ -89,7 +84,7 @@ Damit haben den Power BI-Dienst für Ihre Labs eingerichtet.
 
     1.  Klicken Sie auf verschiedene Gebäudesegmente im Kreisdiagramm, und beobachten Sie Änderungen im Zeitbericht.
 
-    2.  Klicken Sie auf das Säulendiagramm. Drücken Sie die NACH-UNTEN-TASTE, um den **Drilldownmodus** zu aktivieren (oder klicken Sie mit der rechten Maustaste auf das Diagramm, und wählen Sie **Drilldown** aus), und klicken Sie dann auf eine Spalte, um auf die nächste Ebene (Tage) zu gelangen.
+    2.  Die Informationen werden nicht konsistent erfasst und es gibt keine Möglichkeit, Daten über die Besuche auf dem gesamten Campus zu sammeln und zu analysieren.
 
     3.  Führen Sie einen Drillup und Drilldown aus. Wählen Sie dann verschiedene Balken im Zeitsäulendiagramm aus, und beobachten Sie Änderungen im Kreisdiagrammbericht.
 
@@ -101,13 +96,13 @@ Damit haben den Power BI-Dienst für Ihre Labs eingerichtet.
 
 1.  Sie sollten den Bericht aus der vorherigen Aufgabe geöffnet haben.
 
-2.  Wählen Sie im Menü den Eintrag **An ein Dashboard anheften** aus. Je nach Layout müssen Sie möglicherweise auf **...** klicken, um weitere Menüelemente anzuzeigen.
+2.  Select <bpt id="p1">**</bpt>Pin to a dashboard<ept id="p1">**</ept> on the menu. Depending on the layout you may need to press <bpt id="p1">**</bpt>...<ept id="p1">**</ept> to show additional menu items.
 
 3.  Wählen Sie bei der Eingabeaufforderung **An Dashboard anheften** die Option **Neues Dashboard** aus.
 
 4.  Geben Sie **Campusverwaltung** unter **Dashboardname** ein, und klicken Sie auf **Live anheften**.
 
-5.  In einem Popup wird Ihnen mitgeteilt, dass das Dashboard erstellt wurde. Wählen Sie **Zum Dashboard wechseln** aus.
+5.  A pop-up will prompt you that the dashboard has been created. Select <bpt id="p1">**</bpt>Go to dashboard<ept id="p1">**</ept>.
 
 6.  Testen Sie die Interaktivität der angezeigten Kreis- und Balkendiagramme.
 
@@ -115,7 +110,7 @@ Damit haben den Power BI-Dienst für Ihre Labs eingerichtet.
 
 1.  Wählen Sie in Ihrem Dashboard **Campusverwaltung** die Leiste **Stellen Sie eine Frage zu Ihren Daten** ganz oben aus.
 
-2.  Geben Sie im Frage- und Antwortbereich **Gebäude nach Anzahl der Besuche** ein. Ein Balkendiagramm wird angezeigt.
+2.  Enter <bpt id="p1">**</bpt>buildings by number of visits<ept id="p1">**</ept> in Q&amp;A area. A bar chart will be displayed.
 
 3.  Wählen Sie **Visualisierung anheften** aus.
 
@@ -123,7 +118,7 @@ Damit haben den Power BI-Dienst für Ihre Labs eingerichtet.
 
 5.  Klicken Sie auf **F&A beenden**.
 
-Ihr **Campus Management**-Dashboard sollte mit drei visuellen Elementen angezeigt werden. Möglicherweise müssen Sie nach unten scrollen, um das neue Visuelle Q&A-Element anzuzeigen.
+Your <bpt id="p1">**</bpt>Campus Management<ept id="p1">**</ept> dashboard should be displayed with three visuals on it. You may have to scroll down to see the new Q&amp;A visual.
 
 Ihr Dashboard sollte ungefähr wie folgt aussehen:
 

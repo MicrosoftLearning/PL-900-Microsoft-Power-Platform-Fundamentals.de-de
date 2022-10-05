@@ -2,24 +2,19 @@
 lab:
   title: 'Lab 0: Lab-Umgebung überprüfen'
   module: 'Module 0: Course introduction'
-ms.openlocfilehash: d25543d93be7e40749c8fee3a01c35b3a8f2947b
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154394"
 ---
+
 # <a name="lab-0-validate-lab-environment"></a>Lab 0: Lab-Umgebung überprüfen
 
 ## <a name="scenario"></a>Szenario
 
-Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem Campus. Campusbesucher werden derzeit auf Papier erfasst. Die Informationen werden nicht konsistent erfasst und es gibt keine Möglichkeit, Daten über die Besuche auf dem gesamten Campus zu sammeln und zu analysieren.
+Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
 
 Die Campusverwaltung möchte ihr Besucherregistrierungssystem modernisieren, wobei der Zugang zu den Gebäuden von Sicherheitspersonal kontrolliert werden soll und alle Besuche von den entsprechenden Gastgebern zuvor registriert und aufgezeichnet werden müssen.
 
 Während dieses Kurses erstellen Sie Anwendungen und führen eine Automatisierung durch, damit das Verwaltungs- und Sicherheitspersonal des Bellows College den Zugang zu den Gebäuden auf dem Campus verwalten und kontrollieren kann.
 
-In diesem Modul-0-Lab werden Sie einen Power Platform-Testversion erhalten und auf das Power Platform Admin Center zugreifen. Im Admin Center erstellen Sie dann Ihre **Übungsumgebung**, in der Sie den größten Teil Ihrer Lab-Arbeiten erledigen werden.
+In this Module 0 lab, you will acquire a Power Platform trial and access the Power Platform admin center. In the admin center, you will then create a <bpt id="p1">**</bpt>Practice<ept id="p1">**</ept> environment that you will perform the majority of your lab work in.
 
 ## <a name="exercise-1--setup"></a>Übung 1 – Einrichtung
 
@@ -31,7 +26,7 @@ In diesem Modul-0-Lab werden Sie einen Power Platform-Testversion erhalten und a
 
 1. Geben Sie unter **Legen Sie los** die E-Mail-Adresse aus Ihren Microsoft 365-Anmeldeinformationen in das Textfeld **Geben Sie Ihre geschäftliche E-Mail-Adresse ein** ein, und klicken Sie auf **Weiter**.
 
-1. Eine Meldung bestätigt, dass Sie über ein Microsoft-Konto verfügen. Wählen Sie **Anmelden**.
+1. If you see a prompt that you have an existing account with Microsoft. Select <bpt id="p1">**</bpt>Sign in<ept id="p1">**</ept>.
 
 1. Geben Sie das Kennwort ein, dass Sie vom autorisierten Lab-Hoster erhalten haben, und melden Sie sich an.
 
@@ -67,4 +62,4 @@ In diesem Modul-0-Lab werden Sie einen Power Platform-Testversion erhalten und a
 
 1. Ihre **Übungsumgebung** sollte nun in der Liste der Umgebungen angezeigt werden.
 
-> Ihre Umgebung kann einige Minuten zur Bereitstellung benötigen. Aktualisieren Sie die Seite bei Bedarf.
+> Your environment may take a few minutes to provision. Refresh the page if needed.
