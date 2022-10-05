@@ -8,9 +8,9 @@ lab:
 
 ## <a name="scenario"></a>Szenario
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
+Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem Campus. Campusbesuche werden derzeit in Papierzeitschriften aufgezeichnet. Die Informationen werden nicht konsistent erfasst und es gibt keine Möglichkeit, Daten über die Besuche auf dem gesamten Campus zu sammeln und zu analysieren.
 
-Currently, campus administration is leveraging an Excel spreadsheet to track visitor registration. They would like to modernize their visitor registration system where access to the buildings is controlled by security personnel and all visits are required to be pre-registered and recorded by their hosts.
+Derzeit nutzt die Campusverwaltung eine Excel-Kalkulationstabelle, um die Besucherregistrierung nachzuverfolgen. Sie möchte ihr Besucherregistrierungssystem modernisieren, wobei der Zugang zu den Gebäuden von Sicherheitspersonal kontrolliert werden soll und alle Besuche von den entsprechenden Gastgebern zuvor registriert und aufgezeichnet werden müssen.
 
 Während dieses Kurses erstellen Sie Anwendungen und führen eine Automatisierung durch, damit das Verwaltungs- und Sicherheitspersonal des Bellows College den Zugang zu den Gebäuden auf dem Campus verwalten und kontrollieren kann.
 
@@ -37,11 +37,11 @@ Wir werden uns beim Entwerfen der App an nachstehende Gliederung halten:
 
 ### <a name="task-1-create-the-visits-app"></a>Aufgabe \#1: Erstellen der „Visits“-App
 
-1.  Navigate to <ph id="ph1">&lt;https://make.powerapps.com&gt;</ph>. You may need to reauthenticate - click <bpt id="p1">**</bpt>Sign in<ept id="p1">**</ept> and follow instructions if needed.
+1.  Navigieren Sie zu <https://make.powerapps.com>. Möglicherweise müssen Sie sich erneut authentifizieren. Klicken Sie dazu auf **Anmelden**, und folgen Sie den Anweisungen (falls erforderlich).
 
 2.  Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung**sumgebung aus, falls diese noch nicht ausgewählt ist.
 
-3.  If necessary, click the <bpt id="p1">**</bpt>Home<ept id="p1">**</ept> icon on the left side of the screen. Under the <bpt id="p1">**</bpt>Start from<ept id="p1">**</ept> section, select <bpt id="p2">**</bpt>Dataverse<ept id="p2">**</ept>.
+3.  Klicken Sie, falls erforderlich, auf das **Startseitensymbol** auf der linken Seite des Bildschirms. Wählen Sie im Abschnitt **Beginnen mit** die Option **Dataverse** aus.
 
 4.  Wählen Sie Ihre Dataverse-Verbindung aus.
 
@@ -60,17 +60,17 @@ Wir werden uns beim Entwerfen der App an nachstehende Gliederung halten:
 
 ![Aus „Besuch“-Daten erstellte Canvas-App.](media/2-canvas-app-from-data.png)
 
-9. Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem Campus.
+9. Wählen Sie im App-Designer auf der Befehlsleiste die Schaltfläche **Vorschau der App** (Symbol „Wiedergeben“) aus. *(Sie können auch eine Vorschau der App anzeigen, indem Sie F5 auf Ihrer Tastatur drücken.)* Sehen Sie sich an, wie die App im Auslieferungszustand aussieht.
 
 10. Schließen Sie die App-Vorschau, indem Sie rechts oben auf dem Bildschirm das **X** auswählen.
 
-Campusbesuche werden derzeit in Papierzeitschriften aufgezeichnet.
+Glückwunsch, Sie haben erfolgreich eine Power App aus einer Dataverse-Tabelle erstellt. Der nächste Schritt im Prozess besteht darin, die App an das Branding Ihres Colleges anzupassen. Die nächste Reihe von Schritten führt Sie durch die Bereitstellung zusätzlicher Anpassungen an der App.
 
 ### <a name="task-2-modify-and-theme-the-newly-created-app"></a>Aufgabe \#2: Ändern der neu erstellten App, inklusive Design
 
 In dieser Aufgabe passen Sie den Kopfzeilentext für jeden der drei Bildschirme Ihrer App an (Durchsuchen, Details und Bearbeiten) und ändern das App-Design.
 
-1.  Die Informationen werden nicht konsistent erfasst und es gibt keine Möglichkeit, Daten über die Besuche auf dem gesamten Campus zu sammeln und zu analysieren.
+1.  Sie befinden sich auf dem Bildschirm „Durchsuchen“. Wählen Sie die Bezeichnung **Besuche** auf dem Bildschirm aus.
 
 1.  Aktualisieren Sie auf der rechten Seite des Bildschirms unter der Registerkarte „Eigenschaften“ die **Text**-Steuerelementeigenschaft zu **„Bellows College Visits“** (Bellows College-Besuche).
 
@@ -102,18 +102,18 @@ In dieser Aufgabe passen Sie den Kopfzeilentext für jeden der drei Bildschirme 
 
 In dieser Aufgabe testen Sie Ihre neue App.
 
-1.  Wählen Sie bei im App-Designer geöffneter Anwendung **Datei** aus, aktualisieren Sie den Namen Ihrer App auf **Besuche-App** (Visits-App), und wählen Sie **Speichern** aus.
+1.  Wenn Ihre Anwendung im App-Designer geöffnet ist, wählen Sie " **Einstellungen**" aus, aktualisieren Sie im Abschnitt **"Allgemein** " den Namen Ihrer App auf " **App besuchen**", klicken Sie auf " **X** ", um den Einstellungsbildschirm zu schließen und dann " **Speichern"** auszuwählen.
 
 2.  Wählen Sie den Pfeil **Zurück** aus, um zur App zurückzukehren.
 
 3.  Wählen Sie links im Navigationsbereich die Option **BrowseScreen1** aus.
 
-4.  In the app designer, select the <bpt id="p1">**</bpt>preview the app<ept id="p1">**</ept> button (Play icon) on the command bar. <bpt id="p1">*</bpt>(You can also preview the app by pressing F5 on your keyboard.)<ept id="p1">*</ept>
+4.  Wählen Sie im App-Designer auf der Befehlsleiste die Schaltfläche **Vorschau der App** (Symbol „Wiedergeben“) aus. *(Sie können auch eine Vorschau der App anzeigen, indem Sie F5 auf Ihrer Tastatur drücken.)*
 
 4.  Nachdem die App geöffnet wurde, geben Sie in das Feld **Suchelemente** den Text **Maria** ein.
      *(Beachten Sie, wie die Elemente im Katalog gefiltert werden, basierend auf der Eingabe im Suchfeld.)*
 
-5.  Derzeit nutzt die Campusverwaltung eine Excel-Kalkulationstabelle, um die Besucherregistrierung nachzuverfolgen.
+5.  Wenn der Datensatz **Contoso Suites** für **Maria Campbell** angezeigt wird, klicken Sie auf die Zeile, um die Details für diesen Besuch zu öffnen. (**Hinweis**: *Wenn mehrere Contoso Suites-Datensätze für Maria Campbell angezeigt werden, wählen Sie einen beliebigen aus.* )
 
 6.  Um den Datensatz zu bearbeiten, wählen Sie das **Bleistiftsymbol** oben rechts in der App aus.
 
@@ -121,7 +121,7 @@ In dieser Aufgabe testen Sie Ihre neue App.
 
 8.  Klicken Sie rechts oben auf dem Bildschirm auf das **X**, um zum Canvas-App-Editor zurückzukehren.
 
-Sie möchte ihr Besucherregistrierungssystem modernisieren, wobei der Zugang zu den Gebäuden von Sicherheitspersonal kontrolliert werden soll und alle Besuche von den entsprechenden Gastgebern zuvor registriert und aufgezeichnet werden müssen.
+Herzlichen Glückwunsch! Sie haben Ihre erste Canvas-App erstellt und konfiguriert.
 
 ## <a name="challenges"></a>Herausforderungen
 
