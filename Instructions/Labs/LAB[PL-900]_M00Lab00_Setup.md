@@ -2,13 +2,8 @@
 lab:
   title: 'Lab 0: Lab-Umgebung überprüfen'
   module: 'Module 0: Course introduction'
-ms.openlocfilehash: d25543d93be7e40749c8fee3a01c35b3a8f2947b
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154394"
 ---
+
 # <a name="lab-0-validate-lab-environment"></a>Lab 0: Lab-Umgebung überprüfen
 
 ## <a name="scenario"></a>Szenario
@@ -39,7 +34,7 @@ In diesem Modul-0-Lab werden Sie einen Power Platform-Testversion erhalten und a
 
 1. Ändern Sie das Land nicht.
 
-1. Geben Sie als **Telefonnummer** 01234567890 ein.
+1. Geben Sie für **Telefonnummer** 0123456789 ein.
 
 1. Geben Sie Ihre Kontoinformationen ein, und wählen Sie **Erste Schritte** aus, um sich für Ihre Microsoft Power Platform-Testversion zu registrieren.
 

@@ -1,14 +1,9 @@
 ---
 lab:
-  title: 'Lab 2: Eine Canvas-App erstellen'
+  title: "Lab\_2: Eine Canvas-App erstellen"
   module: 'Module 3: Get started with Power Apps'
-ms.openlocfilehash: 9a9a447ac07176e7f7ed3471c105b2d06fa60c97
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154430"
 ---
+
 # <a name="lab-2-how-to-build-a-canvas-app"></a>Lab 2: Eine Canvas-App erstellen
 
 ## <a name="scenario"></a>Szenario
@@ -44,7 +39,7 @@ Wir werden uns beim Entwerfen der App an nachstehende Gliederung halten:
 
 1.  Navigieren Sie zu <https://make.powerapps.com>. Möglicherweise müssen Sie sich erneut authentifizieren. Klicken Sie dazu auf **Anmelden**, und folgen Sie den Anweisungen (falls erforderlich).
 
-2.  Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung** sumgebung aus, falls diese noch nicht ausgewählt ist.
+2.  Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung**sumgebung aus, falls diese noch nicht ausgewählt ist.
 
 3.  Klicken Sie, falls erforderlich, auf das **Startseitensymbol** auf der linken Seite des Bildschirms. Wählen Sie im Abschnitt **Beginnen mit** die Option **Dataverse** aus.
 
@@ -107,7 +102,7 @@ In dieser Aufgabe passen Sie den Kopfzeilentext für jeden der drei Bildschirme 
 
 In dieser Aufgabe testen Sie Ihre neue App.
 
-1.  Wählen Sie bei im App-Designer geöffneter Anwendung **Datei** aus, aktualisieren Sie den Namen Ihrer App auf **Besuche-App** (Visits-App), und wählen Sie **Speichern** aus.
+1.  Wenn Ihre Anwendung im App-Designer geöffnet ist, wählen Sie " **Einstellungen**" aus, aktualisieren Sie im Abschnitt **"Allgemein** " den Namen Ihrer App auf " **App besuchen**", klicken Sie auf " **X** ", um den Einstellungsbildschirm zu schließen und dann " **Speichern"** auszuwählen.
 
 2.  Wählen Sie den Pfeil **Zurück** aus, um zur App zurückzukehren.
 

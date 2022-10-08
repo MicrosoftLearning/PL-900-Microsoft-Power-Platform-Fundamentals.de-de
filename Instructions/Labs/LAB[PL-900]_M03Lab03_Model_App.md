@@ -1,14 +1,9 @@
 ---
 lab:
-  title: 'Lab 3: So erstellen Sie eine modellgesteuerte App'
+  title: "Lab\_3: So erstellen Sie eine modellgesteuerte App"
   module: 'Module 3: Get started with Power Apps'
-ms.openlocfilehash: a5176245ed8ec696049d78e1022e82aa8236057f
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154418"
 ---
+
 # <a name="lab-3-how-to-build-a-model-driven-app"></a>Lab 3: So erstellen Sie eine modellgesteuerte App
 
 ## <a name="scenario"></a>Szenario
@@ -58,7 +53,7 @@ Vor dem Beginn zu beachtende Dinge
 
 1. Melden Sie sich bei [https://make.powerapps.com](https://make.powerapps.com/) an (falls Sie nicht bereits angemeldet sind).
 
-2. Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung** sumgebung aus, falls diese noch nicht ausgewählt ist.
+2. Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung**sumgebung aus, falls diese noch nicht ausgewählt ist.
 
 3. Erweitern Sie im linken Navigationsbereich **Dataverse**, wählen Sie **Tabellen** aus, und klicken Sie auf Ihre Tabelle **Besuch**, um sie zu öffnen.
 
@@ -146,9 +141,9 @@ WICHTIG: Stellen Sie sicher, dass Sie die Ansicht „Aktive Besuche“ nicht sch
 
 **Hinweis:** Da wir nicht mehr nach dem Ansichtsstatus filtern, erhalten wir alle heutigen Besuche, einschließlich der abgeschlossenen. Diese Felder helfen dabei, zwischen abgeschlossenen und laufenden Besuchen zu unterscheiden.
 
-1. Klicken Sie auf **Speichern**.
+9. Klicken Sie auf **Speichern**.
 
-2. Klicken Sie auf **Veröffentlichen** und warten Sie, bis die Veröffentlichung abgeschlossen ist.
+10. Klicken Sie auf **Veröffentlichen** und warten Sie, bis die Veröffentlichung abgeschlossen ist.
 
 ## <a name="exercise-2-create-model-driven-app"></a>Übung 2: Eine modellgesteuerte App erstellen
 
@@ -160,7 +155,7 @@ Zur Vereinfachung und Kürzung behandeln wir einige der „Besuch“-Spalten in 
 
 1. Melden Sie sich bei [https://make.powerapps.com](https://make.powerapps.com/) an (falls Sie nicht bereits angemeldet sind).
 
-2. Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung** sumgebung aus, falls diese noch nicht ausgewählt ist.
+2. Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung**sumgebung aus, falls diese noch nicht ausgewählt ist.
 
 3.  Klicken Sie, falls erforderlich, auf das **Startseitensymbol** auf der linken Seite des Bildschirms.
 
@@ -186,7 +181,7 @@ Zur Vereinfachung und Kürzung behandeln wir einige der „Besuch“-Spalten in 
 
 8. Wählen Sie mithilfe der Navigationssymbole auf der linken Seite des Bildschirms **Navigation** aus.
 
-9. Wählen Sie im Navigationsbereich unterhalb der Bezeichnung „Navigationsleiste“ den Text **Gruppe 1** aus.
+9. Wählen Sie im Navigationsbereich unterhalb der Bezeichnung „Navigationsleiste“ den Text **Gruppe 1** aus. Möglicherweise müssen Sie das Menü links erweitern.
 
 10. Ändern Sie auf der rechten Seite des Bildschirms im Abschnitt **Anzeigeoptionen** die Eigenschaft **Titel** in **Sicherheit**.
 
@@ -220,7 +215,7 @@ Nachdem wir nun Ihrer modellgesteuerten Anwendung alle erforderlichen Komponente
 
 13. Wählen Sie **Speichern** aus.
 
-14. Nachdem der **Speicher** vorgang abgeschlossen wurde, wählen Sie die Schaltfläche **Veröffentlichen** aus, um Ihre Änderungen zu veröffentlichen.
+14. Nachdem der **Speicher**vorgang abgeschlossen wurde, wählen Sie die Schaltfläche **Veröffentlichen** aus, um Ihre Änderungen zu veröffentlichen.
 
 ### <a name="task-3-test-application"></a>Aufgabe 3: Testanwendung
 
@@ -260,7 +255,7 @@ Nachdem wir nun Ihrer modellgesteuerten Anwendung alle erforderlichen Komponente
 
 - Klicken Sie auf **Speichern und schließen**. Der Besuch wird erstellt und sollte in der Ansicht für aktive Besuche zu sehen sein.
 
-- Ändern Sie die Ansicht in **Heutige Besuche**. Sie sollten den neuen Besuch nicht mehr in der Ansicht sehen, da er für morgen geplant ist.
+- Ändern Sie die Ansicht auf **"Heutige Besuche** ", indem Sie die Dropdownliste neben **aktiven Besuchen** verwenden. Sie sollten den neuen Besuch nicht mehr in der Ansicht sehen, da er für morgen geplant ist.
 
 4. Sie können weitere Testdatensätze hinzufügen.
 

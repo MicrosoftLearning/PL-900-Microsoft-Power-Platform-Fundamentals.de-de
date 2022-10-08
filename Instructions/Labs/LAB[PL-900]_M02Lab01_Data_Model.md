@@ -2,24 +2,19 @@
 lab:
   title: 'Lab 1: Datenmodellierung'
   module: 'Module 2: Introduction to Microsoft Dataverse'
-ms.openlocfilehash: 93bccc216d07bc3f609755887c2c57fcfdaa8e4d
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154406"
 ---
+
 # <a name="lab-1-data-modeling"></a>Lab 1: Datenmodellierung
 
 ## <a name="scenario"></a>Szenario
 
-Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem Campus. Campusbesuche werden derzeit in Papierzeitschriften aufgezeichnet. Die Informationen werden nicht konsistent erfasst und es gibt keine Möglichkeit, Daten über die Besuche auf dem gesamten Campus zu sammeln und zu analysieren.
+Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
 
 Die Campusverwaltung möchte ihr Besucherregistrierungssystem modernisieren, wobei der Zugang zu den Gebäuden von Sicherheitspersonal kontrolliert werden soll und alle Besuche von den entsprechenden Gastgebern zuvor registriert und aufgezeichnet werden müssen.
 
 Während dieses Kurses erstellen Sie Anwendungen und führen eine Automatisierung durch, damit das Verwaltungs- und Sicherheitspersonal des Bellows College den Zugang zu den Gebäuden auf dem Campus verwalten und kontrollieren kann.
 
-In diesem Lab greifen Sie auf Ihre Umgebung zu, erstellen eine Microsoft Dataverse-Datenbank und eine Lösung zum Nachverfolgen Ihrer Änderungen. Sie erstellen auch ein Datenmodell, um die folgenden Anforderungen zu unterstützen:
+In this lab you will access your environment, create a Microsoft Dataverse database, and create a solution to track your changes. You will also create a data model to support the following requirements:
 
 - R1: Nachverfolgen von Informationen zu geplanten Campusbesuchen
 
@@ -33,7 +28,7 @@ Zum Abschluss importieren Sie Beispieldaten in Microsoft Dataverse.
 
 Um Ihre Lernumgebungen vorzubereiten, werden Sie:
 
-- Beschreibungen zu den Metadaten (Tabellen und Beziehungen) finden Sie im [Datenmodelldokument](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png). Sie können die STRG-Taste gedrückt halten oder mit der rechten Maustaste auf den Link klicken, um das Datenmodelldokument in einem neuen Fenster zu öffnen.
+- Refer to the <bpt id="p1">[</bpt>data model document<ept id="p1">](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png)</ept> for the metadata description (tables and relationships). You can hold CTRL+click or right click the link to open the data model document in a new window.
 - Erstellen der Tabelle „Visit“
 - Besuchsdaten mithilfe eines Excel-Arbeitsblatts importieren
 
@@ -59,7 +54,7 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
 
 1. Melden Sie sich bei [https://make.powerapps.com](https://make.powerapps.com/) an (falls Sie nicht bereits angemeldet sind).
 
-1. Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung** sumgebung aus, falls diese noch nicht ausgewählt ist.
+1. Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung**sumgebung aus, falls diese noch nicht ausgewählt ist.
 
 1. Erweitern Sie mithilfe der Navigation auf der linken Seite **Dataverse**, und wählen Sie **Tabellen** aus.
 
@@ -171,11 +166,11 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
 
 In dieser Aufgabe importieren Sie die „Visit“-Daten aus einer Excel-Datei.
 
-1. Die Datei **Visits.xlsx** sollte auf Ihrem Desktop gespeichert sein. Laden Sie [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) herunter, wenn dies nicht der Fall ist.
+1. You should have the <bpt id="p1">**</bpt>Visits.xlsx<ept id="p1">**</ept> file stored on your Desktop. Download <bpt id="p1">[</bpt>Visits.xlsx<ept id="p1">](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx)</ept> if you do not.
 
 2. Wenn Sie noch nicht angemeldet sind, melden Sie sich bei [https://make.powerapps.com](https://make.powerapps.com/) an.
 
-3. Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung** sumgebung aus, falls diese noch nicht ausgewählt ist.
+3. Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung**sumgebung aus, falls diese noch nicht ausgewählt ist.
 
 4. Erweitern Sie mithilfe der Navigation auf der linken Seite **Dataverse**, und wählen Sie **Tabellen** aus.
 
@@ -185,7 +180,7 @@ In dieser Aufgabe importieren Sie die „Visit“-Daten aus einer Excel-Datei.
 
 7. Wählen Sie in dem angezeigten Menü **Hochladen** aus.
 
-8. Suchen Sie die zuvor heruntergeladene Datei **Visits.xlsx**, und wählen Sie sie aus. (Beachten Sie, dass der Upload ein bis zwei Minuten dauern kann. Machen Sie sich keine Sorgen, wenn Sie eine Meldung erhalten, dass Zuordnungsfehler vorhanden sind. Diese beheben wir als Nächstes.)
+8. Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem Campus.
 
 9. Klicken Sie auf **Spalten zuordnen** (Hinweis: Vielleicht müssen Sie nach rechts scrollen, um die Option „Spalten zuordnen“ anzuzeigen).
 
@@ -208,7 +203,7 @@ In dieser Aufgabe importieren Sie die „Visit“-Daten aus einer Excel-Datei.
 
 14. Klicken Sie in der oberen rechten Ecke auf **Importieren**, um den Datenimport abzuschließen.
 
-**Hinweis:** Es kann mehrere Minuten dauern, bis Ihre Daten in Ihre Tabelle importiert werden. Machen Sie sich keine Sorgen, wenn ein paar Fehler angezeigt werden. Das ist normal und hat keine Auswirkungen auf den Rest des Kurses.
+Campusbesuche werden derzeit in Papierzeitschriften aufgezeichnet.
 
 15. Klicken Sie auf **X**, um das Dialogfeld zum Importieren von Daten zu schließen.
 

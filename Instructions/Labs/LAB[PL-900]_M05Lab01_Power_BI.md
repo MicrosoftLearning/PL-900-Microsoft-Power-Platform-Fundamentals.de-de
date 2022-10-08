@@ -1,14 +1,9 @@
 ---
 lab:
-  title: 'Lab 5: Erstellen eines einfachen Dashboards'
+  title: "Lab\_5: Erstellen eines einfachen Dashboards"
   module: 'Module 5: Get Started with Power BI'
-ms.openlocfilehash: 2fb53fa9130cae4a711b11f341ea663f019c94c8
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154442"
 ---
+
 ## <a name="lab-5-how-to-build-a-simple-dashboard"></a>Lab 5: Erstellen eines einfachen Dashboards
 
 ## <a name="scenario"></a>Szenario
@@ -67,11 +62,11 @@ Damit haben den Power BI-Dienst für Ihre Labs eingerichtet.
 
 ### <a name="task-2-create-chart-and-time-visualizations"></a>Aufgabe \#2: Diagramm- und Zeitvisualisierungen erstellen
 
-1.  Klicken Sie auf das **Kreisdiagramm** symbol im Bereich **Visualisierungen**, um ein Diagramm einzufügen.
+1.  Klicken Sie auf das **Kreisdiagramm**symbol im Bereich **Visualisierungen**, um ein Diagramm einzufügen.
 
-2.  Klicken Sie auf den Dropdownpfeil neben **bc_building** im Bereich „Felder“. Ziehen Sie das Feld **Gebäude** in das Zielfeld **Legende**.
+2.  Drücken Sie den Dropdownpfeil neben **bc_Visit** im Bereich „Felder“. Ziehen Sie das Feld **Gebäude** in das Zielfeld **Legende**.
 
-3.  Drücken Sie den Dropdownpfeil neben **bc_Visit** im Bereich „Felder“. Ziehen Sie das Feld **Besuch**, und legen Sie es im Feld **Werte** ab.
+3.  Ziehen Sie das Feld **Besuch**, und legen Sie es im Feld **Werte** ab.
 
 4.  Ändern Sie die Größe des Kreisdiagramms mithilfe der Ziehpunkte an den Ecken, sodass alle Diagrammkomponenten sichtbar sind.
 
