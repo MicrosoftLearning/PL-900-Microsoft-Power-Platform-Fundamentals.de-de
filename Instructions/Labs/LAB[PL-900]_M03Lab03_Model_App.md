@@ -20,7 +20,7 @@ Weiterführende Schritte des Lab
 
 Im Rahmen der Erstellung der modellgesteuerten App führen Sie Folgendes aus:
 
-- Das Erstellen einer neuen modellgesteuerten App mit dem Namen „Campus Management“
+- Das Erstellen einer neuen modellgesteuerten App mit dem Namen „Bellows Campus Management“
 
 - Bearbeiten der App-Navigation, um auf die erforderlichen Tabellen zu verweisen
 
@@ -65,7 +65,7 @@ Wenn die Tabelle „Besuch“ nicht angezeigt wird, stellen Sie sicher, dass Sie
 
 5. Wählen Sie auf der rechten Seite des Bildschirms im Eigenschaftenpanel das Feld **Anzeigename** aus, und ändern Sie es in **Hauptinformation**.
 
-6. Wählen Sie über das Menü am oberen Bildschirmrand **+ Formularfeld** aus, und fügen Sie unter dem Feld **Besitzer** die folgenden Felder hinzu, indem Sie Spalten in das Formular ziehen oder einfach auf Spaltennamen klicken:
+6. Wählen Sie die **Tabellenspalten** aus dem linken Navigationsbereich aus, und fügen Sie die folgenden Felder unter dem Feld **Owner** (Besitzer) hinzu, indem Sie Spalten in das Formula ziehen oder einfach auf die Spaltennamen klicken:
 
     1. **Besucher**
 
@@ -255,7 +255,7 @@ Nachdem wir nun Ihrer modellgesteuerten Anwendung alle erforderlichen Komponente
 
 - Klicken Sie auf **Speichern und schließen**. Der Besuch wird erstellt und sollte in der Ansicht für aktive Besuche zu sehen sein.
 
-- Ändern Sie die Ansicht auf **"Heutige Besuche** ", indem Sie die Dropdownliste neben **aktiven Besuchen** verwenden. Sie sollten den neuen Besuch nicht mehr in der Ansicht sehen, da er für morgen geplant ist.
+- Ändern Sie die Ansicht **Heutige Besuche**, indem Sie die Dropdownliste neben **Aktive Besuche** verwenden. Sie sollten den neuen Besuch nicht mehr in der Ansicht sehen, da er für morgen geplant ist.
 
 4. Sie können weitere Testdatensätze hinzufügen.
 
