@@ -162,9 +162,7 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
 
 **Ziel**: In dieser Übung importieren Sie Beispieldaten in die Dataverse-Datenbank.
 
-### <a name="task-1-import-the-visitsxlsx-file"></a>Aufgabe \#1: Importieren der Datei „Visits.xlsx“
-
-In dieser Aufgabe importieren Sie die „Visit“-Daten aus einer Excel-Datei.
+### <a name="task-11-load-excel-file-to-onedrive"></a>Aufgabe 1.1: Laden einer Excel-Datei in OneDrive
 
 1. Die Datei **Visits.xlsx** sollte auf Ihrem Desktop gespeichert sein. Laden Sie [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) herunter, wenn dies nicht der Fall ist.
 
@@ -172,42 +170,64 @@ In dieser Aufgabe importieren Sie die „Visit“-Daten aus einer Excel-Datei.
 
 3. Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung**sumgebung aus, falls diese noch nicht ausgewählt ist.
 
-4. Erweitern Sie mithilfe der Navigation auf der linken Seite **Dataverse**, und wählen Sie **Tabellen** aus.
+4. Klicken Sie in der oberen linken Ecke auf das Waffel-Menü, um die Anwendungen zu ändern, und wählen Sie **OneDrive** aus. (Es kann einen Moment dauern, bis OneDrive eingerichtet ist. Klicken Sie auf „Ihr OneDrive ist fertig.“, wenn die Meldung auf dem Bildschirm angezeigt wird.)
 
-5. Suchen und öffnen Sie die Tabelle **Visit**, die Sie in der vorherigen Übung erstellt haben.
+5. Klicken Sie im oberen Menü auf **Hochladen**, und wählen Sie **Dateien** aus.
 
-6. Wählen Sie oben über das Menü den Dropdownpfeil neben **Importieren** die Option **Daten aus Excel importieren** aus.
+6. Suchen Sie die Datei **Visits.xlsx**, und wählen Sie sie aus. Klicken Sie dann auf **Öffnen**.
 
-7. Wählen Sie in dem angezeigten Menü **Hochladen** aus.
+ **Hinweis:** Diese Datei befindet sich im Ordner **Alle Dateien** auf Ihrem Computer.
+ 
+### <a name="task-12-create-a-dataflow"></a>Aufgabe 1.2: Erstellen eines Dataflows
 
-8. Suchen Sie die zuvor heruntergeladene Datei **Visits.xlsx**, und wählen Sie sie aus. (Beachten Sie, dass der Upload ein bis zwei Minuten dauern kann. Machen Sie sich keine Sorgen, wenn Sie eine Meldung erhalten, dass Zuordnungsfehler vorhanden sind. Diese beheben wir als Nächstes.)
+1. Wenn Sie noch nicht angemeldet sind, melden Sie sich bei [https://make.powerapps.com](https://make.powerapps.com/) an.
 
-9. Klicken Sie auf **Spalten zuordnen** (Hinweis: Vielleicht müssen Sie nach rechts scrollen, um die Option „Spalten zuordnen“ anzuzeigen).
+2. Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung**sumgebung aus, falls diese noch nicht ausgewählt ist.
 
-10. Ordnen Sie die Spalten wie unten beschrieben zu:
+3. Erweitern Sie mithilfe der Navigation auf der linken Seite **Dataverse**, und wählen Sie **Tabellen** aus.
 
-| Visit-Spalten| Quellwerte |
+4. Suchen und öffnen Sie die Tabelle **Visit**, die Sie in der vorherigen Übung erstellt haben.
+
+5. Wählen Sie oben über das Menü den Dropdownpfeil neben **Importieren** die Option **Daten importieren** aus.
+
+6. Wählen Sie im Dialogfeld **Datenquelle auswählen** die Option **Excel-Arbeitsmappe** aus.
+
+7. Wählen Sie die Option **Mit Datei verknüpfen** aus. Klicken Sie auf **OneDrive durchsuchen**. Melden Sie sich bei der entsprechenden Aufforderung mit Ihren Microsoft 365-Anmeldeinformationen an.
+
+8. Wählen Sie die **Visits.xlsx**-Datei aus, die in OneDrive hochgeladen wurde, und klicken Sie auf **Auswählen**.
+
+9. Klicken Sie auf **Weiter**.
+
+10. Aktivieren Sie unter **Daten auswählen** das Kontrollkästchen neben der Excel-Arbeitsmappe **Visits**.
+
+11. Klicken Sie auf **Weiter**. Navigieren Sie nicht von dieser Seite weg.
+
+12. Klicken Sie auf **Weiter**.
+
+13. Wählen Sie im Abschnitt **Tabellen zuordnen** unter **Einstellungen laden** die Option **In vorhandene Tabelle laden** aus.
+
+14. Wählen Sie im Dropdownmenü **Zieltabelle** den Tabellennamen aus, der mit **crXXX_visit** beginnt (wobei XXX eine zufällige Gruppe von Buchstaben und Zahlen ist).
+
+15. Auf der Seite **Column mapping**: Ordnen Sie die Spalten den entsprechenden Zielspalten zu.
+
+| Zielspalten| Quellwerte |
 | - | - |
-| Tatsächliches Ende| tatsächliches Ende |
-| Tatsächlicher Start| tatsächlicher Start |
-| Code| code |
-| Name| name |
-| Geplantes Ende| geplantes Ende |
-| Geplanter Start| geplanter Start |
+| crxxx_ActualEnd| tatsächliches Ende |
+| crxxx_ActualStart| tatsächlicher Start |
+| crxxx_Code| code |
+| crxxx_Name| name |
+| crxxx_ScheduledEnd| geplantes Ende |
+| crxxx_ScheduledStart| geplanter Start |
 
-11. Lassen Sie die restlichen Felder auf **Nicht festgelegt**.
+16. Klicken Sie auf **Weiter**.
 
-12. Klicken Sie in der oberen rechten Ecke des Bildschirms auf **Änderungen speichern**.
+17. Wählen Sie **Manuell aktualisieren** aus.
 
-13. Überprüfen Sie auf dem Bildschirm **Daten importieren**, ob der Zuordnungsstatus besagt, dass die Zuordnung erfolgreich war („Die Zuordnung war erfolgreich“).
-
-14. Klicken Sie in der oberen rechten Ecke auf **Importieren**, um den Datenimport abzuschließen.
+18. Klicken Sie auf **Veröffentlichen**.
 
 **Hinweis:** Es kann mehrere Minuten dauern, bis Ihre Daten in Ihre Tabelle importiert werden. Machen Sie sich keine Sorgen, wenn ein paar Fehler angezeigt werden. Das ist normal und hat keine Auswirkungen auf den Rest des Kurses.
 
-15. Klicken Sie auf **X**, um das Dialogfeld zum Importieren von Daten zu schließen.
-
-### <a name="task-2-verify-data-import"></a>Aufgabe \#2: Datenimport überprüfen
+### <a name="task-3-verify-data-import"></a>Aufgabe 3: Datenimport überprüfen
 
 1. Nachdem Ihre Daten importiert wurden, verwenden Sie die Navigation auf der linken Seite des Bildschirms, um die Tabelle **Besuch** erneut auszuwählen.
 
