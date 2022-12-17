@@ -102,7 +102,7 @@ In dieser Aufgabe passen Sie den Kopfzeilentext für jeden der drei Bildschirme 
 
 In dieser Aufgabe testen Sie Ihre neue App.
 
-1.  Wenn Ihre Anwendung im App-Designer geöffnet ist, wählen Sie " **Einstellungen**" aus, aktualisieren Sie im Abschnitt **"Allgemein** " den Namen Ihrer App auf " **App besuchen**", klicken Sie auf " **X** ", um den Einstellungsbildschirm zu schließen und dann " **Speichern"** auszuwählen.
+1.  Wenn Ihre Anwendung im App-Designer geöffnet ist, wählen Sie **Einstellungen** aus, aktualisieren Sie im Abschnitt **Allgemein** den Namen Ihrer App in **Besuchs-App**, klicken Sie auf das **X**, um den Einstellungsbildschirm zu schließen, und dann auf **Speichern**.
 
 2.  Wählen Sie den Pfeil **Zurück** aus, um zur App zurückzukehren.
 

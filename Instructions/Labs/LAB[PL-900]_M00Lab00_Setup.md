@@ -34,7 +34,7 @@ In diesem Modul-0-Lab werden Sie einen Power Platform-Testversion erhalten und a
 
 1. Ändern Sie das Land nicht.
 
-1. Geben Sie für **Telefonnummer** 0123456789 ein.
+1. Geben Sie bei **Telefonnummer** 0123456789 ein.
 
 1. Geben Sie Ihre Kontoinformationen ein, und wählen Sie **Erste Schritte** aus, um sich für Ihre Microsoft Power Platform-Testversion zu registrieren.
 
