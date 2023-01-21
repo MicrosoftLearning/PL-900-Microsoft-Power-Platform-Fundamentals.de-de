@@ -14,7 +14,7 @@ Die Campusverwaltung möchte ihr Besucherregistrierungssystem modernisieren, wob
 
 Während dieses Kurses erstellen Sie Anwendungen und führen eine Automatisierung durch, damit das Verwaltungs- und Sicherheitspersonal des Bellows College den Zugang zu den Gebäuden auf dem Campus verwalten und kontrollieren kann.
 
-In diesem Lab greifen Sie auf Ihre Umgebung zu, erstellen eine Microsoft Dataverse-Datenbank und eine Lösung zum Nachverfolgen Ihrer Änderungen. Sie erstellen auch ein Datenmodell, um die folgenden Anforderungen zu unterstützen:
+In diesem Lab greifen Sie auf Ihre Umgebung zu und erstellen eine Microsoft Dataverse-Datenbank. Sie erstellen auch ein Datenmodell, um die folgenden Anforderungen zu unterstützen:
 
 - R1: Nachverfolgen von Informationen zu geplanten Campusbesuchen
 
@@ -23,6 +23,7 @@ In diesem Lab greifen Sie auf Ihre Umgebung zu, erstellen eine Microsoft Dataver
 - R3 – Planen, Aufzeichnen und Verwalten von Besuchen
 
 Zum Abschluss importieren Sie Beispieldaten in Microsoft Dataverse.
+
 
 ## <a name="high-level-lab-steps"></a>Weiterführende Schritte des Lab
 
@@ -40,9 +41,11 @@ Um Ihre Lernumgebungen vorzubereiten, werden Sie:
 
 - Benennungskonventionen – Namen sorgfältig eingeben.
 
+
 ## <a name="exercise-1-create-new-table"></a>Übung 1: Erstellen einer neuen Tabelle
 
 **Ziel**: In dieser Übung erstellen Sie eine neue benutzerdefinierte Tabelle für Besuche.
+
 
 ### <a name="task-1-create-visit-table-and-columns"></a>Aufgabe \#1: Tabelle „Visit“ und Spalten erstellen
 
@@ -170,7 +173,7 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
 
 3. Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung**sumgebung aus, falls diese noch nicht ausgewählt ist.
 
-4. Klicken Sie in der oberen linken Ecke auf das Waffel-Menü, um die Anwendungen zu ändern, und wählen Sie **OneDrive** aus. (Es kann einen Moment dauern, bis OneDrive eingerichtet ist. Klicken Sie auf „Ihr OneDrive ist fertig.“, wenn die Meldung auf dem Bildschirm angezeigt wird.)
+4. Klicken Sie in der oberen linken Ecke auf das Waffel-Menü, um die Anwendungen zu ändern, und wählen Sie **OneDrive** aus. (Es kann einen Moment dauern, bis OneDrive eingerichtet ist. Klicken Sie auf **Ihr OneDrive ist fertig**, wenn die Meldung auf dem Bildschirm angezeigt wird.)
 
 5. Klicken Sie im oberen Menü auf **Hochladen**, und wählen Sie **Dateien** aus.
 
@@ -210,14 +213,14 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
 
 15. Auf der Seite **Column mapping**: Ordnen Sie die Spalten den entsprechenden Zielspalten zu.
 
-| Zielspalten| Quellwerte |
-| - | - |
-| crxxx_ActualEnd| tatsächliches Ende |
-| crxxx_ActualStart| tatsächlicher Start |
-| crxxx_Code| code |
-| crxxx_Name| name |
-| crxxx_ScheduledEnd| geplantes Ende |
-| crxxx_ScheduledStart| geplanter Start |
+| Zielspalten  | Quellwerte   |
+|:---------------------|:----------------|
+| crxxx_ActualEnd      | tatsächliches Ende      |
+| crxxx_ActualStart    | tatsächlicher Start    |
+| crxxx_Code           | code            |
+| crxxx_Name           | name            |
+| crxxx_ScheduledEnd   | geplantes Ende   |
+| crxxx_ScheduledStart | geplanter Start |
 
 16. Klicken Sie auf **Weiter**.
 
