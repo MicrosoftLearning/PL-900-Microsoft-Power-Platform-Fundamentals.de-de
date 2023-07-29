@@ -4,9 +4,11 @@ lab:
   module: 'Module 2: Introduction to Microsoft Dataverse'
 ---
 
-# <a name="lab-1-data-modeling"></a>Lab 1: Datenmodellierung
+# Lab 1: Datenmodellierung
 
-## <a name="scenario"></a>Szenario
+**WWL-Mandanten – Nutzungsbedingungen** Wenn Ihnen im Rahmen einer Präsenzschulung ein Mandant zugewiesen worden ist, steht dieser für Praxislabs innerhalb der Präsenzschulung zur Verfügung. Mandanten sollten nicht für Zwecke außerhalb von Praxislabs freigegeben oder verwendet werden. Der in diesem Kurs verwendete Mandant ist ein Testmandant; er kann nach Abschluss des Kurses nicht verwendet oder aufgerufen werden und ist nicht für Erweiterungen geeignet. Mandanten dürfen nicht in ein kostenpflichtiges Abonnement konvertiert werden. Die im Rahmen dieses Kurses erworbenen Mandanten verbleiben im Eigentum der Microsoft Corporation, und wir behalten uns das Recht vor, jederzeit auf Mandanten zuzugreifen und diese zurückzuziehen. 
+
+## Szenario
 
 Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem Campus. Campusbesuche werden derzeit in Papierzeitschriften aufgezeichnet. Die Informationen werden nicht konsistent erfasst und es gibt keine Möglichkeit, Daten über die Besuche auf dem gesamten Campus zu sammeln und zu analysieren.
 
@@ -14,226 +16,227 @@ Die Campusverwaltung möchte ihr Besucherregistrierungssystem modernisieren, wob
 
 Während dieses Kurses erstellen Sie Anwendungen und führen eine Automatisierung durch, damit das Verwaltungs- und Sicherheitspersonal des Bellows College den Zugang zu den Gebäuden auf dem Campus verwalten und kontrollieren kann.
 
-In diesem Lab greifen Sie auf Ihre Umgebung zu und erstellen eine Microsoft Dataverse-Datenbank. Sie erstellen auch ein Datenmodell, um die folgenden Anforderungen zu unterstützen:
+In diesem Lab erstellen Sie ein Datenmodell, um die folgenden Anforderungen zu unterstützen:
 
 - R1: Nachverfolgen von Informationen zu geplanten Campusbesuchen
 
-- R2 – Aufzeichnen der grundlegende Informationen, um die Besucher zu identifizieren und nachzuverfolgen
+- R2: Aufzeichnen der grundlegenden Informationen, um die Besucher*innen zu identifizieren und nachzuverfolgen
 
-- R3 – Planen, Aufzeichnen und Verwalten von Besuchen
+- R3: Planen, Aufzeichnen und Verwalten von Besuchen
 
 Zum Abschluss importieren Sie Beispieldaten in Microsoft Dataverse.
 
-
-## <a name="high-level-lab-steps"></a>Weiterführende Schritte des Lab
+Weiterführende Schritte des Lab
 
 Um Ihre Lernumgebungen vorzubereiten, werden Sie:
 
-- Beschreibungen zu den Metadaten (Tabellen und Beziehungen) finden Sie im [Datenmodelldokument](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png). Sie können die STRG-Taste gedrückt halten oder mit der rechten Maustaste auf den Link klicken, um das Datenmodelldokument in einem neuen Fenster zu öffnen.
-- Erstellen der Tabelle „Visit“
-- Besuchsdaten mithilfe eines Excel-Arbeitsblatts importieren
+- Beschreibungen zu den Metadaten (Tabellen und Beziehungen) finden Sie im [Datenmodelldokument](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png). Sie können die STRG-Taste gedrückt halten und mit der linken oder rechten Maustaste auf den Link klicken, um das Datenmodelldokument in einem neuen Fenster zu öffnen.
+- Tabelle „Besuch“ erstellen
+- Importieren von Besuchsdaten mithilfe eines Excel-Arbeitsblatts
 
-## <a name="prerequisites"></a>Voraussetzungen
+
+## Voraussetzungen
 
 - Beendigung von **Modul 0 Lab 0 – Lab-Umgebung überprüfen**
 
-## <a name="things-to-consider-before-you-begin"></a>Vor dem Beginn zu beachtende Dinge
+Vor dem Beginn zu beachtende Dinge
 
 - Benennungskonventionen – Namen sorgfältig eingeben.
 
-
-## <a name="exercise-1-create-new-table"></a>Übung 1: Erstellen einer neuen Tabelle
+Übung 1: Erstellen einer neuen Tabelle
 
 **Ziel**: In dieser Übung erstellen Sie eine neue benutzerdefinierte Tabelle für Besuche.
 
-
-### <a name="task-1-create-visit-table-and-columns"></a>Aufgabe \#1: Tabelle „Visit“ und Spalten erstellen
+Aufgabe #1: Tabelle „Visit“ und Spalten erstellen
 
 Die Tabelle **Visit** wird Informationen zu den Campusbesuchen enthalten, einschließlich der Besucher*innen sowie des geplanten sowie des tatsächlichen Zeitpunkts jedes Besuchs.
 
 Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besucher leicht eingegeben und interpretiert werden kann, wenn er beim Einchecken gefragt wird.
 
-> Wir nutzen **zeitzonenunabhängiges** Verhalten beim Aufzeichnen von Datums- und Uhrzeitinformationen, da die Uhrzeit eines Besuchs immer die Lokalzeit am Standort des Gebäudes ist und sich nicht ändern sollte, wenn sie aus einer anderen Zeitzone angezeigt wird.
+1.  Melden Sie sich bei <https://make.powerapps.com> an, falls Sie nicht bereits angemeldet sind. 
 
-1. Melden Sie sich bei [https://make.powerapps.com](https://make.powerapps.com/) an (falls Sie nicht bereits angemeldet sind).
+1.  Stellen Sie im Menü **Umgebung** oben rechts sicher, dass Ihre **Übungsumgebung** ausgewählt ist. 
 
-1. Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung**sumgebung aus, falls diese noch nicht ausgewählt ist.
+1.  Wählen Sie links im Navigationsbereich die Option **Tabellen** aus.
 
-1. Erweitern Sie mithilfe der Navigation auf der linken Seite **Dataverse**, und wählen Sie **Tabellen** aus.
+1.  Wählen Sie **+ Neue Tabelle** und dann **+ Neue Tabelle** aus. 
 
-1. Klicken Sie auf **+ Neue Tabelle**.
+1.  Geben Sie für **Anzeigename** `Visit` ein.
 
-1. Geben Sie **Besuch** als **Anzeigename** ein.
+1.  Wählen Sie **Speichern** aus. 
 
-1. Klicken Sie auf **Speichern**.
+1.  Wählen Sie im Abschnitt **Schema** die Option **Spalten** aus. 
 
-1. Wählen Sie im Abschnitt **Schema** die Option **Spalten** aus.
+# Spalte „Geplanter Start“ erstellen
 
-1. Spalte „Geplanter Start“ erstellen
+1.  Wählen Sie **+ Neue Spalte** aus. 
 
-    - Wählen Sie **+ Neue Spalte** aus.
+1.  Geben Sie für **Anzeigename** `Scheduled Start` ein. 
 
-    - Geben Sie **Geplanter Start** als **Anzeigename** ein.
+1.  Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus. 
 
-    - Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
+1.  Ändern Sie **Erforderlich** in **Eingabe erforderlich**. 
 
-    - Wählen Sie für **Erforderlich** **Eingabe erforderlich** aus.
+1.  Erweitern Sie **Erweiterte Optionen**. 
 
-    - Erweitern Sie **Erweiterte Optionen**.
+1.  Wählen Sie in der **Zeitzonenanpassung** die Option **Zeitzonenunabhängig** aus. 
 
-    - Wählen Sie in der **Zeitzonenanpassung** die Option **Zeitzonenunabhängig** aus.
+    > **Hinweis:** Wir nutzen **zeitzonenunabhängiges** Verhalten beim Aufzeichnen von Datums- und Uhrzeitinformationen, da die Uhrzeit eines Besuchs immer die Lokalzeit am Standort des Gebäudes ist und sich nicht ändern sollte, wenn sie aus einer anderen Zeitzone angezeigt wird. 
 
-    - Klicken Sie auf **Speichern**.
+1.  Wählen Sie **Speichern** aus. 
 
-1. Spalte „Geplantes Ende“ erstellen
+# Spalte „Geplantes Ende“ erstellen
 
-    - Klicken Sie auf **+ Neue Spalte**.
+1.  Wählen Sie **+ Neue Spalte** aus. 
 
-    - Geben Sie **Geplantes Ende** als **Anzeigename** ein.
+1.  Geben Sie für **Anzeigename** `Scheduled End` ein.
 
-    - Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
+1.  Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
 
-    - Wählen Sie für **Erforderlich** **Eingabe erforderlich** aus.
+1.  Wählen Sie für **Erforderlich** **Eingabe erforderlich** aus.
 
-    - Erweitern Sie **Erweiterte Optionen**.
+1.  Erweitern Sie **Erweiterte Optionen**.
 
-    - Wählen Sie in der **Zeitzonenanpassung** die Option **Zeitzonenunabhängig** aus.
+1.  Wählen Sie in der **Zeitzonenanpassung** die Option **Zeitzonenunabhängig** aus.
 
-    - Klicken Sie auf **Speichern**.
+1.  Wählen Sie **Speichern** aus. 
 
-1. Spalte „Tatsächlicher Start“ erstellen
+# Spalte „Tatsächlicher Start“ erstellen
 
-    - Klicken Sie auf **+ Neue Spalte**.
+1.  Wählen Sie **+ Neue Spalte** aus. 
 
-    - Geben Sie **Tatsächlicher Start** als **Anzeigename** ein.
+1.  Geben Sie für **Anzeigename** `Actual Start` ein.
 
-    - Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
+1.  Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
 
-    - Behalten Sie unter **Erforderlich** die Einstellung **Optional** bei.
+1.  Behalten Sie unter **Erforderlich** die Einstellung **Optional** bei.
 
-    - Erweitern Sie **Erweiterte Optionen**.
+1.  Erweitern Sie **Erweiterte Optionen**.
 
-    - Wählen Sie in der **Zeitzonenanpassung** die Option **Zeitzonenunabhängig** aus.
+1.  Wählen Sie in der **Zeitzonenanpassung** die Option **Zeitzonenunabhängig** aus. 
 
-    - Klicken Sie auf **Speichern**.
+1.  Wählen Sie **Speichern** aus. 
 
-1. Spalte „Tatsächliches Ende“ erstellen
+# Spalte „Tatsächliches Ende“ erstellen
 
-    - Klicken Sie auf **+ Neue Spalte**.
+1.  Wählen Sie **+ Neue Spalte** aus.
 
-    - Geben Sie **Tatsächliches Ende** als **Anzeigename** ein.
+1.  Geben Sie **Tatsächliches Ende** als **Anzeigename** ein.
 
-    - Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
+1.  Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
 
-    - Behalten Sie unter **Erforderlich** die Einstellung **Optional** bei.
+1.  Behalten Sie unter **Erforderlich** die Einstellung **Optional** bei.
 
-    - Erweitern Sie **Erweiterte Optionen**.
+1.  Erweitern Sie **Erweiterte Optionen**.
 
-    - Wählen Sie in der **Zeitzonenanpassung** die Option **Zeitzonenunabhängig** aus.
+1.  Wählen Sie in der **Zeitzonenanpassung** die Option **Zeitzonenunabhängig** aus.
 
-    - Klicken Sie auf **Speichern**.
+1.  Wählen Sie **Speichern** aus.
 
-1. Spalte „Code“ erstellen
+# Spalte „Code“ erstellen
 
-    - Klicken Sie auf **+ Neue Spalte**.
+1.  Wählen Sie **+ Neue Spalte** aus.
 
-    - Geben Sie **Code** als **Anzeigename** ein.
+1.  Geben Sie für **Anzeigename** `Code` ein.
 
-    - Wählen Sie **AutoWert** als **Datentyp** aus.
+1.  Wählen Sie **AutoWert** als **Datentyp** aus.
 
-    - Wählen Sie **Datumspräfixnummer** als **AutoWert-Typ** aus.
+1.  Wählen Sie **Datumspräfixnummer** als **AutoWert-Typ** aus.
 
-    - Klicken Sie auf **Speichern**.
+1.  Wählen Sie **Speichern** aus. 
 
-1. Erstellen einer Nachschlagespalte für „Besucher“
+# Erstellen einer Nachschlagespalte für „Besucher“
 
-    - Klicken Sie auf **+ Neue Spalte**.
+1.  Wählen Sie **+ Neue Spalte** aus.
 
-    - Geben Sie **Besuch** als **Anzeigename** ein.
+1.  Geben Sie für **Anzeigename** `Visitor` ein.
 
-    - Wählen Sie **Lookup** (Nachschlagen) als **Datentyp** aus.
+1.  Wählen Sie **Lookup** (Nachschlagen) als **Datentyp** aus. 
 
-    - Wählen Sie **Kontakt** für die **Verknüpfte Tabelle** aus.
+1.  Wählen Sie **Kontakt** für die **Verknüpfte Tabelle** aus. 
 
-    - Erweitern Sie **Erweiterte Optionen**.
+1.  Erweitern Sie **Erweiterte Optionen**. 
 
-    - Geben Sie **visitor_id** für **den Beziehungsnamen** ein.
+1.  Geben Sie `visitor_id` für **den Beziehungsnamen** ein. 
 
-    - Klicken Sie auf **Speichern**.
+1.  Wählen Sie **Speichern** aus.
 
-## <a name="exercise-2-import-data"></a>Übung 2: Daten importieren
+
+Übung 2: Daten importieren
 
 **Ziel**: In dieser Übung importieren Sie Beispieldaten in die Dataverse-Datenbank.
 
-### <a name="task-11-load-excel-file-to-onedrive"></a>Aufgabe 1.1: Laden einer Excel-Datei in OneDrive
+### Aufgabe \#1: Laden einer Excel-Datei in OneDrive
 
-1. Die Datei **Visits.xlsx** sollte auf Ihrem virtuellen Computer unter **C:/LabFiles** gespeichert sein. Laden Sie [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) herunter, wenn dies nicht der Fall ist.
+1.  Die Datei **Visits.xlsx** sollte auf Ihrem virtuellen Computer unter **C:/LabFiles** gespeichert sein. Laden Sie [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) herunter, wenn dies nicht der Fall ist.
 
-2. Wenn Sie noch nicht angemeldet sind, melden Sie sich bei [https://make.powerapps.com](https://make.powerapps.com/) an.
+2.  Wenn Sie noch nicht angemeldet sind, melden Sie sich bei [https://make.powerapps.com](https://make.powerapps.com/) an. 
 
-3. Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung**sumgebung aus, falls diese noch nicht ausgewählt ist.
+3.  Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung**sumgebung aus, falls diese noch nicht ausgewählt ist.
 
-4. Klicken Sie in der oberen linken Ecke auf das Waffel-Menü, um die Anwendungen zu ändern, und wählen Sie **OneDrive** aus. (Es kann einen Moment dauern, bis OneDrive eingerichtet ist. Klicken Sie auf **Ihr OneDrive ist fertig**, wenn die Meldung auf dem Bildschirm angezeigt wird.)
+4.  Klicken Sie in der oberen linken Ecke auf das Waffel-Menü, um die Anwendungen zu ändern, und wählen Sie **OneDrive** aus. (Es kann einen Moment dauern, bis OneDrive eingerichtet ist. Klicken Sie auf **Ihr OneDrive ist fertig**, wenn die Meldung auf dem Bildschirm angezeigt wird.)
 
-5. Klicken Sie im oberen Menü auf **Hochladen**, und wählen Sie **Dateien** aus.
+5.  Klicken Sie im oberen Menü auf **Hochladen**, und wählen Sie **Dateien** aus.
 
-6. Suchen Sie die Datei **Visits.xlsx**, und wählen Sie sie aus. Klicken Sie dann auf **Öffnen**.
+6.  Suchen Sie die Datei **Visits.xlsx**, und wählen Sie sie aus. Klicken Sie dann auf **Öffnen**.
 
- **Hinweis:** Diese Datei befindet sich im Ordner **Alle Dateien** auf Ihrem Computer.
- 
-### <a name="task-12-create-a-dataflow"></a>Aufgabe 1.2: Erstellen eines Dataflows
+    > **Hinweis:** Diese Datei befindet sich im Ordner **Alle Dateien** auf Ihrem Computer.
 
-1. Wenn Sie noch nicht angemeldet sind, melden Sie sich bei [https://make.powerapps.com](https://make.powerapps.com/) an.
 
-2. Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung**sumgebung aus, falls diese noch nicht ausgewählt ist.
+### Aufgabe \#2: Erstellen eines Dataflows
 
-3. Erweitern Sie mithilfe der Navigation auf der linken Seite **Dataverse**, und wählen Sie **Tabellen** aus.
+1.  Melden Sie sich bei <https://make.powerapps.com> an, falls Sie nicht bereits angemeldet sind. 
 
-4. Suchen und öffnen Sie die Tabelle **Visit**, die Sie in der vorherigen Übung erstellt haben.
+2.  Stellen Sie im Menü **Umgebung** oben rechts sicher, dass Ihre **Übungsumgebung** ausgewählt ist. 
 
-5. Wählen Sie oben über das Menü den Dropdownpfeil neben **Importieren** die Option **Daten importieren** aus.
+3.  Wählen Sie links im Navigationsbereich die Option **Tabellen** aus. 
 
-6. Wählen Sie im Dialogfeld **Datenquelle auswählen** die Option **Excel-Arbeitsmappe** aus.
+4.  Öffnen Sie die Tabelle **Visit**, die Sie in der vorherigen Übung erstellt haben. 
 
-7. Wählen Sie die Option **Mit Datei verknüpfen** aus. Klicken Sie auf **OneDrive durchsuchen**. Melden Sie sich bei der entsprechenden Aufforderung mit Ihren Microsoft 365-Anmeldeinformationen an.
+5.  Wählen Sie oben im Menü **Importieren** > Daten importieren** aus.
 
-8. Wählen Sie die **Visits.xlsx**-Datei aus, die in OneDrive hochgeladen wurde, und klicken Sie auf **Auswählen**.
+6.  Wählen Sie im Dialogfeld **Datenquelle auswählen** die Option **Excel-Arbeitsmappe** aus.
 
-9. Klicken Sie auf **Weiter**.
+7.  Wählen Sie die Option **Mit Datei verknüpfen** aus. Wählen Sie **OneDrive durchsuchen** aus. Melden Sie sich bei der entsprechenden Aufforderung mit Ihren Microsoft 365-Anmeldeinformationen an. Konfigurieren Sie den Browser so, dass Popupelemente immer zugelassen werden. 
 
-10. Aktivieren Sie unter **Daten auswählen** das Kontrollkästchen neben der Excel-Arbeitsmappe **Visits**.
+8.  Wählen Sie die Datei **Visits.xlsx** aus, die in der vorherigen Aufgabe auf OneDrive hochgeladen wurde. 
 
-11. Klicken Sie auf **Weiter**. Navigieren Sie nicht von dieser Seite weg.
+9.  Wählen Sie **Weiter** aus. 
 
-12. Klicken Sie auf **Weiter**.
+10. Aktivieren Sie unter **Daten auswählen** das Kontrollkästchen neben der Excel-Arbeitsmappe **Visits**. 
 
-13. Wählen Sie im Abschnitt **Tabellen zuordnen** unter **Einstellungen laden** die Option **In vorhandene Tabelle laden** aus.
+11. Wählen Sie **Weiter** aus. Navigieren Sie nicht von dieser Seite weg.
 
-14. Wählen Sie im Dropdownmenü **Zieltabelle** den Tabellennamen aus, der mit **crXXX_visit** beginnt (wobei XXX eine zufällige Gruppe von Buchstaben und Zahlen ist).
+12. Wählen Sie **Weiter** aus. 
+
+13. Wählen Sie im Abschnitt **Zuordnen von Tabellen** unter **Einstellungen laden** die Option **In vorhandene Tabelle laden** aus. 
+
+14. Wählen Sie im Dropdownmenü **Zieltabelle** den Tabellennamen **crXXX_visit** aus (wobei XXX eine zufällige Gruppe von Buchstaben und Zahlen ist).
 
 15. Auf der Seite **Column mapping**: Ordnen Sie die Spalten den entsprechenden Zielspalten zu.
 
-| Zielspalten  | Quellwerte   |
-|:---------------------|:----------------|
-| crxxx_ActualEnd      | tatsächliches Ende      |
-| crxxx_ActualStart    | tatsächlicher Start    |
-| crxxx_Code           | code            |
-| crxxx_Name           | name            |
-| crxxx_ScheduledEnd   | geplantes Ende   |
-| crxxx_ScheduledStart | geplanter Start |
+    | Zielspalten  | Quellwerte   |
+    |:---------------------|:----------------|
+    | crxxx_ActualEnd      | tatsächliches Ende      |
+    | crxxx_ActualStart    | tatsächlicher Start    |
+    | crxxx_Code           | code            |
+    | crxxx_Name           | name            |
+    | crxxx_ScheduledEnd   | geplantes Ende   |
+    | crxxx_ScheduledStart | geplanter Start |
 
-16. Klicken Sie auf **Weiter**.
+16. Wählen Sie **Weiter** aus. 
 
-17. Wählen Sie **Manuell aktualisieren** aus.
+17. Wählen Sie **Manuell aktualisieren** aus. 
 
-18. Klicken Sie auf **Veröffentlichen**.
+18. Klicken Sie auf **Veröffentlichen**. 
 
-**Hinweis:** Es kann mehrere Minuten dauern, bis Ihre Daten in Ihre Tabelle importiert werden. Machen Sie sich keine Sorgen, wenn ein paar Fehler angezeigt werden. Das ist normal und hat keine Auswirkungen auf den Rest des Kurses.
+    > **Hinweis:** Es kann mehrere Minuten dauern, bis Ihre Daten in Ihre Tabelle importiert werden. Machen Sie sich keine Sorgen, wenn ein paar Fehler angezeigt werden. Das ist normal und hat keine Auswirkungen auf den Rest des Kurses.
 
-### <a name="task-3-verify-data-import"></a>Aufgabe 3: Datenimport überprüfen
 
-1. Nachdem Ihre Daten importiert wurden, verwenden Sie die Navigation auf der linken Seite des Bildschirms, um die Tabelle **Besuch** erneut auszuwählen.
+Aufgabe 3: Datenimport überprüfen
 
-2. Stellen Sie sicher, dass die importierten Daten im Abschnitt **Ansehen von Spalten und Daten** angezeigt werden.
+1.  Nachdem Ihre Daten importiert wurden, verwenden Sie die Navigation auf der linken Seite des Bildschirms, um **Tabellen** auszuwählen und die Tabelle **Visit** zu öffnen.
+
+2.  Stellen Sie sicher, dass die importierten Daten im Abschnitt **Ansehen von Spalten und Daten** angezeigt werden.
 
 Glückwunsch, Sie haben erfolgreich eine neue Tabelle erstellt und Daten importiert.

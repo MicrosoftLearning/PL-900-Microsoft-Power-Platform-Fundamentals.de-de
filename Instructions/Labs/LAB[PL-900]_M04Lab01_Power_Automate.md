@@ -4,9 +4,11 @@ lab:
   module: 'Module 4: Get Started with Power Automate'
 ---
 
-# <a name="lab-4-how-to-build-an-automated-solution"></a>Lab 4: Erstellen einer automatisierten Lösung
+# Lab 4: Erstellen einer automatisierten Lösung
 
-## <a name="scenario"></a>Szenario
+**WWL-Mandanten – Nutzungsbedingungen** Wenn Ihnen im Rahmen einer Präsenzschulung ein Mandant zugewiesen worden ist, steht dieser für Praxislabs innerhalb der Präsenzschulung zur Verfügung. Mandanten sollten nicht für Zwecke außerhalb von Praxislabs freigegeben oder verwendet werden. Der in diesem Kurs verwendete Mandant ist ein Testmandant; er kann nach Abschluss des Kurses nicht verwendet oder erreicht werden und ist nicht für Erweiterungen geeignet. Mandanten dürfen nicht in ein kostenpflichtiges Abonnement konvertiert werden. Die im Rahmen dieses Kurses erworbenen Mandanten verbleiben im Eigentum der Microsoft Corporation, und wir behalten uns das Recht vor, jederzeit auf Mandanten zuzugreifen und diese zurückzuziehen. 
+
+## Szenario
 
 Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem Campus. Campusbesucher werden derzeit auf Papier erfasst. Die Informationen werden nicht konsistent erfasst und es gibt keine Möglichkeit, Daten über die Besuche auf dem gesamten Campus zu sammeln und zu analysieren.
 
@@ -16,24 +18,24 @@ Während dieses Kurses erstellen Sie Anwendungen und führen eine Automatisierun
 
 In diesem Lab erstellen Sie einen Power Automate-Flow, um einem Besucher per E-Mail mitzuteilen, wenn ein Besuch geplant ist.
 
-## <a name="high-level-lab-steps"></a>Weiterführende Schritte des Lab
+## Weiterführende Schritte des Lab
 
 Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschließen.
 
 - Kontakte müssen per E-Mail benachrichtigt werden, wenn ein Besuch geplant ist.
 
-## <a name="prerequisites"></a>Voraussetzungen
+## Voraussetzungen
 
 - Beendigung von **Modul 0 Lab 0 – Lab-Umgebung überprüfen**
 - Abschluss von **Modul 2 Lab 1: Datenmodellierung**
 - Abschluss von **Modul 2 Lab 3: Erstellen einer modellgesteuerten App**
 - Der Kontakt „John Doe“ wurde mit einer aufgefüllten persönlichen E-Mail-Adresse erstellt.
 
-## <a name="exercise-1-create-visit-notification-flow"></a>Übung 1: Einen Besuchsbenachrichtigungsfluss erstellen
+## Übung 1: Einen Besuchsbenachrichtigungsfluss erstellen
 
 **Ziel**: In dieser Übung erstellen Sie einen Power Automate-Flow, der die Anforderung implementiert. Dem Besucher sollte eine E-Mail gesendet werden, die den eindeutigen Code enthält, der dem Besuch zugewiesen ist, wenn ein Besuch erstellt wird.
 
-### <a name="task-1-create-a-flow"></a>Aufgabe \#1: Erstellen eines Flows
+### Aufgabe \#1: Erstellen eines Flows
 
 1.  Navigieren Sie zu <https://make.powerapps.com>. Möglicherweise müssen Sie sich erneut authentifizieren. Klicken Sie dazu auf **Anmelden**, und folgen Sie den Anweisungen (falls erforderlich).
 
@@ -61,7 +63,7 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 
     4.  Klicken Sie im Triggerschritt auf die Schaltfläche mit den Auslassungspunkten ( **...** ), und klicken Sie auf **Umbenennen**. Benennen Sie diesen Trigger in **„Wenn ein Besuch hinzugefügt wird“** um. Dies ist eine gute Vorgehensweise, damit Sie und andere Flow-Editoren den Zweck des Schritts erkennen können, ohne tiefer in die Details gehen zu müssen.
 
-### <a name="task-2-create-a-step-to-get-the-visitor-row"></a>Aufgabe \#2: Erstellen eines Schritts zum Abrufen der Besucherzeile
+### Aufgabe \#2: Erstellen eines Schritts zum Abrufen der Besucherzeile
 
 1.  Wählen Sie **+ Neuer Schritt**aus. Dieser Schritt ist erforderlich, um Besucherinformationen einschließlich der E-Mail-Adresse abzurufen.
 
@@ -78,7 +80,7 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 7.  Klicken Sie bei dieser Aktion auf die Schaltfläche mit den Auslassungspunkten ( **...** ), und klicken Sie dann auf **Umbenennen**.
         Benennen Sie diese Aktion in **„Den Besucher abrufen“** um. Dies ist eine gute Vorgehensweise, damit Sie und andere Flow-Editoren den Zweck des Schritts erkennen können, ohne tiefer in die Details gehen zu müssen.
 
-### <a name="task-3-create-a-step-to-send-an-email-to-the-visitor"></a>Aufgabe \#3: Erstellen eines Schritts zum Senden einer E-Mail an den Besucher
+### Aufgabe \#3: Erstellen eines Schritts zum Senden einer E-Mail an den Besucher
 
 1.  Klicken Sie auf **+ Neuer Schritt**. Mit diesem Schritt werden E-Mails an Besucher*innen gesendet.
 
@@ -122,7 +124,7 @@ Lassen Sie die Registerkarte dieses Flows für die nächste Aufgabe geöffnet. I
 
 ![Beispiel für Flowschritte.](media/4-Flow.png)
 
-### <a name="task-4-validate-and-test-the-flow"></a>Aufgabe \#4: Flow überprüfen und aktivieren
+### Aufgabe \#4: Flow überprüfen und aktivieren
 
 1.  Öffnen Sie im Browser eine neue Registerkarte, und navigieren Sie zu <https://make.powerapps.com>.
 
@@ -150,12 +152,12 @@ Lassen Sie die Registerkarte dieses Flows für die nächste Aufgabe geöffnet. I
 
     -   **Geplantes Ende:** Morgen um 9:00 Uhr
 
-8. Wählen Sie **Speichern und schließen** aus.
+8. Wählen Sie die Schaltfläche **Speichern und schließen** aus.
 
 9. Navigieren Sie zur Browserregisterkarte, in dem Ihr Flowtest ausgeführt wird. Nach einer kurzen Verzögerung sollte der Flow ausgeführt werden. Hier können Sie alle Probleme im Flow abfangen oder bestätigen, dass er erfolgreich ausgeführt wurde.
 
 Nach einer kurzen Verzögerung sollten Sie eine E-Mail in Ihrem Posteingang sehen, da Sie die E-Mail-Adresse von John Doe mit Ihrer persönlichen E-Mail-Adresse aufgefüllt haben. Beachten Sie, dass sie möglicherweise in Ihrem Junk-E-Mail-Ordner landen kann.
 
-## <a name="challenges"></a>Herausforderungen
+## Herausforderungen
 
-- Spielen Sie mit der Formatierung in der E-Mail. Wie können Sie sie professioneller gestalten?
+- Spielen Sie mit der Formatierung in der E-Mail. Wie können Sie es professioneller gestalten?

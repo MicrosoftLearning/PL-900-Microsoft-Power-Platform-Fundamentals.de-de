@@ -4,9 +4,11 @@ lab:
   module: 'Module 3: Get started with Power Apps'
 ---
 
-# <a name="lab-2-how-to-build-a-canvas-app"></a>Lab 2: Eine Canvas-App erstellen
+# Lab 2: Eine Canvas-App erstellen
 
-## <a name="scenario"></a>Szenario
+**WWL-Mandanten – Nutzungsbedingungen** Wenn Ihnen im Rahmen einer Präsenzschulung ein Mandant zugewiesen worden ist, steht dieser für Praxislabs innerhalb der Präsenzschulung zur Verfügung. Mandanten sollten nicht für Zwecke außerhalb von Praxislabs freigegeben oder verwendet werden. Der in diesem Kurs verwendete Mandant ist ein Testmandant; er kann nach Abschluss des Kurses nicht verwendet oder aufgerufen werden und ist nicht für Erweiterungen geeignet. Mandanten dürfen nicht in ein kostenpflichtiges Abonnement konvertiert werden. Die im Rahmen dieses Kurses erworbenen Mandanten verbleiben im Eigentum der Microsoft Corporation, und wir behalten uns das Recht vor, jederzeit auf Mandanten zuzugreifen und diese zurückzuziehen. 
+
+## Szenario
 
 Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem Campus. Campusbesuche werden derzeit in Papierzeitschriften aufgezeichnet. Die Informationen werden nicht konsistent erfasst und es gibt keine Möglichkeit, Daten über die Besuche auf dem gesamten Campus zu sammeln und zu analysieren.
 
@@ -14,7 +16,8 @@ Derzeit nutzt die Campusverwaltung eine Excel-Kalkulationstabelle, um die Besuch
 
 Während dieses Kurses erstellen Sie Anwendungen und führen eine Automatisierung durch, damit das Verwaltungs- und Sicherheitspersonal des Bellows College den Zugang zu den Gebäuden auf dem Campus verwalten und kontrollieren kann.
 
-## <a name="high-level-lab-steps"></a>Weiterführende Schritte des Lab
+
+## Weiterführende Schritte des Lab
 
 Wir werden uns beim Entwerfen der App an nachstehende Gliederung halten:
 
@@ -26,16 +29,18 @@ Wir werden uns beim Entwerfen der App an nachstehende Gliederung halten:
 
 - Testen der App-Funktionalität
 
-## <a name="prerequisites"></a>Voraussetzungen
+## Voraussetzungen
 
 - Beendigung von **Modul 0 Lab 0 – Lab-Umgebung überprüfen**
 - Abschluss von **Modul 2 Lab 1: Datenmodellierung**
 
-## <a name="exercise-1-create-visits-canvas-app"></a>Übung 1: Erstellen einer Canvas-App für Besuche
 
-**Ziel:** In dieser Übung erstellen Sie eine Canvas-App, indem Sie Ihre Tabelle „Visits“ (Besuche) verbinden, die Sie zuvor erstellt haben.
+## Übung 1: Erstellen einer Canvas-App für Besuche
 
-### <a name="task-1-create-the-visits-app"></a>Aufgabe \#1: Erstellen der „Visits“-App
+**Ziel:** In dieser Übung erstellen Sie eine Canvas-App, indem Sie die Tabelle „Visits“ (Besuche) verbinden, die Sie zuvor erstellt haben.
+
+
+### Aufgabe \#1: Erstellen der „Visits“-App
 
 1.  Navigieren Sie zu <https://make.powerapps.com>. Möglicherweise müssen Sie sich erneut authentifizieren. Klicken Sie dazu auf **Anmelden**, und folgen Sie den Anweisungen (falls erforderlich).
 
@@ -45,8 +50,8 @@ Wir werden uns beim Entwerfen der App an nachstehende Gliederung halten:
 
 4.  Wählen Sie Ihre Dataverse-Verbindung aus.
 
-    > **HINWEIS:** *Wenn es keine Dataverse-Verbindung gibt:*
-    > - Wählen Sie **Neue Verbindung** aus.
+    > **Hinweis:**  *Tun Sie Folgendes, falls keine Dataverse-Verbindung vorhanden ist:*
+    > - Wählen Sie **+ Neue Verbindung** aus.
     > - Suchen Sie **Microsoft Dataverse**.
     > - Klicken Sie auf **Erstellen**
 
@@ -58,7 +63,7 @@ Wir werden uns beim Entwerfen der App an nachstehende Gliederung halten:
 
 8.  Nach Abschluss der Erstellung sollte es wie die Abbildung unten aussehen.
 
-![Aus „Besuch“-Daten erstellte Canvas-App.](media/2-canvas-app-from-data.png)
+    ![Aus „Besuch“-Daten erstellte Canvas-App.](media/2-canvas-app-from-data.png)
 
 9. Wählen Sie im App-Designer auf der Befehlsleiste die Schaltfläche **Vorschau der App** (Symbol „Wiedergeben“) aus. *(Sie können auch eine Vorschau der App anzeigen, indem Sie F5 auf Ihrer Tastatur drücken.)* Sehen Sie sich an, wie die App im Auslieferungszustand aussieht.
 
@@ -66,23 +71,24 @@ Wir werden uns beim Entwerfen der App an nachstehende Gliederung halten:
 
 Glückwunsch, Sie haben erfolgreich eine Power App aus einer Dataverse-Tabelle erstellt. Der nächste Schritt im Prozess besteht darin, die App an das Branding Ihres Colleges anzupassen. Die nächste Reihe von Schritten führt Sie durch die Bereitstellung zusätzlicher Anpassungen an der App.
 
-### <a name="task-2-modify-and-theme-the-newly-created-app"></a>Aufgabe \#2: Ändern der neu erstellten App, inklusive Design
 
-In dieser Aufgabe passen Sie den Kopfzeilentext für jeden der drei Bildschirme Ihrer App an (Durchsuchen, Details und Bearbeiten) und ändern das App-Design.
+### Aufgabe \#2: Ändern der neu erstellten App, inklusive Design
+
+In dieser Aufgabe passen Sie den Kopfzeilentext für jeden der drei Bildschirme Ihrer App an (Durchsuchen, Details und Bearbeiten) und ändern das App-Design. 
 
 1.  Sie befinden sich auf dem Bildschirm „Durchsuchen“. Wählen Sie die Bezeichnung **Besuche** auf dem Bildschirm aus.
 
-1.  Aktualisieren Sie auf der rechten Seite des Bildschirms unter der Registerkarte „Eigenschaften“ die **Text**-Steuerelementeigenschaft zu **„Bellows College Visits“** (Bellows College-Besuche).
+1.  Aktualisieren Sie auf der rechten Seite des Bildschirms auf der Registerkarte „Eigenschaften“ die **Text**-Steuerelementeigenschaft zu `Bellows College Visits`.
 
-1. Ändern Sie in den Eigenschaften den **Schriftgrad** auf **24**.
+1.  Ändern Sie in den Eigenschaften den **Schriftgrad** auf **24**. 
 
-1.  Klicken Sie auf den leeren Bildschirmhintergrund, um den aktualisierten Text auf dem Bildschirm „Durchsuchen“ anzuzeigen.
+1.  Klicken Sie auf den leeren Bildschirmhintergrund, um den aktualisierten Text auf dem Bildschirm „Durchsuchen“ anzuzeigen. 
 
-1.  Wählen Sie über die Strukturansicht in der linken Navigationsleiste **DetailScreen1** aus.
+1.  Wählen Sie über die Strukturansicht in der linken Navigationsleiste **DetailScreen1** aus. 
 
 1.  Wählen Sie die Bezeichnung **Besuche** auf dem Bildschirm aus.
 
-1.  Aktualisieren Sie auf der rechten Seite des Bildschirms unter der Registerkarte „Eigenschaften“ die **Text**-Steuerelementeigenschaft zu **„Besuchsdetails“** .
+1.  Aktualisieren Sie auf der rechten Seite des Bildschirms auf der Registerkarte „Eigenschaften“ die **Text**-Steuerelementeigenschaft zu `Visit Details`.
 
 1.  Klicken Sie auf den leeren Bildschirmhintergrund, um den aktualisierten Text auf dem Bildschirm „Details “ anzuzeigen.
 
@@ -90,7 +96,7 @@ In dieser Aufgabe passen Sie den Kopfzeilentext für jeden der drei Bildschirme 
 
 1.  Wählen Sie die Bezeichnung **Besuche** auf dem Bildschirm aus.
 
-1.  Ersetzen Sie auf der rechten Seite des Bildschirms unter der Registerkarte „Eigenschaften“ den Text „Table1“ in der **Text**-Steuerelementeigenschaft durch **„Details bearbeiten“** .
+1.  Ersetzen Sie auf der rechten Seite des Bildschirms auf der Registerkarte „Eigenschaften“ den Text in der **Text**-Steuerelementeigenschaft durch `Edit Details`.
 
 1.  Klicken Sie auf den leeren Bildschirmhintergrund, um den aktualisierten Text auf dem Bildschirm „Bearbeiten“ anzuzeigen.
 
@@ -98,11 +104,12 @@ In dieser Aufgabe passen Sie den Kopfzeilentext für jeden der drei Bildschirme 
 
 1. Wählen Sie auf der Befehlssymbolleiste die Schaltfläche **Design** aus und dann aus der angezeigten Liste die Designfarbe **Rot**.
 
-### <a name="task-3-test-your-visits-app"></a>Aufgabe \#3: Testen Ihrer Besuche-App (Visits)
+
+### Aufgabe \#3: Testen Ihrer Besuche-App (Visits)
 
 In dieser Aufgabe testen Sie Ihre neue App.
 
-1.  Wenn Ihre Anwendung im App-Designer geöffnet ist, wählen Sie **Einstellungen** aus, aktualisieren Sie im Abschnitt **Allgemein** den Namen Ihrer App in **Besuchs-App**, klicken Sie auf das **X**, um den Einstellungsbildschirm zu schließen, und dann auf **Speichern**.
+1.  Wenn Ihre Anwendung im App-Designer geöffnet ist, wählen Sie **Einstellungen** aus, aktualisieren Sie im Abschnitt **Allgemein** den Namen Ihrer App in `Visits App`, klicken Sie auf das **X**, um den Einstellungsbildschirm zu schließen, und dann auf **Speichern**.
 
 2.  Wählen Sie den Pfeil **Zurück** aus, um zur App zurückzukehren.
 
@@ -110,19 +117,17 @@ In dieser Aufgabe testen Sie Ihre neue App.
 
 4.  Wählen Sie im App-Designer auf der Befehlsleiste die Schaltfläche **Vorschau der App** (Symbol „Wiedergeben“) aus. *(Sie können auch eine Vorschau der App anzeigen, indem Sie F5 auf Ihrer Tastatur drücken.)*
 
-4.  Nachdem die App geöffnet wurde, geben Sie in das Feld **Suchelemente** den Text **Maria** ein.
-     *(Beachten Sie, wie die Elemente im Katalog gefiltert werden, basierend auf der Eingabe im Suchfeld.)*
+4.  Nachdem die App geöffnet wurde, geben Sie in das Feld **Suchelemente** den Text `Maria`
+    * ein. (Beachten Sie, wie die Elemente im Katalog anhand der Eingabe im Suchfeld gefiltert werden).*
 
-5.  Wenn der Datensatz **Contoso Suites** für **Maria Campbell** angezeigt wird, klicken Sie auf die Zeile, um die Details für diesen Besuch zu öffnen. (**Hinweis**: *Wenn mehrere Contoso Suites-Datensätze für Maria Campbell angezeigt werden, wählen Sie einen beliebigen aus.* )
+5.  Wenn der Datensatz **Contoso Suites** für **Maria Campbell** angezeigt wird, klicken Sie auf die Zeile, und öffnen Sie Details für diesen Besuch. (**Hinweis**: *Wenn mehrere Contoso Suites-Datensätze für Maria Campbell angezeigt werden, wählen Sie einen beliebigen aus.* )
 
 6.  Um den Datensatz zu bearbeiten, wählen Sie das **Bleistiftsymbol** oben rechts in der App aus.
 
-7.  Sie können den Namen des Besuchs hier bearbeiten. Klicken Sie rechts oben auf das Häkchensymbol, um Ihre Änderungen zu speichern.
+7.  Sie können den **Namen des Besuchs** hier bearbeiten. Klicken Sie rechts oben auf das **Häkchensymbol**, um Ihre Änderungen zu speichern.
 
-8.  Klicken Sie rechts oben auf dem Bildschirm auf das **X**, um zum Canvas-App-Editor zurückzukehren.
+8.  Klicken Sie rechts oben auf dem Bildschirm auf das **X**, um den Vorschaumodus zu schließen und zum Canvas-App-Editor zurückzukehren.
 
 Herzlichen Glückwunsch! Sie haben Ihre erste Canvas-App erstellt und konfiguriert.
 
-## <a name="challenges"></a>Herausforderungen
 
-- Fügen Sie den Formularen in „DetailScreen1“ und „EditScreen1“ die folgenden Spalten hinzu: Tatsächlicher Start, Tatsächliches Ende, Code, Geplanter Start und Geplantes Ende.
