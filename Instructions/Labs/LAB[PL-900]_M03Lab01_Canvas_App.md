@@ -46,7 +46,7 @@ Wir werden uns beim Entwerfen der App an nachstehende Gliederung halten:
 
 2.  Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung**sumgebung aus, falls diese noch nicht ausgewählt ist.
 
-3.  Klicken Sie, falls erforderlich, auf das **Startseitensymbol** auf der linken Seite des Bildschirms. Wählen Sie im Abschnitt **Beginnen mit** die Option **Dataverse** aus.
+3.  Wählen Sie **+ Erstellen** im linken Navigationsbereich des Bildschirms aus. Wählen Sie im Abschnitt **Beginnen mit** die Option **Dataverse** aus.
 
 4.  Wählen Sie Ihre Dataverse-Verbindung aus.
 
@@ -54,22 +54,23 @@ Wir werden uns beim Entwerfen der App an nachstehende Gliederung halten:
     > - Wählen Sie **+ Neue Verbindung** aus.
     > - Suchen Sie **Microsoft Dataverse**.
     > - Klicken Sie auf **Erstellen**
+    > - **Melden Sie sich an**, und wählen Sie **Zugriff zulassen** aus.
 
 5.  Suchen Sie die Tabelle **Besuche**, die Sie im vorherigen Lab erstellt haben, und wählen Sie sie aus.
 
 6.  Wählen Sie in der rechten unteren Ecke die Schaltfläche **Verbinden** aus.
 
-7.  Nachdem Ihre App erstellt wurde, aktivieren Sie auf dem Bildschirm „Willkommen bei Power Apps Studio“ das Kontrollkästchen **Nicht mehr anzeigen**, und wählen Sie dann **Überspringen** aus.
+7.  Nachdem Ihre App erstellt wurde, aktivieren Sie auf dem Bildschirm „Willkommen bei Power Apps Studio“ **Nicht mehr anzeigen**, und wählen Sie dann **Überspringen** aus.
 
-8.  Nach Abschluss der Erstellung sollte es wie die Abbildung unten aussehen.
+8.  Nach Abschluss der Erstellung sollte die Canvas-App wie die Abbildung unten aussehen:
 
     ![Aus „Besuch“-Daten erstellte Canvas-App.](media/2-canvas-app-from-data.png)
 
-9. Wählen Sie im App-Designer auf der Befehlsleiste die Schaltfläche **Vorschau der App** (Symbol „Wiedergeben“) aus. *(Sie können auch eine Vorschau der App anzeigen, indem Sie F5 auf Ihrer Tastatur drücken.)* Sehen Sie sich an, wie die App im Auslieferungszustand aussieht.
+9.  Wählen Sie im App-Designer auf der Befehlsleiste die Schaltfläche **Vorschau der App** (Symbol „Wiedergeben“) aus. *(Sie können auch eine Vorschau der App anzeigen, indem Sie F5 drücken.)* Sehen Sie sich an, wie Ihre App nach der Installation aussieht.
 
 10. Schließen Sie die App-Vorschau, indem Sie rechts oben auf dem Bildschirm das **X** auswählen.
 
-Glückwunsch, Sie haben erfolgreich eine Power App aus einer Dataverse-Tabelle erstellt. Der nächste Schritt im Prozess besteht darin, die App an das Branding Ihres Colleges anzupassen. Die nächste Reihe von Schritten führt Sie durch die Bereitstellung zusätzlicher Anpassungen an der App.
+Glückwunsch, Sie haben erfolgreich eine Power App aus einer Dataverse-Tabelle erstellt. Im nächsten Schritt möchten Sie die App an das Branding von Bellows College anpassen. Die nächste Reihe von Schritten führt Sie durch die Bereitstellung zusätzlicher Anpassungen an der App.
 
 
 ### Aufgabe \#2: Ändern der neu erstellten App, inklusive Design
@@ -80,29 +81,29 @@ In dieser Aufgabe passen Sie den Kopfzeilentext für jeden der drei Bildschirme 
 
 1.  Aktualisieren Sie auf der rechten Seite des Bildschirms auf der Registerkarte „Eigenschaften“ die **Text**-Steuerelementeigenschaft zu `Bellows College Visits`.
 
-1.  Ändern Sie in den Eigenschaften den **Schriftgrad** auf **24**. 
+1.  Ändern Sie auf der Registerkarte **Eigenschaften** den **Schriftgrad** in **24**. 
 
-1.  Klicken Sie auf den leeren Bildschirmhintergrund, um den aktualisierten Text auf dem Bildschirm „Durchsuchen“ anzuzeigen. 
+1.  Wählen Sie den leeren Bildschirmhintergrund aus, um den aktualisierten Text auf dem Bildschirm „Durchsuchen“ anzuzeigen. 
 
-1.  Wählen Sie über die Strukturansicht in der linken Navigationsleiste **DetailScreen1** aus. 
+1.  Wählen Sie über die **Strukturansicht** in der linken Navigationsleiste **DetailScreen1** aus. 
 
 1.  Wählen Sie die Bezeichnung **Besuche** auf dem Bildschirm aus.
 
-1.  Aktualisieren Sie auf der rechten Seite des Bildschirms auf der Registerkarte „Eigenschaften“ die **Text**-Steuerelementeigenschaft zu `Visit Details`.
+1.  Aktualisieren Sie auf der rechten Seite des Bildschirms auf der Registerkarte **Eigenschaften** die **Text**-Steuerelementeigenschaft in `Visit Details`.
 
 1.  Klicken Sie auf den leeren Bildschirmhintergrund, um den aktualisierten Text auf dem Bildschirm „Details “ anzuzeigen.
 
-1.  Wählen Sie mithilfe der Strukturansicht in der linken Navigationsleiste **EditScreen1** aus (möglicherweise müssen Sie nach unten scrollen, um die Option in der Strukturansicht anzuzeigen).
+1.  Wählen Sie mithilfe der **Strukturansicht** in der linken Navigationsleiste **EditScreen1** aus (möglicherweise müssen Sie nach unten scrollen, um die Option in der Strukturansicht anzuzeigen).
 
 1.  Wählen Sie die Bezeichnung **Besuche** auf dem Bildschirm aus.
 
-1.  Ersetzen Sie auf der rechten Seite des Bildschirms auf der Registerkarte „Eigenschaften“ den Text in der **Text**-Steuerelementeigenschaft durch `Edit Details`.
+1.  Ersetzen Sie auf der rechten Seite des Bildschirms auf der Registerkarte **Eigenschaften** den Text in der **Text**-Steuerelementeigenschaft durch `Edit Details`.
 
 1.  Klicken Sie auf den leeren Bildschirmhintergrund, um den aktualisierten Text auf dem Bildschirm „Bearbeiten“ anzuzeigen.
 
-1. Wählen Sie über die Strukturansicht in der linken Navigationsleiste **BrowseScreen1** aus.
+1.  Wählen Sie über die **Strukturansicht** in der linken Navigationsleiste **BrowseScreen1** aus.
 
-1. Wählen Sie auf der Befehlssymbolleiste die Schaltfläche **Design** aus und dann aus der angezeigten Liste die Designfarbe **Rot**.
+1.  Wählen Sie auf der Befehlssymbolleiste die Schaltfläche **Design** aus und dann aus der angezeigten Liste die Designfarbe **Rot**.
 
 
 ### Aufgabe \#3: Testen Ihrer Besuche-App (Visits)
@@ -111,11 +112,9 @@ In dieser Aufgabe testen Sie Ihre neue App.
 
 1.  Wenn Ihre Anwendung im App-Designer geöffnet ist, wählen Sie **Einstellungen** aus, aktualisieren Sie im Abschnitt **Allgemein** den Namen Ihrer App in `Visits App`, klicken Sie auf das **X**, um den Einstellungsbildschirm zu schließen, und dann auf **Speichern**.
 
-2.  Wählen Sie den Pfeil **Zurück** aus, um zur App zurückzukehren.
+2.  Wählen Sie links im Navigationsbereich die Option **BrowseScreen1** aus.
 
-3.  Wählen Sie links im Navigationsbereich die Option **BrowseScreen1** aus.
-
-4.  Wählen Sie im App-Designer auf der Befehlsleiste die Schaltfläche **Vorschau der App** (Symbol „Wiedergeben“) aus. *(Sie können auch eine Vorschau der App anzeigen, indem Sie F5 auf Ihrer Tastatur drücken.)*
+3.  Wählen Sie im App-Designer auf der Befehlsleiste die Schaltfläche **Vorschau der App** (Symbol „Wiedergeben“) aus. *(Sie können auch eine Vorschau der App anzeigen, indem Sie F5 drücken.)*
 
 4.  Nachdem die App geöffnet wurde, geben Sie in das Feld **Suchelemente** den Text `Maria`
     * ein. (Beachten Sie, wie die Elemente im Katalog anhand der Eingabe im Suchfeld gefiltert werden).*
@@ -129,5 +128,4 @@ In dieser Aufgabe testen Sie Ihre neue App.
 8.  Klicken Sie rechts oben auf dem Bildschirm auf das **X**, um den Vorschaumodus zu schließen und zum Canvas-App-Editor zurückzukehren.
 
 Herzlichen Glückwunsch! Sie haben Ihre erste Canvas-App erstellt und konfiguriert.
-
 

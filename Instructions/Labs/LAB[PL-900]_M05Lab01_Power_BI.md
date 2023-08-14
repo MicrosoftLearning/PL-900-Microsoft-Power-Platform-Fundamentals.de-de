@@ -6,7 +6,7 @@ lab:
 
 ## Lab 5: Erstellen eines einfachen Dashboards
 
-**WWL-Mandanten – Nutzungsbedingungen** Wenn Ihnen im Rahmen einer Präsenzschulung ein Mandant zugewiesen worden ist, steht dieser für Praxislabs innerhalb der Präsenzschulung zur Verfügung. Mandanten sollten nicht für Zwecke außerhalb von Praxislabs freigegeben oder verwendet werden. Der in diesem Kurs verwendete Mandant ist ein Testmandant; er kann nach Abschluss des Kurses nicht verwendet oder erreicht werden und ist nicht für Erweiterungen geeignet. Mandanten dürfen nicht in ein kostenpflichtiges Abonnement konvertiert werden. Die im Rahmen dieses Kurses erworbenen Mandanten verbleiben im Eigentum der Microsoft Corporation, und wir behalten uns das Recht vor, jederzeit auf Mandanten zuzugreifen und diese zurückzuziehen. 
+**WWL-Mandanten – Nutzungsbedingungen** Wenn Ihnen im Rahmen einer Präsenzschulung ein Mandant zugewiesen worden ist, steht dieser für Praxislabs innerhalb der Präsenzschulung zur Verfügung. Mandanten sollten nicht für Zwecke außerhalb von Praxislabs freigegeben oder verwendet werden. Der in diesem Kurs verwendete Mandant ist ein Testmandant; er kann nach Abschluss des Kurses nicht verwendet oder aufgerufen werden und ist nicht für Erweiterungen geeignet. Mandanten dürfen nicht in ein kostenpflichtiges Abonnement konvertiert werden. Die im Rahmen dieses Kurses erworbenen Mandanten verbleiben im Eigentum der Microsoft Corporation, und wir behalten uns das Recht vor, jederzeit auf Mandanten zuzugreifen und diese zurückzuziehen. 
 
 ## Szenario
 
@@ -44,7 +44,7 @@ Wir werden die folgenden Schritte ausführen, um ein Power BI-Dashboard zu entwe
 
 ### Aufgabe \#1: Vorbereiten des Power BI-Diensts
 
-1.  Die Datei „visits.xlsx“ sollte auf Ihrem virtuellen Computer unter C:/LabFiles gespeichert sein. Laden Sie die Datei [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) herunter, und speichern Sie sie auf Ihrem Computer, falls sie noch nicht vorhanden ist.
+1.  Eine Datei „Visits.pbix“ sollte auf Ihrer VM im Ordner „AllFiles“ auf dem Desktop gespeichert sein. Laden Sie die Datei [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) herunter, und speichern Sie sie auf Ihrem Computer, falls sie dort noch nicht vorhanden ist.
 
 2.  Öffnen Sie eine neue Registerkarte, navigieren Sie zu <https://app.powerbi.com/>, und melden Sie sich bei Bedarf an.
 
@@ -56,7 +56,7 @@ Wir werden die folgenden Schritte ausführen, um ein Power BI-Dashboard zu entwe
 
 7.  Wählen Sie nach Abschluss des Datenladevorgangs den **Besuchsbericht** aus.
 
-    Beachten Sie, dass der Typ auf **Bericht** festgelegt ist, wählen Sie andernfalls das Dataset nicht aus.
+    > **Hinweis**: Der Typ ist auf **Bericht** festgelegt. Wählen Sie das Dataset nicht aus.
 
 8.  Wählen Sie **Bearbeiten** aus. 
 
@@ -67,33 +67,34 @@ Damit haben den Power BI-Dienst für Ihre Labs eingerichtet.
 
 ### Aufgabe \#2: Diagramm- und Zeitvisualisierungen erstellen
 
-1.  Klicken Sie auf das **Kreisdiagramm**symbol im Bereich **Visualisierungen**, um ein Diagramm einzufügen.
+1.  Wählen Sie das **Kreisdiagrammsymbol** im Bereich **Visualisierungen** aus, um ein Diagramm einzufügen.
 
-2.  Drücken Sie den Dropdownpfeil neben **bc_Visit** im Bereich „Felder“. Ziehen Sie das Feld **Gebäude** in das Zielfeld **Legende**.
+2.  Erweitern Sie **bc_Visit** im Bereich **Felder**. Ziehen Sie das Feld **Gebäude** in das Feld **Legende**, und legen Sie es dort ab.
 
-3.  Ziehen Sie das Feld **Besuch**, und legen Sie es im Feld **Werte** ab.
+3.  Ziehen Sie das Feld **Besuch** in das Feld **Werte**, und legen Sie es dort ab.
 
 4.  Ändern Sie die Größe des Kreisdiagramms mithilfe der Ziehpunkte an den Ecken, sodass alle Diagrammkomponenten sichtbar sind.
 
-5.  Klicken Sie auf den Bericht außerhalb des Kreisdiagramms, um die Auswahl aufzuheben, und wählen Sie „Gestapeltes Säulendiagramm“ im Bereich **Visualisierungen** aus.
+5.  Klicken Sie auf den Bericht außerhalb des Kreisdiagramms, um die Auswahl aufzuheben, und wählen Sie das Symbol **Gestapeltes Säulendiagramm** im Fenster **Visualisierungen** aus.
 
-6.  Drücken Sie den Dropdownpfeil neben **bc_Visit** im Bereich „Felder“. Ziehen Sie das Feld **Besuch** in das Zielfeld **Y-Achse**.
+6.  Erweitern Sie **bc_Visit** im Bereich **Felder**, wenn diese Angabe noch nicht erweitert wurde. Ziehen Sie das Feld **Besuch** in das Feld **Y-Achse**, und legen Sie es dort ab.
 
-7.  Ziehen Sie das Feld **Start** in das Zielfeld **X-Achse**.
+7.  Ziehen Sie das Feld **Start** in das Feld **X-Achse**, und legen Sie es dort ab.
 
-8.  Klicken Sie im Bereich „Visualisierungen“ auf das **x** neben **Jahr** und **Quartal**, sodass auf der Achse nur noch die Summen von **Monat** und **Tag** angezeigt werden.
+8.  Klicken Sie im Bereich **Visualisierungen** auf das **x** neben **Jahr** und **Quartal**, sodass auf der Achse nur noch die Summen von **Monat** und **Tag** angezeigt werden.
 
 9.  Ändern Sie die Größe des Diagramms mithilfe der Ziehpunkte an den Ecken je nach Bedarf.
 
 10. Testen Sie die Berichtsinteraktivität:
 
-    1.  Klicken Sie auf verschiedene Gebäudesegmente im Kreisdiagramm, und beobachten Sie Änderungen im Zeitbericht.
+    1.  Wählen Sie verschiedene Gebäudesegmente im Kreisdiagramm aus, und beobachten Sie Änderungen im gestapelten Säulendiagramm.
 
-    2.  Klicken Sie auf das Säulendiagramm. Drücken Sie die NACH-UNTEN-TASTE, um den **Drilldownmodus** zu aktivieren (oder klicken Sie mit der rechten Maustaste auf das Diagramm, und wählen Sie **Drilldown** aus), und klicken Sie dann auf eine Spalte, um auf die nächste Ebene (Tage) zu gelangen.
+    2.  Wählen Sie das gestapelte Säulendiagramm aus. Wählen Sie den Pfeil nach oben aus, um ein **Drillup** auszuführen. Wählen Sie den Pfeil nach unten aus, um den **Drilldownmodus** zu aktivieren, und wählen Sie dann eine Spalte aus, um einen Drilldown zur nächsten Ebene (Tage) durchzuführen.
 
-    3.  Führen Sie einen Drillup und Drilldown aus. Wählen Sie dann verschiedene Balken im Zeitsäulendiagramm aus, und beobachten Sie Änderungen im Kreisdiagrammbericht.
+    3.  Führen Sie einen Drillup und Drilldown aus. Wählen Sie dann verschiedene Balken im gestapelten Säulendiagramm aus, und beobachten Sie Änderungen im Kreisdiagrammbericht.
 
-11. Speichern Sie laufende Arbeiten, indem Sie auf **Speichern** klicken.
+11. Speichern Sie die derzeitige Arbeit, indem Sie **Diesen Bericht speichern** auswählen.
+
 
 ## Übung 2: Power BI-Dashboard erstellen
 
@@ -101,27 +102,28 @@ Damit haben den Power BI-Dienst für Ihre Labs eingerichtet.
 
 1.  Sie sollten den Bericht aus der vorherigen Aufgabe geöffnet haben.
 
-2.  Wählen Sie im Menü den Eintrag **An ein Dashboard anheften** aus. Je nach Layout müssen Sie möglicherweise auf **...** klicken, um weitere Menüelemente anzuzeigen.
+2.  Wählen Sie im Menü den Eintrag **An ein Dashboard anheften** aus. Abhängig vom Layout müssen Sie möglicherweise **...** auswählen, um weitere Optionen anzuzeigen.
 
 3.  Wählen Sie bei der Eingabeaufforderung **An Dashboard anheften** die Option **Neues Dashboard** aus.
 
-4.  Geben Sie **Campusverwaltung** unter **Dashboardname** ein, und klicken Sie auf **Live anheften**.
+4.  Geben Sie `Campus Management` als **Dashboardnamen** ein, und wählen Sie **Live anheften** aus.
 
 5.  In einem Popup wird Ihnen mitgeteilt, dass das Dashboard erstellt wurde. Wählen Sie **Zum Dashboard wechseln** aus.
 
 6.  Testen Sie die Interaktivität der angezeigten Kreis- und Balkendiagramme.
 
+
 ### Aufgabe \#2: Visualisierungen in natürlicher Sprache hinzufügen
 
 1.  Wählen Sie in Ihrem Dashboard **Campusverwaltung** die Leiste **Stellen Sie eine Frage zu Ihren Daten** ganz oben aus.
 
-2.  Geben Sie im Frage- und Antwortbereich **Gebäude nach Anzahl der Besuche** ein. Ein Balkendiagramm wird angezeigt.
+2.  Geben Sie im Frage- und Antwortbereich `buildings by number of visits` ein. Ein Balkendiagramm wird angezeigt.
 
 3.  Wählen Sie **Visualisierung anheften** aus.
 
-4.  Wählen Sie **Vorhandenes Dashboard** und dann Ihr Dashboard **Campusverwaltung** aus, und klicken Sie auf **Anheften**.
+4.  Wählen Sie **Vorhandenes Dashboard** und dann das Dashboard **Campusverwaltung** aus, und klicken Sie auf **Anheften**.
 
-5.  Klicken Sie auf **F&A beenden**.
+5.  Wählen Sie **F&A verlassen** aus.
 
 Ihr **Campus Management**-Dashboard sollte mit drei visuellen Elementen angezeigt werden. Möglicherweise müssen Sie nach unten scrollen, um das neue Visuelle Q&A-Element anzuzeigen.
 
