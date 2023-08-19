@@ -6,7 +6,7 @@ lab:
 
 # Lab 4: Erstellen einer automatisierten Lösung
 
-**WWL-Mandanten – Nutzungsbedingungen** Wenn Ihnen im Rahmen einer Präsenzschulung ein Mandant zugewiesen worden ist, steht dieser für Praxislabs innerhalb der Präsenzschulung zur Verfügung. Mandanten sollten nicht für Zwecke außerhalb von Praxislabs freigegeben oder verwendet werden. Der in diesem Kurs verwendete Mandant ist ein Testmandant; er kann nach Abschluss des Kurses nicht verwendet oder erreicht werden und ist nicht für Erweiterungen geeignet. Mandanten dürfen nicht in ein kostenpflichtiges Abonnement konvertiert werden. Die im Rahmen dieses Kurses erworbenen Mandanten verbleiben im Eigentum der Microsoft Corporation, und wir behalten uns das Recht vor, jederzeit auf Mandanten zuzugreifen und diese zurückzuziehen. 
+**WWL-Mandanten – Nutzungsbedingungen** Wenn Ihnen im Rahmen einer Präsenzschulung ein Mandant zugewiesen worden ist, steht dieser für Praxislabs innerhalb der Präsenzschulung zur Verfügung. Mandanten sollten nicht für Zwecke außerhalb von Praxislabs freigegeben oder verwendet werden. Der in diesem Kurs verwendete Mandant ist ein Testmandant; er kann nach Abschluss des Kurses nicht verwendet oder aufgerufen werden und ist nicht für Erweiterungen geeignet. Mandanten dürfen nicht in ein kostenpflichtiges Abonnement konvertiert werden. Die im Rahmen dieses Kurses erworbenen Mandanten verbleiben im Eigentum der Microsoft Corporation, und wir behalten uns das Recht vor, jederzeit auf Mandanten zuzugreifen und diese zurückzuziehen. 
 
 ## Szenario
 
@@ -37,7 +37,7 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 
 ### Aufgabe \#1: Erstellen eines Flows
 
-1.  Navigieren Sie zu <https://make.powerapps.com>. Möglicherweise müssen Sie sich erneut authentifizieren. Klicken Sie dazu auf **Anmelden**, und folgen Sie den Anweisungen (falls erforderlich).
+1.  Navigieren Sie zu <https://make.powerapps.com>. Möglicherweise müssen Sie sich erneut authentifizieren. Klicken Sie dazu auf **Anmelden**, und befolgen Sie die Anweisungen (falls erforderlich).
 
 2.  Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung**sumgebung aus, falls diese noch nicht ausgewählt ist.
 
@@ -45,13 +45,13 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 
 4.  Wenn Sie dazu aufgefordert werden, wählen Sie **Erste Schritte** aus.
 
-5.  Klicken Sie auf **Neuer Flow**, und wählen Sie **Automatisierter Cloud-Flow** aus.
+5.  Wählen Sie **+ Neuer Flow** und dann **Automatisierter Cloud-Flow** aus.
 
-6.  Geben Sie „Visit Notification“ (Besuchsbenachrichtigung) als **Flownamen** ein.
+6.  Geben Sie `Visit Notification` als **Flowname** ein.
 
-7.  Suchen Sie unter **Flowtrigger auswählen** nach **Dataverse**.
+7.  Suchen Sie unter **Flowtrigger auswählen** nach `Dataverse`.
 
-8.  Wählen Sie den Trigger **Wenn eine Zeile hinzugefügt, geändert oder gelöscht wird** aus, und klicken Sie dann auf **Erstellen**.
+8.  Wählen Sie den Trigger **Wenn eine Zeile hinzugefügt, geändert oder gelöscht wird** aus, und wählen Sie dann **Erstellen** aus.
 
 9.  Füllen Sie die Triggerbedingungen für den Flow auf:
 
@@ -61,56 +61,60 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 
     3.  Wählen Sie im **Bereich** **Organisation** aus
 
-    4.  Klicken Sie im Triggerschritt auf die Schaltfläche mit den Auslassungspunkten ( **...** ), und klicken Sie auf **Umbenennen**. Benennen Sie diesen Trigger in **„Wenn ein Besuch hinzugefügt wird“** um. Dies ist eine gute Vorgehensweise, damit Sie und andere Flow-Editoren den Zweck des Schritts erkennen können, ohne tiefer in die Details gehen zu müssen.
+    4.  Klicken Sie im Triggerschritt auf die Schaltfläche mit den Auslassungspunkten ( **...** ), und wählen Sie **Umbenennen** aus. Umbenennen des Triggerschritts `When a Visit is added` 
+
+        Dies ist eine gute Vorgehensweise, damit Sie und andere Flow-Editoren den Zweck des Schritts erkennen können, ohne tiefer in die Details gehen zu müssen.
+
 
 ### Aufgabe \#2: Erstellen eines Schritts zum Abrufen der Besucherzeile
 
-1.  Wählen Sie **+ Neuer Schritt**aus. Dieser Schritt ist erforderlich, um Besucherinformationen einschließlich der E-Mail-Adresse abzurufen.
+1.  Wählen Sie **+ Neuer Schritt**aus. In diesem Schritt werden Besucherinformationen abgerufen, einschließlich E-Mail-Adressen.
 
-2.  Suchen Sie nach **Dataverse**.
+2.  Suchen Sie nach `Dataverse`.
 
 3.  Wählen Sie die Aktion **Zeile nach ID abrufen** aus.
 
 4.  Wählen Sie **Kontakte** als **Tabellenname** aus.
 
-5.  Wählen Sie das Feld **Zeilen-ID** aus. Beachten Sie, dass ein Fenster angezeigt wird, in dem Sie dynamische Inhalte oder Ausdrücke auswählen können.
+5.  Wählen Sie das Feld **Zeilen-ID** aus. Beachten Sie, dass ein Fenster geöffnet wird, in dem Sie **dynamische Inhalte** oder **Ausdrücke** auswählen können.
 
-6.  Fügen Sie im Feld **Zeilen-ID** den Eintrag **Besucher (Wert)** in der Liste für dynamische Inhalte aus. In diesem Schritt suchen Sie den Kontakt für die Zeile „Visit“, die erstellt wurde, um diesen Flow auszulösen. Da die E-Mail-Adresse Teil der Tabelle „Contact“ ist, benötigen Sie diese Informationen, um die E-Mail an die Besucher*innen zu senden.
+6.  Wählen Sie im Feld **Zeilen-ID** den Eintrag **Besucher (Wert)** aus der Liste **Dynamische Inhalte** aus. In diesem Schritt suchen Sie den Kontakt für die Zeile „Visit“, die erstellt wurde, um diesen Flow auszulösen. Da die E-Mail-Adresse Teil der Tabelle „Contact“ ist, benötigen Sie diese Informationen, um die E-Mail an die Besucher*innen zu senden.
 
-7.  Klicken Sie bei dieser Aktion auf die Schaltfläche mit den Auslassungspunkten ( **...** ), und klicken Sie dann auf **Umbenennen**.
-        Benennen Sie diese Aktion in **„Den Besucher abrufen“** um. Dies ist eine gute Vorgehensweise, damit Sie und andere Flow-Editoren den Zweck des Schritts erkennen können, ohne tiefer in die Details gehen zu müssen.
+7.  Wählen Sie in der Aktion **Zeile nach ID abrufen** die Auslassungspunkte ( **...** ) aus, und wählen Sie dann **Umbenennen** aus. Umbenennen dieser Aktion `Get the Visitor`
+ 
+    Dies ist eine gute Vorgehensweise, damit Sie und andere Flow-Editoren den Zweck des Schritts erkennen können, ohne tiefer in die Details gehen zu müssen.
+
 
 ### Aufgabe \#3: Erstellen eines Schritts zum Senden einer E-Mail an den Besucher
 
-1.  Klicken Sie auf **+ Neuer Schritt**. Mit diesem Schritt werden E-Mails an Besucher*innen gesendet.
+1.  Wählen Sie **+ Neuer Schritt**aus. Mit diesem Schritt werden E-Mails an Besucher*innen gesendet.
 
-2.  Suchen Sie nach *E-Mail*, wählen Sie den Connector **Office 365 Outlook** und die Aktion **E-Mail senden (V2)** aus.
+2.  Suchen Sie nach `mail`, wählen Sie die Aktion **E-Mail senden (V2)** aus dem **Office 365 Outlook**-Connector aus.
 
-3.  Wenn Sie aufgefordert werden, die „Nutzungsbedingungen für diese Aktion zu akzeptieren“, klicken Sie auf **Akzeptieren**.
+3.  Wenn Sie aufgefordert werden, die „Nutzungsbedingungen für diese Aktion zu akzeptieren“, klicken Sie auf **Ich stimme zu**.
 
 4.  Wählen Sie **Dynamischen Inhalt hinzufügen** unter dem Feld **An** aus. 
     
 5.  Wählen Sie das Feld **E-Mail** aus der Liste dynamischer Inhalte aus.
-        > Notice that it is beneath the **Get the visitor** header. This means you
-        are selecting the Email that is related to the Visitor that you looked
-        up in the previous step.
 
-6.  Geben Sie **Ihr geplanter Besuch am Bellows College** in das Feld **Betreff** ein.
+    > Beachten Sie, dass sich diese unterhalb der Kopfzeile **Den Besucher abrufen** befindet. Das bedeutet, dass Sie die E-Mail-Adresse auswählen, die zu dem Besucher gehört, den Sie im vorherigen Schritt nachgeschlagen haben.
 
-7.  Geben Sie den folgenden Text in **E-Mail-Text** ein:
+7.  Geben Sie in das Feld **Betreff** den Text `Your scheduled visit to Bellows College` ein.
 
->   Dynamischer Inhalt muss dort platziert werden, wo Feldnamen in Klammern angegeben sind. Es wird empfohlen, zuerst den gesamten Text zu kopieren und einzufügen und dann dynamischen Inhalt an den richtigen Stellen hinzuzufügen.
+8.  Geben Sie den folgenden Text in **E-Mail-Text** ein:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   Dear {First Name},
+    > Dynamischer Inhalt muss dort platziert werden, wo Feldnamen in Klammern angegeben sind. Es wird empfohlen, zuerst den gesamten Text zu kopieren und einzufügen und dann dynamischen Inhalt an den richtigen Stellen hinzuzufügen.
 
-   You are currently scheduled to visit Bellows Campus from {Scheduled Start} until {Scheduled End}.
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Dear {First Name},
 
-   Best regards,
+    You are currently scheduled to visit Bellows Campus from {Scheduled Start} until {Scheduled End}.
 
-   Campus Administration
-   Bellows College
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Best regards,
+
+    Campus Administration
+    Bellows College
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 8.  Markieren Sie den Text **{First Name}** (Vorname). Ersetzen Sie ihn durch das Feld **Vorname** aus dem Schritt **Besucher abrufen**.
 
@@ -118,11 +122,12 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 
 10.  Markieren Sie den Text **{Scheduled End}** (Geplantes Ende). Ersetzen Sie es durch das Feld **Scheduled End** aus dem Schritt **Wenn ein Besuch hinzugefügt wird**.
 
-11.  Klicken Sie auf **Speichern**.
+11.  Wählen Sie **Speichern** aus.
 
 Lassen Sie die Registerkarte dieses Flows für die nächste Aufgabe geöffnet. Ihr Flow sollte in etwa wie folgt aussehen:
 
 ![Beispiel für Flowschritte.](media/4-Flow.png)
+
 
 ### Aufgabe \#4: Flow überprüfen und aktivieren
 
@@ -130,21 +135,21 @@ Lassen Sie die Registerkarte dieses Flows für die nächste Aufgabe geöffnet. I
 
 2.  Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung**sumgebung aus, falls diese noch nicht ausgewählt ist.
 
-3.  Klicken Sie auf **Apps**, und wählen Sie die **Bellows Campus-Verwaltungs-App** aus, die Sie zuvor erstellt haben.
+3.  Wählen Sie **Apps** aus, und öffnen Sie die modellgesteuerte App **Bellows-Campusverwaltung**, die Sie zuvor erstellt haben.
 
 3.  Lassen Sie diese Browserregisterkarte geöffnet, und navigieren Sie wieder zurück zu der vorherigen Registerkarte mit Ihrem Flow.
 
-4.  Klicken Sie in der Befehlsleiste auf **Testen**. Wählen Sie **Manuell** aus, und klicken Sie dann auf **Testen**.
+4.  Wählen Sie in der Befehlsleiste **Test** aus. Wählen Sie **Manuell** aus, und wählen Sie dann **Testen** aus.
 
 5.  Navigieren Sie zur Browserregisterkarte mit geöffneter modellgesteuerter App. 
 
-6.  Wählen Sie links im Navigationsbereich die Option **Besuche** aus.
+6.  Wählen Sie links in der Sitenavigation die Option **Besuche** aus.
 
-6. Klicken Sie auf die Schaltfläche **+ Neu**, um einen neuen **Besuch**sdatensatz hinzuzufügen.
+6.  Wählen Sie die Schaltfläche **+ Neu** aus, um einen neuen **Besuchsdatensatz** hinzuzufügen.
 
-7. Vervollständigen Sie den Besuchsdatensatz wie folgt:
+7.  Vervollständigen Sie den Besuchsdatensatz wie folgt:
 
-    -   **Name:** Testbesuch
+    -   **Name:** `Test Visit`
 
     -   **Besucher:** John Doe
 
@@ -152,12 +157,15 @@ Lassen Sie die Registerkarte dieses Flows für die nächste Aufgabe geöffnet. I
 
     -   **Geplantes Ende:** Morgen um 9:00 Uhr
 
-8. Wählen Sie die Schaltfläche **Speichern und schließen** aus.
+8.  Wählen Sie die Schaltfläche **Speichern und schließen** aus.
 
-9. Navigieren Sie zur Browserregisterkarte, in dem Ihr Flowtest ausgeführt wird. Nach einer kurzen Verzögerung sollte der Flow ausgeführt werden. Hier können Sie alle Probleme im Flow abfangen oder bestätigen, dass er erfolgreich ausgeführt wurde.
+9.  Navigieren Sie zur Browserregisterkarte, auf der Ihr Flowtest ausgeführt wird. Nach einer kurzen Verzögerung sollte der Flow ausgeführt werden. Hier können Sie alle Probleme im Flow abfangen oder bestätigen, dass er erfolgreich ausgeführt wurde.
 
-Nach einer kurzen Verzögerung sollten Sie eine E-Mail in Ihrem Posteingang sehen, da Sie die E-Mail-Adresse von John Doe mit Ihrer persönlichen E-Mail-Adresse aufgefüllt haben. Beachten Sie, dass sie möglicherweise in Ihrem Junk-E-Mail-Ordner landen kann.
+    Nach einer kurzen Verzögerung sollten Sie eine E-Mail in Ihrem Posteingang sehen, da Sie die E-Mail-Adresse von John Doe mit Ihrer persönlichen E-Mail-Adresse aufgefüllt haben. Beachten Sie, dass sie möglicherweise in Ihrem Junk-E-Mail-Ordner landen kann.
 
-## Herausforderungen
 
-- Spielen Sie mit der Formatierung in der E-Mail. Wie können Sie es professioneller gestalten?
+## Herausforderung
+
+- Experimentieren Sie mit der Formatierung der E-Mail. Wie können Sie es professioneller gestalten?
+
+

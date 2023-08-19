@@ -6,7 +6,7 @@ lab:
 
 # Lab 3: So erstellen Sie eine modellgesteuerte App
 
-**WWL-Mandanten – Nutzungsbedingungen** Wenn Ihnen im Rahmen einer Präsenzschulung ein Mandant zugewiesen worden ist, steht dieser für Praxislabs innerhalb der Präsenzschulung zur Verfügung. Mandanten sollten nicht für Zwecke außerhalb von Praxislabs freigegeben oder verwendet werden. Der in diesem Kurs verwendete Mandant ist ein Testmandant; er kann nach Abschluss des Kurses nicht verwendet oder erreicht werden und ist nicht für Erweiterungen geeignet. Mandanten dürfen nicht in ein kostenpflichtiges Abonnement konvertiert werden. Die im Rahmen dieses Kurses erworbenen Mandanten verbleiben im Eigentum der Microsoft Corporation, und wir behalten uns das Recht vor, jederzeit auf Mandanten zuzugreifen und diese zurückzuziehen. 
+**WWL-Mandanten – Nutzungsbedingungen** Wenn Ihnen im Rahmen einer Präsenzschulung ein Mandant zugewiesen worden ist, steht dieser für Praxislabs innerhalb der Präsenzschulung zur Verfügung. Mandanten sollten nicht für Zwecke außerhalb von Praxislabs freigegeben oder verwendet werden. Der in diesem Kurs verwendete Mandant ist ein Testmandant; er kann nach Abschluss des Kurses nicht verwendet oder aufgerufen werden und ist nicht für Erweiterungen geeignet. Mandanten dürfen nicht in ein kostenpflichtiges Abonnement konvertiert werden. Die im Rahmen dieses Kurses erworbenen Mandanten verbleiben im Eigentum der Microsoft Corporation, und wir behalten uns das Recht vor, jederzeit auf Mandanten zuzugreifen und diese zurückzuziehen. 
 
 ## Szenario
 
@@ -56,21 +56,21 @@ Vor dem Beginn zu beachtende Dinge
 
 Aufgabe Nr. 1: Formular „Besuch bearbeiten“
 
-1. Melden Sie sich bei [https://make.powerapps.com](https://make.powerapps.com/) an (falls Sie nicht bereits angemeldet sind).
+1.  Melden Sie sich bei <https://make.powerapps.com> an (falls Sie nicht bereits angemeldet sind).
 
-2. Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung**sumgebung aus, falls diese noch nicht ausgewählt ist.
+2.  Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung**sumgebung aus, falls diese noch nicht ausgewählt ist.
 
-3. Wählen Sie im linken Navigationsbereich **Tabellen** aus, und klicken Sie auf Ihre Tabelle **Besuch**, um sie zu öffnen.
+3.  Wählen Sie im linken Navigationsbereich **Tabellen** aus, und öffnen Sie Ihre Tabelle **Visit** (Besuchen).
 
-Wenn die Tabelle „Besuch“ nicht angezeigt wird, stellen Sie sicher, dass Sie sich in der richtigen Umgebung befinden (Schritt 2).
+    Wenn die Tabelle „Besuch“ nicht angezeigt wird, stellen Sie sicher, dass Sie sich in der richtigen Umgebung befinden (Schritt 2).
 
-4. Wählen Sie im Abschnitt **Datenfunktionen** die Option **Formulare** aus, und klicken Sie, um das Formular „Informationen“ mit dem Formulartyp **Haupt** zu öffnen. (**Wichtig:** Stellen Sie sicher, dass Sie das Formular mit dem Typ **Main** auswählen.) 
+4.  Wählen Sie im Abschnitt **Datenfunktionen** die Option **Formulare** aus, und öffnen Sie das Formular **Informationen** mit dem Formulartyp **Main** (Haupt). (**Wichtig:** Stellen Sie sicher, dass Sie das Formular mit dem Formulartyp **Main** (Haupt) auswählen.) 
 
-**WICHTIG:** Da alle Formulare standardmäßig „Information“ heißen, müssen Sie unbedingt überprüfen, ob das von Ihnen ausgewählte Formular den Formulartyp **Haupt** hat, und nicht einen anderen. Standardmäßig hat das Formular zwei Felder: „Name“ und „Besitzer“.
+    **WICHTIG:** Da alle Formulare standardmäßig „Information“ heißen, müssen Sie unbedingt überprüfen, ob das von Ihnen ausgewählte Formular den Formulartyp **Haupt** hat, und nicht einen anderen. Standardmäßig hat das Formular zwei Felder: „Name“ und „Besitzer“.
 
-1. Wählen Sie auf der rechten Seite des Bildschirms im Eigenschaftenpanel das Feld **Anzeigename** aus, und ändern Sie es in **Hauptinformation**.
+5.  Wählen Sie auf der rechten Seite des Bildschirms im **Eigenschaftenpanel** das Feld **Anzeigename** aus, und ändern Sie es in `Main Information`.
 
-2. Wählen Sie die **Tabellenspalten** aus dem linken Navigationsbereich aus, und fügen Sie die folgenden Felder unter dem Feld **Owner** (Besitzer) hinzu, indem Sie Spalten in das Formula ziehen oder einfach auf die Spaltennamen klicken:
+6.  Wählen Sie **Tabellenspalten** im linken Navigationsbereich aus, und fügen Sie die folgenden Felder unter dem Feld **Owner** (Besitzer) hinzu, indem Sie Spalten in das Formular ziehen oder einfach auf die Spaltennamen klicken:
 
     1. **Besucher**
 
@@ -82,27 +82,28 @@ Wenn die Tabelle „Besuch“ nicht angezeigt wird, stellen Sie sicher, dass Sie
 
     5. **Actual End (Tatsächliches Ende)**
 
-3. Ziehen Sie die Spalte **Code**, und legen Sie sie im Formularkopf ab.
+7.  Ziehen Sie die Spalte **Code**, und legen Sie sie im Formularkopf ab.
 
-Die Kopfzeile ist der obere rechte Bereich des Formulars. Möglicherweise müssen Sie das Eigenschaftenpanel auf der rechten Seite des Bildschirms zuklappen, um das Feld im Formular anzuzeigen.
+    Die Kopfzeile ist der obere rechte Bereich des Formulars. Möglicherweise müssen Sie das Eigenschaftenpanel auf der rechten Seite des Bildschirms zuklappen, um das Feld im Formular anzuzeigen.
 
-1. Aktivieren Sie bei weiterhin ausgewähltem Feld **Code** das Kontrollkästchen für **Schreibgeschützt** im Eigenschaftenpanel auf der rechten Seite.
+8.  Aktivieren Sie bei weiterhin ausgewähltem Feld **Code** das Kontrollkästchen für **Schreibgeschützt** im Eigenschaftenpanel auf der rechten Seite.
 
-2. Wählen Sie das Feld **Besitzer** aus. Ändern Sie im Eigenschaftenpanel die **Bezeichnung** in **Host**.
+9.  Wählen Sie das Feld **Besitzer** aus. Ändern Sie im Eigenschaftenpanel die **Bezeichnung** in `Host`.
 
-3. Klicken Sie oben rechts auf **Speichern und Veröffentlichen**, und warten Sie, bis der Speicher- und Veröffentlichungsvorgang abgeschlossen ist.
+10. Wählen Sie oben rechts **Speichern und Veröffentlichen** aus, und warten Sie, bis der Speicher- und Veröffentlichungsvorgang abgeschlossen ist.
 
-4. Wenn die Bearbeitungsansicht auf einer neuen Browserregisterkarte oder in einem neuen Fenster geöffnet wurde, schließen Sie sie. Klicken Sie andernfalls oben links im Bildschirm auf **Zurück**. Sie sollten sich nun wieder auf „Formulare“ für die Tabelle „Besuch“ befinden.
+11. Wenn die Bearbeitungsansicht auf einer neuen Browserregisterkarte oder in einem neuen Fenster geöffnet wurde, schließen Sie sie. Wählen Sie andernfalls oben links im Bildschirm **🡠 Zurück** aus. Sie sollten sich nun wieder im Formular für die Tabelle **Visit** (Besuchen) befinden.
 
-5. Sie verwenden die Breadcrumbs oben links (Tabellen > Besuchen > Formulare). Wählen Sie **Besuchen** aus, um zum Hauptbildschirm der Tabelle **Besuchen** zurückzukehren.
+12. Sie verwenden die Breadcrumbs oben links (**Tabellen** > **Besuchen** > **Formulare**). Wählen Sie **Visit** (Besuchen) aus, um zum Hauptbildschirm der Tabelle **Visit** zurückzukehren. 
+
 
 Aufgabe Nr. 2: Bearbeiten der Ansicht „Aktive Besuche“
 
 In dieser Aufgabe ändern wir die Standardansicht „Aktive Besuche“ und erstellen eine neue Ansicht für die heutigen Besuche.
 
-1. Wählen Sie im Abschnitt **Datenfunktionen** die Option **Ansichten** aus, und klicken Sie, um die Ansicht **Aktive Besuche** zu öffnen.
+1.  Wählen Sie im Abschnitt **Datenfunktionen** die Option **Ansichten** aus, und öffnen Sie die Ansicht **Active Visits** (Aktive Besuche).
 
-2. Fügen Sie der Ansicht die folgenden Felder hinzu, indem Sie entweder auf die Felder klicken oder sie ziehen und ablegen:
+2.  Fügen Sie der Ansicht die folgenden Felder hinzu, indem Sie entweder auf die Felder klicken oder sie ziehen und ablegen:
 
     1. **Code**
 
@@ -112,17 +113,16 @@ In dieser Aufgabe ändern wir die Standardansicht „Aktive Besuche“ und erste
 
     4. **Geplantes Ende**
 
-3. Klicken Sie auf die Spalte **Erstellt am**, und wählen Sie **Entfernen** aus. Das Feld **Erstellt am** wird nun aus der Ansicht entfernt.
+3.  Wählen Sie das Dropdownmenü in der Spalte **Erstellt am** und dann **Entfernen** aus. Das Feld **Erstellt am** wird nun aus der Ansicht entfernt.
 
-4. Passen Sie die Größe der einzelnen Spaltenbreiten an die Daten an.
+4.  Passen Sie die Größe der einzelnen Spaltenbreiten an die Daten an.
 
-5. Wählen Sie unter **Sortieren nach …** das X aus, um **Name** zu entfernen, und wählen sie stattdessen **Geplanter Start** aus.
+5.  Wählen Sie unter **Sortieren nach …** das X aus, um **Name** zu entfernen, und wählen sie stattdessen **Geplanter Start** aus.
 
-6. Wählen Sie **Geplanter Start** aus, um die Sortierreihenfolge in **Neu nach alt** zu ändern.
+6.  Wählen Sie **Geplanter Start** aus, um die Sortierreihenfolge in **Neu nach alt** zu ändern.
 
-7. Klicken Sie auf **Speichern** und warten Sie, bis die Änderungen gespeichert sind.
+7.  Wählen Sie oben rechts **Speichern und Veröffentlichen** aus, und warten Sie, bis der Veröffentlichungsvorgang abgeschlossen wurde.
 
-8. Klicken Sie auf **Veröffentlichen** und warten Sie, bis die Veröffentlichung abgeschlossen ist.
 
 Aufgabe 3: Erstellen einer neuen Ansicht für heutige Besuche
 
@@ -130,27 +130,26 @@ Jetzt werden wir die Ansicht klonen, um eine neue Ansicht für die heutigen Besu
 
 WICHTIG: Stellen Sie sicher, dass Sie die Ansicht „Aktive Besuche“ nicht schließen, da wir sie nutzen werden, um die neue Ansicht der heutigen Besuche zu erstellen.
 
-1. Klicken Sie auf den **Dropdownpfeil** neben der Schaltfläche „Speichern“ (achten Sie darauf, dass Sie nicht auf die Schaltfläche selbst klicken), und wählen Sie **Speichern unter** aus.
+1.  Wählen Sie **Speichern unter** aus.
 
-2. Ändern Sie den Namen in **Heutige Besuche**, und wählen Sie **Speichern** aus.
+2.  Ändern Sie den **Status** in `Today’s Visits`, und wählen Sie **Speichern** aus.
 
-3. Klicken Sie im Eigenschaftenpanel auf den Link **Filter bearbeiten**.
+3.  Wählen Sie **Filter bearbeiten** im Eigenschaftenpanel aus.
 
-4. Klicken Sie auf **Hinzufügen**, und wählen Sie **Zeile hinzufügen** aus.
+4.  Klicken Sie auf **+ Hinzufügen**, und wählen Sie **Zeile hinzufügen** aus.
 
-5. Wählen Sie **Geplanter Start** als Feld aus, und wählen Sie dann im Dropdownmenü **Heute** als Bedingung aus.
+5.  Wählen Sie **Geplanter Start** als Feld aus, und ändern Sie dann **Ist gleich** als Bedingung in der Dropdownliste in **Heute**.
 
-6. Klicken Sie auf **...** . in der Zeile **Status**, und klicken Sie auf **Löschen**, um diese Filterbedingung zu löschen.
+6.  Wählen Sie **...** **Weitere Befehle** in der Zeile **Status** und dann **Löschen** aus, um diese Filterbedingung zu löschen.
 
-7. Klicken Sie auf **OK**, um die Bedingung zu speichern. Die Ansicht wird jetzt gefiltert, um nur Datensätze anzuzeigen, bei denen das geplante Startdatum heute liegt.
+7.  Wählen Sie **OK** aus, um die Bedingung zu speichern. Die Ansicht ist jetzt so gefiltert, dass nur Datensätze angezeigt werden, bei denen das Datum **Geplanter Start** der heutige Tag ist.
 
-8. Fügen Sie der Ansicht die Felder **Tatsächlicher Start** und **Tatsächliches Ende** hinzu.
+8.  Fügen Sie der Ansicht die Felder **Tatsächlicher Start** und **Tatsächliches Ende** hinzu.
 
-**Hinweis:** Da wir nicht mehr nach dem Ansichtsstatus filtern, erhalten wir alle heutigen Besuche, einschließlich der abgeschlossenen. Diese Felder helfen dabei, zwischen abgeschlossenen und laufenden Besuchen zu unterscheiden.
+    **Hinweis:** Da wir nicht mehr nach dem Ansichtsstatus filtern, erhalten wir alle heutigen Besuche, einschließlich der abgeschlossenen. Diese Felder helfen dabei, zwischen abgeschlossenen und laufenden Besuchen zu unterscheiden.
 
-1. Klicken Sie auf **Speichern** und warten Sie, bis die Änderungen gespeichert sind.
+9.  Wählen Sie oben rechts **Speichern und Veröffentlichen** aus, und warten Sie, bis der Veröffentlichungsvorgang abgeschlossen wurde.
 
-2. Klicken Sie auf **Veröffentlichen** und warten Sie, bis die Veröffentlichung abgeschlossen ist.
 
 Übung 2: Eine modellgesteuerte App erstellen
 
@@ -160,89 +159,86 @@ Zur Vereinfachung und Kürzung behandeln wir einige der „Besuch“-Spalten in 
 
 Aufgabe 1: Erstellen einer App
 
-1. Melden Sie sich bei [https://make.powerapps.com](https://make.powerapps.com/) an (falls Sie nicht bereits angemeldet sind).
+1.  Melden Sie sich bei <https://make.powerapps.com> an (wenn Sie noch nicht angemeldet sind).
 
-2. Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung**sumgebung aus, falls diese noch nicht ausgewählt ist.
+2.  Wählen Sie oben rechts Ihre Umgebung **[Ihre Initialen] Übung** aus, falls diese noch nicht ausgewählt ist.
 
-3. Klicken Sie, falls erforderlich, auf das **Startseitensymbol** auf der linken Seite des Bildschirms.
+3.  Wählen Sie im linken Navigationsbereich **+ Erstellen** aus.
 
-4. Erstellen der modellgesteuerten Anwendung:
+4.  Erstellen der modellgesteuerten Anwendung:
 
-    1. Wählen Sie **Leere App** im Abschnitt **Beginnen mit** des Startbildschirms aus.
+    1. Wählen Sie **Leere App** im Abschnitt **Beginnen mit** des Bildschirms **App erstellen** aus.
 
     2. Wählen Sie unter **Leere App basierend auf Dataverse** die Option **Erstellen** aus.
 
-    3. Geben Sie **Bellows Campusverwaltung** als „Name“ ein, und wählen Sie **Erstellen** aus.
+    3. Geben Sie `Bellows Campus Management` als **Name** ein, und wählen Sie **Erstellen** aus.
 
-5. Nachdem Ihre neue modellgesteuerte Anwendung geladen wurde, wählen Sie die Schaltfläche **Seite hinzufügen** aus.
+5.  Nachdem Ihre neue modellgesteuerte Anwendung geladen wurde, wählen Sie die Schaltfläche **Seite hinzufügen** aus.
 
-6. Wählen Sie im Bildschirm **Seite hinzufügen** **Dataverse-Tabelle** aus, und klicken Sie auf die Schaltfläche **Weiter**.
+6.  Wählen Sie im Bildschirm **Seite hinzufügen** **Dataverse-Tabelle** aus, und klicken Sie auf die Schaltfläche **Weiter**.
 
-7. Fügen Sie die folgenden Tabellen hinzu:
+7.  Wählen Sie die folgenden Tabellen aus:
 
     1. Navigieren Sie zu folgendem Pfad.
 
     2. Contact
 
-8. Nachdem Sie die 2 Tabellen ausgewählt haben, wählen Sie **Hinzufügen** aus.
+8.  Wenn Sie über beide Tabellen verfügen, wählen Sie **Hinzufügen** aus.
 
-9. Wählen Sie mithilfe der Navigationssymbole auf der linken Seite des Bildschirms **Navigation** aus.
+9.  Wählen Sie mithilfe der Navigationssymbole auf der linken Seite des Bildschirms **Navigation** aus.
 
-10. Wählen Sie im Navigationsbereich unterhalb der Bezeichnung „Navigationsleiste“ den Text **Gruppe 1** aus. Möglicherweise müssen Sie das Menü links erweitern.
+10. Wählen Sie im Navigationsbereich unterhalb der Bezeichnung „Navigation“ die Option **Neue Gruppe** aus. Möglicherweise müssen Sie das Menü links erweitern.
 
-11. Ändern Sie auf der rechten Seite des Bildschirms im Abschnitt **Anzeigeoptionen** die Eigenschaft **Titel** in **Sicherheit**.
+11. Ändern Sie auf der rechten Seite des Bildschirms im Abschnitt **Anzeigeoptionen** die Eigenschaft **Titel** in `Security`.
 
-12. Wählen Sie im Navigationsbereich unter der Gruppe „Sicherheit“ **SubArea1** aus.
+12. Klicken Sie auf **Speichern**, und warten Sie, bis die Änderungen gespeichert sind.
 
-13. Wählen Sie die **Auslassungspunkte** aus, und wählen Sie im angezeigten Menü **Aus Navigation entfernen** aus.
+13. Nachdem der **Speicher**vorgang abgeschlossen wurde, wählen Sie die Schaltfläche **Veröffentlichen** aus, um Ihre Änderungen zu veröffentlichen.
 
-14. Klicken Sie auf **Speichern**, und warten Sie, bis die Änderungen gespeichert sind.
-
-15. Nachdem der **Speicher**vorgang abgeschlossen wurde, wählen Sie die Schaltfläche **Veröffentlichen** aus, um Ihre Änderungen zu veröffentlichen.
 
 Aufgabe 2: Testen der App
 
-1. Starten der Anwendung
+Starten der Anwendung
 
-    1. Wählen Sie die Schaltfläche **Wiedergeben** aus. Die neue App wird auf einer neuen Registerkarte geladen.
+1. Wählen Sie die Schaltfläche **Wiedergeben** aus. Die modellgesteuerte App wird auf einer neuen Registerkarte geladen.
 
-2. Erstellen Sie einen neuen Kontakt.
+Erstellen eines neuen Kontakts
 
-    1. Die App sollte in der Ansicht **Meine aktiven Kontakte** geöffnet werden. Wenn dies nicht der Fall ist, wählen Sie in der linken Navigationsleiste „Kontakte“ aus.
+2.  Die App sollte in der Ansicht **Meine aktiven Kontakte** geöffnet werden. Wenn dies nicht der Fall ist, wählen Sie in der linken Navigationsleiste **Kontakte** aus.
 
-    2. Klicken Sie im oberen Menü auf **+ Neu**.
+3.  Wählen Sie in der Befehlsleiste **+ Neu** aus.
 
-    3. Geben Sie als **Vornamen** Herbert und als Nachnamen **Dorner** an.
+4.  Geben Sie als **Vorname** „`John`“ und als **Nachname** „`Doe`“ ein.
 
-    4. Geben Sie unter **E-Mail** Ihre persönliche E-Mail-Adresse an. Sie wird in einem zukünftigen Lab verwendet, in dem Sie eine E-Mail erhalten.
+5.  Geben Sie unter **E-Mail** Ihre persönliche E-Mail-Adresse an. Sie wird in einem zukünftigen Lab verwendet, in dem Sie eine E-Mail erhalten.
 
-    5. Klicken Sie auf **Speichern &amp; schließen**.
+6.  Klicken Sie auf **Speichern und schließen**.
 
-    6. Sie sollten nun den erstellten Kontakt in der Ansicht **Meine aktiven Kontakte** sehen.
+7.  Sie sollten nun den erstellten Kontakt in der Ansicht **Meine aktiven Kontakte** sehen.
 
-3. Erstellen Sie einen neuen Besuch.
+Erstellen eines neuen Besuchs
 
-    1. Wählen Sie **Besuche** in der linken Navigationsleiste der Siteübersicht aus.
+8.  Wählen Sie **Besuche** in der linken Navigationsleiste (auch als „Siteübersicht“ bezeichnet) aus.
 
-    2. Klicken Sie auf **+ NEU**.
+9.  Wählen Sie **+ Neu** aus.
 
-    3. Füllen Sie die Felder folgendermaßen aus:
+10. Füllen Sie die Felder wie folgt aus:
 
-        1. **Name:** Neuer Testbesuch
+    1. **Name**: `New test visit`
 
-        2. **Besucher**: Wählen Sie Max Mustermann aus
+    2. **Besucher**: Wählen Sie **Max Mustermann** aus
 
-        3. **Geplanter Start**: Wählen Sie das morgige Datum und 14:00 Uhr als Startzeit aus
+    3. **Geplanter Start**: Wählen Sie das morgige Datum und 14:00 Uhr als Startzeit aus.
 
-        4. **Geplantes Ende**: Wählen Sie das morgige Datum und 15:30 Uhr als Endzeit aus
+    4. **Geplantes Ende**: Wählen Sie das morgige Datum und 15:30 Uhr als Endzeit aus.
 
-- Klicken Sie auf **Speichern &amp; schließen**. Der Besuch wird erstellt und sollte in der Ansicht für aktive Besuche zu sehen sein.
+11. Klicken Sie auf **Speichern und schließen**. Der Besuch wird erstellt und sollte in der Ansicht **Aktive Besuche** angezeigt werden.
 
-- Ändern Sie die Ansicht **Heutige Besuche** über die Dropdownliste neben **Aktive Besuche**. Sie sollten den neuen Besuch nicht mehr in der Ansicht sehen, da er für morgen geplant ist.
+12. Ändern Sie die Ansicht über die Dropdownliste neben **Aktive Besuche** in **Heutige Besuche**. Sie sollten den neuen Besuch nicht mehr in der Ansicht sehen, da er für morgen geplant ist.
 
-1. Sie können weitere Testdatensätze hinzufügen.
+13. Sie können weitere Testdatensätze hinzufügen.
 
-Ihre ausgeführte App sollte ungefähr so aussehen:
+Ihre modellgesteuerte App sollte ungefähr folgendermaßen aussehen:
 
 ![](media/3-model-driven-app.png)
 
@@ -251,3 +247,4 @@ Herzlichen Glückwunsch! Sie haben Ihre erste modellgesteuerte App erstellt und 
 ## Herausforderungen
 
 - Wählen Sie spezifische Ansichten und Formulare für Kontakte aus.
+

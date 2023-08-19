@@ -174,7 +174,7 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
 
 3.  Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung**sumgebung aus, falls diese noch nicht ausgewählt ist.
 
-4.  Klicken Sie in der oberen linken Ecke auf das Waffel-Menü, um die Anwendungen zu ändern, und wählen Sie **OneDrive** aus. (Es kann einen Moment dauern, bis OneDrive eingerichtet ist. Klicken Sie auf **Ihr OneDrive ist fertig**, wenn die Meldung auf dem Bildschirm angezeigt wird.)
+4.  Klicken Sie in der oberen linken Ecke auf das Waffel-Menü, um die Anwendungen zu ändern, und wählen Sie **OneDrive** aus. (Es kann einen Moment dauern, bis OneDrive eingerichtet ist. Wählen Sie **Ihr OneDrive ist fertig** aus, wenn die Meldung auf dem Bildschirm angezeigt wird.)
 
 5.  Klicken Sie im oberen Menü auf **Hochladen**, und wählen Sie **Dateien** aus.
 
@@ -193,7 +193,7 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
 
 4.  Öffnen Sie die Tabelle **Visit**, die Sie in der vorherigen Übung erstellt haben. 
 
-5.  Wählen Sie oben im Menü **Importieren** > Daten importieren** aus.
+5.  Wählen Sie oben im Menü **Importieren** > **Daten importieren** aus.
 
 6.  Wählen Sie im Dialogfeld **Datenquelle auswählen** die Option **Excel-Arbeitsmappe** aus.
 
@@ -203,7 +203,7 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
 
 9.  Wählen Sie **Weiter** aus. 
 
-10. Aktivieren Sie unter **Daten auswählen** das Kontrollkästchen neben der Excel-Arbeitsmappe **Visits**. 
+10. Aktivieren Sie auf dem Bildschirm **Power Query** > **Daten auswählen** die Excel-Arbeitsmappe **Visits** (Besuche). 
 
 11. Wählen Sie **Weiter** aus. Navigieren Sie nicht von dieser Seite weg.
 
@@ -213,7 +213,7 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
 
 14. Wählen Sie im Dropdownmenü **Zieltabelle** den Tabellennamen **crXXX_visit** aus (wobei XXX eine zufällige Gruppe von Buchstaben und Zahlen ist).
 
-15. Auf der Seite **Column mapping**: Ordnen Sie die Spalten den entsprechenden Zielspalten zu.
+15. Ordnen Sie die Spalten im Abschnitt **Spaltenzuordnung** den entsprechenden Zielspalten zu:
 
     | Zielspalten  | Quellwerte   |
     |:---------------------|:----------------|
@@ -240,3 +240,4 @@ Aufgabe 3: Datenimport überprüfen
 2.  Stellen Sie sicher, dass die importierten Daten im Abschnitt **Ansehen von Spalten und Daten** angezeigt werden.
 
 Glückwunsch, Sie haben erfolgreich eine neue Tabelle erstellt und Daten importiert.
+
