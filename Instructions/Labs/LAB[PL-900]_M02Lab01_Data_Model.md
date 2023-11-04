@@ -43,11 +43,12 @@ Vor dem Beginn zu beachtende Dinge
 
 - Benennungskonventionen – Namen sorgfältig eingeben.
 
-Übung 1: Erstellen einer neuen Tabelle
+
+# Übung 1: Erstellen einer neuen Tabelle
 
 **Ziel**: In dieser Übung erstellen Sie eine neue benutzerdefinierte Tabelle für Besuche.
 
-Aufgabe #1: Tabelle „Visit“ und Spalten erstellen
+## Aufgabe #1: Tabelle „Visit“ und Spalten erstellen
 
 Die Tabelle **Visit** wird Informationen zu den Campusbesuchen enthalten, einschließlich der Besucher*innen sowie des geplanten sowie des tatsächlichen Zeitpunkts jedes Besuchs.
 
@@ -59,7 +60,7 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
 
 1.  Wählen Sie links im Navigationsbereich die Option **Tabellen** aus.
 
-1.  Wählen Sie **+ Neue Tabelle** und dann **+ Neue Tabelle** aus. 
+1.  Wählen Sie **+ Neue Tabelle** aus und wählen Sie **Erweiterte Eigenschaften festlegen** aus. 
 
 1.  Geben Sie für **Anzeigename** `Visit` ein.
 
@@ -67,7 +68,8 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
 
 1.  Wählen Sie im Abschnitt **Schema** die Option **Spalten** aus. 
 
-# Spalte „Geplanter Start“ erstellen
+
+## Spalte „Geplanter Start“ erstellen
 
 1.  Wählen Sie **+ Neue Spalte** aus. 
 
@@ -85,7 +87,8 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
 
 1.  Wählen Sie **Speichern** aus. 
 
-# Spalte „Geplantes Ende“ erstellen
+
+## Spalte „Geplantes Ende“ erstellen
 
 1.  Wählen Sie **+ Neue Spalte** aus. 
 
@@ -101,7 +104,8 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
 
 1.  Wählen Sie **Speichern** aus. 
 
-# Spalte „Tatsächlicher Start“ erstellen
+
+## Spalte „Tatsächlicher Start“ erstellen
 
 1.  Wählen Sie **+ Neue Spalte** aus. 
 
@@ -117,11 +121,12 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
 
 1.  Wählen Sie **Speichern** aus. 
 
-# Spalte „Tatsächliches Ende“ erstellen
+
+## Spalte „Tatsächliches Ende“ erstellen
 
 1.  Wählen Sie **+ Neue Spalte** aus.
 
-1.  Geben Sie **Tatsächliches Ende** als **Anzeigename** ein.
+1.  Geben Sie für **Anzeigename** `Actual End` ein.
 
 1.  Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
 
@@ -133,7 +138,8 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
 
 1.  Wählen Sie **Speichern** aus.
 
-# Spalte „Code“ erstellen
+
+## Spalte „Code“ erstellen
 
 1.  Wählen Sie **+ Neue Spalte** aus.
 
@@ -145,13 +151,14 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
 
 1.  Wählen Sie **Speichern** aus. 
 
-# Erstellen einer Nachschlagespalte für „Besucher“
+
+## Erstellen einer Nachschlagespalte für „Besucher“
 
 1.  Wählen Sie **+ Neue Spalte** aus.
 
 1.  Geben Sie für **Anzeigename** `Visitor` ein.
 
-1.  Wählen Sie **Lookup** (Nachschlagen) als **Datentyp** aus. 
+1.  Wählen Sie **Lookup** > **Lookup** für **Datentyp** aus. 
 
 1.  Wählen Sie **Kontakt** für die **Verknüpfte Tabelle** aus. 
 
@@ -162,11 +169,11 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
 1.  Wählen Sie **Speichern** aus.
 
 
-Übung 2: Daten importieren
+# Übung 2: Daten importieren
 
 **Ziel**: In dieser Übung importieren Sie Beispieldaten in die Dataverse-Datenbank.
 
-### Aufgabe \#1: Laden einer Excel-Datei in OneDrive
+## Aufgabe \#1: Laden einer Excel-Datei in OneDrive
 
 1.  Die Datei **Visits.xlsx** sollte auf Ihrem virtuellen Computer unter **C:/LabFiles** gespeichert sein. Laden Sie [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) herunter, wenn dies nicht der Fall ist.
 
@@ -176,14 +183,14 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
 
 4.  Klicken Sie in der oberen linken Ecke auf das Waffel-Menü, um die Anwendungen zu ändern, und wählen Sie **OneDrive** aus. (Es kann einen Moment dauern, bis OneDrive eingerichtet ist. Wählen Sie **Ihr OneDrive ist fertig** aus, wenn die Meldung auf dem Bildschirm angezeigt wird.)
 
-5.  Klicken Sie im oberen Menü auf **Hochladen**, und wählen Sie **Dateien** aus.
+5.  Wählen Sie im Menü **+ Neu hinzufügen** aus und wählen Sie **Dateien hochladen** aus.
 
 6.  Suchen Sie die Datei **Visits.xlsx**, und wählen Sie sie aus. Klicken Sie dann auf **Öffnen**.
 
-    > **Hinweis:** Diese Datei befindet sich im Ordner **Alle Dateien** auf Ihrem Computer.
+    > **Hinweis:** Die Datei sollte sich auf Ihrer VM im Ordner **Desktop** > **Alle Dateien** befinden.
 
 
-### Aufgabe \#2: Erstellen eines Dataflows
+## Aufgabe \#2: Erstellen eines Dataflows
 
 1.  Melden Sie sich bei <https://make.powerapps.com> an, falls Sie nicht bereits angemeldet sind. 
 
@@ -233,7 +240,7 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
     > **Hinweis:** Es kann mehrere Minuten dauern, bis Ihre Daten in Ihre Tabelle importiert werden. Machen Sie sich keine Sorgen, wenn ein paar Fehler angezeigt werden. Das ist normal und hat keine Auswirkungen auf den Rest des Kurses.
 
 
-Aufgabe 3: Datenimport überprüfen
+## Aufgabe 3: Datenimport überprüfen
 
 1.  Nachdem Ihre Daten importiert wurden, verwenden Sie die Navigation auf der linken Seite des Bildschirms, um **Tabellen** auszuwählen und die Tabelle **Visit** zu öffnen.
 
