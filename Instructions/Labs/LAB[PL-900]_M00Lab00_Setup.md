@@ -6,7 +6,7 @@ lab:
 
 # Lab 0: Lab-Umgebung überprüfen
 
-**WWL-Mandanten – Nutzungsbedingungen** Wenn Ihnen im Rahmen einer Präsenzschulung ein Mandant zugewiesen worden ist, steht dieser für Praxislabs innerhalb der Präsenzschulung zur Verfügung. Mandanten sollten nicht für Zwecke außerhalb von Praxislabs freigegeben oder verwendet werden. Der in diesem Kurs verwendete Mandant ist ein Testmandant; er kann nach Abschluss des Kurses nicht verwendet oder aufgerufen werden und ist nicht für Erweiterungen geeignet. Mandanten dürfen nicht in ein kostenpflichtiges Abonnement konvertiert werden. Die im Rahmen dieses Kurses erworbenen Mandanten verbleiben im Eigentum der Microsoft Corporation, und wir behalten uns das Recht vor, jederzeit auf Mandanten zuzugreifen und diese zurückzuziehen. 
+**WWL-Mandanten – Nutzungsbedingungen** Wenn Ihnen im Rahmen einer Präsenzschulung ein Mandant zugewiesen worden ist, steht dieser für Praxislabs innerhalb der Präsenzschulung zur Verfügung. Mandanten sollten nicht für Zwecke außerhalb von Praxislabs freigegeben oder verwendet werden. Der in diesem Kurs verwendete Mandant ist ein Testmandant; er kann nach Abschluss des Kurses nicht verwendet oder erreicht werden und ist nicht für Erweiterungen geeignet. Mandanten dürfen nicht in ein kostenpflichtiges Abonnement konvertiert werden. Die im Rahmen dieses Kurses erworbenen Mandanten verbleiben im Eigentum der Microsoft Corporation, und wir behalten uns das Recht vor, jederzeit auf Mandanten zuzugreifen und diese zurückzuziehen. 
 
 ## Szenario
 
@@ -28,6 +28,8 @@ Aufgabe 1: Erhalten Ihres Microsoft Power Platform-Testmandanten
 1.  Navigieren Sie zu <https://powerapps.microsoft.com>, und wählen Sie **Kostenlos starten** aus.
 
 1.  Geben Sie unter **Erste Schritte** die E-Mail-Adresse ein, die Sie vom autorisierten Lab-Hoster erhalten haben, und wählen Sie **Kostenlose Testversion starten** aus. 
+
+1.  Wenn eine zusätzliche Seite mit den Schaltflächen **Erstellung von Apps starten** und **Benutzung von Apps starten** angezeigt wird, dann klicken Sie auf **Benutzung von Apps starten** – nicht auf „Erstellung von Apps starten“.
 
 1.  Eine Meldung bestätigt, dass Sie über ein Microsoft-Konto verfügen. Wählen Sie **Anmelden**. 
 
