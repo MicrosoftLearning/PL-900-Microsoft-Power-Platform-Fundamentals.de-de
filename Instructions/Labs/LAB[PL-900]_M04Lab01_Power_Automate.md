@@ -6,7 +6,7 @@ lab:
 
 # Lab 4: Erstellen einer automatisierten Lösung
 
-**WWL-Mandanten – Nutzungsbedingungen** Wenn Ihnen im Rahmen einer Präsenzschulung ein Mandant zugewiesen worden ist, steht dieser für Praxislabs innerhalb der Präsenzschulung zur Verfügung. Mandanten sollten nicht für Zwecke außerhalb von Praxislabs freigegeben oder verwendet werden. Der in diesem Kurs verwendete Mandant ist ein Testmandant; er kann nach Abschluss des Kurses nicht verwendet oder aufgerufen werden und ist nicht für Erweiterungen geeignet. Mandanten dürfen nicht in ein kostenpflichtiges Abonnement konvertiert werden. Die im Rahmen dieses Kurses erworbenen Mandanten verbleiben im Eigentum der Microsoft Corporation, und wir behalten uns das Recht vor, jederzeit auf Mandanten zuzugreifen und diese zurückzuziehen. 
+**WWL-Mandanten – Nutzungsbedingungen** Wenn Ihnen im Rahmen einer Präsenzschulung ein Mandant zugewiesen worden ist, steht dieser für Praxislabs innerhalb der Präsenzschulung zur Verfügung. Mandanten sollten nicht für Zwecke außerhalb von Praxislabs freigegeben oder verwendet werden. Der in diesem Kurs verwendete Mandant ist ein Testmandant; er kann nach Abschluss des Kurses nicht verwendet oder erreicht werden und ist nicht für Erweiterungen geeignet. Mandanten dürfen nicht in ein kostenpflichtiges Abonnement konvertiert werden. Die im Rahmen dieses Kurses erworbenen Mandanten verbleiben im Eigentum der Microsoft Corporation, und wir behalten uns das Recht vor, jederzeit auf Mandanten zuzugreifen und diese zurückzuziehen. 
 
 ## Szenario
 
@@ -87,7 +87,7 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 
 ### Aufgabe \#3: Erstellen eines Schritts zum Senden einer E-Mail an den Besucher
 
-1.  Wählen Sie **+ Neuer Schritt**aus. Mit diesem Schritt werden E-Mails an Besucher*innen gesendet.
+1.  Wählen Sie **+ Neuer Schritt** aus. Mit diesem Schritt werden E-Mails an Besucher*innen gesendet.
 
 2.  Suchen Sie nach `mail`, wählen Sie die Aktion **E-Mail senden (V2)** aus dem **Office 365 Outlook**-Connector aus.
 
@@ -97,9 +97,9 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
     
 5.  Wählen Sie das Feld **E-Mail** aus der Liste dynamischer Inhalte aus.
 
-    > Beachten Sie, dass sich diese unterhalb der Kopfzeile **Den Besucher abrufen** befindet. Das bedeutet, dass Sie die E-Mail-Adresse auswählen, die zu dem Besucher gehört, den Sie im vorherigen Schritt nachgeschlagen haben.
+    > Beachten Sie, dass sie sich unter der Kopfzeile **Get the Visitor** befindet. Dies bedeutet, dass Sie die E-Mail auswählen, die mit dem Besucher bzw. der Besucherin verknüpft ist, den bzw. die Sie im vorherigen Schritt gesucht haben.
 
-7.  Geben Sie in das Feld **Betreff** den Text `Your scheduled visit to Bellows College` ein.
+7.  Geben Sie im Feld **Betreff** Folgendes ein: `Your scheduled visit to Bellows College`
 
 8.  Geben Sie den folgenden Text in **E-Mail-Text** ein:
 
@@ -122,7 +122,7 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 
 10.  Markieren Sie den Text **{Scheduled End}** (Geplantes Ende). Ersetzen Sie es durch das Feld **Scheduled End** aus dem Schritt **Wenn ein Besuch hinzugefügt wird**.
 
-11.  Wählen Sie **Speichern** aus.
+11.  Wählen Sie **Speichern**.
 
 Lassen Sie die Registerkarte dieses Flows für die nächste Aufgabe geöffnet. Ihr Flow sollte in etwa wie folgt aussehen:
 
@@ -149,7 +149,7 @@ Lassen Sie die Registerkarte dieses Flows für die nächste Aufgabe geöffnet. I
 
 7.  Vervollständigen Sie den Besuchsdatensatz wie folgt:
 
-    -   **Name:** `Test Visit`
+    -   **Name**: `Test Visit`
 
     -   **Besucher:** John Doe
 

@@ -6,7 +6,7 @@ lab:
 
 # Lab 3: So erstellen Sie eine modellgesteuerte App
 
-**WWL-Mandanten – Nutzungsbedingungen** Wenn Ihnen im Rahmen einer Präsenzschulung ein Mandant zugewiesen worden ist, steht dieser für Praxislabs innerhalb der Präsenzschulung zur Verfügung. Mandanten sollten nicht für Zwecke außerhalb von Praxislabs freigegeben oder verwendet werden. Der in diesem Kurs verwendete Mandant ist ein Testmandant; er kann nach Abschluss des Kurses nicht verwendet oder aufgerufen werden und ist nicht für Erweiterungen geeignet. Mandanten dürfen nicht in ein kostenpflichtiges Abonnement konvertiert werden. Die im Rahmen dieses Kurses erworbenen Mandanten verbleiben im Eigentum der Microsoft Corporation, und wir behalten uns das Recht vor, jederzeit auf Mandanten zuzugreifen und diese zurückzuziehen. 
+**WWL-Mandanten – Nutzungsbedingungen** Wenn Ihnen im Rahmen einer Präsenzschulung ein Mandant zugewiesen worden ist, steht dieser für Praxislabs innerhalb der Präsenzschulung zur Verfügung. Mandanten sollten nicht für Zwecke außerhalb von Praxislabs freigegeben oder verwendet werden. Der in diesem Kurs verwendete Mandant ist ein Testmandant; er kann nach Abschluss des Kurses nicht verwendet oder erreicht werden und ist nicht für Erweiterungen geeignet. Mandanten dürfen nicht in ein kostenpflichtiges Abonnement konvertiert werden. Die im Rahmen dieses Kurses erworbenen Mandanten verbleiben im Eigentum der Microsoft Corporation, und wir behalten uns das Recht vor, jederzeit auf Mandanten zuzugreifen und diese zurückzuziehen. 
 
 ## Szenario
 
@@ -18,7 +18,7 @@ Während dieses Kurses erstellen Sie Anwendungen und führen eine Automatisierun
 
 In diesem Lab erstellen Sie eine modellgesteuerte Power Apps-App, mit der die Campus-Mitarbeiter im Backoffice die Besuchsdatensätze für den gesamten Campus verwalten können.
 
-Weiterführende Schritte des Lab
+## Weiterführende Schritte des Lab
 
 Im Rahmen der Erstellung der modellgesteuerten App führen Sie Folgendes aus:
 
@@ -36,7 +36,7 @@ Wir werden mit folgenden Komponenten arbeiten:
 
 Beide werden für eine bessere Benutzererfahrung in die modellgesteuerte App integriert.
 
-Voraussetzungen
+## Voraussetzungen
 
 - Beendigung von **Modul 0 Lab 0 – Lab-Umgebung überprüfen**
 
@@ -50,11 +50,11 @@ Vor dem Beginn zu beachtende Dinge
 
 - Welche Anpassungen können an der Seitenübersicht einer modellgesteuerten App vorgenommen werden?
 
-Übung 1: Ansichten und Formulare anpassen
+## Übung 1: Ansichten und Formulare anpassen
 
 **Ziel**: In dieser Übung passen Sie Ansichten und Formulare der benutzerdefinierten erstellten Tabellen an, die in der modellgesteuerten App verwendet werden.
 
-Aufgabe Nr. 1: Formular „Besuch bearbeiten“
+### Aufgabe Nr. 1: Formular „Besuch bearbeiten“
 
 1.  Melden Sie sich bei <https://make.powerapps.com> an (falls Sie nicht bereits angemeldet sind).
 
@@ -66,7 +66,7 @@ Aufgabe Nr. 1: Formular „Besuch bearbeiten“
 
 4.  Wählen Sie im Abschnitt **Datenfunktionen** die Option **Formulare** aus, und öffnen Sie das Formular **Informationen** mit dem Formulartyp **Main** (Haupt). (**Wichtig:** Stellen Sie sicher, dass Sie das Formular mit dem Formulartyp **Main** (Haupt) auswählen.) 
 
-    **WICHTIG:** Da alle Formulare standardmäßig „Information“ heißen, müssen Sie unbedingt überprüfen, ob das von Ihnen ausgewählte Formular den Formulartyp **Haupt** hat, und nicht einen anderen. Standardmäßig hat das Formular zwei Felder: „Name“ und „Besitzer“.
+> **WICHTIG:** Da alle Formulare standardmäßig „Information“ heißen, müssen Sie unbedingt überprüfen, ob das von Ihnen ausgewählte Formular den Formulartyp **Haupt** hat, und nicht einen anderen. Standardmäßig hat das Formular zwei Felder: „Name“ und „Besitzer“.
 
 5.  Wählen Sie auf der rechten Seite des Bildschirms im **Eigenschaftenpanel** das Feld **Anzeigename** aus, und ändern Sie es in `Main Information`.
 
@@ -88,7 +88,7 @@ Aufgabe Nr. 1: Formular „Besuch bearbeiten“
 
 8.  Aktivieren Sie bei weiterhin ausgewähltem Feld **Code** das Kontrollkästchen für **Schreibgeschützt** im Eigenschaftenpanel auf der rechten Seite.
 
-9.  Wählen Sie das Feld **Besitzer** aus. Ändern Sie im Eigenschaftenpanel die **Bezeichnung** in `Host`.
+9.  Wählen Sie das Feld **Besitzer** aus. Ändern Sie im Eigenschaftenpanel die **Bezeichnung** in `Host`
 
 10. Wählen Sie oben rechts **Speichern und Veröffentlichen** aus, und warten Sie, bis der Speicher- und Veröffentlichungsvorgang abgeschlossen ist.
 
@@ -97,7 +97,7 @@ Aufgabe Nr. 1: Formular „Besuch bearbeiten“
 12. Sie verwenden die Breadcrumbs oben links (**Tabellen** > **Besuchen** > **Formulare**). Wählen Sie **Visit** (Besuchen) aus, um zum Hauptbildschirm der Tabelle **Visit** zurückzukehren. 
 
 
-Aufgabe Nr. 2: Bearbeiten der Ansicht „Aktive Besuche“
+### Aufgabe Nr. 2: Bearbeiten der Ansicht „Aktive Besuche“
 
 In dieser Aufgabe ändern wir die Standardansicht „Aktive Besuche“ und erstellen eine neue Ansicht für die heutigen Besuche.
 
@@ -124,11 +124,11 @@ In dieser Aufgabe ändern wir die Standardansicht „Aktive Besuche“ und erste
 7.  Wählen Sie oben rechts **Speichern und Veröffentlichen** aus, und warten Sie, bis der Veröffentlichungsvorgang abgeschlossen wurde.
 
 
-Aufgabe 3: Erstellen einer neuen Ansicht für heutige Besuche
+### Aufgabe 3: Erstellen einer neuen Ansicht für heutige Besuche
 
 Jetzt werden wir die Ansicht klonen, um eine neue Ansicht für die heutigen Besuche zu erstellen.
 
-WICHTIG: Stellen Sie sicher, dass Sie die Ansicht „Aktive Besuche“ nicht schließen, da wir sie nutzen werden, um die neue Ansicht der heutigen Besuche zu erstellen.
+> **WICHTIG:**  Stellen Sie sicher, dass Sie die Ansicht „Aktive Besuche“ nicht schließen, da wir sie nutzen werden, um die neue Ansicht der heutigen Besuche zu erstellen.
 
 1.  Wählen Sie **Speichern unter** aus.
 
@@ -146,22 +146,22 @@ WICHTIG: Stellen Sie sicher, dass Sie die Ansicht „Aktive Besuche“ nicht sch
 
 8.  Fügen Sie der Ansicht die Felder **Tatsächlicher Start** und **Tatsächliches Ende** hinzu.
 
-    **Hinweis:** Da wir nicht mehr nach dem Ansichtsstatus filtern, erhalten wir alle heutigen Besuche, einschließlich der abgeschlossenen. Diese Felder helfen dabei, zwischen abgeschlossenen und laufenden Besuchen zu unterscheiden.
+> **Hinweis:** Da wir nicht mehr nach dem Ansichtsstatus filtern, erhalten wir alle heutigen Besuche, einschließlich der abgeschlossenen. Diese Felder helfen dabei, zwischen abgeschlossenen und laufenden Besuchen zu unterscheiden.
 
 9.  Wählen Sie oben rechts **Speichern und Veröffentlichen** aus, und warten Sie, bis der Veröffentlichungsvorgang abgeschlossen wurde.
 
 
-Übung 2: Eine modellgesteuerte App erstellen
+## Übung 2: Eine modellgesteuerte App erstellen
 
 **Ziel**: In dieser Übung erstellen Sie eine modellgesteuerte App, passen die Siteübersicht an und testen die App.
 
 Zur Vereinfachung und Kürzung behandeln wir einige der „Besuch“-Spalten in diesem Lab nicht.
 
-Aufgabe 1: Erstellen einer App
+### Aufgabe 1: Erstellen einer App
 
 1.  Melden Sie sich bei <https://make.powerapps.com> an (wenn Sie noch nicht angemeldet sind).
 
-2.  Wählen Sie oben rechts Ihre Umgebung **[Ihre Initialen] Übung** aus, falls diese noch nicht ausgewählt ist.
+2.  Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung**sumgebung aus, falls diese noch nicht ausgewählt ist.
 
 3.  Wählen Sie im linken Navigationsbereich **+ Erstellen** aus.
 
@@ -181,7 +181,7 @@ Aufgabe 1: Erstellen einer App
 
     1. Navigieren Sie zu folgendem Pfad.
 
-    2. Contact
+    2. Kontakt
 
 8.  Wenn Sie über beide Tabellen verfügen, wählen Sie **Hinzufügen** aus.
 
@@ -196,7 +196,7 @@ Aufgabe 1: Erstellen einer App
 13. Nachdem der **Speicher**vorgang abgeschlossen wurde, wählen Sie die Schaltfläche **Veröffentlichen** aus, um Ihre Änderungen zu veröffentlichen.
 
 
-Aufgabe 2: Testen der App
+### Aufgabe 2: Testen der App
 
 Starten der Anwendung
 
@@ -212,7 +212,7 @@ Erstellen eines neuen Kontakts
 
 5.  Geben Sie unter **E-Mail** Ihre persönliche E-Mail-Adresse an. Sie wird in einem zukünftigen Lab verwendet, in dem Sie eine E-Mail erhalten.
 
-6.  Klicken Sie auf **Speichern und schließen**.
+6.  Wählen Sie **Speichern und schließen** aus.
 
 7.  Sie sollten nun den erstellten Kontakt in der Ansicht **Meine aktiven Kontakte** sehen.
 
@@ -220,7 +220,7 @@ Erstellen eines neuen Besuchs
 
 8.  Wählen Sie **Besuche** in der linken Navigationsleiste (auch als „Siteübersicht“ bezeichnet) aus.
 
-9.  Wählen Sie **+ Neu** aus.
+9.  Wählen Sie **+ Neu**.
 
 10. Füllen Sie die Felder wie folgt aus:
 
@@ -232,7 +232,7 @@ Erstellen eines neuen Besuchs
 
     4. **Geplantes Ende**: Wählen Sie das morgige Datum und 15:30 Uhr als Endzeit aus.
 
-11. Klicken Sie auf **Speichern und schließen**. Der Besuch wird erstellt und sollte in der Ansicht **Aktive Besuche** angezeigt werden.
+11. Wählen Sie **Speichern und schließen** aus. Der Besuch wird erstellt und sollte in der Ansicht **Aktive Besuche** angezeigt werden.
 
 12. Ändern Sie die Ansicht über die Dropdownliste neben **Aktive Besuche** in **Heutige Besuche**. Sie sollten den neuen Besuch nicht mehr in der Ansicht sehen, da er für morgen geplant ist.
 
