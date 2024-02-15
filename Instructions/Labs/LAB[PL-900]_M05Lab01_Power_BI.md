@@ -46,7 +46,7 @@ Wir werden die folgenden Schritte ausführen, um ein Power BI-Dashboard zu entwe
 
 1.  Eine Datei „Visits.pbix“ sollte auf Ihrer VM im Ordner „AllFiles“ auf dem Desktop gespeichert sein. Laden Sie die Datei [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) herunter, und speichern Sie sie auf Ihrem Computer, falls sie dort noch nicht vorhanden ist.
 
-2.  Öffnen Sie eine neue Registerkarte, navigieren Sie zu <https://app.powerbi.com/>, und melden Sie sich bei Bedarf an.
+2.  Öffnen Sie eine neue Registerkarte, navigieren Sie zu `https://app.powerbi.com`, und melden Sie sich bei Bedarf an.
 
 3.  Wählen Sie im linken Navigationsbereich **Mein Arbeitsbereich** aus.
 
@@ -102,7 +102,7 @@ Damit haben den Power BI-Dienst für Ihre Labs eingerichtet.
 
 1.  Sie sollten den Bericht aus der vorherigen Aufgabe geöffnet haben.
 
-2.  Wählen Sie im Menü den Eintrag **An ein Dashboard anheften** aus. Abhängig vom Layout müssen Sie möglicherweise **...** auswählen, um weitere Optionen anzuzeigen.
+2.  Wählen Sie im Menü den Eintrag **An ein Dashboard anheften** aus. Abhängig vom Layout müssen Sie möglicherweise das Menü mit den Auslassungspunkten **...** auswählen, um weitere Optionen anzuzeigen.
 
 3.  Wählen Sie bei der Eingabeaufforderung **An Dashboard anheften** die Option **Neues Dashboard** aus.
 
@@ -130,3 +130,4 @@ Ihr **Campus Management**-Dashboard sollte mit drei visuellen Elementen angezeig
 Ihr Dashboard sollte ungefähr wie folgt aussehen:
 
 ![](media/5-powerbi-result.png)
+

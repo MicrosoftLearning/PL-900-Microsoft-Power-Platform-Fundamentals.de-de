@@ -56,9 +56,9 @@ Vor dem Beginn zu beachtende Dinge
 
 ### Aufgabe Nr. 1: Formular „Besuch bearbeiten“
 
-1.  Melden Sie sich bei <https://make.powerapps.com> an (falls Sie nicht bereits angemeldet sind).
+1.  Wenn Sie noch nicht angemeldet sind, melden Sie sich bei `https://make.powerapps.com` an. 
 
-2.  Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung**sumgebung aus, falls diese noch nicht ausgewählt ist.
+2.  Wählen Sie oben rechts die Umgebung **Dev One** aus, sofern sie noch nicht ausgewählt ist.
 
 3.  Wählen Sie im linken Navigationsbereich **Tabellen** aus, und öffnen Sie Ihre Tabelle **Visit** (Besuchen).
 
@@ -66,7 +66,7 @@ Vor dem Beginn zu beachtende Dinge
 
 4.  Wählen Sie im Abschnitt **Datenfunktionen** die Option **Formulare** aus, und öffnen Sie das Formular **Informationen** mit dem Formulartyp **Main** (Haupt). (**Wichtig:** Stellen Sie sicher, dass Sie das Formular mit dem Formulartyp **Main** (Haupt) auswählen.) 
 
-> **WICHTIG:** Da alle Formulare standardmäßig „Information“ heißen, müssen Sie unbedingt überprüfen, ob das von Ihnen ausgewählte Formular den Formulartyp **Haupt** hat, und nicht einen anderen. Standardmäßig hat das Formular zwei Felder: „Name“ und „Besitzer“.
+    > **WICHTIG:** Da alle Formulare standardmäßig „Information“ heißen, müssen Sie unbedingt überprüfen, ob das von Ihnen ausgewählte Formular den Formulartyp **Haupt** hat, und nicht einen anderen. Standardmäßig hat das Formular zwei Felder: „Name“ und „Besitzer“.
 
 5.  Wählen Sie auf der rechten Seite des Bildschirms im **Eigenschaftenpanel** das Feld **Anzeigename** aus, und ändern Sie es in `Main Information`.
 
@@ -159,9 +159,9 @@ Zur Vereinfachung und Kürzung behandeln wir einige der „Besuch“-Spalten in 
 
 ### Aufgabe 1: Erstellen einer App
 
-1.  Melden Sie sich bei <https://make.powerapps.com> an (wenn Sie noch nicht angemeldet sind).
+1.  Wenn Sie noch nicht angemeldet sind, melden Sie sich bei `https://make.powerapps.com` an. 
 
-2.  Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung**sumgebung aus, falls diese noch nicht ausgewählt ist.
+2.  Wählen Sie oben rechts die Umgebung **Dev One** aus, sofern sie noch nicht ausgewählt ist.
 
 3.  Wählen Sie im linken Navigationsbereich **+ Erstellen** aus.
 
@@ -181,7 +181,7 @@ Zur Vereinfachung und Kürzung behandeln wir einige der „Besuch“-Spalten in 
 
     1. Navigieren Sie zu folgendem Pfad.
 
-    2. Kontakt
+    2. Contact
 
 8.  Wenn Sie über beide Tabellen verfügen, wählen Sie **Hinzufügen** aus.
 
@@ -193,7 +193,7 @@ Zur Vereinfachung und Kürzung behandeln wir einige der „Besuch“-Spalten in 
 
 12. Klicken Sie auf **Speichern**, und warten Sie, bis die Änderungen gespeichert sind.
 
-13. Nachdem der **Speicher**vorgang abgeschlossen wurde, wählen Sie die Schaltfläche **Veröffentlichen** aus, um Ihre Änderungen zu veröffentlichen.
+13. Nachdem der **Speicher**vorgang abgeschlossen wurde, wählen Sie die Schaltfläche **Veröffentlichen** aus, um Ihre Änderungen zu veröffentlichen. Warten Sie darauf, bis die Veröffentlichung abgeschlossen ist.
 
 
 ### Aufgabe 2: Testen der App
@@ -204,7 +204,7 @@ Starten der Anwendung
 
 Erstellen eines neuen Kontakts
 
-2.  Die App sollte in der Ansicht **Meine aktiven Kontakte** geöffnet werden. Wenn dies nicht der Fall ist, wählen Sie in der linken Navigationsleiste **Kontakte** aus.
+2.  Die App sollte in der Ansicht **Meine aktiven Kontakte** geöffnet werden. Wenn dies nicht der Fall ist, wählen Sie in der Navigationsleiste links **Kontakte** aus.
 
 3.  Wählen Sie in der Befehlsleiste **+ Neu** aus.
 
@@ -212,7 +212,7 @@ Erstellen eines neuen Kontakts
 
 5.  Geben Sie unter **E-Mail** Ihre persönliche E-Mail-Adresse an. Sie wird in einem zukünftigen Lab verwendet, in dem Sie eine E-Mail erhalten.
 
-6.  Wählen Sie **Speichern und schließen** aus.
+6.  Wählen Sie **Speichern &amp; Schließen**.
 
 7.  Sie sollten nun den erstellten Kontakt in der Ansicht **Meine aktiven Kontakte** sehen.
 
@@ -220,7 +220,7 @@ Erstellen eines neuen Besuchs
 
 8.  Wählen Sie **Besuche** in der linken Navigationsleiste (auch als „Siteübersicht“ bezeichnet) aus.
 
-9.  Wählen Sie **+ Neu**.
+9.  Wählen Sie **+ Neu** aus.
 
 10. Füllen Sie die Felder wie folgt aus:
 
@@ -232,7 +232,7 @@ Erstellen eines neuen Besuchs
 
     4. **Geplantes Ende**: Wählen Sie das morgige Datum und 15:30 Uhr als Endzeit aus.
 
-11. Wählen Sie **Speichern und schließen** aus. Der Besuch wird erstellt und sollte in der Ansicht **Aktive Besuche** angezeigt werden.
+11. Wählen Sie **Speichern &amp; Schließen**. Der Besuch wird erstellt und sollte in der Ansicht **Aktive Besuche** angezeigt werden.
 
 12. Ändern Sie die Ansicht über die Dropdownliste neben **Aktive Besuche** in **Heutige Besuche**. Sie sollten den neuen Besuch nicht mehr in der Ansicht sehen, da er für morgen geplant ist.
 
