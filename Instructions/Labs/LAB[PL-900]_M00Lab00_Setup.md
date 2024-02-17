@@ -21,46 +21,21 @@ In diesem Modul-0-Lab werden Sie einen Power Platform-Testversion erhalten und a
 
 ## Übung 1 – Einrichtung
 
-Aufgabe 1: Erhalten Ihres Microsoft Power Platform-Testmandanten
+Aufgabe 1: Überprüfen Ihres Microsoft Power Platform-Testmandanten
 
-1.  Kopieren Sie Ihre **Microsoft 365-Anmeldeinformationen** vom autorisierten Lab-Hoster. 
+1.  Stellen Sie sicher, dass Ihre **Microsoft 365-Anmeldeinformationen** vom autorisierten Labhost verfügbar sind. 
 
-1.  Navigieren Sie zu <https://powerapps.microsoft.com>, und wählen Sie **Kostenlos starten** aus.
+2.  Navigieren Sie in einem neuen Browsertab zu `https://make.powerapps.com`
 
-1.  Geben Sie unter **Erste Schritte** die E-Mail-Adresse ein, die Sie vom autorisierten Lab-Hoster erhalten haben, und wählen Sie **Kostenlose Testversion starten** aus. 
+3.  Geben Sie das `email address` vom autorisierten Labhost ein. 
 
-1.  Wenn eine zusätzliche Seite mit den Schaltflächen **Erstellung von Apps starten** und **Benutzung von Apps starten** angezeigt wird, dann klicken Sie auf **Benutzung von Apps starten** – nicht auf „Erstellung von Apps starten“.
+4.  Wählen Sie **anmelden** aus. 
 
-1.  Eine Meldung bestätigt, dass Sie über ein Microsoft-Konto verfügen. Wählen Sie **Anmelden**. 
+5.  Geben Sie die `password` vom autorisierten Labhost ein. 
 
-1.  Geben Sie das Kennwort ein, das Sie vom autorisierten Lab-Hoster erhalten haben, und wählen Sie **Anmelden** aus. 
+6.  Optional können Sie **Ja** auswählen, um angemeldet zu bleiben.
 
-1.  Wählen Sie **Ja** aus, um angemeldet zu bleiben. 
+7.  Wenn Sie dazu aufgefordert werden, geben Sie `0123456789` für die **Telefonnummer** ein, und wählen Sie **Absenden** aus.
 
-
-Aufgabe 2: Erstellen der Umgebung
-
-1.  Navigieren Sie zu <https://admin.powerplatform.microsoft.com>, und melden Sie sich mit Ihren Microsoft 365-Anmeldeinformationen an, wenn Sie dazu aufgefordert werden. 
-
-1.  Wenn ein Popupfenster zur Begrüßung angezeigt wird, klicken Sie auf **Erste Schritte**. 
-
-1.  Wählen Sie **Umgebungen** und dann **+ Neu** aus.
-
-    1. Geben Sie für **Name**  **[Meine Initialen] Übung** (Beispiel: AJ Übung) ein.
-
-    1. Wählen Sie als **Typ** die Option **Testversion** aus (Wählen Sie nicht die Option *Testversion (abonnementbasiert)* aus).
-
-    1. Ändern Sie die Umschaltfläche für **Dataverse-Datenspeicher hinzufügen?** in **Ja**. 
-
-    1. Behalten Sie für alle anderen Auswahlmöglichkeiten die Standardwerte bei, und wählen Sie **Weiter** aus. 
-
-    1. Wählen Sie unter der Überschrift **Sicherheitsgruppe** die Schaltfläche **+ Auswählen** aus.
-
-    1. Aktivieren Sie das Kontrollkästchen für das Element **Keine** unter der Überschrift **Zugriff öffnen**, und wählen Sie dann **Fertig** aus.
-
-    1. Behalten Sie für die restlichen Optionen die Standardwerte bei, und wählen Sie **Speichern** aus. 
-
-1.  Ihre **Übungsumgebung** sollte nun in der Umgebungsliste erscheinen. 
-
-    > Ihre Umgebung kann einige Minuten zur Bereitstellung benötigen. Aktualisieren Sie die Seite bei Bedarf.
+8.  **Aktualisieren** Sie die Registerkarte, und überprüfen Sie, ob die Umgebung **Dev One** oben rechts unter **Umgebung** ausgewählt ist. 
 

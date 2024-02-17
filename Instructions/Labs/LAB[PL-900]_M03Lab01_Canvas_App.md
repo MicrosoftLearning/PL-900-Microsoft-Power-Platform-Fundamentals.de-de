@@ -42,13 +42,15 @@ Wir werden uns beim Entwerfen der App an nachstehende Gliederung halten:
 
 ### Aufgabe \#1: Erstellen der „Visits“-App
 
-1.  Navigieren Sie zu <https://make.powerapps.com>. Möglicherweise müssen Sie sich erneut authentifizieren. Klicken Sie dazu auf **Anmelden**, und folgen Sie den Anweisungen (falls erforderlich).
+1.  Navigieren Sie zu `https://make.powerapps.com`.
 
-2.  Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung**sumgebung aus, falls diese noch nicht ausgewählt ist.
+2.  Möglicherweise müssen Sie sich erneut authentifizieren. Wählen Sie dazu **Anmelden** aus, und befolgen Sie die Anweisungen, falls erforderlich.
 
-3.  Wählen Sie **+ Erstellen** im linken Navigationsbereich des Bildschirms aus. Wählen Sie im Abschnitt **Beginnen mit** die Option **Dataverse** aus.
+3.  Wählen Sie oben rechts die Umgebung **Dev One** aus, sofern sie noch nicht ausgewählt ist.
 
-4.  Wählen Sie Ihre Dataverse-Verbindung aus.
+4.  Wählen Sie **+ Erstellen** im linken Navigationsbereich des Bildschirms aus. Wählen Sie im Abschnitt **Beginnen mit** die Option **Dataverse** aus.
+
+5.  Wählen Sie Ihre Dataverse-Verbindung aus.
 
     > **Hinweis:**  *Tun Sie Folgendes, falls keine Dataverse-Verbindung vorhanden ist:*
     > - Wählen Sie **+ Neue Verbindung** aus.
@@ -56,19 +58,19 @@ Wir werden uns beim Entwerfen der App an nachstehende Gliederung halten:
     > - Klicken Sie auf **Erstellen**
     > - **Melden Sie sich an**, und wählen Sie **Zugriff zulassen** aus.
 
-5.  Suchen Sie die Tabelle **Besuche**, die Sie im vorherigen Lab erstellt haben, und wählen Sie sie aus.
+6.  Suchen Sie die Tabelle **Besuche**, die Sie im vorherigen Lab erstellt haben, und wählen Sie sie aus.
 
-6.  Wählen Sie in der rechten unteren Ecke die Schaltfläche **Verbinden** aus.
+7.  Wählen Sie in der rechten unteren Ecke die Schaltfläche **Verbinden** aus.
 
-7.  Nachdem Ihre App erstellt wurde, aktivieren Sie auf dem Bildschirm „Willkommen bei Power Apps Studio“ **Nicht mehr anzeigen**, und wählen Sie dann **Überspringen** aus.
+8.  Nachdem Ihre App erstellt wurde, aktivieren Sie auf dem Bildschirm „Willkommen bei Power Apps Studio“ **Nicht mehr anzeigen**, und wählen Sie dann **Überspringen** aus.
 
-8.  Nach Abschluss der Erstellung sollte die Canvas-App wie die Abbildung unten aussehen:
+9.  Nach Abschluss der Erstellung sollte die Canvas-App wie die Abbildung unten aussehen:
 
     ![Aus „Besuch“-Daten erstellte Canvas-App.](media/2-canvas-app-from-data.png)
 
-9.  Wählen Sie im App-Designer auf der Befehlsleiste die Schaltfläche **Vorschau der App** (Symbol „Wiedergeben“) aus. *(Sie können auch eine Vorschau der App anzeigen, indem Sie F5 drücken.)* Sehen Sie sich an, wie Ihre App nach der Installation aussieht.
+10.  Wählen Sie im App-Designer auf der Befehlsleiste die Schaltfläche **Vorschau der App** (Symbol „Wiedergeben“) aus. *(Sie können auch eine Vorschau der App anzeigen, indem Sie F5 drücken.)* Sehen Sie sich an, wie Ihre App nach der Installation aussieht.
 
-10. Schließen Sie die App-Vorschau, indem Sie rechts oben auf dem Bildschirm das **X** auswählen.
+11. Schließen Sie die App-Vorschau, indem Sie rechts oben auf dem Bildschirm das **X** auswählen.
 
 Glückwunsch, Sie haben erfolgreich eine Power App aus einer Dataverse-Tabelle erstellt. Im nächsten Schritt möchten Sie die App an das Branding von Bellows College anpassen. Die nächste Reihe von Schritten führt Sie durch die Bereitstellung zusätzlicher Anpassungen an der App.
 

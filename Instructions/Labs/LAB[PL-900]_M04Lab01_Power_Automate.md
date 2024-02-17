@@ -37,23 +37,25 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 
 ### Aufgabe \#1: Erstellen eines Flows
 
-1.  Navigieren Sie zu <https://make.powerapps.com>. Möglicherweise müssen Sie sich erneut authentifizieren. Klicken Sie dazu auf **Anmelden**, und befolgen Sie die Anweisungen (falls erforderlich).
+1.  Navigieren Sie zu `https://make.powerapps.com`.
 
-2.  Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung**sumgebung aus, falls diese noch nicht ausgewählt ist.
+2.  Möglicherweise müssen Sie sich erneut authentifizieren. Wählen Sie dazu **Anmelden** aus, und befolgen Sie die Anweisungen, falls erforderlich.
 
-3.  Wählen Sie im linken Navigationsbereich **Flows** aus.
+3.  Wählen Sie oben rechts die Umgebung **Dev One** aus, sofern sie noch nicht ausgewählt ist.
 
-4.  Wenn Sie dazu aufgefordert werden, wählen Sie **Erste Schritte** aus.
+4.  Wählen Sie im linken Navigationsbereich **Flows** aus.
 
-5.  Wählen Sie **+ Neuer Flow** und dann **Automatisierter Cloud-Flow** aus.
+5.  Wenn Sie dazu aufgefordert werden, wählen Sie **Erste Schritte** aus.
 
-6.  Geben Sie `Visit Notification` als **Flowname** ein.
+6.  Wählen Sie **+ Neuer Flow** und dann **Automatisierter Cloud-Flow** aus.
 
-7.  Suchen Sie unter **Flowtrigger auswählen** nach `Dataverse`.
+7.  Geben Sie `Visit Notification` als **Flowname** ein.
 
-8.  Wählen Sie den Trigger **Wenn eine Zeile hinzugefügt, geändert oder gelöscht wird** aus, und wählen Sie dann **Erstellen** aus.
+8.  Suchen Sie unter **Flowtrigger auswählen** nach `Dataverse`.
 
-9.  Füllen Sie die Triggerbedingungen für den Flow auf:
+9.  Wählen Sie den Trigger **Wenn eine Zeile hinzugefügt, geändert oder gelöscht wird** aus, und wählen Sie dann **Erstellen** aus.
+
+10.  Füllen Sie die Triggerbedingungen für den Flow auf:
 
     1.  Wählen Sie **Hinzugefügt** für **Änderungstyp** aus.
 
@@ -87,7 +89,7 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 
 ### Aufgabe \#3: Erstellen eines Schritts zum Senden einer E-Mail an den Besucher
 
-1.  Wählen Sie **+ Neuer Schritt** aus. Mit diesem Schritt werden E-Mails an Besucher*innen gesendet.
+1.  Wählen Sie **+ Neuer Schritt**aus. Mit diesem Schritt werden E-Mails an Besucher*innen gesendet.
 
 2.  Suchen Sie nach `mail`, wählen Sie die Aktion **E-Mail senden (V2)** aus dem **Office 365 Outlook**-Connector aus.
 
@@ -131,9 +133,9 @@ Lassen Sie die Registerkarte dieses Flows für die nächste Aufgabe geöffnet. I
 
 ### Aufgabe \#4: Flow überprüfen und aktivieren
 
-1.  Öffnen Sie im Browser eine neue Registerkarte, und navigieren Sie zu <https://make.powerapps.com>.
+1.  Öffnen Sie im Browser eine neue Registerkarte, und navigieren Sie zu `https://make.powerapps.com`.
 
-2.  Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung**sumgebung aus, falls diese noch nicht ausgewählt ist.
+2.  Wählen Sie oben rechts die Umgebung **Dev One** aus, sofern sie noch nicht ausgewählt ist.
 
 3.  Wählen Sie **Apps** aus, und öffnen Sie die modellgesteuerte App **Bellows-Campusverwaltung**, die Sie zuvor erstellt haben.
 
