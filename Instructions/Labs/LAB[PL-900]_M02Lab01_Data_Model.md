@@ -41,7 +41,8 @@ Um Ihre Lernumgebungen vorzubereiten, werden Sie:
 
 Vor dem Beginn zu beachtende Dinge
 
-- Benennungskonventionen – Namen sorgfältig eingeben.
+- Namenskonventionen: Geben Sie Namen sorgfältig ein.
+
 
 # Übung 1: Erstellen einer neuen Tabelle
 
@@ -53,9 +54,9 @@ Die Tabelle **Visit** wird Informationen zu den Campusbesuchen enthalten, einsch
 
 Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besucher leicht eingegeben und interpretiert werden kann, wenn er beim Einchecken gefragt wird.
 
-1.  Melden Sie sich bei <https://make.powerapps.com> an, falls Sie nicht bereits angemeldet sind. 
+1.  Melden Sie sich bei `https://make.powerapps.com` an, falls Sie nicht bereits angemeldet sind.
 
-1.  Stellen Sie im Menü **Umgebung** oben rechts sicher, dass Ihre **Übungsumgebung** ausgewählt ist. 
+1.  Vergewissern Sie sich im Menü **Umgebung** oben rechts, dass Ihre Übungsumgebung **Dev One** ausgewählt ist. 
 
 1.  Wählen Sie links im Navigationsbereich die Option **Tabellen** aus.
 
@@ -176,11 +177,11 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
 
 1.  Die Datei **Visits.xlsx** sollte auf Ihrem virtuellen Computer unter **C:/LabFiles** gespeichert sein. Laden Sie [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) herunter, wenn dies nicht der Fall ist.
 
-2.  Wenn Sie noch nicht angemeldet sind, melden Sie sich bei [https://make.powerapps.com](https://make.powerapps.com/) an. 
+2.  Wenn Sie noch nicht angemeldet sind, melden Sie sich bei `https://make.powerapps.com` an.
 
-3.  Wählen Sie oben rechts Ihre **[Ihre Initialen] Übung**sumgebung aus, falls diese noch nicht ausgewählt ist.
+3.  Wählen Sie oben rechts die Umgebung **Dev One** aus, sofern sie noch nicht ausgewählt ist.
 
-4.  Klicken Sie in der oberen linken Ecke auf das Waffel-Menü, um die Anwendungen zu ändern, und wählen Sie **OneDrive** aus. (Es kann einen Moment dauern, bis OneDrive eingerichtet ist. Wählen Sie **Ihr OneDrive ist fertig** aus, wenn die Meldung auf dem Bildschirm angezeigt wird.)
+4.  Wählen Sie in der oberen linken Ecke das App-Startfeld (Waffel-Schaltfläche) aus, um die Anwendungen zu ändern, und wählen Sie **OneDrive** aus. (Es kann einen Moment dauern, bis OneDrive eingerichtet ist. Wählen Sie **Ihr OneDrive ist fertig** aus, wenn die Meldung auf dem Bildschirm angezeigt wird.)
 
 5.  Wählen Sie im Menü **+ Neu hinzufügen** aus und wählen Sie **Dateien hochladen** aus.
 
@@ -191,9 +192,9 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
 
 ## Aufgabe \#2: Erstellen eines Dataflows
 
-1.  Melden Sie sich bei <https://make.powerapps.com> an, falls Sie nicht bereits angemeldet sind. 
+1.  Melden Sie sich bei `https://make.powerapps.com` an, falls Sie nicht bereits angemeldet sind.
 
-2.  Stellen Sie im Menü **Umgebung** oben rechts sicher, dass Ihre **Übungsumgebung** ausgewählt ist. 
+2.  Vergewissern Sie sich im Menü **Umgebung** oben rechts, dass Ihre Übungsumgebung **Dev One** ausgewählt ist. 
 
 3.  Wählen Sie links im Navigationsbereich die Option **Tabellen** aus. 
 
@@ -246,4 +247,5 @@ Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besuche
 2.  Stellen Sie sicher, dass die importierten Daten im Abschnitt **Ansehen von Spalten und Daten** angezeigt werden.
 
 Glückwunsch, Sie haben erfolgreich eine neue Tabelle erstellt und Daten importiert.
+
 
