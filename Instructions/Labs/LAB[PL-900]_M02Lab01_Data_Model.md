@@ -37,7 +37,7 @@ Um Ihre Lernumgebungen vorzubereiten, werden Sie:
 
 ## Voraussetzungen
 
-- Beendigung von **Modul 0 Lab 0 – Lab-Umgebung überprüfen**
+- Beendigung von **Modul 1 Lab 0 – Lab-Umgebung überprüfen**
 
 Vor dem Beginn zu beachtende Dinge
 
