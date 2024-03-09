@@ -28,7 +28,7 @@ Wir werden die folgenden Schritte ausführen, um ein Power BI-Dashboard zu entwe
 
 ## Voraussetzungen
 
-- Beendigung von **Modul 0 Lab 0 – Lab-Umgebung überprüfen**
+- Beendigung von **Modul 1 Lab 0 – Lab-Umgebung überprüfen**
 - Abschluss von **Modul 2 Lab 1: Datenmodellierung**
 
 ## Vor dem Beginn zu beachtende Dinge

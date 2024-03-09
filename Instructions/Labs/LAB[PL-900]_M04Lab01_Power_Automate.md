@@ -26,7 +26,7 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 
 ## Voraussetzungen
 
-- Beendigung von **Modul 0 Lab 0 – Lab-Umgebung überprüfen**
+- Beendigung von **Modul 1 Lab 0 – Lab-Umgebung überprüfen**
 - Abschluss von **Modul 2 Lab 1: Datenmodellierung**
 - Abschluss von **Modul 2 Lab 3: Erstellen einer modellgesteuerten App**
 - Der Kontakt „John Doe“ wurde mit einer aufgefüllten persönlichen E-Mail-Adresse erstellt.

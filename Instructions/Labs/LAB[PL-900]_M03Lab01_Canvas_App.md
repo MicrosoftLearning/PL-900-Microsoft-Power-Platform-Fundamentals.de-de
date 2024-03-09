@@ -31,7 +31,7 @@ Wir werden uns beim Entwerfen der App an nachstehende Gliederung halten:
 
 ## Voraussetzungen
 
-- Beendigung von **Modul 0 Lab 0 – Lab-Umgebung überprüfen**
+- Beendigung von **Modul 1 Lab 0 – Lab-Umgebung überprüfen**
 - Abschluss von **Modul 2 Lab 1: Datenmodellierung**
 
 
