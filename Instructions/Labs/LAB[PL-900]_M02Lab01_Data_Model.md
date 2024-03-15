@@ -6,15 +6,15 @@ lab:
 
 # Lab 1: Datenmodellierung
 
-**WWL-Mandanten – Nutzungsbedingungen** Wenn Ihnen im Rahmen einer Präsenzschulung ein Mandant zugewiesen worden ist, steht dieser für Praxislabs innerhalb der Präsenzschulung zur Verfügung. Mandanten sollten nicht für Zwecke außerhalb von Praxislabs freigegeben oder verwendet werden. Der in diesem Kurs verwendete Mandant ist ein Testmandant; er kann nach Abschluss des Kurses nicht verwendet oder erreicht werden und ist nicht für Erweiterungen geeignet. Mandanten dürfen nicht in ein kostenpflichtiges Abonnement konvertiert werden. Die im Rahmen dieses Kurses erworbenen Mandanten verbleiben im Eigentum der Microsoft Corporation, und wir behalten uns das Recht vor, jederzeit auf Mandanten zuzugreifen und diese zurückzuziehen. 
+**WWL-Mandanten – Nutzungsbedingungen** Wenn Ihnen im Rahmen einer Präsenzschulung ein Mandant zugewiesen worden ist, steht dieser für Praxislabs innerhalb der Präsenzschulung zur Verfügung. Mandanten sollten nicht für Zwecke außerhalb von Praxislabs freigegeben oder verwendet werden. Der in diesem Kurs verwendete Tenant ist ein Testtenant; er kann nach Abschluss des Kurses nicht verwendet oder aufgerufen werden und ist nicht für Erweiterungen geeignet. Mandanten dürfen nicht in ein kostenpflichtiges Abonnement konvertiert werden. Die im Rahmen dieses Kurses erworbenen Mandanten verbleiben im Eigentum der Microsoft Corporation, und wir behalten uns das Recht vor, jederzeit auf Mandanten zuzugreifen und diese zurückzuziehen. 
 
 ## Szenario
 
-Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem Campus. Campusbesuche werden derzeit in Papierzeitschriften aufgezeichnet. Die Informationen werden nicht konsistent erfasst und es gibt keine Möglichkeit, Daten über die Besuche auf dem gesamten Campus zu sammeln und zu analysieren.
+Das Bellows College ist eine Bildungsorganisation mit mehreren Campusgebäuden. Viele der Lehrer und Administratoren am Bellow College müssen an Veranstaltungen teilnehmen und Artikel kaufen. Historisch gesehen war die Nachverfolgung dieser Ausgaben eine Herausforderung. 
 
-Die Campusverwaltung möchte ihr Besucherregistrierungssystem modernisieren, wobei der Zugang zu den Gebäuden von Sicherheitspersonal kontrolliert werden soll und alle Besuche von den entsprechenden Gastgebern zuvor registriert und aufgezeichnet werden müssen.
+Die Campusverwaltung möchte ihr Spesenabrechnungssystem modernisieren, indem den Mitarbeitern eine digitale Möglichkeit zum Melden von Ausgaben an die Hand gegeben wird. 
 
-Während dieses Kurses erstellen Sie Anwendungen und führen eine Automatisierung durch, damit das Verwaltungs- und Sicherheitspersonal des Bellows College den Zugang zu den Gebäuden auf dem Campus verwalten und kontrollieren kann.
+Während dieses Kurses erstellen Sie Anwendungen und führen eine Automatisierung durch, damit die Mitarbeiter des Bellows College Ausgaben verwalten können.
 
 In diesem Lab erstellen Sie ein Datenmodell, um die folgenden Anforderungen zu unterstützen:
 
@@ -26,16 +26,17 @@ In diesem Lab erstellen Sie ein Datenmodell, um die folgenden Anforderungen zu u
 
 Zum Abschluss importieren Sie Beispieldaten in Microsoft Dataverse.
 
-Weiterführende Schritte des Lab
+## Weiterführende Schritte des Lab
 
 Um Ihre Lernumgebungen vorzubereiten, werden Sie:
 
-- Beschreibungen zu den Metadaten (Tabellen und Beziehungen) finden Sie im [Datenmodelldokument](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png). Sie können die STRG-Taste gedrückt halten und mit der linken oder rechten Maustaste auf den Link klicken, um das Datenmodelldokument in einem neuen Fenster zu öffnen.
-- Tabelle „Besuch“ erstellen
-- Importieren von Besuchsdaten mithilfe eines Excel-Arbeitsblatts
+- Beschreibungen zu den Metadaten (Tabellen und Beziehungen) finden Sie im [Datenmodelldokument](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus Management.png). Sie können die STRG-Taste gedrückt halten und mit der linken oder rechten Maustaste auf den Link klicken, um das Datenmodelldokument in einem neuen Fenster zu öffnen.
 
+- Spesentabelle erstellen
 
-## Voraussetzungen
+- Fügen Sie einige Beispieldaten hinzu. 
+
+### Voraussetzungen
 
 - Beendigung von **Modul 1 Lab 0 – Lab-Umgebung überprüfen**
 
@@ -43,208 +44,150 @@ Vor dem Beginn zu beachtende Dinge
 
 - Namenskonventionen: Geben Sie Namen sorgfältig ein.
 
+## Übung 1: Erstellen einer neuen Tabelle
 
-# Übung 1: Erstellen einer neuen Tabelle
+**Ziel**: In dieser Übung erstellen Sie eine neue benutzerdefinierte Tabelle für Ausgaben.
 
-**Ziel**: In dieser Übung erstellen Sie eine neue benutzerdefinierte Tabelle für Besuche.
+### Aufgabe Nr. 1: Kostentabelle und Spalten erstellen
 
-## Aufgabe #1: Tabelle „Visit“ und Spalten erstellen
+Die **Tabelle "Ausgaben** " enthält Informationen zu einzelnen Ausgaben, die ein Mitarbeiter übermitteln kann, einschließlich Grund, Typ, Datum und Betrag.
 
-Die Tabelle **Visit** wird Informationen zu den Campusbesuchen enthalten, einschließlich der Besucher*innen sowie des geplanten sowie des tatsächlichen Zeitpunkts jedes Besuchs.
+1. Melden Sie sich bei https://make.powerapps.com an, falls Sie nicht bereits angemeldet sind.
 
-Wir möchten jedem Besuch eine eindeutige Nummer zuweisen, die von einem Besucher leicht eingegeben und interpretiert werden kann, wenn er beim Einchecken gefragt wird.
+1. Vergewissern Sie sich im Menü **Umgebung** oben rechts, dass Ihre Übungsumgebung **Dev One** ausgewählt ist.
 
-1.  Melden Sie sich bei `https://make.powerapps.com` an, falls Sie nicht bereits angemeldet sind.
+1. Wählen Sie links im Navigationsbereich die Option **Tabellen** aus.
 
-1.  Vergewissern Sie sich im Menü **Umgebung** oben rechts, dass Ihre Übungsumgebung **Dev One** ausgewählt ist. 
+1. Wählen Sie **+ Neue Tabelle** aus und wählen Sie **Erweiterte Eigenschaften festlegen** aus.
 
-1.  Wählen Sie links im Navigationsbereich die Option **Tabellen** aus.
+1. Geben Sie "Ausgabe" für **den Anzeigenamen**ein.
 
-1.  Wählen Sie **+ Neue Tabelle** aus und wählen Sie **Erweiterte Eigenschaften festlegen** aus. 
+1. Wählen Sie **Speichern**.
 
-1.  Geben Sie für **Anzeigename** `Visit` ein.
+1. Wählen Sie im Abschnitt **Schema** die Option **Spalten** aus.
 
-1.  Wählen Sie **Speichern** aus. 
+### Spalte "Spesendatum erstellen"
 
-1.  Wählen Sie im Abschnitt **Schema** die Option **Spalten** aus. 
+1. Wählen Sie **+ Neue Spalte** aus.
 
+1. Geben Sie das Spesendatum für **den Anzeigenamen**ein.
 
-## Spalte „Geplanter Start“ erstellen
+1. Wählen Sie **"Datum nur** für **Datentyp**" aus.
 
-1.  Wählen Sie **+ Neue Spalte** aus. 
+1. Ändern Sie **Erforderlich** in **Eingabe erforderlich**.
 
-1.  Geben Sie für **Anzeigename** `Scheduled Start` ein. 
+1. Erweitern Sie **Erweiterte Optionen**.
 
-1.  Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus. 
+1. Wählen Sie in **der Zeitzonenanpassung**"Nur **Datum"** aus.
 
-1.  Ändern Sie **Erforderlich** in **Eingabe erforderlich**. 
+    >**Hinweis:** Wir verwenden **das Datumsverhalten nur** , um Datumsinformationen aufzuzeichnen, da sich das Datum des Besuchs nicht ändern sollte, wenn er aus einer anderen Zeitzone angezeigt wird.
 
-1.  Erweitern Sie **Erweiterte Optionen**. 
+1. Wählen Sie **Speichern**.
 
-1.  Wählen Sie in der **Zeitzonenanpassung** die Option **Zeitzonenunabhängig** aus. 
+### Spalte "Spesentyp erstellen"
 
-    > **Hinweis:** Wir nutzen **zeitzonenunabhängiges** Verhalten beim Aufzeichnen von Datums- und Uhrzeitinformationen, da die Uhrzeit eines Besuchs immer die Lokalzeit am Standort des Gebäudes ist und sich nicht ändern sollte, wenn sie aus einer anderen Zeitzone angezeigt wird. 
+1. Wählen Sie **+ Neue Spalte** aus.
 
-1.  Wählen Sie **Speichern** aus. 
+1. Geben Sie den Spesentyp für **den Anzeigenamen**ein.
 
+1. Wählen Sie **"Auswahl** " für **"Datentyp**" aus.
 
-## Spalte „Geplantes Ende“ erstellen
+1. Wählen Sie in **"Erforderlich**" die Option "Optional" **aus**.
 
-1.  Wählen Sie **+ Neue Spalte** aus. 
+1. Festlegen der **Synchronisierung mit globaler Auswahl** auf **"Ja" (empfohlen)**
 
-1.  Geben Sie für **Anzeigename** `Scheduled End` ein.
+1. **Wählen Sie in "Diese Option synchronisieren" mit** dem Feld "Spesentyp" ** aus**.
 
-1.  Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
+1. Stellen Sie das Feld " **Standardauswahl** " auf **"Keine"** ein.
 
-1.  Wählen Sie für **Erforderlich** **Eingabe erforderlich** aus.
+1. Wählen Sie **Speichern**.
 
-1.  Erweitern Sie **Erweiterte Optionen**.
+### Spalte "Spesenzweck erstellen"
 
-1.  Wählen Sie in der **Zeitzonenanpassung** die Option **Zeitzonenunabhängig** aus.
+1. Wählen Sie **+ Neue Spalte** aus.
 
-1.  Wählen Sie **Speichern** aus. 
+1. Geben Sie "Spesenzweck" für **den Anzeigenamen ein**.
 
+1. Wählen Sie **"Auswahl** " für **"Datentyp**" aus.
 
-## Spalte „Tatsächlicher Start“ erstellen
+1. Wählen Sie in **"Erforderlich**" die Option "Optional" **aus**.
 
-1.  Wählen Sie **+ Neue Spalte** aus. 
+1. Festlegen der **Synchronisierung mit globaler Auswahl** auf **"Ja" (empfohlen)**
 
-1.  Geben Sie für **Anzeigename** `Actual Start` ein.
+1. **Wählen Sie in "Diese Option synchronisieren" mit** dem **Feld "Spesenzweck" aus**.
 
-1.  Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
+1. Legen Sie das **Feld "Standard** " auf **"Keine"** fest.
 
-1.  Behalten Sie unter **Erforderlich** die Einstellung **Optional** bei.
+1. Wählen Sie **Speichern**.
 
-1.  Erweitern Sie **Erweiterte Optionen**.
+### Spalte "Elementbeschreibung erstellen"
 
-1.  Wählen Sie in der **Zeitzonenanpassung** die Option **Zeitzonenunabhängig** aus. 
+1. Wählen Sie **+ Neue Spalte** aus.
 
-1.  Wählen Sie **Speichern** aus. 
+1. Geben Sie die Elementbeschreibung für **den Anzeigenamen ein**.
 
+1. Wählen Sie **für den Datentyp &gt; "Nur-Text** **" mehrere Textzeilen**aus.
 
-## Spalte „Tatsächliches Ende“ erstellen
+1. Wählen Sie **Speichern**.
 
-1.  Wählen Sie **+ Neue Spalte** aus.
+### Spalte "Spesenbetrag erstellen"
 
-1.  Geben Sie für **Anzeigename** `Actual End` ein.
+1. Wählen Sie **+ Neue Spalte** aus.
 
-1.  Wählen Sie **Datum und Uhrzeit** als **Datentyp** aus.
+1. Geben Sie den Spesenbetrag für **den Anzeigenamen**ein.
 
-1.  Behalten Sie unter **Erforderlich** die Einstellung **Optional** bei.
+1. Wählen Sie **"Währung** " für **den Datentyp**aus.
 
-1.  Erweitern Sie **Erweiterte Optionen**.
+1. Wählen Sie **Speichern**.
 
-1.  Wählen Sie in der **Zeitzonenanpassung** die Option **Zeitzonenunabhängig** aus.
+ 
+## Übung 2: Daten eingeben
 
-1.  Wählen Sie **Speichern** aus.
+**Ziel**: In dieser Übung geben Sie einige Beispieldaten manuell in die neue Tabelle ein. 
 
+### Aufgabe Nr. 1: Ändern Sie die angezeigten Spalten
 
-## Spalte „Code“ erstellen
+1. Wenn Sie noch nicht angemeldet sind, melden Sie sich bei https://make.powerapps.com an.
 
-1.  Wählen Sie **+ Neue Spalte** aus.
+1. Wählen Sie oben rechts die Umgebung **Dev One** aus, sofern sie noch nicht ausgewählt ist.
 
-1.  Geben Sie für **Anzeigename** `Code` ein.
+1. Wählen Sie links im Navigationsbereich die Option **Tabellen** aus.
 
-1.  Wählen Sie **AutoWert** als **Datentyp** aus.
+1. Öffnen Sie die Tabelle **Ausgabe**, die Sie in der vorherigen Übung erstellt haben.
 
-1.  Wählen Sie **Datumspräfixnummer** als **AutoWert-Typ** aus.
+1. Wählen Sie neben der **Spalte "Name** " **+26 weitere **aus.
 
-1.  Wählen Sie **Speichern** aus. 
+1. Wählen Sie im daraufhin angezeigten Menü die folgenden Spalten aus.
 
+    1. Spesendatum
 
-## Erstellen einer Nachschlagespalte für „Besucher“
+    2. Spesenzweck 
 
-1.  Wählen Sie **+ Neue Spalte** aus.
+    3. Spesentyp
 
-1.  Geben Sie für **Anzeigename** `Visitor` ein.
+    4. Ausgabenbetrag
 
-1.  Wählen Sie **Lookup** > **Lookup** für **Datentyp** aus. 
+    5. Item Description
 
-1.  Wählen Sie **Kontakt** für die **Verknüpfte Tabelle** aus. 
+1. Wählen Sie die Schaltfläche **Speichern** aus.
 
-1.  Erweitern Sie **Erweiterte Optionen**. 
+## Aufgabe Nr. 2: Fügen Sie einen Beispieldatensatz hinzu.
 
-1.  Geben Sie `visitor_id` für **den Beziehungsnamen** ein. 
+1. Wählen Sie den **Pfeil** neben **"Bearbeiten"** aus. Wählen Sie im nun angezeigten Menü " **Bearbeiten" auf der neuen Registerkarte**aus.
 
-1.  Wählen Sie **Speichern** aus.
+1. Geben Sie in der **Spalte "Name** " **John Doe** ein.
 
+1. Geben Sie in der **Spalte "Spesendatum** " **"xxx"** ein.
 
-# Übung 2: Daten importieren
+1. Wählen Sie im **Spesenzweck** **"Konferenz "** aus.
 
-**Ziel**: In dieser Übung importieren Sie Beispieldaten in die Dataverse-Datenbank.
+1. Wählen Sie in der Spalte **"Spesentyp"** die **Option "Reise" **aus.
 
-## Aufgabe \#1: Laden einer Excel-Datei in OneDrive
+1. Geben Sie in der **Spalte "Spesenbetrag** " **750,00** ein.
 
-1.  Die Datei **Visits.xlsx** sollte auf Ihrem virtuellen Computer unter **C:/LabFiles** gespeichert sein. Laden Sie [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) herunter, wenn dies nicht der Fall ist.
+1. Geben Sie in der **Elementbeschreibung**eine kurze Beschreibung ein.
 
-2.  Wenn Sie noch nicht angemeldet sind, melden Sie sich bei `https://make.powerapps.com` an.
-
-3.  Wählen Sie oben rechts die Umgebung **Dev One** aus, sofern sie noch nicht ausgewählt ist.
-
-4.  Wählen Sie in der oberen linken Ecke das App-Startfeld (Waffel-Schaltfläche) aus, um die Anwendungen zu ändern, und wählen Sie **OneDrive** aus. (Es kann einen Moment dauern, bis OneDrive eingerichtet ist. Wählen Sie **Ihr OneDrive ist fertig** aus, wenn die Meldung auf dem Bildschirm angezeigt wird.)
-
-5.  Wählen Sie im Menü **+ Neu hinzufügen** aus und wählen Sie **Dateien hochladen** aus.
-
-6.  Suchen Sie die Datei **Visits.xlsx**, und wählen Sie sie aus. Klicken Sie dann auf **Öffnen**.
-
-    > **Hinweis:** Die Datei sollte sich auf Ihrer VM im Ordner **Desktop** > **Alle Dateien** befinden.
-
-
-## Aufgabe \#2: Erstellen eines Dataflows
-
-1.  Melden Sie sich bei `https://make.powerapps.com` an, falls Sie nicht bereits angemeldet sind.
-
-2.  Vergewissern Sie sich im Menü **Umgebung** oben rechts, dass Ihre Übungsumgebung **Dev One** ausgewählt ist. 
-
-3.  Wählen Sie links im Navigationsbereich die Option **Tabellen** aus. 
-
-4.  Öffnen Sie die Tabelle **Visit**, die Sie in der vorherigen Übung erstellt haben. 
-
-5.  Wählen Sie oben im Menü **Importieren** > **Daten importieren** aus.
-
-6.  Wählen Sie im Dialogfeld **Datenquelle auswählen** die Option **Excel-Arbeitsmappe** aus.
-
-7.  Wählen Sie die Option **Mit Datei verknüpfen** aus. Wählen Sie **OneDrive durchsuchen** aus. Melden Sie sich bei der entsprechenden Aufforderung mit Ihren Microsoft 365-Anmeldeinformationen an. Konfigurieren Sie den Browser so, dass Popupelemente immer zugelassen werden. 
-
-8.  Wählen Sie die Datei **Visits.xlsx** aus, die in der vorherigen Aufgabe auf OneDrive hochgeladen wurde. 
-
-9.  Wählen Sie **Weiter** aus. 
-
-10. Aktivieren Sie auf dem Bildschirm **Power Query** > **Daten auswählen** die Excel-Arbeitsmappe **Visits** (Besuche). 
-
-11. Wählen Sie **Weiter** aus. Navigieren Sie nicht von dieser Seite weg.
-
-12. Wählen Sie **Weiter** aus. 
-
-13. Wählen Sie im Abschnitt **Zuordnen von Tabellen** unter **Einstellungen laden** die Option **In vorhandene Tabelle laden** aus. 
-
-14. Wählen Sie im Dropdownmenü **Zieltabelle** den Tabellennamen **crXXX_visit** aus (wobei XXX eine zufällige Gruppe von Buchstaben und Zahlen ist).
-
-15. Ordnen Sie die Spalten im Abschnitt **Spaltenzuordnung** den entsprechenden Zielspalten zu:
-
-    | Zielspalten  | Quellwerte   |
-    |:---------------------|:----------------|
-    | crxxx_ActualEnd      | tatsächliches Ende      |
-    | crxxx_ActualStart    | tatsächlicher Start    |
-    | crxxx_Code           | code            |
-    | crxxx_Name           | name            |
-    | crxxx_ScheduledEnd   | geplantes Ende   |
-    | crxxx_ScheduledStart | geplanter Start |
-
-16. Wählen Sie **Weiter** aus. 
-
-17. Wählen Sie **Manuell aktualisieren** aus. 
-
-18. Klicken Sie auf **Veröffentlichen**. 
-
-    > **Hinweis:** Es kann mehrere Minuten dauern, bis Ihre Daten in Ihre Tabelle importiert werden. Machen Sie sich keine Sorgen, wenn ein paar Fehler angezeigt werden. Das ist normal und hat keine Auswirkungen auf den Rest des Kurses.
-
-
-## Aufgabe 3: Datenimport überprüfen
-
-1.  Nachdem Ihre Daten importiert wurden, verwenden Sie die Navigation auf der linken Seite des Bildschirms, um **Tabellen** auszuwählen und die Tabelle **Visit** zu öffnen.
-
-2.  Stellen Sie sicher, dass die importierten Daten im Abschnitt **Ansehen von Spalten und Daten** angezeigt werden.
+1. Drücken Sie die Tabulatorschaltfläche, um zur nächsten Zeile zu wechseln und **den Datensatz zu speichern** .
 
 Glückwunsch, Sie haben erfolgreich eine neue Tabelle erstellt und Daten importiert.
 
