@@ -6,7 +6,7 @@ lab:
 
 # Bonus Lab: Erstellen einer Canvas-App mit Copilot
 
-**WWL-Mandanten – Nutzungsbedingungen** Wenn Ihnen im Rahmen einer Präsenzschulung ein Mandant zugewiesen worden ist, steht dieser für Praxislabs innerhalb der Präsenzschulung zur Verfügung. Mandanten sollten nicht für Zwecke außerhalb von Praxislabs freigegeben oder verwendet werden. Der in diesem Kurs verwendete Mandant ist ein Testmandant; er kann nach Abschluss des Kurses nicht verwendet oder aufgerufen werden und ist nicht für Erweiterungen geeignet. Mandanten dürfen nicht in ein kostenpflichtiges Abonnement konvertiert werden. Die im Rahmen dieses Kurses erworbenen Mandanten verbleiben im Eigentum der Microsoft Corporation, und wir behalten uns das Recht vor, jederzeit auf Mandanten zuzugreifen und diese zurückzuziehen. 
+**WWL-Mandanten – Nutzungsbedingungen** Wenn Ihnen im Rahmen einer Präsenzschulung ein Mandant zugewiesen worden ist, steht dieser für Praxislabs innerhalb der Präsenzschulung zur Verfügung. Mandanten sollten nicht für Zwecke außerhalb von Praxislabs freigegeben oder verwendet werden. Der in diesem Kurs verwendete Tenant ist ein Testtenant; er kann nach Abschluss des Kurses nicht verwendet oder aufgerufen werden und ist nicht für Erweiterungen geeignet. Mandanten dürfen nicht in ein kostenpflichtiges Abonnement konvertiert werden. Die im Rahmen dieses Kurses erworbenen Mandanten verbleiben im Eigentum der Microsoft Corporation, und wir behalten uns das Recht vor, jederzeit auf Mandanten zuzugreifen und diese zurückzuziehen. 
 
 ## Szenario
 
@@ -30,7 +30,7 @@ Wir werden uns beim Entwerfen der App an nachstehende Gliederung halten:
 
 ## Übung 1: Verwenden Sie Copilot, um eine Anwendung für Universitätsbesuche zu erstellen.
 
-**Ziel**: In dieser Übung erstellen Sie eine Canvas-App, indem Sie eine Verbindung mit einer Tabelle „Expense Reports“ herstellen.
+**Ziel**: In dieser Übung erstellen Sie eine Canvas-App, indem Sie eine Verbindung mit einer Tabelle „Campus visits“ herstellen.
 
 ### Aufgabe \#1: Erstellen der ursprünglichen Anwendung
 
