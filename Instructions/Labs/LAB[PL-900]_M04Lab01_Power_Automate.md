@@ -141,8 +141,6 @@ Lassen Sie die Registerkarte dieses Flows für die nächste Aufgabe geöffnet. D
 
     - **Berichtsname:** Testbericht
 
-    - **Berichtssumme:** 750,00 $
-
     - **Fälligkeitsdatum melden:** Morgen 
 
 1. Wählen Sie die Schaltfläche **Speichern und schließen** aus.
