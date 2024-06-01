@@ -1,7 +1,7 @@
 ---
 lab:
   title: "Lab\_4: Erstellen einer automatisierten Lösung"
-  module: 'Module 4: Get Started with Power Automate'
+  module: 'Module 4: Describe building automation with Microsoft Power Automate'
 ---
 
 # Lab 4: Erstellen einer automatisierten Lösung

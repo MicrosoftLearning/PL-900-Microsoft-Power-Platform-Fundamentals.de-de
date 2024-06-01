@@ -1,7 +1,7 @@
 ---
 lab:
   title: "Lab\_3: So erstellen Sie eine modellgesteuerte App"
-  module: 'Module 3: Get started with Power Apps'
+  module: 'Module 3: Describe how to build applications with Microsoft Power Apps'
 ---
 
 # Lab 3: So erstellen Sie eine modellgesteuerte App
