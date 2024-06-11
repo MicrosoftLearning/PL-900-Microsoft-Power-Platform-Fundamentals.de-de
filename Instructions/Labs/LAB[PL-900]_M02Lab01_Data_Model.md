@@ -1,7 +1,7 @@
 ---
 lab:
   title: 'Lab 1: Datenmodellierung'
-  module: 'Module 2: Introduction to Microsoft Dataverse'
+  module: 'Module 2: Identify foundational components of Microsoft Power Platform'
 ---
 
 # Lab 1: Datenmodellierung
@@ -15,14 +15,6 @@ Das Bellows College ist eine Bildungsorganisation mit mehreren Campusgebäuden. 
 Die Campusverwaltung möchte ihr Spesenabrechnungssystem modernisieren, indem den Mitarbeitern eine digitale Möglichkeit zum Melden von Ausgaben an die Hand gegeben wird. 
 
 Während dieses Kurses erstellen Sie Anwendungen und führen eine Automatisierung durch, damit die Mitarbeiter des Bellows College Ausgaben verwalten können.
-
-In diesem Lab erstellen Sie ein Datenmodell, um die folgenden Anforderungen zu unterstützen:
-
-- R1: Nachverfolgen von Informationen zu geplanten Campusbesuchen
-
-- R2: Aufzeichnen der grundlegenden Informationen, um die Besucher*innen zu identifizieren und nachzuverfolgen
-
-- R3: Planen, Aufzeichnen und Verwalten von Besuchen
 
 Zum Abschluss importieren Sie Beispieldaten in Microsoft Dataverse.
 
@@ -80,7 +72,7 @@ Die **Tabelle "Ausgaben** " enthält Informationen zu einzelnen Ausgaben, die ei
 
 1. Wählen Sie in **der Zeitzonenanpassung**"Nur **Datum"** aus.
 
-    >**Hinweis:** Wir verwenden **das Datumsverhalten nur** , um Datumsinformationen aufzuzeichnen, da sich das Datum des Besuchs nicht ändern sollte, wenn er aus einer anderen Zeitzone angezeigt wird.
+    >**Hinweis:** Wir verwenden das **Nur Datum**-Verhalten, um Datumsinformationen aufzuzeichnen, da sich das Datum der Spesen nicht ändern sollte, wenn er in einer anderen Zeitzone angezeigt wird.
 
 1. Wählen Sie **Speichern**.
 

@@ -1,7 +1,7 @@
 ---
 lab:
   title: "Lab\_4: Erstellen einer automatisierten Lösung"
-  module: 'Module 4: Get Started with Power Automate'
+  module: 'Module 4: Describe building automation with Microsoft Power Automate'
 ---
 
 # Lab 4: Erstellen einer automatisierten Lösung
@@ -66,7 +66,7 @@ Dies ist eine gute Vorgehensweise, damit Sie und andere Flow-Editoren den Zweck 
 
 ### Aufgabe Nr. 2: Erstellen eines Schritts zum Abrufen der Zeile "Spesenabrechnung"
 
-1. Wählen Sie **+ Neuer Schritt**aus. In diesem Schritt werden Besucherinformationen abgerufen, einschließlich E-Mail-Adressen.
+1. Wählen Sie **+ Neuer Schritt**aus. In diesem Schritt werden Spesenabrechnungsinformationen abgerufen, einschließlich der E-Mail-Adresse.
 
 1. Suchen Sie nach Dataverse
 
@@ -82,9 +82,9 @@ Dies ist eine gute Vorgehensweise, damit Sie und andere Flow-Editoren den Zweck 
 
 Dies ist eine gute Vorgehensweise, damit Sie und andere Flow-Editoren den Zweck des Schritts erkennen können, ohne tiefer in die Details gehen zu müssen.
 
-### Aufgabe 3: Erstellen eines Schritts zum Senden einer E-Mail an den Besucher
+### Aufgabe 3: Erstellen eines Schritts zum Senden einer E-Mail zur Bestätigung der Übermittlung einer Spesenabrechnung
 
-1. Wählen Sie **+ Neuer Schritt**aus. Mit diesem Schritt werden E-Mails an Besucher*innen gesendet.
+1. Wählen Sie **+ Neuer Schritt**aus. Dies ist der Schritt, der eine E-Mail an die Person sendet, die eine Spesenabrechnung übermittelt hat.
 
 1. Suchen Sie nach einem Mail, wählen Sie die Aktion **„ein E-Mail verschicken“ (V2)** aus** dem **Office 365 Outlook-Connector aus.
 
@@ -109,9 +109,9 @@ Dynamischer Inhalt muss dort platziert werden, wo Feldnamen in Klammern angegebe
 
 1. Markieren Sie den Text **{First Name}** (Vorname). Ersetzen Sie es durch das Feld **Vorname** aus dem Schritt **Besitzer abrufen**.
 
-1. Markieren Sie den **Text {Gesamtbetrag eingeben}** . Ersetzen Sie ihn durch das **Feld "Gesamtbetrag melden"**, wenn ein **Besuch hinzugefügt** wird.
+1. Markieren Sie den **Text {Gesamtbetrag eingeben}** . Ersetzen Sie ihn durch das Feld **Gesamtbetrag melden** aus dem Schritt **wenn ein Spesenabrechnungsschritt übermittelt wird**.
 
-1. Markieren Sie den **Text {Fälligkeitsdatum eingeben**). Ersetzen Sie ihn durch das **Feld "Fälligkeitsdatum** eingeben" aus dem **Schritt "Wenn ein Besuch hinzugefügt** wird".
+1. Markieren Sie den **Text {Fälligkeitsdatum eingeben**). Ersetzen Sie ihn durch das Feld **Fälligkeitsdatum melden** aus dem Schritt **Senden einer Spesenabrechnung**.
 
 1. Wählen Sie **Speichern**.
 
@@ -140,8 +140,6 @@ Lassen Sie die Registerkarte dieses Flows für die nächste Aufgabe geöffnet. D
 1. Füllen Sie den **Spesenabrechnungseintrag** wie folgt aus:
 
     - **Berichtsname:** Testbericht
-
-    - **Berichtssumme:** 750,00 $
 
     - **Fälligkeitsdatum melden:** Morgen 
 

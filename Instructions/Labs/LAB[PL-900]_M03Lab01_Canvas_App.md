@@ -1,18 +1,18 @@
 ---
 lab:
   title: "Lab\_2: Eine Canvas-App erstellen"
-  module: 'Module 3: Get started with Power Apps'
+  module: 'Module 3: Describe how to build applications with Microsoft Power Apps'
 ---
 
 # Lab 2: Eine Canvas-App erstellen
 
-**WWL-Mandanten – Nutzungsbedingungen** Wenn Ihnen im Rahmen einer Präsenzschulung ein Mandant zugewiesen worden ist, steht dieser für Praxislabs innerhalb der Präsenzschulung zur Verfügung. Mandanten sollten nicht für Zwecke außerhalb von Praxislabs freigegeben oder verwendet werden. Der in diesem Kurs verwendete Mandant ist ein Testmandant; er kann nach Abschluss des Kurses nicht verwendet oder aufgerufen werden und ist nicht für Erweiterungen geeignet. Mandanten dürfen nicht in ein kostenpflichtiges Abonnement konvertiert werden. Die im Rahmen dieses Kurses erworbenen Mandanten verbleiben im Eigentum der Microsoft Corporation, und wir behalten uns das Recht vor, jederzeit auf Mandanten zuzugreifen und diese zurückzuziehen. 
+**WWL-Mandanten – Nutzungsbedingungen** Wenn Ihnen im Rahmen einer Präsenzschulung ein Mandant zugewiesen worden ist, steht dieser für Praxislabs innerhalb der Präsenzschulung zur Verfügung. Mandanten sollten nicht für Zwecke außerhalb von Praxislabs freigegeben oder verwendet werden. Der in diesem Kurs verwendete Tenant ist ein Testtenant; er kann nach Abschluss des Kurses nicht verwendet oder aufgerufen werden und ist nicht für Erweiterungen geeignet. Mandanten dürfen nicht in ein kostenpflichtiges Abonnement konvertiert werden. Die im Rahmen dieses Kurses erworbenen Mandanten verbleiben im Eigentum der Microsoft Corporation, und wir behalten uns das Recht vor, jederzeit auf Mandanten zuzugreifen und diese zurückzuziehen. 
 
 ## Szenario
 
-Das Bellows College ist eine Bildungseinrichtung mit mehreren Campusgebäuden und Programmen. Viele der Bellow Colleges Lehrer und Administratoren müssen an Veranstaltungen teilnehmen und Artikel kaufen. Historisch gesehen war die Verfolgung dieser Ausgaben eine Herausforderung. 
+Das Bellows College ist eine Bildungsorganisation mit mehreren Campusgebäuden. Viele der Lehrer und Administratoren am Bellow College müssen an Veranstaltungen teilnehmen und Artikel kaufen. Historisch gesehen war die Nachverfolgung dieser Ausgaben eine Herausforderung. 
 
-Die Campusverwaltung möchte ihr Spesenabrechnungssystem modernisieren, indem die Mitarbeitenden eine digitale Möglichkeit zum Melden von Ausgaben haben. 
+Die Campusverwaltung möchte ihr Spesenabrechnungssystem modernisieren, indem den Mitarbeitern eine digitale Möglichkeit zum Melden von Ausgaben an die Hand gegeben wird. 
 
 Während dieses Kurses erstellen Sie Anwendungen und führen Automatisierung durch, damit die Mitarbeitenden des Bellows College Ausgaben verwalten können. 
 
@@ -21,9 +21,9 @@ Während dieses Kurses erstellen Sie Anwendungen und führen Automatisierung dur
 
 Wir werden uns beim Entwerfen der App an nachstehende Gliederung halten:
 
-- Erstellen einer Canvas-App aus Daten in der Tabelle „Besuch“
+- Erstellen einer Canvas-App für Spesenabrechnungen 
 
-- Konfigurieren, wie die Besuche im Bildschirm „Durchsuchen“ angezeigt werden
+- Konfigurieren, wie Spesenabrechnungen auf dem Suchbildschirm angezeigt werden
 
 - Vornehmen einiger einfacher Änderungen an der App
 
@@ -107,7 +107,7 @@ In dieser Aufgabe passen Sie den Kopfzeilentext für jeden der drei Bildschirme 
 
 In dieser Aufgabe testen Sie Ihre neue App.
 
-1. Wenn Ihre Anwendung im App-Designer geöffnet ist, wählen Sie **Einstellungen** aus (Möglicherweise müssen Sie wählen ... damit das Einstellungssymbol angezeigt wird), aktualisieren Sie im Abschnitt **Allgemein** den Namen Ihrer Anwendung auf „Visits App“, wählen Sie das **X**, um den Einstellungsbildschirm zu schließen und wählen Sie dann **Speichern**.
+1. Wenn Ihre Anwendung im App-Designer geöffnet ist, wählen Sie **Einstellungen** aus (Möglicherweise müssen Sie wählen ... damit das Einstellungssymbol angezeigt wird), aktualisieren Sie im Abschnitt **Allgemein** den Namen Ihrer Anwendung auf „Expense Report App“, wählen Sie das **X**, um den Einstellungsbildschirm zu schließen und wählen Sie dann **Speichern**.
 
 1. Wählen Sie links im Navigationsbereich die Option **BrowseScreen1** aus.
 

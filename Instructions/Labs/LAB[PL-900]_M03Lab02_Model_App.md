@@ -1,22 +1,20 @@
 ---
 lab:
   title: "Lab\_3: So erstellen Sie eine modellgesteuerte App"
-  module: 'Module 3: Get started with Power Apps'
+  module: 'Module 3: Describe how to build applications with Microsoft Power Apps'
 ---
 
 # Lab 3: So erstellen Sie eine modellgesteuerte App
 
-**WWL-Mandanten – Nutzungsbedingungen** Wenn Ihnen im Rahmen einer Präsenzschulung ein Mandant zugewiesen worden ist, steht dieser für Praxislabs innerhalb der Präsenzschulung zur Verfügung. Mandanten sollten nicht für Zwecke außerhalb von Praxislabs freigegeben oder verwendet werden. Der in diesem Kurs verwendete Mandant ist ein Testmandant. Er kann nach Abschluss des Kurses nicht verwendet oder aufgerufen werden und ist nicht für Erweiterungen geeignet. Mandanten dürfen nicht in ein kostenpflichtiges Abonnement konvertiert werden. Die im Rahmen dieses Kurses erworbenen Mandanten verbleiben im Eigentum der Microsoft Corporation, und wir behalten uns das Recht vor, jederzeit auf Mandanten zuzugreifen und diese zurückzuziehen. 
+**WWL-Mandanten – Nutzungsbedingungen** Wenn Ihnen im Rahmen einer Präsenzschulung ein Mandant zugewiesen worden ist, steht dieser für Praxislabs innerhalb der Präsenzschulung zur Verfügung. Mandanten sollten nicht für Zwecke außerhalb von Praxislabs freigegeben oder verwendet werden. Der in diesem Kurs verwendete Tenant ist ein Testtenant; er kann nach Abschluss des Kurses nicht verwendet oder aufgerufen werden und ist nicht für Erweiterungen geeignet. Mandanten dürfen nicht in ein kostenpflichtiges Abonnement konvertiert werden. Die im Rahmen dieses Kurses erworbenen Mandanten verbleiben im Eigentum der Microsoft Corporation, und wir behalten uns das Recht vor, jederzeit auf Mandanten zuzugreifen und diese zurückzuziehen. 
 
 ## Szenario
 
-Das Bellows College ist eine Bildungsorganisation mit mehreren Gebäuden auf dem Campus. Campusbesucher werden derzeit auf Papier erfasst. Die Informationen werden nicht konsistent erfasst und es gibt keine Möglichkeit, Daten über die Besuche auf dem gesamten Campus zu sammeln und zu analysieren.
+Das Bellows College ist eine Bildungsorganisation mit mehreren Campusgebäuden. Viele der Lehrer und Administratoren am Bellow College müssen an Veranstaltungen teilnehmen und Artikel kaufen. Historisch gesehen war die Nachverfolgung dieser Ausgaben eine Herausforderung.
 
-Die Campusverwaltung möchte ihr Besucherregistrierungssystem modernisieren, wobei der Zugang zu den Gebäuden von Sicherheitspersonal kontrolliert werden soll und alle Besuche von den entsprechenden Gastgebern zuvor registriert und aufgezeichnet werden müssen.
+Die Campusverwaltung möchte ihr Spesenabrechnungssystem modernisieren, indem den Mitarbeitern eine digitale Möglichkeit zum Melden von Ausgaben an die Hand gegeben wird.
 
-Während dieses Kurses erstellen Sie Anwendungen und führen eine Automatisierung durch, damit das Verwaltungs- und Sicherheitspersonal des Bellows College den Zugang zu den Gebäuden auf dem Campus verwalten und kontrollieren kann.
-
-In diesem Lab erstellen Sie eine modellgesteuerte Power Apps-App, mit der die Campus-Mitarbeiter im Backoffice die Besuchsdatensätze für den gesamten Campus verwalten können.
+Während dieses Kurses erstellen Sie Anwendungen und führen Automatisierung durch, damit die Mitarbeitenden des Bellows College Ausgaben verwalten können.
 
 ## Weiterführende Schritte des Lab
 
@@ -88,11 +86,11 @@ Die Kopfzeile ist der obere rechte Bereich des Formulars. Möglicherweise müsse
 
 1. Wenn die Bearbeitungsansicht auf einer neuen Browserregisterkarte oder in einem neuen Fenster geöffnet wurde, schließen Sie sie. Wählen Sie andernfalls oben links im Bildschirm **🡠 Zurück** aus. Sie sollten sich nun wieder im Formular für die Tabelle **Expense Report** (Spesenabrechnung) befinden.
 
-1. Sie verwenden die Breadcrumbs oben links (**Tabellen** > **Expense Report (Spesenabrechnung)** > **Formulare**). Wählen Sie **Expense Report** (Spesenabrechnung) aus, um zum Eigenschaftendialogfeld der Tabelle **Visit** (Besuch) zurückzukehren.
+1. Sie verwenden die Breadcrumbs oben links (**Tabellen** > **Expense Report (Spesenabrechnung)** > **Formulare**). Wählen Sie **Spesenabrechnung** aus, um zum Eigenschaftendialogfeld der Tabelle **Spesenabrechnung** zurückzukehren.
 
-## Aufgabe Nr. 2: Bearbeiten der Ansicht „Aktive Besuche“
+## Aufgabe Nr. 2: Ansicht „Aktive Spesenabrechnungen bearbeiten“
 
-In dieser Aufgabe ändern wir die Standardansicht „Aktive Spesenabrechnungen“ und erstellen eine neue Ansicht für die heutigen Besuche.
+In dieser Aufgabe ändern wir die Standardansicht „Aktive Spesenabrechnungen“ und erstellen eine neue Ansicht für die heute fälligen Spesenabrechnungen.
 
 1. Wählen Sie im Abschnitt **Datenfunktionen** die Option **Ansichten** aus, und öffnen Sie die Ansicht **Active Expense Reports** (Aktive Spesenabrechnungen).
 
@@ -210,15 +208,15 @@ Der Einfachheit halber und aus Zeitgründen gehen wir in diesem Lab nicht auf al
 
 1. Füllen Sie die Felder wie folgt aus:
 
-    - **Berichtsname**: Neuer Testbericht
+    - **Berichtsname**: neuer Testbericht
 
     - **Berichtszweck**: Wählen Sie **Konferenz** aus.
 
     - **Berichtsfälligkeitsdatum**: Wählen Sie das heutige Datum aus.
 
-1. Wählen Sie **Speichern &amp; Schließen**. Der Besuch wird erstellt und sollte in der Ansicht **Aktive Besuche** angezeigt werden.
+1. Wählen Sie **Speichern &amp; Schließen**. Dadurch wird der neue Testbericht erstellt, und Sie sollten ihn in der Ansicht **Aktive Spesenabrechnungen** anzeigen können.
 
-1. Ändern Sie die Ansicht über die Dropdownliste neben **Aktive Besuche** in **Heute fällige Spesenabrechnungen**. 
+1. Ändern Sie die Ansicht in **Heute fällige Spesenabrechnungen** über die Dropdownliste neben **Aktive Spesenabrechnungen**. 
 
 1. Sie können weitere Testdatensätze hinzufügen.
 
