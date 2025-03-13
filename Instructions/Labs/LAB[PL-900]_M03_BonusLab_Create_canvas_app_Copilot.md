@@ -40,7 +40,7 @@ Wir werden uns beim Entwerfen der App an nachstehende Gliederung halten:
 
 3. Wählen Sie oben rechts die Umgebung **Dev One** aus, sofern sie noch nicht ausgewählt ist.
 
-4. Geben Sie den folgenden Text in das Feld **Beschreiben Sie die Anwendung, die Sie erstellen möchten** ein. Erstellen Sie eine Anwendung, die Besuche auf einem Universitätscampus protokolliert. 
+4. Geben Sie im Feld **Verwenden Sie alltägliche Wörter, um zu beschreiben, was Ihre App sammeln, verfolgen, auflisten oder verwalten soll** den folgenden Text ein: `Create an application that logs visits to a college campus`. 
 
 5. Wählen Sie die Schaltfläche **Los** aus.
 
@@ -48,34 +48,45 @@ Copilot beginnt mit der Erstellung einer Tabellenstruktur zur Unterstützung Ihr
 
 > **WICHTIG:** Wenn Sie generative KI verwenden, erhalten Sie nicht immer dieselben genauen Ergebnisse. Es ist möglich, dass Ihre Tabelle nicht genau mit der Tabelle übereinstimmt, die für einen anderen Kursteilnehmer erstellt wurde. 
 
-6. Geben Sie in das Feld **Beschreiben Sie, was geändert werden soll** den Text ein: Fügen Sie zwei Spalten hinzu, „Time in“ und „Time out“. Beide sollten Datums- und Uhrzeitfelder sein.  
+6. Wählen Sie auf der rechten Seite die Tabellenstruktur im Copilot-Fenster aus und wählen Sie dann **Tabellenoptionen**.
 
-7. Klicken Sie auf die Schaltfläche **Los** oder drücken Sie die **EINGABETASTE**. 
+7. Wählen Sie die Option **Eine Tabelle** und wählen Sie dann **Anwenden**.
+ 
+    ![Screenshot der soeben erstellten Tabellenstruktur](media/bonus-lab-tablestr.png)
 
-8. Scrollen Sie zur Seite der Tabelle, und überprüfen Sie, ob die Spalten **Time in** und **Time out** erstellt wurden. 
+
+> Um die Tabellenstruktur zu sehen, wählen Sie die Tabelle aus und klicken Sie auf die Schaltfläche **Daten anzeigen**. 
+
+8. Geben Sie in das Feld **Was möchten Sie als nächstes tun?** den folgenden Text ein: Füge in der Tabelle zwei Spalten hinzu, „Time in“ und „Time out“. Beides sollten Datums- und Uhrzeitfelder sein. 
+
+9. Klicken Sie auf die Schaltfläche **Los** oder drücken Sie die **EINGABETASTE**. 
+
+10. Scrollen Sie zur Seite der Tabelle und überprüfen Sie, ob die Spalten **Time in** und **Time out** erstellt wurden. 
 
 Da wir die Zeit des Zutritts und Verlassens der Besucher protokollieren, benötigen wir keine anderen Datumsfelder für Besuche mehr. 
 
-9. Suchen Sie das Feld **Besuchsdatum** (oder ähnliches Feld) und geben Sie im Feld **Beschreiben Sie, was geändert werden soll**den Text „Feld für Besuchsdatum entfernen“ ein. 
+11. Suchen Sie das Feld **Besuchsdatum** (oder ein entsprechendes Feld) und geben Sie im Feld **Was möchten Sie als Nächstes tun?** den folgenden Text ein: Entferne das Feld „Besuchsdatum“ (oder ein entsprechendes Feld). 
 
-10. Wählen Sie die Schaltfläche **Los** aus. 
+>Aktualisiere bei Bedarf den Feldnamen, der aus dem relevanten Tabellennamen entfernt werden soll.
 
-11. Entfernen Sie alle zusätzlichen Datumsfelder, die möglicherweise zusätzlich zu **Time in** und **Time out** vorhanden sind. 
+12. Wählen Sie die Schaltfläche **Los** aus. 
+
+13. Entfernen Sie alle zusätzlichen Datumsfelder, die möglicherweise zusätzlich zu **Time in** und **Time out** vorhanden sind. 
 
 Zunächst wurde ein Feld wie das Feld **Zweck** mit einem Textdatentyp formatiert. Wir lassen es von Copilot in ein Dropdownmenü (Auswahl) ändern. 
 
-12. Geben Sie in das Feld **Beschreiben Sie, was geändert werden soll** folgenden Text ein: Ändern Sie das Feld „Zweck“ in ein Auswahlmenü mit den folgenden Optionen: Campus-Tour, Karrieremesse, Treffen mit Professor, Studienberatung, Sonstiges. 
-
-13. Wählen Sie die Schaltfläche **Los** aus. 
-
-14. Da wir auch die Gebäudenummer erfassen möchten, geben Sie im Feld **Beschreiben Sie, was sie geändert werden soll** Folgendes ein: Fügen Sie eine Gebäudespalte hinzu. 
+14. Geben Sie im Feld **Was möchten Sie als Nächstes tun?** den folgenden Text ein: Ändere das Feld „Zweck“ in ein Auswahlmenü mit den folgenden Möglichkeiten: Campus-Tour, Karrieremesse, Treffen mit einem Professor, Beratung für Studierende, Sonstiges. 
 
 15. Wählen Sie die Schaltfläche **Los** aus. 
 
-16. Sobald Sie mit Ihrer Tabelle zufrieden sind, wählen Sie die Schaltfläche **App erstellen** aus. 
+16. Da wir auch die Gebäudenummer erfassen möchten, geben Sie im Feld **Was möchten Sie als Nächstes tun?** ein: Füge eine Gebäude-Spalte hinzu. 
 
-17. Bei Bedarf wählen Sie auf dem Bildschirm **Willkommen bei Power Apps Studio** **Nicht mehr anzeigen**, und wählen Sie dann **Überspringen** aus. 
+17. Wählen Sie die Schaltfläche **Los** aus. 
 
-![Screenshot der soeben erstellten App](media/bonus-lab-copilot-01.png)
+18. Wenn Sie mit Ihrer Tabelle zufrieden sind, wählen Sie die Schaltfläche **Speichern und App öffnen**. 
+
+19. Falls erforderlich, wählen Sie auf dem Bildschirm **Arbeit abgeschlossen?** die Option **Nicht mehr nachfragen** aus und wählen Sie die Schaltfläche **App speichern und öffnen** aus. 
+
+![Screenshot der soeben erstellten App](media/bonus-lab-copilot-02.png)
 
 Herzlichen Glückwunsch, Sie haben Copilot zum Erstellen einer neuen App verwendet. 

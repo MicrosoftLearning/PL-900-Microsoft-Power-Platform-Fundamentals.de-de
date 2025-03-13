@@ -22,8 +22,6 @@ Zum Abschluss importieren Sie Beispieldaten in Microsoft Dataverse.
 
 Um Ihre Lernumgebungen vorzubereiten, werden Sie:
 
-- Beschreibungen zu den Metadaten (Tabellen und Beziehungen) finden Sie im [Datenmodelldokument](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus Management.png). Sie können die STRG-Taste gedrückt halten und mit der linken oder rechten Maustaste auf den Link klicken, um das Datenmodelldokument in einem neuen Fenster zu öffnen.
-
 - Spesentabelle erstellen
 
 - Fügen Sie einige Beispieldaten hinzu. 
@@ -50,11 +48,11 @@ Die **Tabelle "Ausgaben** " enthält Informationen zu einzelnen Ausgaben, die ei
 
 1. Wählen Sie links im Navigationsbereich die Option **Tabellen** aus.
 
-1. Wählen Sie **+ Neue Tabelle** aus und wählen Sie **Erweiterte Eigenschaften festlegen** aus.
+1. Wählen Sie **+ Neue Tabelle** und dann **Tabelle (erweiterte Eigenschaften)** aus dem Dropdown-Menü aus.
 
-1. Geben Sie "Ausgabe" für **den Anzeigenamen**ein.
+1. Geben Sie für **Anzeigename** `Expense` ein.
 
-1. Wählen Sie **Speichern**.
+1. Wählen Sie **Speichern** aus.
 
 1. Wählen Sie im Abschnitt **Schema** die Option **Spalten** aus.
 
@@ -62,7 +60,7 @@ Die **Tabelle "Ausgaben** " enthält Informationen zu einzelnen Ausgaben, die ei
 
 1. Wählen Sie **+ Neue Spalte** aus.
 
-1. Geben Sie das Spesendatum für **den Anzeigenamen**ein.
+1. Geben Sie für **Anzeigename** `Expense Date` ein.
 
 1. Wählen Sie **"Datum nur** für **Datentyp**" aus.
 
@@ -70,7 +68,7 @@ Die **Tabelle "Ausgaben** " enthält Informationen zu einzelnen Ausgaben, die ei
 
 1. Erweitern Sie **Erweiterte Optionen**.
 
-1. Wählen Sie in **der Zeitzonenanpassung**"Nur **Datum"** aus.
+1. Wählen Sie unter **Zeitzonenanpassung** die Option **Nur Datum**.
 
     >**Hinweis:** Wir verwenden das **Nur Datum**-Verhalten, um Datumsinformationen aufzuzeichnen, da sich das Datum der Spesen nicht ändern sollte, wenn er in einer anderen Zeitzone angezeigt wird.
 
@@ -80,13 +78,13 @@ Die **Tabelle "Ausgaben** " enthält Informationen zu einzelnen Ausgaben, die ei
 
 1. Wählen Sie **+ Neue Spalte** aus.
 
-1. Geben Sie den Spesentyp für **den Anzeigenamen**ein.
+1. Geben Sie für **Anzeigename** `Expense Type` ein.
 
 1. Wählen Sie **"Auswahl** " für **"Datentyp**" aus.
 
 1. Wählen Sie in **"Erforderlich**" die Option "Optional" **aus**.
 
-1. Festlegen der **Synchronisierung mit globaler Auswahl** auf **"Ja" (empfohlen)**
+1. Legen Sie **Synchronisierung mit globaler Auswahl** auf **Ja (empfohlen)** fest.
 
 1. **Wählen Sie in "Diese Option synchronisieren" mit** dem Feld "Spesentyp" ** aus**.
 
@@ -98,17 +96,17 @@ Die **Tabelle "Ausgaben** " enthält Informationen zu einzelnen Ausgaben, die ei
 
 1. Wählen Sie **+ Neue Spalte** aus.
 
-1. Geben Sie "Spesenzweck" für **den Anzeigenamen ein**.
+1. Geben Sie für **Anzeigename** `Expense Purpose` ein.
 
 1. Wählen Sie **"Auswahl** " für **"Datentyp**" aus.
 
 1. Wählen Sie in **"Erforderlich**" die Option "Optional" **aus**.
 
-1. Festlegen der **Synchronisierung mit globaler Auswahl** auf **"Ja" (empfohlen)**
+1. Legen Sie **Synchronisierung mit globaler Auswahl** auf **Ja (empfohlen)** fest.
 
 1. **Wählen Sie in "Diese Option synchronisieren" mit** dem **Feld "Spesenzweck" aus**.
 
-1. Legen Sie das **Feld "Standard** " auf **"Keine"** fest.
+1. Stellen Sie das Feld " **Standardauswahl** " auf **"Keine"** ein.
 
 1. Wählen Sie **Speichern**.
 
@@ -116,7 +114,7 @@ Die **Tabelle "Ausgaben** " enthält Informationen zu einzelnen Ausgaben, die ei
 
 1. Wählen Sie **+ Neue Spalte** aus.
 
-1. Geben Sie die Elementbeschreibung für **den Anzeigenamen ein**.
+1. Geben Sie für **Anzeigename** `Item Description` ein.
 
 1. Wählen Sie **für den Datentyp &gt; "Nur-Text** **" mehrere Textzeilen**aus.
 
@@ -126,7 +124,7 @@ Die **Tabelle "Ausgaben** " enthält Informationen zu einzelnen Ausgaben, die ei
 
 1. Wählen Sie **+ Neue Spalte** aus.
 
-1. Geben Sie den Spesenbetrag für **den Anzeigenamen**ein.
+1. Geben Sie für **Anzeigename** `Expense Amount` ein.
 
 1. Wählen Sie **"Währung** " für **den Datentyp**aus.
 
@@ -167,7 +165,7 @@ Die **Tabelle "Ausgaben** " enthält Informationen zu einzelnen Ausgaben, die ei
 
 1. Wählen Sie den **Pfeil** neben **"Bearbeiten"** aus. Wählen Sie im nun angezeigten Menü " **Bearbeiten" auf der neuen Registerkarte**aus.
 
-1. Geben Sie in der **Spalte "Name** " **John Doe** ein.
+1. Geben Sie in der Spalte **Name** entsprechend `John Doe` ein.
 
 1. Geben Sie in der **Spalte "Spesendatum** " **"xxx"** ein.
 
@@ -175,7 +173,7 @@ Die **Tabelle "Ausgaben** " enthält Informationen zu einzelnen Ausgaben, die ei
 
 1. Wählen Sie in der Spalte **"Spesentyp"** die **Option "Reise" **aus.
 
-1. Geben Sie in der **Spalte "Spesenbetrag** " **750,00** ein.
+1. In der Spalte **Ausgabenbetrag** geben Sie `750.00` ein.
 
 1. Geben Sie in der **Elementbeschreibung**eine kurze Beschreibung ein.
 

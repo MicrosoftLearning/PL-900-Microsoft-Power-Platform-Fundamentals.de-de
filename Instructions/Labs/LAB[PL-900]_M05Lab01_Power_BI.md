@@ -46,7 +46,7 @@ Wir werden die folgenden Schritte ausführen, um ein Power BI-Dashboard zu entwe
 
 1. Eine Datei „Visits.pbix“ sollte auf Ihrer VM im Ordner „AllFiles“ auf dem Desktop gespeichert sein. Laden Sie die Datei [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) herunter, und speichern Sie sie auf Ihrem Computer, falls sie dort noch nicht vorhanden ist.
 
-1. Öffnen Sie eine neue Registerkarte, navigieren Sie zu https://app.powerbi.com, und melden Sie sich bei Bedarf an.
+1. Öffnen Sie eine neue Registerkarte, navigieren Sie zu `https://app.powerbi.com`, und melden Sie sich bei Bedarf an.
 
 1. Wählen Sie im linken Navigationsbereich **Mein Arbeitsbereich** aus.
 
@@ -56,7 +56,7 @@ Wir werden die folgenden Schritte ausführen, um ein Power BI-Dashboard zu entwe
 
 1. Wählen Sie nach Abschluss des Datenladevorgangs den **Besuchsbericht** aus.
 
-    >**Hinweis**: Der Typ ist auf **Bericht** festgelegt. Wählen Sie das Dataset nicht aus.
+    >**Hinweis:** Der Typ ist auf **Bericht** festgelegt, wählen Sie nicht das semantische Modell aus.
 
 1. Wählen Sie **Bearbeiten** aus.
 
@@ -68,7 +68,7 @@ Damit haben den Power BI-Dienst für Ihre Labs eingerichtet.
 
 1. Wählen Sie das **Kreisdiagrammsymbol** im Bereich **Visualisierungen** aus, um ein Diagramm einzufügen.
 
-1. Erweitern Sie **bc_Visit** im Bereich **Felder**. Ziehen Sie das Feld **Gebäude** in das Feld **Legende**, und legen Sie es dort ab.
+1. Erweitern Sie **bc_Visit** im Bereich **Daten**. Ziehen Sie das Feld **Gebäude** in das Feld **Legende**, und legen Sie es dort ab.
 
 1. Ziehen Sie das Feld **Besuch** in das Feld **Werte**, und legen Sie es dort ab.
 
@@ -76,7 +76,7 @@ Damit haben den Power BI-Dienst für Ihre Labs eingerichtet.
 
 1. Klicken Sie auf den Bericht außerhalb des Kreisdiagramms, um die Auswahl aufzuheben, und wählen Sie das Symbol **Gestapeltes Säulendiagramm** im Fenster **Visualisierungen** aus.
 
-1. Erweitern Sie **bc_Visit** im Bereich **Felder**, wenn diese Angabe noch nicht erweitert wurde. Ziehen Sie das Feld **Besuch** in das Feld **Y-Achse**, und legen Sie es dort ab.
+1. Erweitern Sie **bc_Visit** im Bereich **Daten**, falls diese Angabe noch nicht erweitert wurde. Ziehen Sie das Feld **Besuch** in das Feld **Y-Achse**, und legen Sie es dort ab.
 
 1. Ziehen Sie das Feld **Start** in das Feld **X-Achse**, und legen Sie es dort ab.
 
@@ -104,7 +104,7 @@ Damit haben den Power BI-Dienst für Ihre Labs eingerichtet.
 
 1. Wählen Sie bei der Eingabeaufforderung **An Dashboard anheften** die Option **Neues Dashboard** aus.
 
-1. Geben Sie „Campusverwaltung“ unter **Dashboardname** ein, und wählen Sie **Live anheften** aus.
+1. Geben Sie `Campus Management` als **Dashboardnamen** ein, und wählen Sie **Live anheften** aus.
 
 1. In einem Popup wird Ihnen mitgeteilt, dass das Dashboard erstellt wurde. Wählen Sie **Zum Dashboard wechseln** aus.
 
@@ -114,7 +114,7 @@ Damit haben den Power BI-Dienst für Ihre Labs eingerichtet.
 
 1. Wählen Sie in Ihrem Dashboard **Campusverwaltung** die Leiste **Stellen Sie eine Frage zu Ihren Daten** ganz oben aus.
 
-1. Geben Sie im Frage- und Antwortbereich Gebäude nach Anzahl der Besuche ein. Ein Balkendiagramm wird angezeigt.
+1. Geben Sie `buildings by number of visits` in den Q&A-Bereich ein. Ein Balkendiagramm wird angezeigt.
 
 1. Wählen Sie **Visualisierung anheften** aus.
 
