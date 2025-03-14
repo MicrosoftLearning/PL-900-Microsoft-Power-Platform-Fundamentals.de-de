@@ -39,7 +39,7 @@ Wir werden uns beim Entwerfen der App an nachstehende Gliederung halten:
 
 ### Aufgabe Nr. 1: Erstellen der Spesenabrechnungs-App
 
-1. Navigieren Sie zu https://make.powerapps.com.
+1. Navigieren Sie zu `https://make.powerapps.com`.
 
 1. Möglicherweise müssen Sie sich erneut authentifizieren. Wählen Sie dazu **Anmelden** aus, und befolgen Sie die Anweisungen, falls erforderlich.
 

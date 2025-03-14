@@ -20,11 +20,11 @@ Während dieses Kurses erstellen Sie Anwendungen und führen Automatisierung dur
 
 Im Rahmen der Erstellung der modellgesteuerten App führen Sie Folgendes aus:
 
-- Erstellen einer neuen modellgesteuerten App mit dem Namen „Bellows Campus Management“
+- Erstellen einer neuen modellgesteuerten App mit dem Namen „Bellows Campus Management“.
 
-- Bearbeiten der App-Navigation, um auf die erforderlichen Tabellen zu verweisen
+- Bearbeiten der App-Navigation, um auf die erforderlichen Tabellen zu verweisen.
 
-- Anpassen der Formulare und Ansichten der erforderlichen Tabellen für die App
+- Anpassen der Formulare und Ansichten der erforderlichen Tabellen für die App.
 
 Wir werden mit folgenden Komponenten arbeiten:
 
@@ -58,7 +58,7 @@ Beide werden für eine bessere Benutzererfahrung in die modellgesteuerte App int
 
 1. Wählen Sie im linken Navigationsbereich **Tabellen** aus, und öffnen Sie die Tabelle **Expense Report** (Spesenabrechnung).
 
-Wenn die Tabelle „Expense Report“ bzw. „Spesenabrechnung“ nicht angezeigt wird, stellen Sie sicher, dass Sie die richtige Umgebung ausgewählt haben (Schritt 2).
+    >Wenn die Tabelle „Expense Report“ bzw. „Spesenabrechnung“ nicht angezeigt wird, stellen Sie sicher, dass Sie die richtige Umgebung ausgewählt haben (Schritt 2).
 
 1. Wählen Sie im Abschnitt **Datenfunktionen** die Option **Formulare** aus, und öffnen Sie das Formular **Informationen** mit dem Formulartyp **Main** (Haupt). (**Wichtig:** Stellen Sie sicher, dass Sie das Formular mit dem Formulartyp **Main** (Haupt) auswählen.)
 
@@ -78,7 +78,7 @@ Wenn die Tabelle „Expense Report“ bzw. „Spesenabrechnung“ nicht angezeig
 
 1. Ziehen Sie die Spalte **Statusgrund**, und legen Sie sie auf der Kopfzeile des Formulars ab.
 
-Die Kopfzeile ist der obere rechte Bereich des Formulars. Möglicherweise müssen Sie das Eigenschaftenpanel auf der rechten Seite des Bildschirms zuklappen, um das Feld im Formular anzuzeigen.
+    >Die Kopfzeile ist der obere rechte Bereich des Formulars. Möglicherweise müssen Sie das Eigenschaftenpanel auf der rechten Seite des Bildschirms zuklappen, um das Feld im Formular anzuzeigen.
 
 1. Wählen Sie das Feld **Besitzer** aus. Ändern Sie im Eigenschaftenpanel die **Bezeichnung** in „Anforderer“.
 
@@ -88,7 +88,7 @@ Die Kopfzeile ist der obere rechte Bereich des Formulars. Möglicherweise müsse
 
 1. Sie verwenden die Breadcrumbs oben links (**Tabellen** > **Expense Report (Spesenabrechnung)** > **Formulare**). Wählen Sie **Spesenabrechnung** aus, um zum Eigenschaftendialogfeld der Tabelle **Spesenabrechnung** zurückzukehren.
 
-## Aufgabe Nr. 2: Ansicht „Aktive Spesenabrechnungen bearbeiten“
+## Aufgabe Nr. 2: Bearbeiten der Ansicht „Inaktive Spesenabrechnungen“
 
 In dieser Aufgabe ändern wir die Standardansicht „Aktive Spesenabrechnungen“ und erstellen eine neue Ansicht für die heute fälligen Spesenabrechnungen.
 
@@ -100,15 +100,15 @@ In dieser Aufgabe ändern wir die Standardansicht „Aktive Spesenabrechnungen�
 
     - **Berichtsfälligkeitsdatum**
 
-    - **Berichtssumme**
+    - **Gesamtbetrag des Berichts**
 
 1. Wählen Sie das Dropdownmenü in der Spalte **Erstellt am** und dann **Entfernen** aus. Das Feld **Erstellt am** wird nun aus der Ansicht entfernt.
 
 1. Passen Sie die Größe der einzelnen Spaltenbreiten an die Daten an.
 
-1. Wählen Sie unter **Sortieren nach …** Wählen Sie das X aus, um **Name** zu entfernen, und wählen sie stattdessen **Gesamtbetrag des Berichts** aus.
+1. Wählen Sie unter **Sortieren nach …** Wählen Sie das X, um **Berichtsname** zu entfernen, und wählen Sie stattdessen **Berichtsgesamtbetrag**.
 
-1. Wählen Sie **Gesamtbetrag des Berichts** aus, um die Sortierreihenfolge in **Absteigend** zu ändern.
+1. Wählen Sie **Berichtsgesamtbetrag** aus, um die Sortierreihenfolge in **Absteigend** zu ändern.
 
 1. Wählen Sie oben rechts **Speichern und Veröffentlichen** aus, und warten Sie, bis der Veröffentlichungsvorgang abgeschlossen wurde.
 
@@ -136,13 +136,13 @@ Jetzt werden wir die Ansicht klonen, um eine neue Ansicht für die heute fällig
 
 1. Wählen Sie oben rechts **Speichern und Veröffentlichen** aus, und warten Sie, bis der Veröffentlichungsvorgang abgeschlossen wurde.
 
-## Übung 2: Eine modellgesteuerte App erstellen
+## Übung 2: Erstellen einer modellgesteuerten App
 
 **Ziel**: In dieser Übung erstellen Sie eine modellgesteuerte App, passen die Siteübersicht an und testen die App.
 
 Der Einfachheit halber und aus Zeitgründen gehen wir in diesem Lab nicht auf alle Spalten der Spesenabrechnung ein.
 
-### Aufgabe 1: Erstellen einer App
+### Aufgabe 1: Erstellen der App
 
 1. Wenn Sie noch nicht angemeldet sind, melden Sie sich bei https://make.powerapps.com an.
 
@@ -156,11 +156,11 @@ Der Einfachheit halber und aus Zeitgründen gehen wir in diesem Lab nicht auf al
 
     - Wählen Sie unter **Leere App basierend auf Dataverse** die Option **Erstellen** aus.
 
-    - Geben Sie „Employee Expense Management“ als **Name** ein, und wählen Sie **Erstellen** aus.
+    - Geben Sie `Employee Expense Management` als **Name** ein, und wählen Sie **Erstellen** aus.
 
-1. Nachdem Ihre neue modellgesteuerte Anwendung geladen wurde, wählen Sie die Schaltfläche **Seite hinzufügen** aus.
+1. Nachdem Ihre neue modellgesteuerte Anwendung geladen wurde, wählen Sie die Schaltfläche **+ Seite hinzufügen** aus.
 
-1. Wählen Sie im Bildschirm **Seite hinzufügen** **Dataverse-Tabelle** aus, und klicken Sie auf die Schaltfläche **Weiter**.
+1. Auf dem Bildschirm **Seite hinzufügen** wählen Sie **Dataverse-Tabelle**.
 
 1. Wählen Sie die folgenden Tabellen aus:
 
@@ -180,7 +180,7 @@ Der Einfachheit halber und aus Zeitgründen gehen wir in diesem Lab nicht auf al
 
 1. Nachdem der **Speicher**vorgang abgeschlossen wurde, wählen Sie die Schaltfläche **Veröffentlichen** aus, um Ihre Änderungen zu veröffentlichen. Warten Sie darauf, bis die Veröffentlichung abgeschlossen ist.
 
-## Aufgabe 2: Testen der App
+## Aufgabe 2: Testen der App
 
 **Starten der Anwendung**
 
@@ -192,7 +192,7 @@ Der Einfachheit halber und aus Zeitgründen gehen wir in diesem Lab nicht auf al
 
 1. Wählen Sie in der Befehlsleiste **+ Neu** aus.
 
-1. Geben Sie als **Vorname** „John“ und als **Nachname** „Doe“ein.
+1. Geben Sie als **Vorname** „`John`“ und als **Nachname** „`Doe`“ ein.
 
 1. Geben Sie unter **E-Mail** Ihre persönliche E-Mail-Adresse an. Sie wird in einem zukünftigen Lab verwendet, in dem Sie eine E-Mail erhalten.
 
@@ -208,7 +208,7 @@ Der Einfachheit halber und aus Zeitgründen gehen wir in diesem Lab nicht auf al
 
 1. Füllen Sie die Felder wie folgt aus:
 
-    - **Berichtsname**: neuer Testbericht
+    - **Berichtsname**: `New Test Report`
 
     - **Berichtszweck**: Wählen Sie **Konferenz** aus.
 

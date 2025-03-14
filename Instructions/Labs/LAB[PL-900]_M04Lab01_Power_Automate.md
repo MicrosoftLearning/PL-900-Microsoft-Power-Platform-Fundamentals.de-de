@@ -34,7 +34,7 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 
 ### Aufgabe Nr. 1: Erstellen eines Flows
 
-1. Navigieren Sie zu https://make.powerapps.com.
+1. Navigieren Sie zu `https://make.powerapps.com`.
 
 1. Möglicherweise müssen Sie sich erneut authentifizieren. Wählen Sie dazu **Anmelden** aus, und befolgen Sie die Anweisungen, falls erforderlich.
 
@@ -46,7 +46,7 @@ Sie müssen die folgenden Anforderungen implementieren, um das Projekt abzuschli
 
 1. Wählen Sie **+ Neuer Flow** und dann **Automatisierter Cloud-Flow** aus.
 
-1. Geben Sie die Spesenbenachrichtigung für **den Namen des Flow **ein.
+1. Geben Sie `Expense Notification` als **Flowname** ein.
 
 1. Suchen Sie unter **Flowtrigger auswählen** nach Dataverse
 
@@ -92,7 +92,7 @@ Dies ist eine gute Vorgehensweise, damit Sie und andere Flow-Editoren den Zweck 
 
 1. Wählen Sie das Feld **bis** aus und geben Sie Ihre persönliche E-Mail-Adresse ein. (Es gibt viele Möglichkeiten, wie wir eine E-Mail-Adresse dynamisch auffüllen können, wobei wir sie aber für diese Übung manuell zuweisen werden.)  
 
-1. Geben Sie im **Feld "Betreff** " wurde Ihre Spesenabrechnung eingestellt.
+1. Geben Sie im Feld **Betreff** Folgendes ein: `Your expense report was submitted`
 
 1. Geben Sie den folgenden Text in **E-Mail-Text** ein:
 
@@ -109,9 +109,9 @@ Dynamischer Inhalt muss dort platziert werden, wo Feldnamen in Klammern angegebe
 
 1. Markieren Sie den Text **{First Name}** (Vorname). Ersetzen Sie es durch das Feld **Vorname** aus dem Schritt **Besitzer abrufen**.
 
-1. Markieren Sie den **Text {Gesamtbetrag eingeben}** . Ersetzen Sie ihn durch das Feld **Gesamtbetrag melden** aus dem Schritt **wenn ein Spesenabrechnungsschritt übermittelt wird**.
+1. Markieren Sie den **Text {Gesamtbetrag eingeben}** . Ersetzen Sie es durch das Feld **Gesamtbetrag des Berichts** im Schritt **Wenn ein Ausgabenbericht hinzugefügt wird**.
 
-1. Markieren Sie den **Text {Fälligkeitsdatum eingeben**). Ersetzen Sie ihn durch das Feld **Fälligkeitsdatum melden** aus dem Schritt **Senden einer Spesenabrechnung**.
+1. Markieren Sie den **Text {Fälligkeitsdatum eingeben**). Ersetzen Sie ihn durch das Feld **Fälligkeitsdatum des Berichts** aus dem Schritt **Wenn ein Ausgabenbericht hinzugefügt wird**.
 
 1. Wählen Sie **Speichern**.
 
@@ -141,7 +141,9 @@ Lassen Sie die Registerkarte dieses Flows für die nächste Aufgabe geöffnet. D
 
     - **Berichtsname:** Testbericht
 
-    - **Fälligkeitsdatum melden:** Morgen 
+    - **Berichtszweck:** Konferenz
+
+    - **Fälligkeitsdatum melden:** Morgen
 
 1. Wählen Sie die Schaltfläche **Speichern und schließen** aus.
 
