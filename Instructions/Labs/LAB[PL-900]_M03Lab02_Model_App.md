@@ -20,7 +20,7 @@ Während dieses Kurses erstellen Sie Anwendungen und führen Automatisierung dur
 
 Im Rahmen der Erstellung der modellgesteuerten App führen Sie Folgendes aus:
 
-- Erstellen einer neuen modellgesteuerten App mit dem Namen „Bellows Campus Management“.
+- Erstellen Sie eine neue modellgesteuerte App mit dem Namen Ausgabenverwaltung einer mitarbeitenden Person.
 
 - Bearbeiten der App-Navigation, um auf die erforderlichen Tabellen zu verweisen.
 
@@ -64,7 +64,7 @@ Beide werden für eine bessere Benutzererfahrung in die modellgesteuerte App int
 
     >**WICHTIG:** Da alle Formulare standardmäßig „Information“ heißen, müssen Sie unbedingt überprüfen, ob das von Ihnen ausgewählte Formular den Formulartyp **Haupt** hat, und nicht einen anderen. Standardmäßig hat das Formular zwei Felder: „Name“ und „Besitzer“.
 
-1. Wählen Sie auf der rechten Seite des Bildschirms im Bereich **Eigenschaften** das Feld **Anzeigename** aus, und ändern Sie es in „Berichtsinformationen“.
+1. Wählen Sie auf der rechten Seite des Bildschirms im Bereich **Eigenschaften** das Feld **Anzeigename** aus und ändern Sie es in `Report Information`.
 
 1. Wählen Sie **Tabellenspalten** im linken Navigationsbereich aus, und fügen Sie die folgenden Felder unter dem Feld **Owner** (Besitzer) hinzu, indem Sie Spalten in das Formular ziehen oder einfach auf die Spaltennamen klicken:
 
@@ -80,7 +80,7 @@ Beide werden für eine bessere Benutzererfahrung in die modellgesteuerte App int
 
     >Die Kopfzeile ist der obere rechte Bereich des Formulars. Möglicherweise müssen Sie das Eigenschaftenpanel auf der rechten Seite des Bildschirms zuklappen, um das Feld im Formular anzuzeigen.
 
-1. Wählen Sie das Feld **Besitzer** aus. Ändern Sie im Eigenschaftenpanel die **Bezeichnung** in „Anforderer“.
+1. Wählen Sie das Feld **Besitzer** aus. Ändern Sie auf dem Eigenschaftspanel die **Bezeichnung** in `Requestor`.
 
 1. Wählen Sie oben rechts **Speichern und Veröffentlichen** aus, und warten Sie, bis der Speicher- und Veröffentlichungsvorgang abgeschlossen ist.
 
@@ -120,7 +120,7 @@ Jetzt werden wir die Ansicht klonen, um eine neue Ansicht für die heute fällig
 
 1. Wählen Sie **Speichern unter** aus.
 
-1. Ändern Sie **Name** in „Heute fällige Spesenabrechnungen“, und wählen Sie **Speichern** aus.
+1. Ändern Sie den **Status** in `Expense Reports Due Today`, und wählen Sie **Speichern** aus.
 
 1. Wählen Sie **Filter bearbeiten** im Eigenschaftenpanel aus.
 
@@ -148,15 +148,13 @@ Der Einfachheit halber und aus Zeitgründen gehen wir in diesem Lab nicht auf al
 
 1. Wählen Sie oben rechts die Umgebung **Dev One** aus, sofern sie noch nicht ausgewählt ist.
 
-1. Wählen Sie im linken Navigationsbereich **+ Erstellen** aus.
+1. Wählen Sie links in der Navigation **Lösungen** aus.
 
-1. Erstellen der modellgesteuerten Anwendung:
+1. Öffnen Sie Lösung **Ausgabenverwaltung** .
 
-    - Wählen Sie **Leere App** im Abschnitt **Beginnen mit** des Bildschirms **App erstellen** aus.
+1. Wählen Sie **+Neu**, wählen Sie **APP** und wählen Sie dann **Modellgesteuerte App**.
 
-    - Wählen Sie unter **Leere App basierend auf Dataverse** die Option **Erstellen** aus.
-
-    - Geben Sie `Employee Expense Management` als **Name** ein, und wählen Sie **Erstellen** aus.
+1. Geben Sie `Employee Expense Management` als **Name** ein, und wählen Sie **Erstellen** aus.
 
 1. Nachdem Ihre neue modellgesteuerte Anwendung geladen wurde, wählen Sie die Schaltfläche **+ Seite hinzufügen** aus.
 
@@ -174,7 +172,7 @@ Der Einfachheit halber und aus Zeitgründen gehen wir in diesem Lab nicht auf al
 
 1. Wählen Sie im Navigationsbereich unterhalb der Bezeichnung „Navigation“ die Option **Neue Gruppe** aus. Möglicherweise müssen Sie das Menü links erweitern.
 
-1. Ändern Sie auf der rechten Seite des Bildschirms im Abschnitt **Anzeigeoptionen** die Eigenschaft **Titel** in „Berichte“.
+1. Auf der rechten Seite des Bildschirms, im Abschnitt **Anzeigeoptionen**, ändern Sie die Eigenschaft **Titel** in `Reports`.
 
 1. Klicken Sie auf **Speichern**, und warten Sie, bis die Änderungen gespeichert sind.
 
