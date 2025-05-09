@@ -78,7 +78,7 @@ Dies ist eine gute Vorgehensweise, damit Sie und andere Flow-Editoren den Zweck 
 
 1. Fügen Sie im Feld **Zeilen-ID** den Eintrag **Besitzer (Wert)** in der Liste für **dynamische Inhalte** aus. In diesem Schritt suchen Sie den Besitzer für die Zeile "Spesenabrechnung", die erstellt wurde, um diesen Flow auszulösen. 
 
-1. Wählen Sie in der Aktion **Zeile nach ID abrufen** die Auslassungspunkte ( **...** ) aus, und wählen Sie dann **Umbenennen** aus. Benennen Sie diese Aktion in „Den Besitzer abrufen“ um
+1. Wählen Sie in der Aktion **Zeile nach ID abrufen** die Auslassungspunkte ( **...** ) aus, und wählen Sie dann **Umbenennen** aus. Umbenennen dieser Aktion `Get the Owner`.
 
 Dies ist eine gute Vorgehensweise, damit Sie und andere Flow-Editoren den Zweck des Schritts erkennen können, ohne tiefer in die Details gehen zu müssen.
 
@@ -121,7 +121,7 @@ Lassen Sie die Registerkarte dieses Flows für die nächste Aufgabe geöffnet. D
 
 ### Aufgabe Nr. 4: Flow überprüfen und aktivieren
 
-1. Öffnen Sie im Browser eine neue Registerkarte, und navigieren Sie zu https://make.powerapps.com.
+1. Öffnen Sie im Browser eine neue Registerkarte, und navigieren Sie zu `https://make.powerapps.com`.
 
 1. Wählen Sie oben rechts die Umgebung **Dev One** aus, sofern sie noch nicht ausgewählt ist.
 
@@ -139,7 +139,7 @@ Lassen Sie die Registerkarte dieses Flows für die nächste Aufgabe geöffnet. D
 
 1. Füllen Sie den **Spesenabrechnungseintrag** wie folgt aus:
 
-    - **Berichtsname:** Testbericht
+    - **Berichtsname**: `Test Report`
 
     - **Berichtszweck:** Konferenz
 
