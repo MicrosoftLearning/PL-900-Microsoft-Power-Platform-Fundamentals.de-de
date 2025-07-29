@@ -61,10 +61,10 @@ Das Anwenden der neuesten Updates auf den Browser verhindert Probleme in der nä
 ## Übung 2: Images herunterladen
 
 1. Öffnen Sie ein Browserfenster in Ihrem Mandanten, und geben Sie https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/tree/master/Allfiles ein.
-1. Sie sehen die Images auf dem Screenshot.
+2. Sie sehen die Images auf dem Screenshot.
 
-    ![Bilddateien.](media/images.png)
+![Bilddateien.](media/images.png)
 
-1. Öffnen Sie jedes Image separat, und laden Sie es herunter, indem Sie das Symbol **Herunterladen** auswählen.
+3. Öffnen Sie jedes Image separat, und laden Sie es herunter, indem Sie das Symbol **Herunterladen** auswählen.
 
-    ![Schaltfläche „Image herunterladen“](media/download-image.png)
+![Schaltfläche „Image herunterladen“](media/download-image.png)
