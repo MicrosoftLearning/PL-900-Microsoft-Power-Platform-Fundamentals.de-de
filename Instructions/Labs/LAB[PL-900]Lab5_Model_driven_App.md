@@ -171,7 +171,7 @@ Zunächst werden wir ein paar Kontakte hinzufügen.
 1.  Wählen Sie in der Formularkopfzeile den Abwärtspfeil neben **Kontakttyp** aus.
 1.  Legen Sie den **Kontakttyp** auf **Sprecher** fest.
 
-    ![Screenshot, der zeigt, wie das Feld „Kontakttyp“ in einem Formular festgelegt wird](media/0860116a9b7df096c14728212b9977b1.png)
+    ![Screenshot, der zeigt, wie das Feld „Kontakttyp“ in einem Formular festgelegt wird.](media/0860116a9b7df096c14728212b9977b1.png)
 
 1.  Wählen Sie die Schaltfläche **Speichern** aus, um den Kontakt zu speichern, und lassen Sie ihn geöffnet.
 1. Wählen Sie die Schaltfläche **+ Neu** aus.
