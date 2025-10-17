@@ -38,12 +38,17 @@ Die geschätzte Dauer dieser Übung beträgt **30 bis 45** Minuten.
 
 > **Hinweis:** Im vorherigen Lab haben wir eine Eventverwaltungslösung erstellt und als bevorzugte Lösung in dieser Umgebung festgelegt. Aus diesem Grund müssen wir nicht direkt zur Lösung wechseln, um unser Datenmodell zu erstellen. Die von uns erstellten Elemente werden der Lösung automatisch hinzugefügt.
 
+> **Hinweis:** Wenn beim Erstellen einer Auswahlspalte mit Copilot eine Fehlermeldung vom Typ **Eingreifen erforderlich** für die Tabelle auftritt, können Sie die Spalte manuell erstellen, indem Sie die folgenden Schritte ausführen:
+1. Wählen Sie **Optionen anzeigen** und dann **Daten anzeigen** aus. Die Tabellenstruktur wird angezeigt.
+1. Klicken Sie auf **+ Neue Spalte**, um eine neue Spalte hinzuzufügen.
+
+
 ## Aufgabe 1: Datenmodell erstellen
 
 Contoso speichert derzeit Spenderkontaktinformationen in seiner Dataverse-Instanz. Das Unternehmen möchte Dataverse verwenden, um die beantragten Zuschüsse und die erhaltenen Spenden zu verfolgen. Sie müssen die erforderlichen Tabellen erstellen, um die zukünftigen Anwendungsanforderungen von Contoso zu unterstützen.
 
 1.  Öffnen Sie bei Bedarf einen Webbrowser, und navigieren Sie zum [Power Apps](https://make.powerapps.com/) Maker Portal, und melden Sie sich mit den Anmeldeinformationen für Ihr Microsoft-Konto an.
-1.  Wählen Sie auf der Power Pages-Startseite mithilfe der Navigation auf der linken Seite **Tabellen** aus.
+1.  Wählen Sie auf der Power Apps-Startseite im Navigationsbereich auf der linken Seite die Option **Tabellen** aus.
 1.  Wählen Sie unter **Tabellen** die Option **Erste Schritte mit Copilot** aus.
 1.  Geben Sie auf dem Bildschirm **Beschreiben Sie die Tabellen, die Copilot erstellen soll** Folgendes ein: „*Erstelle einer Tabelle zum Verwalten von Events. Die Tabelle sollte den Namen des Events, die Eventdaten, den Veranstaltungsort, die maximalen Anzahl der Teilnehmenden und der Eventdetails enthalten.“*
 1.  Wählen Sie neben der Schaltfläche **Generieren** die Option **Tabelleneinstellungen** aus, und konfigurieren Sie Folgendes:
