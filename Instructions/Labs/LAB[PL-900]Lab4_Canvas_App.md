@@ -26,6 +26,9 @@ Bevor Sie mit dieser Übung beginnen, müssen Sie das folgende Lab abgeschlossen
 > **Wichtig** Dieses Lab verwendet KI, um die Komponenten zu erstellen. Da KI-Ergebnisse variieren können, sind Ihre Ergebnisse möglicherweise unterschiedlich (aber ähnlich) mit den im Lab definierten Ergebnissen. Die grundlegenden Konzepte, die im Lab beschrieben werden, sind identisch, unabhängig davon, was erstellt wurde oder wie es benannt wurde. Wenn die Tabellen und Spalten nicht exakt übereinstimmen, müssen Sie sich möglicherweise an das, was für Sie erstellt wurde, anpassen.
 
 Die geschätzte Dauer dieser Übung beträgt **60 bis 75** Minuten.
+> **Hinweis:** Wenn beim Erstellen einer Auswahlspalte mit Copilot eine Fehlermeldung vom Typ **Eingreifen erforderlich** für die Tabelle auftritt, können Sie die Spalte manuell erstellen, indem Sie die folgenden Schritte ausführen:
+1. Wählen Sie **Optionen anzeigen** und dann **Daten anzeigen** aus. Die Tabellenstruktur wird angezeigt.
+1. Klicken Sie auf **+ Neue Spalte**, um eine neue Spalte hinzuzufügen.
 
 ## Aufgabe 1: Anmeldung bei Power Apps und Erkunden der Benutzeroberfläche
 
@@ -133,7 +136,7 @@ Während Sie die App erstellen, erreicht einer Ihrer Vorgesetzten Sie zu Ihnen u
 1.  Klicken Sie mit der rechten Maustaste auf **SidebarContainer**, und benennen Sie ihn in **EquipContainer1** um.
 1.  Klicken Sie, während der **EquipContainer1**-Container ausgewählt ist, auf die Schaltfläche **Einfügemenü öffnen**.
 1.  Geben Sie im Fenster **Suche** **Katalog** ein, und wählen Sie **Vertikaler Katalog** aus.
-1.  Wenn Sie aufgefordert werden, eine Datenquelle in dem angezeigten Feld **Suche** anzugeben, geben Sie **Arbeitsmittel** ein, und wählen Sie die Tabelle **Arbeitsmittel** aus.
+1.  Wenn Sie im daraufhin angezeigten Feld **Suchen** aufgefordert werden, eine Datenquelle anzugeben, geben Sie **Equipment** ein, und wählen Sie die Tabelle **Equipment** aus.
 1. Wählen Sie in der **Strukturansicht** auf der linken Seite des Bildschirms das **Gallery1**-Steuerelement aus, das Sie soeben hinzugefügt haben.
 1. Klicken Sie mit der rechten Maustaste auf den Katalognamen, wählen Sie **Umbenennen** aus, und benennen Sie ihn in `Equipment List` um.
 1. Zeigen Sie auf den Katalog **Arbeitsmittelliste**, und wählen Sie auf der Symbolleiste, die oberhalb des Katalogs angezeigt wird, **Layout** aus.
@@ -200,7 +203,7 @@ Während Sie die App erstellen, erreicht einer Ihrer Vorgesetzten Sie zu Ihnen u
 
     ![Screenshot der Eigenschaften des Suchsymbols](media/cb3305731a09bca0bbf166d55d9822a4.png)
 
-1. Wählen Sie in der **Strukturansicht** auf der linken Seite den **EquipSearchContainer** aus.
+
 
     Abschließend konfigurieren wir den Katalog **Arbeitsmittelliste** so, dass die Daten basierend auf dem im Suchsteuerelementfeld eingegebenen Text aufgefüllt werden.
 
@@ -223,7 +226,7 @@ Wenn ein Benutzer einen Datensatz in der Arbeitsmittelliste auswählt, sollte de
 1.  Klicken Sie mit der rechten Maustaste, und **ändern Sie den Namen** des Containers in `RecordDetails`.
 1.  Wählen Sie im Container **RecordDetails** die Schaltfläche **Einfügen** aus.
 1.  Wählen Sie im Menü **Einfügen** **Formular bearbeiten** aus.
-1.  Wählen Sie auf dem Bildschirm „Datenquelle auswählen“ **Arbeitsmittel** aus. *(Es kann bis zu 30 Sekunden dauern, bis die Daten aufgefüllt werden.)*
+1.  Wählen Sie auf dem Bildschirm „Datenquelle auswählen“ die Datenquelle **Equipment** aus. *(Es kann bis zu 30 Sekunden dauern, bis die Daten aufgefüllt werden.)*
 1.  Klicken Sie mit der rechten Maustaste auf das Formular, das Sie gerade hinzugefügt haben, und **ändern Sie den Namen** in `EquipmentForm`.
 1.  Wählen Sie im Bereich **Eigenschaften** die Registerkarte **Erweitert** aus, und legen Sie die Eigenschaft **Item** auf Folgendes fest: `'Equipment List'.Selected` *(Dadurch wird das Formular mit dem aktuell ausgewählten Datensatz aufgefüllt.)*
 1. Wählen Sie die Registerkarte **Anzeige** aus, und konfigurieren Sie das Formular wie folgt:
@@ -332,3 +335,7 @@ Bei der Überprüfung haben wir entschieden, dass wir nicht in der Lage sein mü
 1.  Wählen Sie in Power Apps Studio die Schaltfläche **Speichern** aus.
 1.  Wählen Sie die Schaltfläche **Veröffentlichen** aus.
 1.  Wählen Sie **Diese Version veröffentlichen** aus.
+
+
+
+

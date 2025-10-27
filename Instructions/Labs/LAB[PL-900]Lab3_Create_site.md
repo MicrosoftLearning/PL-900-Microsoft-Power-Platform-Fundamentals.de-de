@@ -319,3 +319,6 @@ Sobald Ihre Website erstellt wurde, sollten Sie sie ansehen, um sicherzustellen,
     - Layout und Navigation
     - Brandingelemente wie Farben, Schriftarten und Logos
 1. Nachdem Sie die Tests abgeschlossen haben, schließen Sie die Browserregisterkarte, um zur Website zurückzukehren.
+
+
+

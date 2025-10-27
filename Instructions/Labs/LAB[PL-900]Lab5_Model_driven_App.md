@@ -232,3 +232,6 @@ Zunächst werden wir ein paar Kontakte hinzufügen.
     ![Screenshot des ausgefüllten Sitzungsregistrierungsformulars  ](media/Session-registration-form.png)
 
 1.  Wählen Sie **Speichern und schließen** aus.
+
+
+
