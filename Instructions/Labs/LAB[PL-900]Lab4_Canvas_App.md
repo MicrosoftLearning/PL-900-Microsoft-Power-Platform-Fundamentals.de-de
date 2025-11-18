@@ -208,7 +208,7 @@ Während Sie die App erstellen, erreicht einer Ihrer Vorgesetzten Sie zu Ihnen u
     Abschließend konfigurieren wir den Katalog **Arbeitsmittelliste** so, dass die Daten basierend auf dem im Suchsteuerelementfeld eingegebenen Text aufgefüllt werden.
 
 1.  Wählen Sie den Katalog **Arbeitsmittelliste** aus, den Sie zuvor erstellt haben.
-1.  Geben Sie in der Eigenschaft **Items** die folgende Formel ein: `Search([@'Equipments'], EquipSearchInput.Text, 'Equipment Name',Category)`.
+1.  Geben Sie in der Eigenschaft **Items** die folgende Formel ein: `Search([@'Equipment'], EquipSearchInput.Text, 'Equipment Name',Category)`.
 
     ![Screenshot: PowerFx-Formel für „Items“](media/powerfx-formula.png)
 
@@ -261,7 +261,7 @@ Wenn ein Benutzer einen Datensatz in der Arbeitsmittelliste auswählt, sollte de
     3.  **Mindestbreite:** 150
     4.  **Höhe:** 40
        
-1. Wählen Sie den **SecondRecord1**-Container aus, und klicken Sie auf die Schaltfläche **Einfügen**.
+1. Wählen Sie den Container **SelectedRecord1** und anschließend die Schaltfläche **Einfügen** aus.
 1. Geben Sie im Feld **Suche** **Speichern** ein, und wählen Sie das Symbol **Speichern** aus.
 1. Konfigurieren Sie die Schaltfläche **Speichern** wie folgt:
 
@@ -335,6 +335,8 @@ Bei der Überprüfung haben wir entschieden, dass wir nicht in der Lage sein mü
 1.  Wählen Sie in Power Apps Studio die Schaltfläche **Speichern** aus.
 1.  Wählen Sie die Schaltfläche **Veröffentlichen** aus.
 1.  Wählen Sie **Diese Version veröffentlichen** aus.
+
+
 
 
 
